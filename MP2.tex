@@ -85,6 +85,16 @@ In diesem Versuch werden Phasenübergänge von einer Cu$_{3}$Au Mischung unter V
 Ziel bei dieser Untersuchung ist es die Gitterkonstante a des fcc-Gitters zu bestimmen und ihre lineare Abhängigkeit von der Temperatur zu überprüfen. Außerdem soll geschaut werden, ob die Kernaussagen die Debye mathematisch hergeleitet hat auch experimentell bestätigt werden können.
 \section{Interferenz von Röntgenstrahlen unter Erhöhung der Temperatur}
 \subsection{Methoden und Durchführung}
+Um zu gewährleisten, dass eine Wärmebehandlung während der Röntgenuntersuchung stattfinden kann, wird die Cu$_{3}$Au Probe in Scheiben geschnitten und mit einem Loch versehen, in das das Thermoelement aufgenommen wird. Diese Probe wird dann in ein Röntgendiffraktometer kombiniert mit einer Heizkammer getan. Um die Oxidation der Probe zu verhindern, muss ein Vakuum erzeugt werden. Das bedeutet, dass die Messungen bei einem Druck von $10^{.15}$ ausgeführt werden. Diese Probe wird daraufhin mit monochromatischer Röntgenstrahlung der Länge $\lambda = 1,54$\AA bestrahlt. Gleichzeitig werden sowohl Quelle als auch Detektor gedreht, was zu einer 2$\theta$ Geometrie führt, gezeigt in \cref{theta}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{2theta.PNG}
+	\caption{Skizze des Versuchaufbaus}
+	\label{theta}
+\end{figure}
+
+Die Intensität wird dann in 2$\theta$ = 0,02° Schritten im Winkelbereich 20° bis 90° gemessen. Das passiert bei den Temperaturen 25°C,400°C,500°C und 700°C. Die Messdauer pro Schritt beträgt 0,5s. Da es bei der 700°C Messung zu Komplikationen kam, wurde dort in 0,04° Abständen gemessen und die Messung ist bei 80,52° abgebrochen.
 
 \subsection{Auswertung}
 \subsubsection{Gitterkonstante}
@@ -172,12 +182,12 @@ Fläche & Winkel $2 \theta${[}°{]} & Flächenabstand d {[}\AA{]} & Gitterabstan
 \end{tabular}
 \end{table} 
 
-Wenn dieser Vorgang für die anderen Temperaturen wiederholt wird, ergibt sich der aus \cref{Temp} erwartete lineare Anstieg.
+Wenn dieser Vorgang für die anderen Temperaturen wiederholt wird, ergibt sich der aus \cref{Temp} erwartete lineare Anstieg, zu sehen in \cref{Lin}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.35]{Lin.PNG}
 	\caption{Gitterabstand in Abhängigkeit der Temperatur}
-	\label{Temp}
+	\label{Lin}
 \end{figure}
 
 \begin{figure}[h]
@@ -270,6 +280,7 @@ Da die Wellenlänge in diesem Versuch konstant gehalten wurde, kann der letzte P
 	\caption{Intensitätsverteilung bei 700°C}
 	\label{700}
 \end{figure}
+
 
 \section{Fernordnungsparameter}
 \subsection{Methoden}
