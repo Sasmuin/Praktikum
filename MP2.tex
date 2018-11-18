@@ -57,8 +57,7 @@
 % Definition von Unicode-Symbolen; Nach [utf8]inputenc laden!
 \usepackage{newunicodechar}
 % Unicode-Formeln mit pdfLaTeX
-\input{tex/99_pdflatex_unicode-math.tex}
-%ende neue Mathetools
+
 
 %Neu hinzugefügte Packeges
 % Nutzen von +, -, *, / in \setlength u.ä. (z.B. \setlength{\a + 3cm})
@@ -82,21 +81,6 @@
 % Zusätzliche Optionen für Tabellen (tabular)
 \usepackage{array}
 
-% Farben
-\usepackage{xcolor}
-% Einbinden von Grafiken (\includegraphics)
-\usepackage{graphicx}
-% .tex-Dateien mit \includegraphics einbinden
-\usepackage{gincltex}
-% Größere Freiheiten bei Dateinamen mit \includegraphics
-\usepackage{grffile}
-% Abbildungen im Fließtext
-\usepackage{wrapfig}
-% Zitieren, Bibliographie (Biber als Bibliographie-Programm verwenden!)
-\usepackage[style=verbose, backend=biber]{biblatex}
-% Abbildungen nebeneinander (subfigure, subtable)
-\usepackage{subcaption}
-%ende neue Tools
 
 
 
@@ -401,7 +385,7 @@ Dabei wird überprüft, ob der theoretische Wert von $\eta = 4$ angenommen wird.
 Als erstes wird die Dynamik des (001) Überstrukturreflex analysiert. Die erste und die zweite Messung sind vom Rauschen überzogen, sodass nicht erkannt werden kann ob überhaupt ein Reflex auftaucht. Mit der Zeit bildet sich ein Peak aus, welches sich vom Rauschen abhebt. Ab der 15. Messung ist zu sehen, dass sich ein Überstrukturreflex gebildet hat.
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.6]{Bragg Punkte.pdf}
+    \includegraphics[scale = 0.5]{Bragg Punkte.pdf}
     \caption{Diese Graphik stellt die Dynamik (001)-Ebene dar. Auf der $x$-Achse ist der Winkel in Grad angegeben und auf der $y$-Achse ist die Intensität angegeben der einfallenden Röntenstrahlung. Die dunkel blauen Rauten sind die ersten Messungen. Die roten Quadrate die fünften Messungen die grünen Dreiecke sind die zehnten Messungen die violetten Kreuze die 15. Messungen und die hell blauen Kreuze sind die 20. Messung.}
     \label{A3}
 \end{figure}
@@ -474,8 +458,11 @@ In diesem Versuch wird die Methode verwendet um den Phasenübergang zwischen Ord
 	\label{3}
 \end{figure}	
 
-\section{Literaturverzeichnis}
-[1] \url{https://www.researchgate.net/figure/Miller-indices-indicating-the-plane-perpendicular-to-the-vector-given-for-the-cubic_fig7_302838100}\\
-[2] Charakterisierung der Phasenumwandlung in Kupfer-Gold Legierungen,Fortgeschrittenen Praktikum, Versuchsanleitung, Münster ,WS 18/19
+\begin{thebibliography}{9}
+\bibitem{A}
+ \url{https://www.researchgate.net/figure/Miller-indices-indicating-the-plane-perpendicular-to-the-vector-given-for-the-cubic_fig7_302838100}\\
+\bibitem{B}
+Charakterisierung der Phasenumwandlung in Kupfer-Gold Legierungen,Fortgeschrittenen Praktikum, Versuchsanleitung, Münster ,WS 18/19
 
+\end{thebibliography}
 \end{document}
