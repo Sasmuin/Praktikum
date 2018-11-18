@@ -80,7 +80,14 @@
 	
 \newpage
 \section{Einleitung}
-Ziel dieses Versuches ist es die Phasenumwandlung einer Kupfer-Gold Mischung für verschiedene Temperaturen zu untersuchen, wobei bekannt ist, dass es sich um ein fcc-Gitter handelt. Im ersten Teil des Versuchs wird das erreicht, indem diese Mischung unter sich verändernden Winkel mit Röntgenstrahlung bestrahlt wird und die Intensität dazu gemessen wird. Wenn es zu einer konstruktiven Interferenz kommt, kann mithilfe der Bragg-Gleichung auf den Abstand der Ebenen voneinander geschlossen werden:
+In diesem Versuch werden Phasenübergänge von einer Cu$_{3}$Au Mischung unter Variation der Temperatur betrachtet. Im ersten Teil des Versuchs wird das erreicht, indem das Debye-Scherrer Verfahren angewendet wird. Dabei wird eine polykristalline Probe mit monochromatischer Röntgenstrahlung unter Variation des Drehwinkels bestrahlt.
+Ziel bei dieser Untersuchung ist es die Gitterkonstante a des fcc-Gitters zu bestimmen und ihre lineare Abhängigkeit von der Temperatur zu überprüfen. 
+\section{Interferenz von Röntgenstrahlen unter Erhöhung der Temperatur}
+\subsection{Methoden und Durchführung}
+
+\subsection{Auswertung}
+\subsubsection{Gitterkonstante}
+Ziel dieses Teil des Versuches ist es die Phasenumwandlung einer Kupfer-Gold Mischung für verschiedene Temperaturen zu untersuchen, wobei bekannt ist, dass es sich um ein fcc-Gitter handelt. Das wird erreicht, indem diese Mischung unter sich verändernden Winkel mit Röntgenstrahlung bestrahlt wird und die Intensität dazu gemessen wird. Wenn es zu einer konstruktiven Interferenz kommt, kann mithilfe der Bragg-Gleichung auf den Abstand der Ebenen voneinander geschlossen werden:
 \begin{equation}
 2d sin(\theta) = n \lambda
 \label{bragg}
@@ -90,15 +97,20 @@ Wenn bekannt ist um was für eine Ebene es sich handelt, kann daraus wiederum de
 
 \begin{equation}
 d = \frac{a}{\sqrt{h^{2}+k^{2}+l^{2}}}
+\label{d}
 \end{equation}
 
-Damit lässt sich daraufhin zeigen, wie sich der Gitterabstand mit der Temperatur verändert, wobei ein linearer Anstieg erwartet wird.
+Damit lässt sich daraufhin zeigen, wie sich der Gitterabstand mit der Temperatur verändert, wobei ein linearer Anstieg erwartet wird, anhand von 
+\begin{equation}
+<r-r_{0}> = \frac{3 b}{4 a^{2}} k_{b} \cdot T, 
+\label{Temp}
+\end{equation}
+wobei alles außer die Temperatur T Konstanten sind.
 
-Außerdem soll versucht werden die sogenannte Fernordnung zu bestimmen, welche aussagt wie geordnet ein Kristallgitter ist. Ein fcc-Gitter lässt sich in vier verschiedene sc-Gitter aufteilen. Bei einer vollständigen Ordnung befinden sich alle Goldatome auf dem sc-Gitter mit der Basis (0,0,0), während sich die Kupferatome auf den anderen drei sc-Gitter befinden.
+Der Phasenübergang lässt sich mit der sogenannten Fernordnung beschreiben, welche aussagt wie geordnet ein Kristallgitter ist, wobei $\mu$ = 1 für eine vollständige Ordnung und $\mu$ = 0 für vollständige Unordnung steht. Ein fcc-Gitter lässt sich in vier verschiedene sc-Gitter aufteilen. Bei einer vollständigen Ordnung befinden sich alle Goldatome auf dem sc-Gitter mit der Basis (0,0,0), während sich die Kupferatome auf den anderen drei sc-Gitter befinden.
 Bei einer vollständigen Unordnung ist es rein zufällig, wie die Gold und Kupferatome verteilt sind.
 
-Um die Fernordnung zu bestimmen, muss zuerst die Intensität theoretisch bestimmt werden. 
-Dies passiert bis auf eine Konstante genau mit
+Die Intensität hängt dabei auch indirekt mit der Intensität bzw. der Fernordnung zusammen.
 \begin{equation}
 I_{hkl} \propto |F_{hkl}|^{2} \cdot p \cdot L_{p} \cdot D_{T}.
 \end{equation}
@@ -139,36 +151,123 @@ Unter der Annahme, dass der Strukturfaktor linear mit der Fernordnung $\mu$ skal
 \begin{equation}
 F_{hkl} = \left \{ \begin{array}{ll}
 f_{Au} + 3f_{Cu} \text{  für nur gerade oder ungerade h,k,l} \\
-\mu (f_{Au} - f_{Cu}) \text{  sonst} \\
-\end{array} \right .
+\mu \cdot (f_{Au} - f_{Cu}) \text{  sonst} \\
+\end{array} \right.
 \end{equation}
 
-Daraus lässt sich dann die Fernordnung berechnen  mit 
-\begin{equation}
-\mu^{2} = \frac{I^{Ü}(\mu)}{I^{Ü}(1)} = \frac{I^{Ü}_{exp}(\mu)\cdot I^{F}_{theo}}{I^{F}_{exp} \cdot I^{Ü}_{theo}(1)}.
-\end{equation}  
+Das entspricht auch den experimentellen Ergebnissen Ergebnissen. In \cref{25} sind alle möglichen Ebenen bis (3 1 1) vorhanden, während in \cref{400} nur der Fundamentalreflex zu sehen ist. Dies ändert sich auch nicht für höhere Temperaturen von 500 bzw. 700°C. 
+Daraus lässt sich schließen, dass es bei der Temperaturerhöhung von 25 auf 400°C zu einem Phasenübergang gekommen ist. Am Anfang ist Die Fernordnung $\mu$ deutlich größer als null, während sie später ungefähr gleich null ist. Dies entspricht auch den bisherigen Erkenntnissen, welche einen Phasenübergang bei 390°C erwarten. Allerdings lässt sich mit dieser Methode nicht herausfinden wie groß die Fernordnung genau ist. 
 
-Außerdem sollen noch die Kernaussagen von Debye überprüft werden. Diese heißen:
-1. Die Schärfe der Interferenzmaxima wird durch die Wärmebewegung nicht beeinflusst.
+Außerdem lassen sich die Gitterkonstanten mithilfe von \cref{bragg} und \cref{d} berechnen. Beispielhaft wird dies hier für \cref{400} gemacht:
+\begin{table}[h]
+\caption{Gitterabstand a bei 400°}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Fläche & Winkel $2 \theta${[}°{]} & Flächenabstand d {[}\AA{]} & Gitterabstand a {[}\AA{]} \\ \hline
+111    & 41,62                     & 2,1674        & 3,7540      \\ \hline
+200    & 48,4                      & 1,8784        & 3,7568       \\ \hline
+220    & 70,64                     & 1,3319        & 3,7670       \\ \hline
+331    & 85,24                     & 1,1371         & 3,7715       \\ \hline
+\end{tabular}
+\end{table} 
 
-2. Durch die Wärmebewegung ändert sich die räumliche Intensitätsverteilung.
-
-3. Aufgrund der Wärmebewegung nimmt die Interferenzintensität
-\begin{itemize}
-\item mit zunehmender Temperatur 
-\item mit zunehmendem Winkelabstand zwischen Einfalls- und Beobachtungsrichtung 
-\item mit abnehmender Wellenlänge
-\end{itemize}
-exponentiell ab.
-\section{Erhöhung der Temperatur}
-\subsection{Ergebnis}
-Um herauszuf
+Wenn dieser Vorgang für die anderen Temperaturen wiederholt wird, ergibt sich der aus \cref{Temp} erwartete lineare Anstieg.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{Lin.PNG}
+	\caption{Gitterabstand in Abhängigkeit der Temperatur}
+	\label{Temp}
+\end{figure}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.35]{25.PNG}
 	\caption{Intensitätsverteilung bei Raumtemperatur}
-	\label{ski}
+	\label{25}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{400.PNG}
+	\caption{Intensitätsverteilung bei 400°C}
+	\label{400}
+\end{figure}
+
+\subsubsection{Debye}
+
+Außerdem sollen noch die Kernaussagen von Debye überprüft werden. Die erste Aussage heißt:
+
+"Die Schärfe der Interferenzmaxima wird durch die Wärmebewegung nicht beeinflusst."
+
+
+Die Breite (und damit Schärfe) der Interferenzmaxima wird bestimmt, indem die Halbwertsbreite für die Ebenen (1 1 1) und (2 0 0) als Breite angenommen werden und für die Ebenen (2 2 0) und (3 1 1)  Der Punkt auf dem sie unter $\frac{3}{4}$ ihres Höchstwerts fallen. Diese wurde gemacht, wegen der geringen Intensität der beiden hinter Fundamentalpeaks, weshalb die Hintergrundstrahlung häufig bei der Halbwertsbreite interferiert hat. Unter diesen Annahmen ergibt sich eine Schärfe der einzelnen Peaks von:
+\begin{table}[h]
+\caption{Schärfe der Interferenzpeaks in Grad}
+\begin{tabular}{l|llll}
+Temperatur[°C] \textbackslash{}Fläche & 110  & 200  & 220  & 311  \\ \hline
+25                               & 0,46 & 0,4  & 0,18 & 0,14 \\
+400                              & 0,34 & 0,58 & 0,1  & 0,1  \\
+500                              & 0,58 & 0,74 & 0,2  & 0,2  \\
+700                              & 0,64 & 0,64 & 0,16 & -   
+\end{tabular}
+\end{table}
+
+In der Tabelle lässt sich zwar ein Anstieg der Breite mit der Temperatur erahnen, besonders bei den beiden Halbwertsbreiten, die deutlich genauer sind, da sie weniger stark von einzelnen Fluktuationen beeinflusst sind. Für die beiden anderen Ebenen scheint die Schärfe mehr oder weniger zufällig zu sein. Insgesamt lässt sich also sagen, dass es zwar Indizien dafür gibt, dass die Schärfe der Intensitätspeaks mit dem Temperaturanstieg sinken, allerdings lässt sich keine eindeutige Aussage treffen. 
+
+Die zweite Aussage von Debye sagt aus, dass sich die räumliche Intensitätsverteilung mit der Wärmebewegung ändert.
+
+Das ist auch deutlich zu sehen, wenn die verschiedenen Fundamentalpeaks verglichen werden:
+\begin{table}[h]
+\caption{Position der Interferenzpeaks in Grad}
+\begin{tabular}{l|llll}
+Temperatur[°C] \textbackslash{}Fläche & 110   & 200   & 220   & 311   \\ \hline
+25                               & 41,94 & 48,68 & 71,32 & 86,24 \\
+400                              & 41,62 & 48,4  & 70,64 & 85,24 \\
+500                              & 41,44 & 48,22 & 70,3  & 85,02 \\
+700                              & 41,2  & 48,04 & 70,08 &      
+\end{tabular}
+\end{table}
+
+Mit steigender Temperatur wird der Abstand zwischen Beobachtungs- und Einfallsebene immer kleiner. Es wurden allerdings zu wenige Messwerte aufgenommen, um festzustellen in welcher Abhängigkeit die beiden Variablen zueinander stehen.
+
+Die letzte Aussage von Debye sagt aus, dass aufgrund der Wärmebewegung die Interferenzintensität exponentiell abnimmt
+\begin{itemize}
+\item mit zunehmender Temperatur 
+\item mit zunehmendem Winkelabstand zwischen Einfalls- und Beobachtungsrichtung 
+\item mit abnehmender Wellenlänge
+\end{itemize}
+
+Die erste Aussage spiegelt sich nicht in den experimentellen Ergebnissen wieder:
+\begin{table}[h]
+\caption{Intensität in kg$\cdot \text{s}^{-3}$}
+\begin{tabular}{l|llll}
+Temperatur[°C] \textbackslash{}Fläche & 110 & 200 & 220 & 311 \\ \hline
+25                               & 165 & 151 & 96  & 109 \\
+400                              & 198 & 211 & 136 & 124 \\
+500                              & 251 & 154 & 124 & 182 \\
+700                              & 194 & 162 & 114 &    
+\end{tabular}
+\end{table}
+
+Die Intensität steigt sogar grundsätzlich beim Übergang von 25 auf 400°C. Ein exponentieller Abfall bei Zunahme der Temperatur kann also ausgeschlossen werden.
+
+Die zweite Aussage von Debye ist zumindest nicht allgemeingültig richtig. Zwar scheint es die Intensitätsverteilung in \cref{400} gut zu beschrieben, allerdings wird offensichtlich bei Betrachtung von \cref{500}, dass sie nicht immer stimmen kann. 
+
+Da die Wellenlänge in diesem Versuch konstant gehalten wurde, kann der letzte Punkt nicht diskutiert werden.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{500.PNG}
+	\caption{Intensitätsverteilung bei 500°C}
+	\label{500}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{700.PNG}
+	\caption{Intensitätsverteilung bei 700°C}
+	\label{700}
 \end{figure}
 
 \section{Kalorimetrie}
