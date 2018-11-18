@@ -271,6 +271,128 @@ Da die Wellenlänge in diesem Versuch konstant gehalten wurde, kann der letzte P
 	\label{700}
 \end{figure}
 
+\section{Fernordnungsparameter}
+\subsection{Methoden}
+In diesem Teil wird Untersucht, wie sich die Dynamik beim Phasenübergang verhält. Dazu wird die $Cu_3Au$-Probe von ca. 400°C auf 375°C herabgekühlt, um den Phasenübergang von Oben herab zu beobachtet. 400°C ist genau die Temperatur bei der ein Phasenübergang von $CU_3Au$ stattfindet. Während die Probe ihre Struktur umordnet Messen wir ihre Dynamik, mit Röntgenstrahlung ($1,54 \cdot 10^{-10}$m) unter einem Winkel ($\theta$). Aus den vorherigen Ergebnissen konnte ein Winkel abgelesen werden,
+bei dem ein Reflex (001) und ein Reflex (111) gemesssen wird. In diesen beiden Winkelbereichen messen wir die Änderung der Dynamik.
+\begin{figure}[h!]
+    \centering
+        \begin{minipage}[t]{0.45\linewidth}
+            \centering
+            \includegraphics[scale = 0.4]{001.png}
+            \caption{Stellt die (001)-Ebene graphisch dar.[1]}
+            \label{A1}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[t]{0.45\linewidth}
+            \centering
+            \includegraphics[scale = 0.25]{111.png}
+            \caption{Stellt die (111)-Ebene graphisch dar.[1]}
+            \label{A2}
+        \end{minipage}
+\end{figure}
+Der (001) Reflex ist ein Überstruckturreflex und wächst bei zunehmender Ordnung, wohingegen der (111) Reflex ein Fundamentalreflex ist und sich mit längerer Wartedauer am Phasenübergang nicht ändert. Das Ziel dieses Teil des Berichtes ist herauszufinden, wie sich der Ordnungsparameter ändert. Dazu wird der Ordnungsparameter $\eta$ ,gemäß des JMAK-Modells[2], eingeführt. \\
+\begin{align}
+    \eta^2 &= {\frac{I_\text{exp}^{Ü}}{I_\text{exp}^{F}}}
+    \cdot 
+    ({\frac{(f_\text{Au}+3f_\text{Cu})^{F}}{(f_\text{Au}-f_\text{Cu})^{Ü}}})^{2}
+    \cdot
+    {\frac{p^{F}}{p^{Ü}}}
+    \cdot
+    {\frac{L_\text{p}^{F}}{L_\text{p}^{Ü}}}
+    \cdot
+    {\frac{D_\text{T}^{F}}{D_\text{T}^{Ü}}}
+    \label{F1}
+\end{align}
+ Dabei sind die einzelnen Komponenten Wie folgt definiert. Die Buchtaben "Ü" und "F" stehen dabei für die jeweiligen Faktoren der Überstrukturreflexe bzw. der Fundamentalstrukturreflexe. Die Intensität des Überstrukturreflexes ist $I_\text{exp}^{Ü}$ und die Intensität des Fundamentalreflexes ist $I_\text{exp}^{F}$. Diese werden aus den Messungen abgelesen.
+ Die Atomformfaktoren sind $f_\text{Au}$ und $f_\text{Cu}$. Diese sind für die Überstrukturreflexe und den Fundamentalreflexen identisch. Diese berücksichtigen die Lage der Atome in einer Elementarzelle. Um die Formfaktoren zu berechnen benötigt man Parameter $a_i$,$b_i$ und $c$. Diese werden aus [2] entnommen.
+ Der Flächenhäufungsfaktor $p$ berücksichtigen wie häufig die einzelnen Netzebenen vorkommen. 
+ Der Lorentz-Polarisationsfaktor $L_\text{p}$ werden geometrische Effekte der Röntenstrahlung korrigiert.
+ Mit dem Debye- Waller-Faktor $D_\text{T}$ wird der Einfluss der Wärmebewegung mitberücksichtigt. Hierfür muss eine Konstante (B) ermittelt werden, die für 400°C $B = 1,6187$ ist.
+ Die jeweiligen Faktoren wurden, wie in [2] angegeben berechnet. 
+ \begin{align}
+     f_\text{Atom} &= \sum_{i=0}^N a_i\exp{(-b_is^2)} +c
+ \end{align}
+ \begin{align}
+     p_\text{(001)} &= 6 \\
+     p_\text{(001)} &= 8
+ \end{align}
+\begin{align}
+    L_\text{p} = \frac{1+\cos{2\theta}^2}{\sin{\theta}^2\cdot\cos{\theta}}
+\end{align}
+\begin{align}
+    D_\text{T} &= \exp{(-2B\frac{\sin{\theta}^2}{\lambda^2})} \\
+    B &= 1,6187
+\end{align}
+Als letzten Aspekt wurde der Fernordnungsparameter auf die Zeit aufgetragen um zu beschreiben, wie sich die Dynamik von $\eta$ verhält. Nach dem JMAK-Modell soll die zeitliche Veränderung beschrieben werden durch eine Konstante (k), die von der Nukleationsrate und der Wachstumsgeschwindigkeit der Keime abhängig ist und dem Avrami-Exponenten (n).
+\begin{align}
+    \eta(t) = 1- exp(-kt^n)
+\end{align}
+Dabei wird überprüft, ob der theoretische Wert von $\eta = 4$ angenommen wird.
+
+\subsection{Auswertung}
+Als erstes wird die Dynamik des (001) Überstrukturreflex analysiert. Die erste und die zweite Messung sind vom Rauschen überzogen, sodass nicht erkannt werden kann ob überhaupt ein Reflex auftaucht. Mit der Zeit bildet sich ein Peak aus, welches sich vom Rauschen abhebt. Ab der 15. Messung ist zu sehen, dass sich ein Überstrukturreflex gebildet hat.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale = 0.6]{Bragg.pdf}
+    \caption{Diese Graphik stellt die Dynamik (001)-Ebene dar. Auf der $x$-Achse ist der Winkel in Grad angegeben und auf der $y$-Achse ist die Intensität angegeben der einfallenden Röntenstrahlung. Die dunkel blauen Rauten sind die ersten Messungen. Die roten Quadrate die fünften Messungen die grünen Dreiecke sind die zehnten Messungen die violetten Kreuze die 15. Messungen und die hell blauen Kreuze sind die 20. Messung.}
+    \label{A3}
+\end{figure}
+Anhand von \cref{A3} konnte beobachtet werden, dass sich innerhalb der Messwerte nach der 15. Messung nicht mehr viel in der Dynamik abgespielt hat, sodass dies als neue Phase erkannt wurde. Durch diesen stationären Zustand kann der Ordnungsgrad ermittelt werden. Dieser lag bei kleinen Temperaturen (25°C) bei $\eta = 1$ und bei hohen Temperaturen(x > 700°C) bei $\eta = 0$. Da ein Maß der Ordnung $\eta$ darstellt und dies gerade das Verhältnis von dem (001) und (111) Reflex nach \cref{F1} ist, werden deren Größenordungen, bei 400°C durch \cref{A3} veranschaulicht.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale = 0.6]{001 und 111.pdf}
+    \caption{Diese Graphik stellt die (001) und die (111) Reflexe im stationären Zustand dar. Auf der $x$-Achse ist der Winkel in Grad angegeben und auf der $y$-Achse ist die Intensität angegeben der einfallenden Röntenstrahlung. Der Überstrukturreflex stellt die 15. Messung dar. Wohingegen der Fundamentalreflex sich über die Zeit nicht geändert hat.}
+    \label{A4}
+\end{figure}
+Der Überstrukturreflex ist die 15. Messung die gemacht wurde. Diese Messung wurde zur bildlichen Darstellung benutzt, da diese den höchsten Wert innerhalb der Messreihe besessen hat. Während der Auswertung wurde jedoch mit allen Messwerten gerechnet.
+Über Formel \cref{F1} wurden die Ordnungsparameter bestimmt. Dazu wurde bei dem (111) Reflex ein Mittelwert der beiden Referenzwerte genommen, um näher beim statistischen Mittel zu liegen. Der (111) Wert hat sich mit der Zeit kaum geändert, sodass hier ein, mit den variierenden Parametern, zeitlicher konstanter Peak angenommen wurde. Um ein Mittel bzgl. dieser beiden Messwerte zu benutzen wurde der Mittelwert betrachtet. In \cref{A4} können die Messpunkte betrachtet werden. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale = 0.7]{M3/tex/fit.png}
+    \caption{Die Ordnung steigt mit zunehmender Zeit. Vor dem Anstiegt hatte die Ordnung einen festen Wert. Nach dem Anstieg wird der Wert  ebenfalls auf einem Wert verharren bis sich die Phase wieder ändert. Sodass hier ein logistisches Wachstum der Ordnung angenommen werden kann.Hier ist nur der Ausschnitt des Wachstums dargestellt. Der Fit besitzt folgende Form. Die Messunsicherheiten sind dabei so klein, dass diese nicht zu sehen sind. Der Fit wurde mit OriginPro berechnet.
+    $\eta = 1 - exp(-kt^n)$ mit $k=0,32 \pm 0,02$ und $n=0,07 \pm 0,01$}
+    \label{A5}
+\end{figure}
+
+Nun wurden die Ordnungsparameter berechnet und auf \cref{A5} dargestellt. Die Zeitbalken auf der $x$-Achse müssen nicht immer denselben Abstand haben. Diese Unsicherheit wurde im folgenden ignoriert. Dieser Graph zeigt wie sich die Ordnung beim Phasenübergang verhält. Vor dem Phasenübergang existierte eine Stabile Ordnung. Dann wird die Ordnung bei der Phasenumwandlung so lange verändert bis eine neue Ordnung entsteht die wieder stabil ist. In \cref{A5} ist jedoch nur die Dynamik des Übergangs dargestellt. Anhand des Fits können folgende Parameter bestimmt werden. \\
+$\eta = 1 - exp(-kt^n)$ mit $k=0,32 \pm 0,02$ und $n=0,07 \pm 0,01$\\
+Hieraus kann abgelesen werden, dass der Avrami-Exponenten nicht den theoretischen Wert von n=4 angenommen hat.
+
+
+\subsection{Unsicherheit}
+Um die Unsicherheiten zu berechnen wurde geschaut, welche Messungen die höchste Messunsicherheit hatte. Innerhalb unserer Messwerte konnte die größte Messunsicherheit der Intensitätsmessung zugewiesen werden, sodass diese durch eine Dreickswahrscheinlichkeitsdichtefunktion abgeschätzt wurde. Alle anderen Messwerte wurden vernachlässigt, da diese zur Gesamtunsicherheit vernachlässigar sind.
+\begin{align*}
+    u_{I_\text{max}} &= \frac{1[I]}{2\sqrt{6}} &= 0,02[I]
+\end{align*}
+Die weiteren Rechnungen wurden dann mithilfe der Fehlerfortpflanzung ermittelt. Diese wurde nur bei den Termen angewandt, wo der größte Fehler aufgetreten ist.
+\begin{align*}
+    u_{\eta^2}^2 &= ({\frac{1}{I_\text{exp}^{F}}}
+    \cdot 
+    ({\frac{(f_\text{Au}+3f_\text{Cu})^{F}}{(f_\text{Au}-f_\text{Cu})^{Ü}}})^{2}
+    \cdot
+    {\frac{p^{F}}{p^{Ü}}}
+    \cdot
+    {\frac{L_\text{p}^{F}}{L_\text{p}^{Ü}}}
+    \cdot
+    {\frac{D_\text{T}^{F}}{D_\text{T}^{Ü}}}u_{I_\text{max}^{Ü}})^2 + 
+    ({\frac{I_\text{exp}^{Ü}}{I_\text{exp}^{F}^2}}
+    \cdot 
+    ({\frac{(f_\text{Au}+3f_\text{Cu})^{F}}{(f_\text{Au}-f_\text{Cu})^{Ü}}})^{2}
+    \cdot
+    {\frac{p^{F}}{p^{Ü}}}
+    \cdot
+    {\frac{L_\text{p}^{F}}{L_\text{p}^{Ü}}}
+    \cdot
+    {\frac{D_\text{T}^{F}}{D_\text{T}^{Ü}}}u_{I_\text{max}^{F}})^2
+\end{align*}
+Weitere Unsicherheiten wurden über den Fit bestimmt, der mit OriginPro berechnet wurde.
+
+
+\subsection{Diskussion}
+Innerhalb dieser Auswertung wurde eine Näherung für die Dynamik bei einem Phasenübergang gemacht. Da der (001) Reflex wieder auftaucht kann darauf geschlossen werden, dass die Ordnung im Kristall zunimmt, da neue Symmetrien auftauchen. Anhand von \cref{A5} kann gesehen werden, dass die Ordnung zwischen (0,4-0,6) liegt. Dies entspricht unseren Erwartungen, da Null vollständige Unordnung entsprach, wohingegen 1 der vollständigen Ordnung entsprach. Da die Temperatur inmitten der zugeordneten Temperaturskala (25°C - 700°C) liegt, ist es logisch, dass auch der Ordnungsparameter in etwa in der Mitte der Werte liegt. Das ein Anstieg zu begutachten ist ist auch plausibel, da einmal der Phasenübergang eine zeitliche Entwicklung braucht, aber auch weil von 400°C auf 375°C reduziert wurde. So könnte ein zeitlich Veränderliches B (Debye-Waller-Faktor) zur genaueren Untersuchung dieses Sachverhaltes eingebaut werden. Der berechnete Fit stimmt jedoch zu der theoretischen Überlegung von n=4 nicht. In diesem Fall wurde n zu $n=0,07 \pm 0,01$ berechnet. Um diesen Sachverhalt genauer zu beleuchtet, wird erstmal erklärt, wieso der Exponent n=4  herausgefunden werden sollte. Zum einen steigt die Anzahl der Keime (N) gemäß $N \cdot t$ an und jeder einzelne Keim wächst in jeder Dimension mit $t$, folglich $t^3$. Es könnte an dem Versuchsaufbau liegen, dass nicht n=4 herausgekommen ist, da nur an der Oberfläche gemessen wurde und so die Keimausbreitung nur noch mit $t^2$ steigt, sodass ein Wert zwischen 3-4 erwartet werden würde. Dies erklärt dennoch immer noch nicht den Wert von $n=0,07 \pm 0,01$, sodass der Fehler im Fit liegen muss. Es könnte sein, dass das Programm zu wenig variable Parameter besessen hatte um die Messwerte gut genug abzubilden. So müsste ein Verschub in der Zeit, eine andere Amplitude oder ein Offset der Daten berücksichtigt werden, um näher am theoretischen Ergebnis zu landen. So ist die Gleichung vom JMAK-Modell nicht an Experimentelle Messdaten angepasst, sodass an der zu fittenden Funktion eine Änderung vorgenommen werden müsste.
+
+
 \section{Kalorimetrie}
 \subsection{Methoden und Durchführung}
 Zur Analyse des Phasenübergangs in der CuAu-Legierung wird eine kalorimetrische Untersuchung durchgeführt. Hierfür wird ein dynamisches Wärmestromdifferenzkalorimeter verwendet. Mit diesem werden Temperaturdifferenzen zwischen einer Probe und einer Referenz gemessen, die sich beide in einem Aluminiumtiegel befinden. Die Differenz ist in diesem Versuch einfach ein leerer Tiegel (Luftreferenz). Beide befinden sich dabei in einer Kammer, in der sie symmetrisch auf einer Scheibe positioniert werden ("disk-type"). Wenn die Kammer nun aufgeheizt wird, kann über die Scheibe die Temperaturdifferenz zwischen den beiden Proben ermittelt werden.
