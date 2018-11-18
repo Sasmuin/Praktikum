@@ -282,7 +282,7 @@ Da die Wellenlänge in diesem Versuch konstant gehalten wurde, kann der letzte P
 	\label{700}
 \end{figure}
 
-
+\newpage
 \section{Fernordnungsparameter}
 \subsection{Methoden}
 In diesem Teil wird Untersucht, wie sich die Dynamik beim Phasenübergang verhält. Dazu wird die $Cu_3Au$-Probe von ca. 400°C auf 375°C herabgekühlt, um den Phasenübergang von Oben herab zu beobachtet. 400°C ist genau die Temperatur bei der ein Phasenübergang von $CU_3Au$ stattfindet. Während die Probe ihre Struktur umordnet Messen wir ihre Dynamik, mit Röntgenstrahlung ($1,54 \cdot 10^{-10}$m) unter einem Winkel ($\theta$). Aus den vorherigen Ergebnissen konnte ein Winkel abgelesen werden,
@@ -353,7 +353,7 @@ Als erstes wird die Dynamik des (001) Überstrukturreflex analysiert. Die erste 
 Anhand von \cref{A3} konnte beobachtet werden, dass sich innerhalb der Messwerte nach der 15. Messung nicht mehr viel in der Dynamik abgespielt hat, sodass dies als neue Phase erkannt wurde. Durch diesen stationären Zustand kann der Ordnungsgrad ermittelt werden. Dieser lag bei kleinen Temperaturen (25°C) bei $\eta = 1$ und bei hohen Temperaturen(x > 700°C) bei $\eta = 0$. Da ein Maß der Ordnung $\eta$ darstellt und dies gerade das Verhältnis von dem (001) und (111) Reflex nach \cref{F1} ist, werden deren Größenordungen, bei 400°C durch \cref{A3} veranschaulicht.
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.6]{001 und 111.pdf}
+    \includegraphics[scale = 0.5]{001 und 111.pdf}
     \caption{Diese Graphik stellt die (001) und die (111) Reflexe im stationären Zustand dar. Auf der $x$-Achse ist der Winkel in Grad angegeben und auf der $y$-Achse ist die Intensität angegeben der einfallenden Röntenstrahlung. Der Überstrukturreflex stellt die 15. Messung dar. Wohingegen der Fundamentalreflex sich über die Zeit nicht geändert hat.}
     \label{A4}
 \end{figure}
@@ -388,7 +388,7 @@ Die weiteren Rechnungen wurden dann mithilfe der Fehlerfortpflanzung ermittelt. 
     {\frac{L_\textsuperscript{p}^{F}}{L_\textsuperscript{p}^{Ü}}}
     \cdot
     {\frac{D_\textsuperscript{T}^{F}}{D_\textsuperscript{T}^{Ü}}}u_{I_\textsuperscript{max}^{Ü}})^2 + 
-    ({\frac{I_\textsuperscript{exp}^{Ü}}{I_\textsuperscript{exp}^{F}^2}}
+    ({\frac{I_\textsuperscript{exp}^{Ü}}{I_\textsuperscript{exp}^{F^2}}}
     \cdot 
     ({\frac{(f_\textsuperscript{Au}+3f_\textsuperscript{Cu})^{F}}{(f_\textsuperscript{Au}-f_\textsuperscript{Cu})^{Ü}}})^{2}
     \cdot
@@ -404,7 +404,6 @@ Weitere Unsicherheiten wurden über den Fit bestimmt, der mit OriginPro berechne
 \subsection{Diskussion}
 Innerhalb dieser Auswertung wurde eine Näherung für die Dynamik bei einem Phasenübergang gemacht. Da der (001) Reflex wieder auftaucht kann darauf geschlossen werden, dass die Ordnung im Kristall zunimmt, da neue Symmetrien auftauchen. Anhand von \cref{A5} kann gesehen werden, dass die Ordnung zwischen (0,4-0,6) liegt. Dies entspricht unseren Erwartungen, da Null vollständige Unordnung entsprach, wohingegen 1 der vollständigen Ordnung entsprach. Da die Temperatur inmitten der zugeordneten Temperaturskala (25°C - 700°C) liegt, ist es logisch, dass auch der Ordnungsparameter in etwa in der Mitte der Werte liegt. Das ein Anstieg zu begutachten ist ist auch plausibel, da einmal der Phasenübergang eine zeitliche Entwicklung braucht, aber auch weil von 400°C auf 375°C reduziert wurde. So könnte ein zeitlich Veränderliches B (Debye-Waller-Faktor) zur genaueren Untersuchung dieses Sachverhaltes eingebaut werden. Der berechnete Fit stimmt jedoch zu der theoretischen Überlegung von n=4 nicht. In diesem Fall wurde n zu $n=0,07 \pm 0,01$ berechnet. Um diesen Sachverhalt genauer zu beleuchtet, wird erstmal erklärt, wieso der Exponent n=4  herausgefunden werden sollte. Zum einen steigt die Anzahl der Keime (N) gemäß $N \cdot t$ an und jeder einzelne Keim wächst in jeder Dimension mit $t$, folglich $t^3$. Es könnte an dem Versuchsaufbau liegen, dass nicht n=4 herausgekommen ist, da nur an der Oberfläche gemessen wurde und so die Keimausbreitung nur noch mit $t^2$ steigt, sodass ein Wert zwischen 3-4 erwartet werden würde. Dies erklärt dennoch immer noch nicht den Wert von $n=0,07 \pm 0,01$, sodass der Fehler im Fit liegen muss. Es könnte sein, dass das Programm zu wenig variable Parameter besessen hatte um die Messwerte gut genug abzubilden. So müsste ein Verschub in der Zeit, eine andere Amplitude oder ein Offset der Daten berücksichtigt werden, um näher am theoretischen Ergebnis zu landen. So ist die Gleichung vom JMAK-Modell nicht an Experimentelle Messdaten angepasst, sodass an der zu fittenden Funktion eine Änderung vorgenommen werden müsste.
 
-
 \section{Kalorimetrie}
 \subsection{Methoden und Durchführung}
 Zur Analyse des Phasenübergangs in der CuAu-Legierung wird eine kalorimetrische Untersuchung durchgeführt. Hierfür wird ein dynamisches Wärmestromdifferenzkalorimeter verwendet. Mit diesem werden Temperaturdifferenzen zwischen einer Probe und einer Referenz gemessen, die sich beide in einem Aluminiumtiegel befinden. Die Differenz ist in diesem Versuch einfach ein leerer Tiegel (Luftreferenz). Beide befinden sich dabei in einer Kammer, in der sie symmetrisch auf einer Scheibe positioniert werden ("disk-type"). Wenn die Kammer nun aufgeheizt wird, kann über die Scheibe die Temperaturdifferenz zwischen den beiden Proben ermittelt werden.
@@ -418,6 +417,8 @@ In diesem Versuch wird die Methode verwendet um den Phasenübergang zwischen Ord
 	\caption{}
 	\label{3}
 \end{figure}	
+
+\newpage
 
 \begin{thebibliography}{9}
 \bibitem{A}
