@@ -173,16 +173,34 @@ Um herauszuf
 
 \section{Kalorimetrie}
 \subsection{Methoden und Durchführung}
-Zur Analyse des Phasenübergangs in der CuAu-Legierung wird eine kalorimetrische Untersuchung durchgeführt. Hierfür wird ein dynamisches Wärmestromdifferenzkalorimeter verwendet. Mit diesem werden Temperaturdifferenzen zwischen einer Probe und einer Referenz gemessen, die sich beide in einem Aluminiumtiegel befinden. Die Differenz ist in diesem Versuch einfach ein leerer Tiegel (Luftreferenz). Beide befinden sich dabei in einer Kammer, in der sie symmetrisch auf einer Scheibe positioniert werden ("disk-type"). Wenn die Kammer nun aufgeheizt wird, kann über die Scheibe die Temperaturdifferenz zwischen den beiden Proben ermittelt werden.
+Zur Analyse des Phasenübergangs in der CuAu-Legierung wird eine kalorimetrische Untersuchung durchgeführt. Hierfür wird ein dynamisches Wärmestromdifferenzkalorimeter, zu sehen in \cref{kalori}, verwendet. Mit diesem werden Temperaturdifferenzen zwischen einer Probe und einer Referenz gemessen, die sich beide in einem Aluminiumtiegel befinden. Die Differenz ist in diesem Versuch einfach ein leerer Tiegel (Luftreferenz). Beide befinden sich dabei in einer Kammer, in der sie symmetrisch auf einer Scheibe positioniert werden ("disk-type"). Wenn die Kammer nun aufgeheizt wird, kann über die Scheibe die Temperaturdifferenz zwischen den beiden Proben ermittelt werden.
 
-In diesem Versuch wird die Methode verwendet um den Phasenübergang zwischen Ordnung und Unordnung in der CuAu-Legierung zu untersuchen. Hierfür wird die Kammer zuerst auf eine Temperatur von $\SI{500}{\degreeCelsius}$ gebracht. Diese liegt deutlich über der Phasenübergangstemperatur, deswegen ist der Kristall in diesem Zustand ungeordnet. Anschließend wird die Kammer wieder abgekühlt, zuerst auf $\SI{410}{\degreeCelsius}$ mit einer Rate von $\SI{60}{\degreeCelsius/\minute}$, anschließend sehr langsam mit einer Rate von $\SI{5}{\degreeCelsius/\minute}$ auf $\SI{385}{\degreeCelsius}$. Diese Temperatur liegt knapp unter der Phasenübergangstemperatur von $\SI{390}{\degreeCelsius}$, daher ist nun der Phasenübergang der Legierung zu erwarten. Um diesen zu beobachten, wird die Temperatur nun für $\SI{30}{\minute}$ konstant gehalten. Der Phasenübergang von Unordnung zu Ordnung ist ein exothermer Vorgang, das heißt die Probe gibt dabei Wärme ab. Dieser Wärmefluss kann über die Temperaturdifferenz bestimmt werden. Da der Wärmefluss ein Maß für die Änderung des umgewandelten Volumens im isothermen Phasenübergang ist, kann mit diesem untersucht werden, inwiefern die Versuchsergebnisse mit der Johnson-Mehl-Avrami-Kolmogorow-Gleichung übereinstimmen.
-
-\subsection{Auswertung}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.6]{Graph3.png}
-	\caption{}
+	\includegraphics[scale=0.7]{Kalorimeter.png}
+	\caption{Aufbau eines "disk-type" Wärmestrom-DSC. P: Probe, R: Referenz, 1: Scheibe,
+		2: Thermoelemente, 3: Temperaturregelung.}
+	\label{kalori}
+\end{figure}
+
+In diesem Versuch wird die Methode verwendet um den Phasenübergang zwischen Ordnung und Unordnung in der CuAu-Legierung zu untersuchen. Hierfür wird die Kammer zuerst auf eine Temperatur von $\SI{500}{\degreeCelsius}$ gebracht. Diese liegt deutlich über der Phasenübergangstemperatur, deswegen ist der Kristall in diesem Zustand ungeordnet. Anschließend wird die Kammer wieder abgekühlt, zuerst auf $\SI{410}{\degreeCelsius}$ mit einer Rate von $\SI{60}{\degreeCelsius/\minute}$, anschließend sehr langsam mit einer Rate von $\SI{5}{\degreeCelsius/\minute}$ auf $\SI{385}{\degreeCelsius}$. Diese Temperatur liegt knapp unter der Phasenübergangstemperatur von $\SI{390}{\degreeCelsius}$, daher ist nun der Phasenübergang der Legierung zu erwarten. Um diesen zu beobachten, wird die Temperatur nun für $\SI{30}{\minute}$ konstant gehalten. Der Phasenübergang von Unordnung zu Ordnung ist ein exothermer Vorgang, das heißt die Probe gibt dabei Wärme ab. Dieser Wärmefluss kann über die Temperaturdifferenz bestimmt werden. Da der Wärmefluss ein Maß für die Änderung des umgewandelten Volumens im isothermen Phasenübergang ist, kann mit diesem untersucht werden, inwiefern die Versuchsergebnisse mit der Johnson-Mehl-Avrami-Kolmogorow-Gleichung (\cref{eq:jmak}) übereinstimmen. Insbesondere soll betrachtet werden, ob die Wahl des Avrami-Exponenten auf $n=4$ mit den Messwerten übereinstimmt.
+\begin{equation}
+	\frac{\mathrm{d}X(t)}{\mathrm{d}t} = H \cdot K \cdot n \cdot \exp(-K\cdot (t-t_0)^n)\cdot (t-t_0)^{n-1}
+	\label{eq:jmak}
+\end{equation}
+
+\subsection{Auswertung}
+In \cref{3} wurde der im Kalorimeter gemessene Wärmestrom gegen die Zeit aufgetragen. Zuerst steigt der Wärmestrom sehr stark, das liegt daran, dass sich das System erst in der Isotherme einpendeln muss, da die Kammer vorher gekühlt wurde. Dieser Vorgang dauert etwa $105$ Sekunden, an dieser Stelle ist ein lokales Maximum erreicht. Anschließend sinkt der Wärmefluss wieder, erreicht nach ca. $300$ Sekunden ein lokales Minimum und steigt dann bis etwa $450$ Sekunden nach Beginn der Isotherme auf den Wert des vorherigen lokalen Maximums. Den Rest der Zeit steigt der Wärmefluss nur noch leicht an.
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[scale=0.7]{Graph3.png}
+	\caption{Der im Kalorimeter gemessene Wärmefluss aufgetragen gegen die Zeit und der an die Messwerte angepasste Fit nach dem JMAK-Modell}
 	\label{3}
-\end{figure}	
+\end{figure}
+
+Der Phasenübergang ist exotherm, währenddessen wird also Energie in Form von Wärme abgegeben. Dies äußert sich im Diagramm durch den nach unten zeigenden Peak im Intervall zwischen $105$ und $450$ Sekunden. In diesem Bereich findet der Phasenübergang zwischen Unordnung und Ordnung im Kristall statt. Der Phasenübergang startet zuerst langsam mit einem geringen Wärmefluss, vollzieht sich anschließend immer schnell, bis zeitlich nach der Hälfte des Übergangs der größte Wärmefluss erreicht wird. Anschließend wird der Vorgang wieder langsamer. Auf den Bereich des Phasenübergangs wird nun der Fit nach \cref{eq:jmak} angewendet. In der Formel wurden im Vergleich zur Anleitung einige Änderungen vorgenommen. Zum einen wurden die Parameter $H$ und $t_0$ ergänzt, zum anderen wurden alle Messwerte um $\SI{0,25}{mW}$ nach unten verschoben, da die angefittete Funktion nur im negativen Wertebereich definiert ist. Somit ergibt sich die in \cref{3} dargestellte Fitfunktion mit den angegebenen Parametern. Für $n$ wurde ein Wert von $3,84\pm0,02$ ermittelt. Der theoretisch vorhergesagte Wert liegt damit nicht innerhalb der angegebenen Unsicherheit.
+
+Eine mögliche Ursache dafür liegt in der Form der untersuchten Probe. Nach dem JMAK-Modell setzt sich der Exponent der Exponentialfunktion vor allem aus zwei Faktoren zusammen. Erstens, dem Faktor $N\cdot t$, über den die Anzahl der Kerne in die Rechnung einfließt, zweitens dem Faktor $g \cdot t$, der die Ausbreitung der Körner in eine Raumrichtung beschreibt. Da der zweite Faktor in der Theorie für alle drei Raumrichtungen auftritt, ergibt sich damit der Exponent $n=4$. Die untersuchte Probe war allerdings sehr schmal, daher breiten sich die Körner vor allem in zwei Raumrichtungen aus, in die dritte nicht so stark. Dies könnte erklären, dass der Exponent etwas kleiner ist als erwartet.
 
 \end{document}
