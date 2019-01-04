@@ -89,6 +89,26 @@ Anschließend wird die Vickers-Härte der Proben bestimmt, über die Rückschlü
 Es zeigt sich, dass die Proben bei höheren Temperaturen schneller ausheilen, da die Rekristallisation hier schneller abläuft.
 Im zweiten Teil wurde der Verformungsgrad auf die Anzahl der Körner aufgetragen. Anhand der Graphen konnten drei Bereiche beobachtet werden. Im ersten Bereich hat die Anzahl der Körner mit steigender Verformung abgenommen. Im zweiten Teil hat die Anzahl dann exponentiell zugenommen und im dritten Teil konvergierte die Anzahl an Körnern bei steigendem Verformungsgrad. Der zeite Teil dieser Beobachtung wurde über ein Auswertungsprogramm geplottet. Die anderen beiden Bereiche wurden in der Diskussion erläutert.
 
+\section{Theorie}
+Ein Kristall ist eine periodische Gitteranordnung der Atome. Man unterscheidet zwischen homogenen und inhomogenen Kristallen. Homogene Kristalle folgen einer strikten Periodizität. Inhomogene Kristalle besitzen Versetzungen innerhalb des Gitters. Zu den Versetzungen gehören die nulldimensionalen Punktfehler, die sich in Leerstellen äußern, die eindimensionalen Linienfehler und die zweidimensionalen Flächenfehler, die sich als Stufen oder Schrauben äußern. Die Anordnung dieser Versetzungen ist in \cref{Th1} zu sehen
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{theorie.png}
+	\caption{Hier ist der Atomaufbau der Gitterstruktur dargesetllt. die Linien stellen hierbei die Bindungskräfte dar. Die Atome werden durch Kugeln oder durch sich Kreuzende Linien dargestellt.	Links ist eine Stufenversetzung zu sehen und rechts eine Schraubenversetzung}
+	label{Th1}
+\end{figure}
+Der Grund der Versetzungsarten liegt an den verschiedenen Spannungen innerhalb des Materials und an der Oberfläche es kommt zu einer Spannungsdifferenz innerhalb des Materials. Da es keine Gegenkraft gibt, biegt sich das Material bis die Spannungsdifferenz aufgehoben ist. Als Resultat erhalten wir Versetungen. Der Winkel zwischen periodischen Gitterebenen die durch Versetzungen unterbrochen werden, werden Kleinwinkel-Korngrenzen genannt. Diese Winkel sind kleiner als 5°
+Desweiteren gibt es noch Großwinkel-Korngrenzen. Diese bilden sich an Gebieten großer Versetungsdichten hinsichtlich zu Gebieten kleiner Versetzungsdichten. Die Fläche, die diese Grenzen einschließen beträgt mehr als 15°.
+Die nächsten Effekte die in einem Kristall auftreten und in diesem Versuch behandelt werden, ist die Erholung und Rekristallisation. 
+Beide Effekte entstehen dadurch, da der Werkstoff im vorhinein plastisch verformt wurde. Durch diese Verformung hat der Werkstoff Verzerrungsenergie erhalten. Bei den Effekten wird, ab einer bestimmenten Temperatur, die für Erholung bei einer kleineren Temperatur liegt als bei der Rekristallisation, die gespeicherte Energie frei. Der Energieabbau führt zur Ausheilen und Umordnung von Gitterdefekten (Erholung) oder zur Kornneubildung (Rekristallisation).
+Erholung schließt alle Vorgänge zusammen ein, die ohne Wanderung von Großwinkel-Korngrenzen zu einer Rückbildung der physikalischen Zustände (bzgl. des Referenzwertes) führen.
+Die physikalischen Eigenschaften erhalten nach diesem Prozess praktisch dieselben physikalischen Eigenschaften wie vorher, wohingegen die mechanischen kaum geändert werden. Hierzu zählen die Ausheilung von nulldimensionalen Punktfehler oder Auslöschung von  Stufenversetzungen mit Stufenversetung entgegengesetzter Richtung. Da die Anzahl an Versetzungen ein Maß für die Festigkeit des Stoffes ist, ist es wichtig, dass sich die Summe der Versetzungen nicht ändern. Weiterhin ist eine Versetzung von Kleinwinkelkorngrenzen möglich. 
+Unter Rekristallisation versteht man im Gegensatz dazu, die völlige Umornung von Versetzungen.
+Wie bereits oben erwähnt tritt Rekrstallisation erst bei höheren Temperaturan auf, als die Erholung. Zusätzlich zu der Starttemperatur (ca. 40\% der Schmelzwärme) muss auch noch ein kritischer Verformungsgrad (ca. 1\% - 5\%) erreicht werden. Wobei die Starttemperatur durch Verlängerung der Glühdauer erniedrigt wird. Weiterhin gibt es zwei quantitative Aussagen über das Verhältnis zwischen Verformungsgrad und Temperatur.
+Je niedriger die Temperatur ist, bei der Rekristallisation einsetzt umso höher ist der Verformungsgrad.  
+Je kleiner die Korngröße nach der Rekristallisation ist umso höher ist der Verformungsgrad und umso niedriger ist Glühtemperatur.  
+ 
+
 
 \section{Härte von Aluminium}
 \subsection{Methoden und Durchführung}
@@ -130,51 +150,56 @@ Bei den ersten beiden Temperaturen ist die Rekristallisationszeit noch sehr gro�
 Die Vickers-Härte, und damit auch die Ausheilung der Proben, ist in diesem Versuch unabhängig von der Erholung und lässt sich vollständig durch Rekristallisation erklären. Das liegt daran, dass die Erholung am Anfang stark ist und mit der Zeit schwächer wird und nicht so stark von der Temperatur abhängt wie die Rekristallisation, sondern auch bei Raumtemperatur stattfindet. Da zwischen der Verformung der Proben und der Messung der Vickers-Härte mehrere Stunden lagen, konnten sich die Proben in dieser Zeit bereits sehr stark erholen. Da die Erholung nach längerer Zeit sowieso kaum noch Auswirkung auf die Ausheilung hat, spielt sie für den Verlauf der Messwerte in \cref{vickers} keine Rolle.
 
 \section{Korngröße von Aluminium}
-\subsection{Methoden}
-In diesem Teil des Berichtes wird beschrieben, wie die technischen Apparaturen aussahen, um die Korngröße in Abhängigkeit vom Verformungsgrad (V) zu messen. Dazu wurden acht Aluminium-Proben durch eine Kaltwalze verformt. Zuerst wurde die Anfangsdicke der Aluminiumplatten ($d_0$) mit einer Mikrometerschraube ausgemessen. Dann wurden die Platten durch die Kaltwalze verformt. Im Nachhinein wurde dann die Verformte Dicke der Aluminiumplatten (d) gemessen. Über \cref{eq:ver} konnte dann der Verformungsgrad errechnet werden.
+\section{Methoden}
+In diesem Teil des Berichtes wird beschrieben, welche technischen Methoden benutzt wurden, um die Korngröße in Abhängigkeit vom Verformungsgrad (V) zu messen. Dazu wurden acht Aluminium-Proben durch eine Kaltwalze verformt.Zuerst wurde die Anfangsdicke der Alumiuniumplatten ($d_0$) mit einer Mikrometerschraube ausgemessen. Dann wurden die Platten durch die Kaltwalze verformt. Im nnach hineinwurde dann die Verformte Dicke der AAlumiuniumplatten(d) gemessen. Über \cref{f1} konnte dann der Verformungsgrad errechnet werden.
+ \begin{align}
+    V = \frac{d_0-d}{d_0}100 \cref{f1}
+\end{align} \cref{f1}
+Die Veformung betrag 0\%, 2,5\%, 5\%, 10\%, 20\%, 30\%, 40\% und 50\%.
+Die einzelnen Proben wurden dann auf 550°C für eine Stunde lang erhitzt. Dadurch wurde der Prozess der Rekristallisation in Gang gesetzt, der erst ab ca. 40\% der Schmelztemperatur beginnt d.h. der Prozess der Körnerbildung fängt an. Die Schmelztemperatur von Aluminium beträgt in etwa 660°C, somit befinden sich die Proben oberhalb dieser Grenze. Nach einer Stunde wurden die Proben durch ein Kältebad abgekühlt, sodass die kristalline Struktur erstarrt und beobachtet werden kann. Dafür wurden die Aluminiumplatten chemisch behandelt, sodass eine Kornstruktur sichtlich wurde. Nach der Behandlung konnte man durch eine Linearanalyse die Anzahl der Korngrößen pro Zentimeter bestimmen.
 
-Die Verformung betrug 0\%, 2,5\%, 5\%, 10\%, 20\%, 30\%, 40\% und 50\%.
-Die einzelnen Proben wurden dann eine Stunde lang auf 550°C erhitzt. Dadurch wurde der Prozess der Rekristallisation beschleunigt, d.h. der Prozess der Körnerbildung beginnt. Nach einer Stunde wurden die Proben durch ein Kältebad abgekühlt, sodass die räumliche Struktur des Aluminiums einfriert und beobachtet werden kann. Dafür wurden die Aluminiumplatten chemisch behandelt, sodass eine Kornstruktur sichtbar wurde. Nach der Behandlung konnte man durch eine Linearanalyse die Anzahl der Körner pro Zentimeter bestimmen.
-
-\subsection{Auswertung}
-Durch die Linearanalyse konnte man die Anzahl der Körner bei verschiedenen Verformungsgraden bestimmen. Dazu wurde eine Strecke quer über das Aluminiumplättchen gezogen und gezählt, wie viele Körner sich auf der Linie befinden. Dies ist ein Mittelwert für die Anzahl der Körner pro Zentimeter. 
-Dieses Mittel wurde über den Verformungsgrad aufgetragen.
+\section{Auswertung}
+Durch die Linearanalyse konnte man die Anzahl der Körner bei verschiedenen Verformungsgraden bestimmen. Dazu wurden mehrere Strecken (mindestens zwei) Quer über das Aluminiumplättchen gezogen und gezählt wie viele Körner sich auf der Linie befinden. Dadurch wurde dann ein Mittelwert gebildet. somit bildete sich ein Mittelwert für die Anzahl der Körner pro Zentimeter. Es wurde der Verformungsgrad über dieses Mittel aufgetragen.
 Daraus ergab sich \cref{A1}.
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.6]{A1.pdf}
-    \caption{Hier ist der Verformungsgrad in Abhängigkeit von der Anzahl an Körnern pro Zentimeter aufgetragen.}
+    \includegraphics[scale = 0.3]{nichtln.png}
+    \caption{Hier ist der Verformungsgrad in Abhängigkeit der Anzahl an Körnern pro Zentimeter aufgetragen.Der blaue Punkt stellt dabei die unverformte Probe dar.}
     \label{A1}
 \end{figure}
-Anhand der Messwerte kann ein exponentieller Anstieg vermutet werden. Um genauer zu untersuchen, ob es sich tatsächlich um einen exponentiellen Anstieg handelt, wurden die Messwerte logarithmisch aufgetragen. Dieses Verhältnis kann in \cref{A2} berechnet werden. Die roten Punkte sind die Messwerte, an denen ein exponentieller Anstieg vermutet wird. Hierzu wird \cref{A3} einen funktionalen Zusammenhang bieten. Der blaue Punkt bei \cref{A2} stellt das Aluminiumplättchen ohne jegliche Verformung dar. Es ist zu beobachten, dass der Nullzustand eine deutlich größere Anzahl an Kristallen pro Zentimeter besitzt, als die ersten beiden Verformungszustände ($V<e^2$) . Danach erst wächst die Anzahl an Kristallen, wie bereits beschrieben, exponentiell an, bis zu einem Punkt, an dem die Messwerte konvergieren. Sie steigen nicht mehr an, sondern verteilen sich statistisch um einen Mittelwert herum.
+Anhand der Messwerte kann ein exponentieller Anstieg vermutet werden. Um genauer zu Untersuchen ob es sich tatsächlich um einen exponentiellen Anstieg handelt, wurden die Messwerte logarithmisch aufgetragen. Dieses Verhältnis kann in \cref{A2} erkannt werden. Die roten Punkte sind die Messwerte an denen ein exponentieller Anstieg vermutet wird. Hierzu wird \cref{A3} einen funktionalen Zusammenhang bieten. Der blaue Punkt bei \cref{A1} stellt das Aluminiumplättchen ohne jegliche Verformung dar. Es ist zu beobachten, dass der Nullzustand eine deutlich größere Anzahl an Kristallen pro Zentimeter besitzt, als die ersten beiden Verformungszustände ($V<e^2$ \approx 5,43\%) . Danach wächst erst die Anzahl an Kristallen wie bereits beschrieben exponentiell an, bis zu einem Punkt an dem die Messwerte konvergieren. Sie steigen nicht mehr an, sondern verteilen sich statistisch um einen Mittelert herum.
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 0.6]{te.png}
-    \caption{Der Graph stellt die Verformung in Abhängigkeit von der Anzahl der Körner dar. Die roten Punkte stellen die Messwerte da, die einen exponentiellen Zusammenhang aufweisen. Der blaue Punkt stellt den Referenzwert dar.}
+    \includegraphics[scale = 0.3]{tempsnip.png}
+    \caption{Der Graph stellt die Verformung in Abhängigkeit von den Anzahl der Körner dar. Die roten Punkte stellen die Messwerte da die einen exponentiellen Zusammenhang aufweisen.}
     \label{A2}
 \end{figure}
-In \cref{A3} wurde der bereits erwähnte funktionale Zusammenhang zur Verformung und Anzahl an Kristallen dargestellt. Dieser Zusammenhang gilt nur für Verformungen bei einem Grad von etwa $e^1 - e^3$. Aufgrund des geringen Fehlers kann angenommen werden, dass in diesem Bereich tatsächlich ein exponentielles Wachstum stattfindet.
+In \cref{A3} wurde der bereits erwähnte funktionale Zusammenhang zur Verformung und Anzahl an Kristallen dargestellt. Dieser Zusammenhang gilt nur für Verformungen bei einem Grad von etwa $e^1 - e^3$ sind etwa 2,7\% - 20,1\% . Aufgrund des geringen Fehlers kann angenommen werden, dass in diesem Bereich tatsächlich ein exponentielles Wachstum stattfindet.
 \begin{figure}[h!]
     \centering
     \includegraphics[scale = 0.6]{fitfit.pdf}
-    \caption{Der Graph stellt die Verformung in Abhängigkeit von den Anzahl der Körner dar. Für den Fit, welcher mit Origin durchgeführt wurde, wurden nur die roten Punkte aus \cref{A2} verwendet. Die Fitparameter lauten:
+    \caption{Der Graph stellt die prozentuale Verformung in [\%] in Abhängigkeit von den Anzahl der Körner dar. Für den Fit, welcher mit Origin durchgeführt wurde, wurden nur die roten Punkte aus \cref{A2} verwendet. Die Fitparameter lauten:
     $y=ab^x$ mit Parametern $a=1,33\pm 0,08$ und $b = 1,39 \pm 0,01$.}
     \label{A3}
 \end{figure}
 
-\subsection{Unsicherheiten}
-Für die Unsicherheit der Anzahl der Körner wird eine absolute Messunsicherheit von $\pm 0,1$cm für die Länge der Linie angenommen. Für das Körner zählen wird wiederum eine Unsicherheit von 5\% angenommen. Mithilfe von Fehlerfortpflanzung kann daraufhin die Unsicherheit für die Anzahl der Körner pro cm berechnet werden.
-
-Die Unsicherheit der Verformung berechnet sich aus \cref{eq:ver}.
-Da hier ein linearer Zusammenhang vorliegt, ist die Unsicherheit dieselbe wie bei d. Die Unsicherheit von der Dicke (d) wurde durch eine Dreieckswahrscheinlichkeitsdichtefunktion berechnet.
+\section{Unsicherheiten}
+Für die Unsicherheit der Anzahl der Körner wird eine absolute Messunsicherheit von \pm 0,1cm für die Länge der Linie angenommen. Für das zählen der Körner  wird wiederum eine Unsicherheit von 5\% angenommen. Diese 5\% wurden bestimmt, indem abgeschätzt wurde, um wie viele Körner man sich verzählt haben könnte. So wurde eine Vertraulichkeit der Zählung von \pm 1 Korn pro 20 Körner angenommen. Mithilfe von Fehlerfortpﬂanzung kann darauf hin die Unsicherheit für die Anzahl der Körner pro cm berechnet werden. 
+Die Unsicherheit der Verformung berechnet sich aus \cref{f1}.
+Da hier ein linearer Zusammenhang vorliegt ist die Unsicherheit dieselbe wie bei d. Die Unsicherheit von der Dicke (d) wurde durch eine Dreieckswahrschenlichkeitsdichtefunktion berechnet 
 \begin{align*}
     u_d = 0,2\text{cm}
 \end{align*}
 Die Messunsicherheiten sind in den Graphen mitberücksichtigt worden, sind jedoch häufig so klein, dass diese nicht zu erkennen sind.
 
 
-\subsection{Diskussion}
-Anhand der Messwerte lässt sich einiges über das Verhalten des Stoffes herausfinden. Nur die Verformungen bei einem Grad von $e^1-e^3$ konnten beschrieben werden.\cref{A3} konnte einen exponentiellen Zuwachs von Körnern bei steigendem Verformungsgrad beobachten. Außerdem konnten noch zwei weitere Fälle beobachtet werden. Der erste Fall ist bei hohen Körnerzahlen beobachtet worden. Es scheint, als ob es eine Mindestgröße von Körnern gäbe. Wenn diese Mindestgröße erreicht ist kann ich meinen Stoff beliebig stark verformen ohne dass Körnerbildung ansetzt. Der zweite Fall ist der, dass bei der Referenzprobe (keine Verformung) mehr Körner vorhanden sind, als nach den ersten beiden Verformungsstufen, dass heißt, dass die Körnerbildung erst zurückgeht und dann wieder anwächst. dieser Zusammenhang kann ebenfalls durch mehr Messwerte im kleinen Verformungsbereich modelliert werden. Woran liegt es jedoch, dass diese beiden Fälle auftreten. Unsere Referenzprobe besitzt eine mittlere Korngröße, wenn der Stoff verformt wird, wächst die mittlere Korngröße an, jedoch besitzt der Stoff nur wenige Versetzungen, sodass sich bei dem Prozess der Rekristallisation nur wenige Körner bilden. ES werden vor allem die Körner gestreckt. Die Anzahl der Körner nimmt ab pro Zentimeter. Wenn immer stärker verformt wird, nimmt die Anzahl der Versetzungen zu und es können immer mehr Körner bei der Rekristallisation entstehen, bis zu einem Punkt, an dem so viele Versetzungen in den Kristall eingegangen sind, sodass sich die maximale Anzahl an Versetzungen bereits gebildet hat. Ab diesem Zeitpunkt würde bei größerer Verformung der Werkstoff reißen und die Anzahl an Körnen gleich bleiben, sodass hier ein Grenzwert erreicht wird.
+\section{Diskussion}
+Anhand der Messwerte lässt sich einiges über das Verhalten des Stoffes herausfinden. Nur der Verformungen bei einem Grad von $e^1-e^3$ sind etwa 2,7\% - 20,1\% konnten beschrieben werden.\cref{A3} konnte einen exponentiellen Zuwachs von Körnern bei steigendem Verformungsgrad beobachten. Doch konnten noch zwei weitere Fälle beobachtet werden.
+Der erste Fall ist bei hohen Körnerzahlen beobachtet worden. Es scheint als ob es eine Mindestgröße von Körnern gäbe. Wenn diese Mindestgröße erreicht ist kann ich meinen Stoff beliebig stark verformen ohne dass Körnerbildung ansetzt. Das liegt daran, dass der Stoff nur ein gewisses Maß an kapazität von Verzerrungsenergie bereitstellt. Anderenfalls zerspringt das Material.
+Der zweite Fall ist der, dass bei der Referenzprobe (keine Verformung) mehr Körner vorhanden sind, als nach den ersten beiden Verformungsstufen, dass heißt, dass die Körner erst vergrößert werden, bevor weitere durch den Prozess der Rekristallisation entstehen. Bei diesen Werten beginnt der Prozess der Rekristallisation erst bei einer Verzerrungsstärke von 2,7\%. Dies liegt im theoretischen Bereich, ab dem Rekristallisation auftreten könnte. Die Korngröße nimmt vorher ab, dieser Zusammenhang kann ebenfalls durch mehr Messwerte im kleinen Verformungsbereich modelliert werden.
+Woran liegt es jedoch, dass diese beiden Fälle auftreten. 
+Unsere Referenzprobe besitzt eine mittlere Korngröße, wenn der Stoff verformt wird, wächst die mittlere Korngröße an, jedoch besitzt der Stoff nur wenige Versetzungen, sodass ein Kriterium für den Prozess der Rekristallisation nicht erfüllt ist oder nur an sehr wenigen Stellen erfüllt ist, sodass nur der Prozess der Erholung stattfindet. Es werden vor allem die Körner gestreckt. Die Anzahl der Körner nimmt pro Zentimeter ab. Wenn immer stärker Verformt wird nimmt die Anzahl der Versetzungen zu und es können immer mehr Körner bei der Rekristallisation entstehen. Das zweite Kriterium der minimalen Versetzungsdichte ist dadurch erfüllt. 
+Die treibende Kraft der Primärkristallisation ist die Verzerrungsenergie. Beim Rekristallisieren werden die Gitterdefekte beseitig über den vorher beschriebenen Vorgang. Dieser Vorgang findet häufiger statt, da bei vielen Versetzungen mehr Kleinwinkelkorngrenzen vorhanden sind, somit eine unterschiedliche Verzerrungsdichte entsteht und sich Gr0ßwinkel-Korngrenzen bilden können. Dies geschieht solange bis zu einem Punkt, an dem so viele Versetzungen in den Kristall eingegangen sind, sodass sich die Maximale Anzahl an Versetzungen bereits gebildet hat. Ab diesem Zeitpunkt würde bei größerer Verformung der Werkstoff reißen und die Anzahl an Körnen gleich bleiben, sodass hier ein Grenzwert erreicht wird.
 
 \newpage
 
