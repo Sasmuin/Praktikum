@@ -1,0 +1,6 @@
+SetPoint: 1,001nA
+P-Gain: 12 (oder 10 bei Angabe und bei 10 nm)
+I-Gain: 11
+GapVoltage: 0,050V
+
+Tersoff
