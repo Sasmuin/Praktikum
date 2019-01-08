@@ -161,7 +161,24 @@ Die einzelnen Proben wurden dann auf 550°C für eine Stunde lang erhitzt. Dadur
 \subsection{Auswertung}
 Durch die Linearanalyse konnte man die Anzahl der Körner bei verschiedenen Verformungsgraden bestimmen. Dazu wurden mehrere Strecken (mindestens zwei) Quer über das Aluminiumplättchen gezogen und gezählt wie viele Körner sich auf der Linie befinden. Dadurch wurde dann ein Mittelwert gebildet. somit bildete sich ein Mittelwert für die Anzahl der Körner pro Zentimeter. Es wurde der Verformungsgrad über dieses Mittel aufgetragen.
 Daraus ergab sich \cref{A1}.
-\begin{figure}[h!]
+\begin{figure}[h!]    \includegraphics[scale = 0.6]{fitfit.pdf}
+    \caption{Der Graph stellt die prozentuale Verformung in [\%] in Abhängigkeit von den Anzahl der Körner dar. Für den Fit, welcher mit Origin durchgeführt wurde, wurden nur die roten Punkte aus \cref{A2} verwendet. Die Fitparameter lauten:
+    $y=ab^x$ mit Parametern $a=1,33\pm 0,08$ und $b = 1,39 \pm 0,01$.}
+    \label{A3}
+\end{figure}
+
+\subsection{Unsicherheiten}
+Für die Unsicherheit der Anzahl der Körner wird eine absolute Messunsicherheit von $\pm 0,1$cm für die Länge der Linie angenommen. Für das zählen der Körner  wird wiederum eine Unsicherheit von $5\%$ angenommen. Diese $5\%$ wurden bestimmt, indem abgeschätzt wurde, um wie viele Körner man sich verzählt haben könnte. So wurde eine Vertraulichkeit der Zählung von $\pm 1$ Korn pro $20$ Körner angenommen. Mithilfe von Fehlerfortpflanzung kann darauf hin die Unsicherheit für die Anzahl der Körner pro cm berechnet werden. 
+Die Unsicherheit der Verformung berechnet sich aus \cref{f1}.
+Da hier ein linearer Zusammenhang vorliegt ist die Unsicherheit dieselbe wie bei d. Die Unsicherheit von der Dicke (d) wurde durch eine Dreieckswahrscheinlichkeitsdichtefunktion berechnet 
+\begin{align*}
+    u_d = 0,2\text{cm}
+\end{align*}
+Die Messunsicherheiten sind in den Graphen mitberücksichtigt worden, sind jedoch häufig so klein, dass diese nicht zu erkennen sind.
+
+
+\subsection{Diskussion}
+Anhand der Messwerte lässt sich einiges über das Verhalten des Stoffes herausfinden. Nur die Verformungen bei einem Grad von $e^1-e^3$ sind etwa 2,7\% - 20,1\% konnten beschrieben werden.\cref{A3} konnte einen exponentiellen Zuwachs von Körnern bei steigendem Verformungsgrad beobachten. Doch
     \centering
     \includegraphics[scale = 0.3]{nichtln.png}
     \caption{Hier ist der Verformungsgrad in Abhängigkeit der Anzahl an Körnern pro Zentimeter aufgetragen.Der blaue Punkt stellt dabei die unverformte Probe dar.}
@@ -196,12 +213,12 @@ Die Messunsicherheiten sind in den Graphen mitberücksichtigt worden, sind jedoc
 
 
 \subsection{Diskussion}
-Anhand der Messwerte lässt sich einiges über das Verhalten des Stoffes herausfinden. Nur die Verformungen bei einem Grad von $e^1-e^3$ sind etwa 2,7\% - 20,1\% konnten beschrieben werden.\cref{A3} konnte einen exponentiellen Zuwachs von Körnern bei steigendem Verformungsgrad beobachten. Doch konnten noch zwei weitere Fälle beobachtet werden.
-Der erste Fall ist bei hohen Körnerzahlen beobachtet worden. Es scheint als ob es eine Mindestgröße von Körnern gäbe. Wenn diese Mindestgröße erreicht ist kann ich meinen Stoff beliebig stark verformen ohne dass Körnerbildung ansetzt. Das liegt daran, dass der Stoff nur ein gewisses Maß an kapazität von Verzerrungsenergie bereitstellt. Anderenfalls zerspringt das Material.
-Der zweite Fall ist der, dass bei der Referenzprobe (keine Verformung) mehr Körner vorhanden sind, als nach den ersten beiden Verformungsstufen, dass heißt, dass die Körner erst vergrößert werden, bevor weitere durch den Prozess der Rekristallisation entstehen. Bei diesen Werten beginnt der Prozess der Rekristallisation erst bei einer Verzerrungsstärke von 2,7\%. Dies liegt im theoretischen Bereich, ab dem Rekristallisation auftreten könnte. Die Korngröße nimmt vorher ab, dieser Zusammenhang kann ebenfalls durch mehr Messwerte im kleinen Verformungsbereich modelliert werden.
-Woran liegt es jedoch, dass diese beiden Fälle auftreten. 
+Anhand der Messwerte lässt sich einiges über das Verhalten des Stoffes herausfinden. Nur die Verformungen bei einem Grad von $e^1-e^3$ sind etwa 2,7\% - 20,1\% konnten beschrieben werden.\cref{A3} konnte einen exponentiellen Zuwachs von Körnern bei steigendem Verformungsgrad beobachten. In der Grafik konnten noch zwei weitere Fälle beobachtet werden.
+Der erste Fall ist bei hohen Körnerzahlen beobachtet worden. Es scheint, als ob es eine Mindestgröße von Körnern gäbe. Wenn diese Mindestgröße erreicht ist kann ich meinen Stoff beliebig stark verformen ohne dass Körnerbildung ansetzt. Das liegt daran, dass der Stoff nur ein gewisses Maß an Kapazität von Verzerrungsenergie bereit stellt. Anderenfalls zerspringt das Material.
+Der zweite Fall ist der, dass bei der Referenzprobe (keine Verformung) mehr Körner vorhanden sind, als nach den ersten beiden Verformungsstufen, dass heißt, dass die Körner erst vergrößert werden, bevor weitere durch den Prozess der Rekristallisation entstehen. Bei diesen Werten beginnt der Prozess der Rekristallisation erst bei einer Verzerrungsstärke von 2,7\%. Dies liegt im theoretischen Bereich, ab dem Rekristallisation auftreten könnte. Die Korngröße nimmt zu. Dieser Zusammenhang kann durch mehr Messwerte im kleinen Verformungsbereich modelliert werden.
+Woran liegt es, dass diese beiden Fälle auftreten. 
 Unsere Referenzprobe besitzt eine mittlere Korngröße, wenn der Stoff verformt wird, wächst die mittlere Korngröße an, jedoch besitzt der Stoff nur wenige Versetzungen, sodass ein Kriterium für den Prozess der Rekristallisation nicht erfüllt ist oder nur an sehr wenigen Stellen erfüllt ist, sodass nur der Prozess der Erholung stattfindet. Es werden vor allem die Körner gestreckt. Die Anzahl der Körner nimmt pro Zentimeter ab. Wenn immer stärker Verformt wird nimmt die Anzahl der Versetzungen zu und es können immer mehr Körner bei der Rekristallisation entstehen. Das zweite Kriterium der minimalen Versetzungsdichte ist dadurch erfüllt. 
-Die treibende Kraft der Primärkristallisation ist die Verzerrungsenergie. Beim Rekristallisieren werden die Gitterdefekte beseitig über den vorher beschriebenen Vorgang. Dieser Vorgang findet häufiger statt, da bei vielen Versetzungen mehr Kleinwinkelkorngrenzen vorhanden sind, somit eine unterschiedliche Verzerrungsdichte entsteht und sich Gr0ßwinkel-Korngrenzen bilden können. Dies geschieht solange bis zu einem Punkt, an dem so viele Versetzungen in den Kristall eingegangen sind, sodass sich die Maximale Anzahl an Versetzungen bereits gebildet hat. Ab diesem Zeitpunkt würde bei größerer Verformung der Werkstoff reißen und die Anzahl an Körnen gleich bleiben, sodass hier ein Grenzwert erreicht wird.
+Die treibende Kraft der Primärkristallisation ist die Verzerrungsenergie. Beim Rekristallisieren werden die Gitterdefekte beseitig über den vorher beschriebenen Vorgang. Dieser Vorgang findet häufiger statt, da bei vielen Versetzungen mehr Kleinwinkelkorngrenzen vorhanden sind.Somit entsteht eine unterschiedliche Verzerrungsdichte und es können sich Großwinkel-Korngrenzen bilden. Dies geschieht solange bis zu einem Punkt, an dem so viele Versetzungen in den Kristall eingegangen sind, sodass sich die Maximale Anzahl an Versetzungen bereits gebildet hat. Ab diesem Zeitpunkt würde bei größerer Verformung der Werkstoff reißen und die Anzahl an Körnen gleich bleiben, sodass hier ein Grenzwert erreicht wird.
 
 \newpage
 
