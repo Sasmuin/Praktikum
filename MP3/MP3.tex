@@ -153,7 +153,7 @@ Die Vickers-Härte, und damit auch die Ausheilung der Proben, ist in diesem Vers
 \section{Methoden}
 In diesem Teil des Berichtes wird beschrieben, welche technischen Methoden benutzt wurden, um die Korngröße in Abhängigkeit vom Verformungsgrad (V) zu messen. Dazu wurden acht Aluminium-Proben durch eine Kaltwalze verformt.Zuerst wurde die Anfangsdicke der Alumiuniumplatten ($d_0$) mit einer Mikrometerschraube ausgemessen. Dann wurden die Platten durch die Kaltwalze verformt. Im nnach hineinwurde dann die Verformte Dicke der AAlumiuniumplatten(d) gemessen. Über \cref{f1} konnte dann der Verformungsgrad errechnet werden.
  \begin{align}
-    V = \frac{d_0-d}{d_0}100 \cref{f1}
+    V = \frac{d_0-d}{d_0}100 \label{f1}
 \end{align} \cref{f1}
 Die Veformung betrag 0\%, 2,5\%, 5\%, 10\%, 20\%, 30\%, 40\% und 50\%.
 Die einzelnen Proben wurden dann auf 550°C für eine Stunde lang erhitzt. Dadurch wurde der Prozess der Rekristallisation in Gang gesetzt, der erst ab ca. 40\% der Schmelztemperatur beginnt d.h. der Prozess der Körnerbildung fängt an. Die Schmelztemperatur von Aluminium beträgt in etwa 660°C, somit befinden sich die Proben oberhalb dieser Grenze. Nach einer Stunde wurden die Proben durch ein Kältebad abgekühlt, sodass die kristalline Struktur erstarrt und beobachtet werden kann. Dafür wurden die Aluminiumplatten chemisch behandelt, sodass eine Kornstruktur sichtlich wurde. Nach der Behandlung konnte man durch eine Linearanalyse die Anzahl der Korngrößen pro Zentimeter bestimmen.
@@ -167,7 +167,9 @@ Daraus ergab sich \cref{A1}.
     \caption{Hier ist der Verformungsgrad in Abhängigkeit der Anzahl an Körnern pro Zentimeter aufgetragen.Der blaue Punkt stellt dabei die unverformte Probe dar.}
     \label{A1}
 \end{figure}
-Anhand der Messwerte kann ein exponentieller Anstieg vermutet werden. Um genauer zu Untersuchen ob es sich tatsächlich um einen exponentiellen Anstieg handelt, wurden die Messwerte logarithmisch aufgetragen. Dieses Verhältnis kann in \cref{A2} erkannt werden. Die roten Punkte sind die Messwerte an denen ein exponentieller Anstieg vermutet wird. Hierzu wird \cref{A3} einen funktionalen Zusammenhang bieten. Der blaue Punkt bei \cref{A1} stellt das Aluminiumplättchen ohne jegliche Verformung dar. Es ist zu beobachten, dass der Nullzustand eine deutlich größere Anzahl an Kristallen pro Zentimeter besitzt, als die ersten beiden Verformungszustände ($V<e^2$ \approx 5,43\%) . Danach wächst erst die Anzahl an Kristallen wie bereits beschrieben exponentiell an, bis zu einem Punkt an dem die Messwerte konvergieren. Sie steigen nicht mehr an, sondern verteilen sich statistisch um einen Mittelert herum.
+
+Anhand der Messwerte kann ein exponentieller Anstieg vermutet werden. Um genauer zu Untersuchen ob es sich tatsächlich um einen exponentiellen Anstieg handelt, wurden die Messwerte logarithmisch aufgetragen. Dieses Verhältnis kann in \cref{A2} erkannt werden. Die roten Punkte sind die Messwerte an denen ein exponentieller Anstieg vermutet wird. Hierzu wird \cref{A3} einen funktionalen Zusammenhang bieten. Der blaue Punkt bei \cref{A1} stellt das Aluminiumplättchen ohne jegliche Verformung dar. Es ist zu beobachten, dass der Nullzustand eine deutlich größere Anzahl an Kristallen pro Zentimeter besitzt, als die ersten beiden Verformungszustände ($V<e^2 \approx 5,43\%$) . Danach wächst erst die Anzahl an Kristallen wie bereits beschrieben exponentiell an, bis zu einem Punkt an dem die Messwerte konvergieren. Sie steigen nicht mehr an, sondern verteilen sich statistisch um einen Mittelert herum.
+
 \begin{figure}[h!]
     \centering
     \includegraphics[scale = 0.3]{tempsnip.png}
@@ -184,9 +186,9 @@ In \cref{A3} wurde der bereits erwähnte funktionale Zusammenhang zur Verformung
 \end{figure}
 
 \section{Unsicherheiten}
-Für die Unsicherheit der Anzahl der Körner wird eine absolute Messunsicherheit von \pm 0,1cm für die Länge der Linie angenommen. Für das zählen der Körner  wird wiederum eine Unsicherheit von 5\% angenommen. Diese 5\% wurden bestimmt, indem abgeschätzt wurde, um wie viele Körner man sich verzählt haben könnte. So wurde eine Vertraulichkeit der Zählung von \pm 1 Korn pro 20 Körner angenommen. Mithilfe von Fehlerfortpﬂanzung kann darauf hin die Unsicherheit für die Anzahl der Körner pro cm berechnet werden. 
+Für die Unsicherheit der Anzahl der Körner wird eine absolute Messunsicherheit von $\pm 0,1$cm für die Länge der Linie angenommen. Für das zählen der Körner  wird wiederum eine Unsicherheit von $5\%$ angenommen. Diese $5\%$ wurden bestimmt, indem abgeschätzt wurde, um wie viele Körner man sich verzählt haben könnte. So wurde eine Vertraulichkeit der Zählung von $\pm 1$ Korn pro $20$ Körner angenommen. Mithilfe von Fehlerfortpflanzung kann darauf hin die Unsicherheit für die Anzahl der Körner pro cm berechnet werden. 
 Die Unsicherheit der Verformung berechnet sich aus \cref{f1}.
-Da hier ein linearer Zusammenhang vorliegt ist die Unsicherheit dieselbe wie bei d. Die Unsicherheit von der Dicke (d) wurde durch eine Dreieckswahrschenlichkeitsdichtefunktion berechnet 
+Da hier ein linearer Zusammenhang vorliegt ist die Unsicherheit dieselbe wie bei d. Die Unsicherheit von der Dicke (d) wurde durch eine Dreieckswahrscheinlichkeitsdichtefunktion berechnet 
 \begin{align*}
     u_d = 0,2\text{cm}
 \end{align*}
