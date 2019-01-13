@@ -60,7 +60,7 @@
 	\centering
 	{\scshape\LARGE Versuchsbericht zu \par}
 	\vspace{1cm}
-	{\scshape\huge O4 - Magneto-Optischer-Kerr-Effekt \par}
+	{\scshape\huge XRAY \par}
 	\vspace{2.5cm}
 	{\LARGE Gruppe 6 Mo\par}
 	\vspace{0.5cm}
@@ -83,14 +83,14 @@
 In \cref{B1} ist der Aufbau zu sehen. In dem Kasten befindet sich eine Röntgenröhre. Das Charakteristische Material der Röntgenröhre ist Kupfer. Durch eine Blende kann die Röntgenstrahlung auf ein Analysator (in unserem Fall Kaliumbromid und Lithiumflourid) auftreffen und durch Bragg-Reflexion \cref{B2} auf einen Detektor (Geiger-Müller-Zählrohr) treffen. Diese Zählrate wird registriert und an einem Computer (rechts in \cref{B1}) dargestellt. Da das Geiger-Müller-Zählrohr eine Totzeit besitzt trifft mehr Strahlung ein als Registiert wird. Diese Korrektur ist in diesen Aufgabenteilen nicht nötig zu berücksichtigen, da für die Folgenden Auswertungen die Position der Maxima relevant ist und nicht deren Intensität.
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 1]{M3/aufbau.png}
+    \includegraphics[scale = 1]{aufbau.png}
     \caption{}
     \label{B1}
 \end{figure}
 Um das Spektrum der Charakteristischen Strahlung der Anode qualitativ wird die Bragg-Bedingung benutzt. Diese kann durch \cref{B2} hergeleitet werden.
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 1.5]{M3/bragg.png}
+    \includegraphics[scale = 1.5]{bragg.png}
     \caption{}
     \label{B2}
 \end{figure}
@@ -102,7 +102,7 @@ Dabei sind $\theta$ der Winkel und d der Abstand zwischen zwei Gitterebenen (hie
 Dadrurch können den entsprechenden Peaks eine Energie zugeordnet werden.
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale = 1]{M3/termschema.png}
+    \includegraphics[scale = 1]{termschema.png}
     \caption{Hier ist das Thermschema einer Kupferanode dargestellt. Dabei sind die Relevanten Übergänge eingezeichnet.}
     \label{B3}
 \end{figure}
@@ -188,11 +188,12 @@ ermittelt werden, der ebenfalls in hinblick auf die Messunsicherheiten genau zu 
 
 
 \section{Methoden und Durchführung}
+\label{Methode}
 In diesem Versuch wurden verschiedene Eigenschaften von Röntgenstrahlung untersucht. Hierfür wurde eine Röntgenröhre mit Kupferanode verwendet. Der schematische Aufbau einer Röntgenröhre ist in \cref{roentgen} dargestellt.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale = 1]{roentgen.png}
+	\includegraphics[scale = 1]{aufbau.png} %eigentlich röntgen.png aber hast vergessen das hochzuladen
 	\caption{Schematischer Aufbau einer Röntgenröhre}
 	\label{roentgen}
 \end{figure}
@@ -249,4 +250,62 @@ Anschließend wurde der Einfluss einer Spannungsänderung auf die Intensität be
 \end{figure}
 
 
+\section{Absorptionsgesetz für Röntgenstrahlung}
+\subsection{Methode}
+Der Aufbau ist bis auf kleine Unterschiede analog zu \cref{Methode}. In diesem Fall wird für alle Versuchsteile eine Anodenspannung von 25kV angelegt. Außerdem wird hinter dem LiF-Kristall jeweils ein Absorber eingesetzt, welcher in diesem Teil des Versuchs hauptsächlich untersucht wird. In ersten Teil wird dabei Zink und Aluminium benutzt,wobei jeweils die Dicke der Absorber variiert wird und die verschiedenen Intensitäten verglichen werden, um den Absorptionskoeffizienten zu bestimmen. 
+
+Im zweiten Teil wird Nickel betrachtet, welches nach der Absorptionskante untersucht wird, wobei jeder Winkel 50s lang gemessen wird, um eine möglichst genaue Auflösung zu erhalten.
+
+Außerdem ist die Messung des LiF-Kristalls ohne Absorber benötigt.
+\subsection{Auswertung}
+\subsubsection{Absorptionskoeffizient Zink und Aluminium}
+
+ Wenn Röntgenstrahlung auf ein Material trifft, kann der Absorptionskoeffizient berechnet werden mit
+\begin{equation}
+I = I_{0} e^{- \mu(\lambda,z) d}.
+\label{Absorp}
+\end{equation}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 1]{expo.png} 
+	\caption{Exponentieller Abfall der Strahlung in Absorbern bei $\lambda$ = \SI{154,1}{pm}}
+	\label{expo}
+\end{figure}
+
+Es wurde allerdings nicht der Wert in \cref{expo} für d=0 nicht benutzt, da er mit $I_{0} = 7523,6$ zu groß sind als das ein sinnvoller Fit noch möglich wäre, was darauf hindeutet, dass es zu einem Fehler bei der Messung kam, wie es später auch noch in \cref{Ni} sichtbar wird.
+
+Außerdem soll der Zusammenhang näherungsweise gelten:
+\begin{equation}
+\dfrac{\mu}{\rho} = k(\lambda^{3} \cdot Z^{3}),
+\label{Z}
+\end{equation}
+wobei k eine Konstante ist. Mit den Dichten für $\rho_{Al} = \SI{2,17}{\dfrac{g}{cm}}$ und $\rho_{Zn} = \SI{7,14}{\dfrac{g}{cm}}$ ergeben sich die Massenabsorptionskoeffizienten $\left(\dfrac{\mu}{\rho}\right)_{Al} = \SI{2,0 \pm 0,1}{\dfrac{cm^{2}}{g}}$ und $\left(\dfrac{\mu}{\rho}\right)_{Zn} = \SI{19,3 \pm 0,5}{\dfrac{cm^{2}}{g}}$. Da Zink eine Ladung von Z = 30 und Aluminium von Z = 13 hat, folgt daraus, dass der Quotient der beiden Massenabsorptionskoeffizienten ungefähr 12,3 groß sein sollte. In diesem Fall ergibt sich allerdings ein Quotient von 9,6.
+
+\subsubsection{Absorptionskante Nickel}
+\label{Ni}
+Ziel ist es durch die Absorptionskante das Energieniveau der K-Schale zu bestimmen. Dafür wird in \cref{Kante} die Dritte Wurzel des Massenabsorptionskoeffizienten gegen die Wellenlänge der Strahlung aufgetragen. Der Massenabsorptionskoeffizient wird dabei wieder mithilfe von \cref{Absorp} berechnet und danach durch die Dichte von Nickel mit $\rho = \SI{8,99}{\dfrac{g}{cm^{3}}}$ geteilt. Diesmal werden allerdings nur zwei Werte pro Winkel benutzt.
+
+Die Wellenlänge der Röntgenstrahlung folgt aus der Bragg-Bedingung mit
+\begin{equation}
+n \lambda = 2 d \sin(\theta),
+\end{equation}
+wobei n = 1 angenommen wird da das erste Maximum überwiegt. Die Absorptionskante entspricht dem Energieniveau, da es an diesem Punkt zur Ionisation der K-Schale kommen kann und somit der Absorptionskoeffizient mit höherer Energie bzw. niedrigerer Wellenlänge stark ansteigt. Aus dem linearen Fit in \cref{Absorp} lässt sich dann die Wellenlänge der Strahlung an der Absorptionskante bestimmen. Diese beträgt $\lambda_{k} = \SI{150,0 \pm 23,7}{pm}$. Die Unsicherheit folgt alleine aus dem linearen Fit, scheint aber unnötigerweise groß zu sein. Die Energie der K-Schale lässt sich daraufhin mit $E_{k} = \dfrac{h \cdot c}{\lambda_{k}} = \SI{8267 \pm 1303}{eV}$ berechnen. Dies stimmt auch mit dem Literaturwert von $E_{k} = \SI{8,33}{keV}$ gut überein.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 1]{Absorptionskante.png}
+	\caption{Absorptionskante von Nickel}
+	\label{Kante}
+\end{figure}
+
+\subsection{Diskussion}
+Im ersten Teil der Untersuchung von Absorbern sollte der Absorptionskoeffizient berechnet werden. Ein Problem dabei war allerdings, dass der Wert bei d=0 nicht benutzt werden konnte, weshalb der Fit wesentlich ungenauer wird. Das lässt sich auch daran erkennen, dass die Amplituden $I_{0}$ in \cref{expo} sich deutlich voneinander unterscheiden, obwohl das für beide Funktionen der gleiche Wert sein sollte. Trotzdem scheinen sich die Absorptionskoeffizienten zumindest in der richtigen Größenordnung zu befinden, wie auch der Vergleich mit der empirischen Funktion \cref{Z} zeigt.
+
+Bei der Untersuchung von Nickel lies sich die Energie der k-Schale mit $E_{k} = \SI{8267 \pm 1303}{eV}$, die auch mit dem Literaturwert von $E_{k} = \SI{8,33}{keV}$ gut übereinstimmt, problemlos bestimmen. Allerdings sind die Werte in \cref{Kante} allesamt um einen Faktor von 4-10 größer, als in der Vorlage, was auf einen Fehler hinweisen könnte, was auch mit dem viel zu hohen Wert aus dem ersten Teil übereinstimmt. Höchstwahrscheinlich kommt dies durch einen Fehler in des Messung, wie z.B. unterschiedliche Blenden bei den verschiedenen Messungen. Trotzdem stimmt sowohl die grundlegende Form, als auch der Endwert mit den Literaturwerten überein. 
+\begin{thebibliography}{9}
+\bibitem{A}
+Phywe Schriftenreihe Handbuch Physik,Experimente mit Röntgenstrahlen,PHYWE SYSTEME GMBH \& Co.KG , D-37070 Göttingen
+ \end{thebibliography}
 \end{document}
