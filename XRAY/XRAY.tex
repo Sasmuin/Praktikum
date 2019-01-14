@@ -60,7 +60,7 @@
 	\centering
 	{\scshape\LARGE Versuchsbericht zu \par}
 	\vspace{1cm}
-	{\scshape\huge XRAY \par}
+	{\scshape\huge Bestimmung der Struktur von Kristallgittern mit Röntgenstrahlen \par}
 	\vspace{2.5cm}
 	{\LARGE Gruppe 6 Mo\par}
 	\vspace{0.5cm}
@@ -107,6 +107,37 @@ Da beim Geiger-Müller-Zählrohr bei jedem detektierten Photon eine vollständig
 	N = \frac{N_0}{1 - \tau \cdot N_0}
 	\label{eq:korr}
 \end{equation}
+
+Zuerst wurden mithilfe der vollständigen Röntgenspektren, die durch Bragg-Reflexion an den beiden Einkristallen erzeugt wurden, die charakteristischen Linien in Kupfer-Röntgenstrahlung bestimmt.
+Um das Spektrum der charakteristischen Strahlung der Anode qualitativ zu bestimmen, wird die Bragg-Bedingung benutzt. Diese kann durch \cref{B2} hergeleitet werden.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 1.5]{bragg.png}
+	\caption{}
+	\label{B2}
+\end{figure}
+Man erhält für die Energie 
+\begin{align}
+E &= \frac{nhc}{2d\sin{\theta}}.
+\label{eq:f1}
+\end{align}
+Dabei sind $\theta$ der Winkel und d der Abstand zwischen zwei Gitterebenen (hier sind die (200)-Ebenen die Ebenen an denen die Reflexe auftreten), wie in \cref{B2} zu sehen. h und c sind das Plank'sche Wirkungsquantum und die Lichtgeschwindigkeit. n stellt die Anzahl der Perioden der Wellenlängen bei einer konstruktiven Interferenz dar.
+Dadurch können den entsprechenden Peaks eine Energie zugeordnet werden.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 1]{termschema.png}
+	\caption{Hier ist das Termschema einer Kupferanode dargestellt. Dabei sind die Relevanten Übergänge eingezeichnet.}
+	\label{B3}
+\end{figure}
+Über \cref{B3} kann dann verglichen werden, ob die jeweiligen Übergänge zu Literaturwerten passt. Da die Auflösung nicht groß genug ist kann nicht zwischen einem $K_{\alpha1}$ und einem $K_{\alpha2}$ Zerfall unterschieden werden. Aus \cref{B3} kann für die einzelnen Zerfälle folgende Werte zugeordnet werden.
+\begin{align*}
+K_{\alpha} &= 8,028 keV \\
+K_{\beta} &= 8,867 keV
+\end{align*}
+
+
+Als weitere Motivation wurde gezeigt, wie ein monochromatisches Spektrum erzeugt werden kann. Dafür gibt es zwei Methoden. Die erste Methode ist, indem der Kristall seine Richtung nicht ändert, die zweite Möglichkeit ist Monochromatisierung über Absorption zu erzeugen.
+
 Im zweiten Versuchsteil wurde untersucht, welchen Einfluss die Anodenspannung und die Anodenstromstärke auf die Intensität der charakteristischen Röntgenstrahlung von Kupfer hat. Es sollte experimentell überprüft werden, ob für die Intensität der Strahlung gilt:
 \begin{equation}
 	I_K = B I_A (U_A - U_K)^{1,5}
@@ -117,99 +148,15 @@ Im zweiten Versuchsteil wurde untersucht, welchen Einfluss die Anodenspannung un
 
 Hierfür wurde zuerst die Spannung konstant bei $35$kV gehalten und die Stromstärke in $0,1$mA-Schritten zwischen $0,1$mA und $1$mA variiert. Anschließend wurde die Stromstärke konstant bei $1$mA gehalten und die Spannung in $3$kV-Schritten zwischen $11$kV und $35$kV variiert. Gemessen wurde hier nur bei Kristallwinkeln zwischen $19$° und $24$°.
 
-In \cref{B1} ist der Aufbau zu sehen. In dem Kasten befindet sich eine Röntgenröhre. Das Charakteristische Material der Röntgenröhre ist Kupfer. Durch eine Blende kann die Röntgenstrahlung auf ein Analysator (in unserem Fall Kaliumbromid und Lithiumflourid) auftreffen und durch Bragg-Reflexion \cref{B2} auf einen Detektor (Geiger-Müller-Zählrohr) treffen. Diese Zählrate wird registriert und an einem Computer (rechts in \cref{B1}) dargestellt. Da das Geiger-Müller-Zählrohr eine Totzeit besitzt trifft mehr Strahlung ein als Registiert wird. Diese Korrektur ist in diesen Aufgabenteilen nicht nötig zu berücksichtigen, da für die Folgenden Auswertungen die Position der Maxima relevant ist und nicht deren Intensität.
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale = 1]{M3/aufbau.png}
-    \caption{}
-    \label{B1}
-\end{figure}
-Um das Spektrum der Charakteristischen Strahlung der Anode qualitativ wird die Bragg-Bedingung benutzt. Diese kann durch \cref{B2} hergeleitet werden.
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale = 1.5]{M3/bragg.png}
-    \caption{}
-    \label{B2}
-\end{figure}
-Man erhält für die Energie 
-\begin{align}
-    E &= \frac{nhc}{2d\sin{\theta}} \cref{F1}
-\end{align}
-Dabei sind $\theta$ der Winkel und d der Abstand zwischen zwei Gitterebenen (hier sind die (200)-Ebenen die Ebenen an denen die Reflexe austeten), wie in \cref{B2} zu sehen. h und c sind das Plank'sche Wirkungsquantum und die Lichtgeschwindigkeit. n stellt die Anzahl der Perioden der Wellenlängen bei einer konstruktiven Interferenz dar.
-Dadrurch können den entsprechenden Peaks eine Energie zugeordnet werden.
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale = 1]{M3/termschema.png}
-    \caption{Hier ist das Thermschema einer Kupferanode dargestellt. Dabei sind die Relevanten Übergänge eingezeichnet.}
-    \label{B3}
-\end{figure}
-Über \cref{B3} kann dann verglichen werden, ob die jeweiligen Übergänge zu Literaturwerten passt. Da die Auflösung nicht groß genug ist kann nicht zwischen einem $K_{\alpha1}$ und einem $K_{\alpha2}$ Zerfall unterschieden werden. Aus \cref{B3} kann für die einzelnen Zerfälle folgende Werte zugeordnet werden.
-\begin{align*}
-    K_{\alpha} &= 8,028 keV \\
-    K_{\beta} &= 8,867 keV
-\end{align*}
-Als weitere Motivation wird gezeigt, wie ein Monochromatisches Spektrum erzeugt werden kann. Dafür gibt es zwei Methoden die erste Methode ist, indem der Kristall seine Richtung nicht ändert, die zweite Möglichkeit ist Monochromatisierung über Absorbtion zu erzeugen.
+Anschließend wurden die Absorptionskoeffizienten von Zink und Aluminium bestimmt. Hier wird für die letzten beiden Versuchsteile eine Anodenspannung von 25kV angelegt. Außerdem wird hinter dem LiF-Kristall jeweils ein Absorber eingesetzt, welcher in diesem Teil des Versuchs hauptsächlich untersucht wird. In ersten Teil wird dabei Zink und Aluminium benutzt,wobei jeweils die Dicke der Absorber variiert wird und die verschiedenen Intensitäten verglichen werden, um den Absorptionskoeffizienten zu bestimmen. 
 
-\section{Auswertung}
-Zuerst wurde die Abhängigkeit der Intensität der K-Strahlung von der Stromstärke untersucht. Die Intensität entspricht der nach \cref{eq:korr} korrigierten Impulsrate. Dieser Zusammenhang ist in \cref{strom} dargestellt. Offensichtlich hängt die Intensität linear vom angelegten Anodenstrom ab. Dies bestätigt die Vorhersage nach \cref{eq:ik}. Die Steigung der $K_\alpha$-Linie ist dabei deutlich größer als die der $K_\beta$-Linie, was auch in allen anderen Versuchsteilen so gemessen wurde.
+Im letzten Teil wird Nickel betrachtet, welches nach der Absorptionskante untersucht wird, wobei jeder Winkel 50s lang gemessen wird, um eine möglichst genaue Auflösung zu erhalten.
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale = 0.6]{strom.eps}
-	\caption{Die korrigierte Impulsrate aufgetragen gegen die angelegte Stromstärke. Der lineare Verlauf ist deutlich erkennbar.}
-	\label{strom}
-\end{figure}
+Außerdem ist die Messung des LiF-Kristalls ohne Absorber benötigt.
 
-Anschließend wurde der Einfluss einer Spannungsänderung auf die Intensität betrachtet. Auch hier entspricht die Intensität der nach \cref{eq:korr} korrigierten Impulsrate. Dieser Zusammenhang ist in \cref{spannung} dargestellt. Die Impulsrate steigt bei kleineren Spannungen erst langsam, bei höheren Spannungen aber immer stärker.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale = 0.6]{spannung.eps}
-	\caption{Die korrigierte Impulsrate aufgetragen gegen die Spannung.}
-	\label{spannung}
-\end{figure}
-
- Um den in \cref{eq:ik} dargestellten Zusammenhang zu überprüfen, wurde in \cref{spannung2} die korrigierte Impulsrate gegen $(U_A - U_K)^{1,5}$ aufgetragen. Hier ist der lineare Verlauf der beiden K-Linien wieder deutlich erkennbar, so wie in \cref{eq:ik} vorhergesagt.
- 
- Somit konnte in diesem Abschnitt die Gültigkeit der Formel für die K-Linien in Kupfer gezeigt werden.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale = 0.6]{spannung2.eps}
-	\caption{Die korrigierte Impulsrate aufgetragen gegen $(U_A-U_K)^{1,5}$. Der lineare Verlauf ist deutlich erkennbar.}
-	\label{spannung2}
-\end{figure}
-In \cref{B1} ist der Aufbau zu sehen. In dem Kasten befindet sich eine Röntgenröhre. Das Charakteristische Material der Röntgenröhre ist Kupfer. Durch eine Blende kann die Röntgenstrahlung auf ein Analysator (in unserem Fall Kaliumbromid und Lithiumflourid) auftreffen und durch Bragg-Reflexion \cref{B2} auf einen Detektor (Geiger-Müller-Zählrohr) treffen. Diese Zählrate wird registriert und an einem Computer (rechts in \cref{B1}) dargestellt. Da das Geiger-Müller-Zählrohr eine Totzeit besitzt trifft mehr Strahlung ein als Registiert wird. Diese Korrektur ist in diesen Aufgabenteilen nicht nötig zu berücksichtigen, da für die Folgenden Auswertungen die Position der Maxima relevant ist und nicht deren Intensität.
-
-Um das Spektrum der Charakteristischen Strahlung der Anode qualitativ wird die Bragg-Bedingung benutzt. Diese kann durch \cref{B2} hergeleitet werden.
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale = 1.5]{bragg.png}
-    \caption{}
-    \label{B2}
-\end{figure}
-Man erhält für die Energie 
-\begin{align}
-    E &= \frac{nhc}{2d\sin{\theta}} \cref{F1}
-\end{align}
-Dabei sind $\theta$ der Winkel und d der Abstand zwischen zwei Gitterebenen (hier sind die (200)-Ebenen die Ebenen an denen die Reflexe austeten), wie in \cref{B2} zu sehen. h und c sind das Plank'sche Wirkungsquantum und die Lichtgeschwindigkeit. n stellt die Anzahl der Perioden der Wellenlängen bei einer konstruktiven Interferenz dar.
-Dadrurch können den entsprechenden Peaks eine Energie zugeordnet werden.
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale = 1]{termschema.png}
-    \caption{Hier ist das Thermschema einer Kupferanode dargestellt. Dabei sind die Relevanten Übergänge eingezeichnet.}
-    \label{B3}
-\end{figure}
-Über \cref{B3} kann dann verglichen werden, ob die jeweiligen Übergänge zu Literaturwerten passt. Da die Auflösung nicht groß genug ist kann nicht zwischen einem $K_{\alpha1}$ und einem $K_{\alpha2}$ Zerfall unterschieden werden. Aus \cref{B3} kann für die einzelnen Zerfälle folgende Werte zugeordnet werden.
-\begin{align*}
-    K_{\alpha} &= 8,028 keV \\
-    K_{\beta} &= 8,867 keV
-\end{align*}
-Als weitere Motivation wird gezeigt, wie ein Monochromatisches Spektrum erzeugt werden kann. Dafür gibt es zwei Methoden die erste Methode ist, indem der Kristall seine Richtung nicht ändert, die zweite Möglichkeit ist Monochromatisierung über Absorbtion zu erzeugen.
-
-
-\section{Auswertung}
-Zuerst wurden die verschiedenen Kennlinien aufgenommen. Dafür dient einmal ein Kaliumbromid(KBr)- und einmal ein Litiumfluoridkristall(LiF) als Analysator für die Energien der Kupferanode. Auf die Kupferanoden wurden die Elektronen mit einer Beschleunigungsspannung von 35keV beschleunigt. Das entspricht nach \cref{F1} einem Winkel im Spektrum von 3°. Bei späteren Versuchen wurde die Beschleunigungsspannung reduziert auf 25keV, sodass hier nur noch ein Winkel von 6° erreicht werden kann. Da die Netzebenen für die beiden Kristalle bekannt sind und der Winkel aus \cref{A1} entnommen werden kann,
+\section{Bestimmung der K-Linien und Monochromatisierung}
+\subsection{Auswertung}
+Zuerst wurden die verschiedenen Kennlinien aufgenommen. Dafür dient einmal ein Kaliumbromid- und einmal ein Lithiumfluoridkristall als Analysator für die Energien der Kupferanode. Auf die Kupferanoden wurden die Elektronen mit einer Beschleunigungsspannung von 35keV beschleunigt. Das entspricht nach \cref{eq:f1} einem Winkel im Spektrum von 3°. Bei späteren Versuchen wurde die Beschleunigungsspannung reduziert auf 25keV, sodass hier nur noch ein Winkel von 6° erreicht werden kann. Da die Netzenbenen für die beiden Kristalle bekannt sind und der Winkel aus \cref{A1} entnommen werden kann,
 \begin{align*}
     d_{LiF} &= (2,014 \cdot 10^{-10})m \\
     d_{KBr} &= (3,290 \cdot 10^{-10})m  
@@ -226,7 +173,7 @@ kann für alle n ein Mittelwert der $K_{\alpha}$ und der $K_{\beta}$ Strahlung g
     K_{\beta} &= (8,89 \pm 0,05) keV
 \end{align*}
 
-Als nächstes wurde dieselbe Messung mit einer Tubusblende mit einer Nickelfolie durchgeführt. Durch die Nickelfolie kam es zu einem geringen Intensitätsverlust der Strahlung. Da die Nickelfolie selbst einen Quantenübergang innerhalb der $K_{\alpha}$-Energie besitzt, werden diese Peaks wie in \cref{A3} bei Kaliumbromid und \cref{A4} bei Lithiumflourid zu sehen vollständig aufgehoben. Es bleiben nur noch die $K_{\beta}$-Energien übrig.
+Als nächstes wurde dieselbe Messung mit einer Tubusblende mit einer Nickelfolie durchgeführt. Durch die Nickelfolie kam es zu einem geringen Intensitätsverlust der Strahlung. Da aber die Nickelfolie selbst einen Quantenübergang innerhalb der $K_{\alpha}$-Energie besitzt, werden diese Peaks wie in \cref{A3} bei Kaliumbromid und \cref{A4} bei Lithiumflourid zu sehen vollständig aufgehoben. Es bleiben nur noch die $K_{\beta}$-Energien übrig.
 Somit kann nochmal die Energie der $K_{\beta}$ Strahlung bestimmt werden. 
 \begin{align*}
     K_{\beta} &= (8,87 \pm 0,03)keV
@@ -250,19 +197,18 @@ In diesem Teil wurde die Monochromatisierung dargestellt. Einmal bzgl. einem sta
     \caption{Hier ist die Monochromatisierung dargestellt über das Verfahren, dass der der Analysator fix gehalten wird.}
     \label{A6}
 \end{figure}
-In zweiten Fall wurde eine Nickelfolie zwischen Detektor und Analysator positioniert, sodass hier an \cref{A7} erkannt werden kann, dass ebenfalls eine Monochromatisierung ,in diesem Bereich des Spektrums, eintritt, da wie bereits oben erwähnt, die $K_{\alpha}$ Strahlung im Nickel einen Quantensprung hervorruft und somit der Peak verschwindet.
+In zweiten Fall wurde eine Nickelfolie zwischen Detektor und Analysator positioniert, sodass hier an \cref{A7} erkannt werden kann, adss ebenfalls eine Monochromatisierung eintritt, in diesem Bereich des Spektrums, da wie bereits oben erwähnt, die $K_{\alpha}$ Strahlung im Nickel einen Quantensprung hervorruft und somit der Peak verschwindet.
 \begin{figure}[h!]
     \centering
     \includegraphics[scale = 0.6]{abs-mono.png}
     \caption{Hier ist die Monochromatisierung dargestellt über das Verfahren, dass Zwischen Analysator und Detektor ein Nickelfilter zwischengeschaltet wurde. In Rot ist die Monochromatisierte Kurve dargestellt und in Schwarz die Lithiumflourid-Kurve aus \cref{A1}.}
     \label{A7}
 \end{figure}
+\subsection{Unsicherheiten}
+Die Unsicherheit des Winkel wo der Peak liegt wurde durch die Breite der Peaks abgeschätzt. Die Breite der Peaks nach beiden Seiten hinweg wurde auf $0,2$° geschätzt. Sodass sich eine Unsicherheit des Winkels durch die Dreickswahrscheinlichkeitssichtefunktion und der Umrechnung von Grad in Bogenmaß zu $0,0014$ Rad ergeben hat.
+Die Unsicherheiten der Bragg-Gleichung wurden durch Fehlerfortpflanzung bestimmt, wobei die einzige Unsicherheitsquelle im Bogenmaß war.
 
-\section{Unsicherheiten}
-Die Unsicherheit des Winkels, wo der Peak liegt, wurde durch die Breite des Peaks abgeschätzt. Die Breite der Peaks nach beiden Seiten hinweg wurde auf $0,2$° geschätzt. Sodass sich eine Unsicherheit des Winkels durch die Dreickswahrscheinlichkeitssichtefunktion und der Umrechnung von Grad in Bogenmaß zu $0,0014$ Rad ergeben hat.
-Die Unsicherheiten der Bragg-Gleichung wurden durch Fehlerfortpflanzung bestimmt, wobei die einzige Unsicherheitsquelle im Bogenmaß lag.
-
-\section{Diskussion}
+\subsection{Diskussion}
 Die Literaturwerte der Strahlungsarten lagen bei:
 \begin{align*}
     K_{\alpha} &= 8,028 keV \\
@@ -279,13 +225,39 @@ ergeben, die in Betrachtung zu den Messunsicherheiten genau den Literaturwerte e
 \end{align*}
 ermittelt werden, der ebenfalls in hinblick auf die Messunsicherheiten genau zu den Literaturwerten passt.
 
+\section{Abhängigkeit der Intensität von Stromstärke und Spannung}
+Zuerst wurde die Abhängigkeit der Intensität der K-Strahlung von der Stromstärke untersucht. Die Intensität entspricht der nach \cref{eq:korr} korrigierten Impulsrate. Dieser Zusammenhang ist in \cref{strom} dargestellt. Offensichtlich hängt die Intensität linear vom angelegten Anodenstrom ab. Dies bestätigt die Vorhersage nach \cref{eq:ik}. Die Steigung der $K_\alpha$-Linie ist dabei deutlich größer als die der $K_\beta$-Linie, was auch in allen anderen Versuchsteilen so gemessen wurde.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.6]{strom.eps}
+	\caption{Die korrigierte Impulsrate aufgetragen gegen die angelegte Stromstärke. Der lineare Verlauf ist deutlich erkennbar.}
+	\label{strom}
+\end{figure}
+
+Anschließend wurde der Einfluss einer Spannungsänderung auf die Intensität betrachtet. Auch hier entspricht die Intensität der nach \cref{eq:korr} korrigierten Impulsrate. Dieser Zusammenhang ist in \cref{spannung} dargestellt. Die Impulsrate steigt bei kleineren Spannungen erst langsam, bei höheren Spannungen aber immer stärker.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.45]{spannung.eps}
+	\caption{Die korrigierte Impulsrate aufgetragen gegen die Spannung.}
+	\label{spannung}
+\end{figure}
+
+Um den in \cref{eq:ik} dargestellten Zusammenhang zu überprüfen, wurde in \cref{spannung2} die korrigierte Impulsrate gegen $(U_A - U_K)^{1,5}$ aufgetragen. Hier ist der lineare Verlauf der beiden K-Linien wieder deutlich erkennbar, so wie in \cref{eq:ik} vorhergesagt.
+
+Somit konnte in diesem Abschnitt die Gültigkeit der Formel für die K-Linien in Kupfer gezeigt werden.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.45]{spannung2.eps}
+	\caption{Die korrigierte Impulsrate aufgetragen gegen $(U_A-U_K)^{1,5}$. Der lineare Verlauf ist deutlich erkennbar.}
+	\label{spannung2}
+\end{figure}
+
+\newpage
+
 \section{Absorptionsgesetz für Röntgenstrahlung}
-\subsection{Methode}
-Der Aufbau ist bis auf kleine Unterschiede analog zu \cref{Methode}. In diesem Fall wird für alle Versuchsteile eine Anodenspannung von 25kV angelegt. Außerdem wird hinter dem LiF-Kristall jeweils ein Absorber eingesetzt, welcher in diesem Teil des Versuchs hauptsächlich untersucht wird. In ersten Teil wird dabei Zink und Aluminium benutzt,wobei jeweils die Dicke der Absorber variiert wird und die verschiedenen Intensitäten verglichen werden, um den Absorptionskoeffizienten zu bestimmen. 
-
-Im zweiten Teil wird Nickel betrachtet, welches nach der Absorptionskante untersucht wird, wobei jeder Winkel 50s lang gemessen wird, um eine möglichst genaue Auflösung zu erhalten.
-
-Außerdem ist die Messung des LiF-Kristalls ohne Absorber benötigt.
 \subsection{Auswertung}
 \subsubsection{Absorptionskoeffizient Zink und Aluminium}
 
@@ -333,6 +305,9 @@ wobei n = 1 angenommen wird da das erste Maximum überwiegt. Die Absorptionskant
 Im ersten Teil der Untersuchung von Absorbern sollte der Absorptionskoeffizient berechnet werden. Ein Problem dabei war allerdings, dass der Wert bei d=0 nicht benutzt werden konnte, weshalb der Fit wesentlich ungenauer wird. Das lässt sich auch daran erkennen, dass die Amplituden $I_{0}$ in \cref{expo} sich deutlich voneinander unterscheiden, obwohl das für beide Funktionen der gleiche Wert sein sollte. Trotzdem scheinen sich die Absorptionskoeffizienten zumindest in der richtigen Größenordnung zu befinden, wie auch der Vergleich mit der empirischen Funktion \cref{Z} zeigt.
 
 Bei der Untersuchung von Nickel lies sich die Energie der k-Schale mit $E_{k} = \SI{8267 \pm 1303}{eV}$, die auch mit dem Literaturwert von $E_{k} = \SI{8,33}{keV}$ gut übereinstimmt, problemlos bestimmen. Allerdings sind die Werte in \cref{Kante} allesamt um einen Faktor von 4-10 größer, als in der Vorlage, was auf einen Fehler hinweisen könnte, was auch mit dem viel zu hohen Wert aus dem ersten Teil übereinstimmt. Höchstwahrscheinlich kommt dies durch einen Fehler in des Messung, wie z.B. unterschiedliche Blenden bei den verschiedenen Messungen. Trotzdem stimmt sowohl die grundlegende Form, als auch der Endwert mit den Literaturwerten überein. 
+
+\newpage
+
 \begin{thebibliography}{9}
 \bibitem{A}
 Phywe Schriftenreihe Handbuch Physik,Experimente mit Röntgenstrahlen,PHYWE SYSTEME GMBH \& Co.KG , D-37070 Göttingen
