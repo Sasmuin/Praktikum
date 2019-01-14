@@ -117,6 +117,39 @@ Im zweiten Versuchsteil wurde untersucht, welchen Einfluss die Anodenspannung un
 
 Hierfür wurde zuerst die Spannung konstant bei $35$kV gehalten und die Stromstärke in $0,1$mA-Schritten zwischen $0,1$mA und $1$mA variiert. Anschließend wurde die Stromstärke konstant bei $1$mA gehalten und die Spannung in $3$kV-Schritten zwischen $11$kV und $35$kV variiert. Gemessen wurde hier nur bei Kristallwinkeln zwischen $19$° und $24$°.
 
+In \cref{B1} ist der Aufbau zu sehen. In dem Kasten befindet sich eine Röntgenröhre. Das Charakteristische Material der Röntgenröhre ist Kupfer. Durch eine Blende kann die Röntgenstrahlung auf ein Analysator (in unserem Fall Kaliumbromid und Lithiumflourid) auftreffen und durch Bragg-Reflexion \cref{B2} auf einen Detektor (Geiger-Müller-Zählrohr) treffen. Diese Zählrate wird registriert und an einem Computer (rechts in \cref{B1}) dargestellt. Da das Geiger-Müller-Zählrohr eine Totzeit besitzt trifft mehr Strahlung ein als Registiert wird. Diese Korrektur ist in diesen Aufgabenteilen nicht nötig zu berücksichtigen, da für die Folgenden Auswertungen die Position der Maxima relevant ist und nicht deren Intensität.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale = 1]{M3/aufbau.png}
+    \caption{}
+    \label{B1}
+\end{figure}
+Um das Spektrum der Charakteristischen Strahlung der Anode qualitativ wird die Bragg-Bedingung benutzt. Diese kann durch \cref{B2} hergeleitet werden.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale = 1.5]{M3/bragg.png}
+    \caption{}
+    \label{B2}
+\end{figure}
+Man erhält für die Energie 
+\begin{align}
+    E &= \frac{nhc}{2d\sin{\theta}} \cref{F1}
+\end{align}
+Dabei sind $\theta$ der Winkel und d der Abstand zwischen zwei Gitterebenen (hier sind die (200)-Ebenen die Ebenen an denen die Reflexe austeten), wie in \cref{B2} zu sehen. h und c sind das Plank'sche Wirkungsquantum und die Lichtgeschwindigkeit. n stellt die Anzahl der Perioden der Wellenlängen bei einer konstruktiven Interferenz dar.
+Dadrurch können den entsprechenden Peaks eine Energie zugeordnet werden.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale = 1]{M3/termschema.png}
+    \caption{Hier ist das Thermschema einer Kupferanode dargestellt. Dabei sind die Relevanten Übergänge eingezeichnet.}
+    \label{B3}
+\end{figure}
+Über \cref{B3} kann dann verglichen werden, ob die jeweiligen Übergänge zu Literaturwerten passt. Da die Auflösung nicht groß genug ist kann nicht zwischen einem $K_{\alpha1}$ und einem $K_{\alpha2}$ Zerfall unterschieden werden. Aus \cref{B3} kann für die einzelnen Zerfälle folgende Werte zugeordnet werden.
+\begin{align*}
+    K_{\alpha} &= 8,028 keV \\
+    K_{\beta} &= 8,867 keV
+\end{align*}
+Als weitere Motivation wird gezeigt, wie ein Monochromatisches Spektrum erzeugt werden kann. Dafür gibt es zwei Methoden die erste Methode ist, indem der Kristall seine Richtung nicht ändert, die zweite Möglichkeit ist Monochromatisierung über Absorbtion zu erzeugen.
+
 \section{Auswertung}
 Zuerst wurde die Abhängigkeit der Intensität der K-Strahlung von der Stromstärke untersucht. Die Intensität entspricht der nach \cref{eq:korr} korrigierten Impulsrate. Dieser Zusammenhang ist in \cref{strom} dargestellt. Offensichtlich hängt die Intensität linear vom angelegten Anodenstrom ab. Dies bestätigt die Vorhersage nach \cref{eq:ik}. Die Steigung der $K_\alpha$-Linie ist dabei deutlich größer als die der $K_\beta$-Linie, was auch in allen anderen Versuchsteilen so gemessen wurde.
 
