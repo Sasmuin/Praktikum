@@ -60,7 +60,7 @@
 	\centering
 	{\scshape\LARGE Versuchsbericht zu \par}
 	\vspace{1cm}
-	{\scshape\huge STM - Rastertunnelmikroskop \par}
+	{\scshape\huge Raster-Tunnel-Mikroskopie, Spitzenpräparation und Messungen an Graphit und Gold     \par}
 	\vspace{2.5cm}
 	{\LARGE Gruppe 6 Mo\par}
 	\vspace{0.5cm}
@@ -71,7 +71,9 @@
 	durchgeführt am 17.12.2018\par
 	
 	\vfill
-	betreut von Christoph Angrick
+	betreut von Alexander Timmer\par
+	
+	\vfill
 	{\large \today\par}
 \end{titlepage}
 
@@ -79,9 +81,10 @@
 		
 \newpage
 \section{Kurzfassung}
-der Versuch beschäftigt sich mit dem Rastertunnelmikroskop. Im ersten Teil wird dabei die Theorie des STMs erläutert. Im zweiten Teil geht es darum eine Kupfer- und eine Goldprobe zu untersuchen. Dabei wird versucht die atomare Struktur beider Proben näher zu untersuchen. Für die Kupferprobe ist es möglich die einzelnen Atome zu sehen und auch die Gitterkonstante konnte mit $a = \SI{1,419 \pm 0,008} {\AA}$ bestimmt werden. Bei der Goldprobe allerdings gibt es das Problem, dass die freien Elektronen an der Oberfläche sehr gleichmäßig verteilt sind, weshalb nur einzelne Stufen auf der Goldoberfläche sichtbar werden. 
+Dieser Versuch beschäftigt sich mit dem Rastertunnelmikroskop. Im ersten Teil werden dabei die Theorie der Rastertunnelmikroskopie und der Tunneleffekt erläutert. Da eine exakte Berechnung des Tunnelstroms aufgrund fehlender Informationen und hoher Komplexität nicht durchgeführt werden kann, wird anschließend das bekannteste Modell zur angemessenen, genäherten Beschreibung der Rastertunnelmikroskopie, das Tersoff-Hamann-Modell, eingeführt. Im zweiten Teil geht es darum eine Kupfer- und eine Goldprobe zu untersuchen. Dabei wird versucht die atomare Struktur beider Proben näher zu untersuchen. Für die Kupferprobe ist es möglich die einzelnen Atome zu sehen und auch die Gitterkonstante konnte mit $a = \SI{1,419 \pm 0,008} {\AA}$ bestimmt werden. Bei der Goldprobe allerdings gibt es das Problem, dass die freien Elektronen an der Oberfläche sehr gleichmäßig verteilt sind, weshalb nur einzelne Stufen auf der Goldoberfläche sichtbar werden. 
 
 \section{Theorie}
+\subsection{Tunneleffekt und Rastertunnelmikroskopie}
 In der Physik spielen Oberflächen für die Eigenschaften von Stoffen eine große Rolle. Eine Methode, um die Beschaffenheit von Oberflächen genauer zu untersuchen, ist die Rastertunnelmikroskopie (eng. scanning tunneling mikroskopy, kurz: STM). Die STM gehört zu den Techniken der Rastersondenmikroskopie und basiert auf dem  quantenmechanischen Tunneleffekt. Dieser ermöglicht es Elektronen eine Potentialbarriere zwischen zwei Leitern zu durchdringen, obwohl die Barriere höher ist als die Energie des Elektrons. Im STM entspricht die Potentialbarriere dem Abstand zwischen der Spitze des Mikroskops und der zu untersuchenden Probe. Wird eine Spannung zwischen Spitze und Probe angelegt, fließt daher ein kleiner Tunnelstrom. Der einfachste Fall ist der einer rechteckigen Potentialbarriere, durch die ein freies Elektron tunnelt. Die Tunnelwahrscheinlichkeit ist für diesen Fall durch
 
 \begin{equation}
@@ -155,7 +158,7 @@ Zur Vereinfachung werden die Austrittsarbeiten von Spitze und Probe als gleich a
 	\label{eq:I3}
 \end{equation}
 
-Hierbei sind $\rho_\text{S}(E_\text{F})$ die normierte Zustandsdichte der Spitze und $\rho\text{P}(r_0, E_\text{F}) = \sum_{\nu} |\Psi_\nu(r_0)|^2 \delta(E_\nu - E_\text{F})$ die lokale Zustandsdichte der Probe.
+Hierbei sind $\rho_\text{S}(E_\text{F})$ die normierte Zustandsdichte der Spitze und\\ $\rho_\text{P}(r_0, E_\text{F}) = \sum_{\nu} |\Psi_\nu(r_0)|^2 \delta(E_\nu - E_\text{F})$ die lokale Zustandsdichte der Probe.
 
 Aus \cref{eq:I3} ergeben sich einige wichtige Eigenschaften des Tunnelstroms im STM. Der Tunnelstrom hängt exponentiell vom Abstand zwischen Spitze und Probe ab.
 Wird der Tunnelstrom während der Messung konstant gehalten, variiert die Höhe der Spitze je nach elektronischer Struktur der Probe an dieser Stelle. Diese Abhängigkeit von der lokalen Zustandsdichte am Fermi-Niveau ermöglicht es, auf diese Weise die Topographie der Probe zu kartographieren. Diese enthält Informationen darüber, um welchen Stoff es sich handelt und wie die Atome im Gitter sortiert sind. Außerdem können Korngrenzen und Defekte im Kristallgitter identifiziert werden.
@@ -175,24 +178,24 @@ Mit diesem Modell lässt sich die Theorie hinter dem Rastertunnelmikroskop berei
 
 
 \section{Methode}
-Der wichtigste Teil des STMs ist der Messkopf. In diesem wird die Oberfläche der Probe abgetastet, indem der Tunnelstrom, der zwischen Messspitze und Probe fließt, mithilfe eines Operationsverstärkers in eine Spannung umgewandelt wird. Diese Spannung stellt das Messsignal dar. Damit Atome messbar werden muss die Messspitze auf ein $\AA$ genau eingestellt werden. 
+Der wichtigste Teil des STMs ist der Messkopf. In diesem wird die Oberfläche der Probe abgetastet, indem der Tunnelstrom, der zwischen Messspitze und Probe fließt, mithilfe eines Operationsverstärkers in eine Spannung umgewandelt wird. Diese Spannung stellt das Messsignal dar. Damit Atome messbar werden, muss die Messspitze auf ein $\AA$ genau eingestellt werden. 
 
 Dafür ist der Messkopf auf einer Steinplatte mit einer Gummimatte obendrauf gelagert, um Schwingungen zu minimieren. Die schwere Steinplatte steht wiederum auf 4 kleineren Gummifüßen. 
 Das System funktioniert so, dass die Eigenschwingung zwischen Steinplatte und Gummifüßen bei sehr kleinen Frequenzen stattfinden. Außerdem haben die Gummifüße eine große Reibung und der Übertrag von Steinplatte auf Gummimatte ist wiederum sehr gering. Das führt dazu, dass leichte Schwingungen des Tisches praktisch keine Auswirkung auf die Messung haben.
 
-Die Messspitze ist ein Stück eines Pt-Ir Drahtes mit einer Länge von 5-10 mm und eine Breite von 0,1 mm. Die Spitze ist durch eine Blattfeder in der Kerbe einer Keramikplatte festgehalten. Eins der drei Piezoelemente ist direkt an der Keramikplatte befestigt. Ein Piezoelement ist ein Kristall an dem durch Anlegung einer Spannung eine sehr kleine mechanische Kraft erzeugt werden kann, welche zur Positionierung der Spitze verwendet wird. Es werden drei verschiedene Piezoelemente gebraucht, um die Spitze in alle drei Raumrichtungen mit sehr hoher Genauigkeit zu bewegen.
+Die Messspitze ist ein Stück eines Pt-Ir Drahts mit einer Länge von 5-10 mm und eine Breite von 0,1 mm. Die Spitze ist durch eine Blattfeder in der Kerbe einer Keramikplatte festgehalten. Eins der drei Piezoelemente ist direkt an der Keramikplatte befestigt. Ein Piezoelement ist ein Kristall, an dem durch Anlegung einer Spannung eine sehr kleine mechanische Kraft erzeugt werden kann, welche zur Positionierung der Spitze verwendet wird. Es werden drei verschiedene Piezoelemente gebraucht, um die Spitze in alle drei Raumrichtungen mit sehr hoher Genauigkeit zu bewegen.
 
 Zur Durchführung muss zunächst die Messspitze selbst hergestellt werden. Dafür wird ein Pt-Ir Draht abgeschnitten und mit einer Flachzange festgehalten. Gleichzeitig muss der Seitenschneider im 20°-45° Winkel zum Draht gehalten werden. Daraufhin muss der Seitenschneider und die Flachzange auseinandergezogen werden, während gleichzeitig der Draht mit dem Seitenschneider geschnitten wird. Im Optimalfall ersteht dabei eine Messspitze mit einer einatomigen Spitze, weil sonst die Qualität der Bilder stark leidet. Außerdem muss darauf geachtet werden, dass alle Geräte sauber sind, da schon leichte Verunreinigungen zu schlechteren Ergebnissen führen kann. Zudem muss die Gold- bzw. Graphitprobe eingesetzt werden, wobei besonders bei der Goldprobe aufgepasst werden muss, weil sich diese nicht reinigen lässt.
 
 
-Sobald sowohl die Messspitze als auch die Probe eingesetzt wurden wird Messspitze zuerst grob per Hand und dann später mit den eben genannten Piezoelementen auf 1 $\AA$ an die Probe herangeführt. 
+Sobald sowohl die Messspitze als auch die Probe eingesetzt wurden, wird Messspitze zuerst grob per Hand und dann später mit den eben genannten Piezoelementen auf $\SI{1}{\angstrom}$ an die Probe herangeführt. 
 
 Der Rest der Messung lässt sich mit dem Computer bzw. dem Easy-Scan Programm durchführen. Es muss sichergestellt werden, dass die Oberfläche der Probe senkrecht zur Messspitze steht. Danach müssen nur noch Bilder der Proben unter verschiedenen Parametern gemacht werden. 
-Alle Messungen wurden mit den Werten: SetPoint(Tunnelstrom): 1,001nA; P-Gain: 12;
+Alle Messungen wurden mit den Werten SetPoint(Tunnelstrom): 1,001nA; P-Gain: 12;
 I-Gain: 11; GapVoltage: 0,050V; durchgeführt.
 \section{Auswertung}
 \subsection{Graphit}
-Zuerst wird die Graphitprobe untersucht. Dafür muss allerdings erst klargestellt werden, wie das Graphitgitter aufgebaut ist. Ein Modell des Graphitgitter ist in \cref{gra1} zu sehen, dabei wird klar, dass die Ebenen jeweils zueinander versetzt sind, was dazu führt, dass einzelne Atome besser zu sehen sind als andere. Diese Atome können sich in drei verschiedene Gruppen aufteilen lassen:A,B und H, wie es in \cref{gra2} explizit zu sehen ist. Die oberen Atome sind dabei als weißer Kreis aufgezeichnet und die unteren als schwarzer Punkt. Somit setzten sich die drei Gruppen zusammen. A-Atome haben einen direkten Nachbarn in der Netzebene unter ihnen. B-Atome hingegen fehlt dieser Nachbar, während die H-Atome nur ein Atom in der zweiten Netzebene haben. Weil das Rastertunnelmikroskop den Ladungsstrom misst und dieser wiederum direkt von der Ladungsdichte abhängt verhalten sich die verschiedenen Atome auch unterschiedlich. Die A-Atome sind die durch die weiteren Atome direkt unter ihnen stärker gebunden, was dazu führt dass sich die Ladungsverteilung tiefer in dem Material befindet. Das macht sie für das Rastertunnelmikroskop praktisch unsichtbar.
+Zuerst wird die Graphitprobe untersucht. Dafür muss allerdings erst klargestellt werden, wie das Graphitgitter aufgebaut ist. Ein Modell des Graphitgitter ist in \cref{gra1} zu sehen. Dabei wird klar, dass die Ebenen jeweils zueinander versetzt sind, was dazu führt, dass einzelne Atome besser zu sehen sind als andere. Diese Atome können sich in drei verschiedene Gruppen aufteilen lassen:A,B und H, wie es in \cref{gra2} explizit zu sehen ist. Die oberen Atome sind dabei als weiße Kreise aufgezeichnet und die unteren als schwarze Punkte. Somit setzten sich die drei Gruppen wie folgt zusammen: A-Atome haben einen direkten Nachbarn in der Netzebene unter ihnen. B-Atome hingegen fehlt dieser Nachbar, während die H-Atome nur ein Atom in der zweiten Netzebene haben. Weil das Rastertunnelmikroskop den Ladungsstrom misst und dieser wiederum direkt von der Ladungsdichte abhängt verhalten sich die verschiedenen Atome auch unterschiedlich. Die A-Atome sind die durch die weiteren Atome direkt unter ihnen stärker gebunden, was dazu führt dass sich die Ladungsverteilung tiefer in dem Material befindet. Das macht sie für das Rastertunnelmikroskop praktisch unsichtbar.
 
 \begin{figure}[h!]
 	\centering
@@ -209,7 +212,7 @@ Zuerst wird die Graphitprobe untersucht. Dafür muss allerdings erst klargestell
 	\label{gra2}
 \end{figure}
 
-Mit diesem Wissen ist es allerdings möglich das Graphit zu untersuchen und auch die Gitterkonstante zu berechnen. Um die Gitterkonstante zu berechnen wurden verschiedene Bilder wie beispielsweise \cref{scan3} benutzt. Dafür wird jeweils der Abstand von mehreren Gitterabständen genommen und dieser dann gemittelt. Dieser Vorgang wird mehrfach wiederholt und diese Werte wiederum gemittelt. Damit folgt eine mittlere Gitterkonstante der B-Atome von $a_{B} = \SI{2,457 \pm 0,012}{\AA}$. Die Unsicherheit folgt dabei aus der Größe der einzelnen B-Atome und der Mittelwertabweichung. Die eigentliche Gitterkonstante kann mithilfe des Kosinussatzes berechnet werden. Da es sich jeweils um ein gleichschenkliges Dreieck handelt (vgl. \cref{gra2}) kürzt sich dieser zu
+Mit diesem Wissen ist es möglich das Graphit zu untersuchen und auch die Gitterkonstante zu berechnen. Um die Gitterkonstante zu berechnen, wurden verschiedene Bilder wie beispielsweise \cref{scan3} benutzt. Dafür wird jeweils der Abstand von mehreren Gitterabständen genommen und dieser dann gemittelt. Dieser Vorgang wird mehrfach wiederholt und diese Werte wiederum gemittelt. Damit folgt eine mittlere Gitterkonstante der B-Atome von $a_{B} = \SI{2,457 \pm 0,012}{\AA}$. Die Unsicherheit folgt dabei aus der Größe der einzelnen B-Atome und der Mittelwertabweichung. Die eigentliche Gitterkonstante kann mithilfe des Kosinussatzes berechnet werden. Da es sich jeweils um ein gleichschenkliges Dreieck handelt (vgl. \cref{gra2}) kürzt sich dieser zu
 \begin{equation}
 a^{2} = a_{B}^2(1 - 2 \cos(\theta)),
 \end{equation}
@@ -232,7 +235,7 @@ Die gerade eben genannte Verzerrung kommen im Normalfall durch sogenannte Drifts
 	\label{scan1}
 \end{figure}
 \newpage
-\section{Gold}
+\subsection{Gold}
 Gold ist wesentlich schwieriger zu untersuchen als Graphit, da die freien Elektronen sehr gleichmäßig verteilt sind. Einzelne Atome sind deshalb selten bis gar nicht zu erkennen. Allerdings ist es möglich einzelne Stufen zu erkennen, an denen die Oberfläche ein Atom größer bzw. kleiner wird. Außerdem ist es manchmal möglich einzelne Kristallfehler zu entdecken. 
 
 \begin{figure}[h!]
@@ -248,11 +251,11 @@ In \cref{gold} sind einige dieser Stellen zu sehen. Die einzelnen Stufen sind be
 \section{Diskussion}
 Insgesamt konnten die wichtigsten Beobachtungen erfolgreich gemacht werden. Die Struktur von Graphit ist, soweit wie möglich, in \cref{gra1}, deutlich zu erkennen und auch die berechnete Gitterkonstante mit $a = \SI{1,419 \pm 0,008} {\AA}$ stimmt gut mit dem Literaturwert von $a = \SI{1,42} {\AA}$ überein. In Gold war wie zu erwarten die atomare Struktur in \cref{gold} nicht zu erkennen, allerdings ist es möglich mehrere Stufen und auch einige Gitterfehler zu sehen. 
 
-Die größte Schwierigkeit des Versuchs war dabei das Herstellen einer funktionierenden Messspitze. Der aktuelle Verfahren ist, besonders für ungeübte Praktikanten, sehr schwierig und kann bei Versagen dazu führen, dass überhaupt keine sinnvollen Messwerte aufgenommen werden können. Möglicherweise wäre es sinnvoll eine vorgefertigte Messspitze bereitzustellen, um die Durchführung vom Rest des Versuches zu gewährleisten.
+Die größte Schwierigkeit des Versuchs war dabei das Herstellen einer funktionierenden Messspitze. Das aktuelle Verfahren ist, besonders für ungeübte Praktikanten, sehr schwierig und kann bei Versagen dazu führen, dass überhaupt keine sinnvollen Messwerte aufgenommen werden können. Möglicherweise wäre es sinnvoll eine vorgefertigte Messspitze bereitzustellen, um die Durchführung vom Rest des Versuches zu gewährleisten.
  
 
 \section{Anmerkung}
-Alle Messwerte sind vom Ordner BA-B-07, Ba-B-05 der Example-Data
+Alle Messwerte sind aus Ordner BA-B-07, Ba-B-05 der Example-Data entnommen.
 
 \newpage
 \begin{thebibliography}{9}
