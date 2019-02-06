@@ -89,7 +89,7 @@ Der Stickstofflaser besteht aus zwei gleich geladenen Platten,die über einen Wi
 
 Für die ersten 3 Messungen von Pulsenergie, Repetitionsrate und Impulsdauer sind einfache Messungen mit einer Photodiode, die an einem Oszilloskop angeschlossen ist, nötig. Die ersten beiden Messungen werden, dabei mit einer "langsameren" Diode gemessen, während für die letztere die schnelle Diode zu benutzten ist.
 
-Der untersuchte Stickstofflaser kommt aufgrund seiner Konstruktionsweise ohne Resonator aus, mit dem normalerweise eine bestimmte Wellenlänge und ein festgelegtes Strahlprofil erzeugt werden. Daher wurde im nächsten Versuchsteil die Divergenz des Strahls bestimmt. Hierzu wurde die Intensität des Strahls an verschiedenen Stellen vertikal entlang des Strahldurchmessers im Abstand von $\SI{30}{cm}$ und $\SI{3}{m}$ zum Laser gemessen. Hierfür wurde im Abstand von $\SI{30}{cm}$ alle $\SI{0,5}{mm}$ ein Messwert genommen, im Abstand von $\SI{3}{m}$ wurde jeden Millimeter ein Messwert genommen.
+Der untersuchte Stickstofflaser kommt aufgrund seiner Konstruktionsweise ohne Resonator aus, mit dem normalerweise eine bestimmte Wellenlänge und ein festgelegtes Strahlprofil erzeugt werden. Daher wurde im nächsten Versuchsteil die Divergenz des Strahls bestimmt. Hierzu wurde die Intensität des Strahls an verschiedenen Stellen vertikal entlang des Strahldurchmessers im Abstand von $\SI{30}{cm}$ und $\SI{3}{m}$ zum Laser mit einer Photodiode gemessen. Hierfür wurde im Abstand von $\SI{30}{cm}$ alle $\SI{0,5}{mm}$ ein Messwert genommen, im Abstand von $\SI{3}{m}$ wurde jeden Millimeter ein Messwert genommen. Um Messung in diesem feinen Abständen zu realisieren, wurde die Photodiode auf einem Verschiebetisch positioniert, der senkrecht zum Strahl mithilfe einer Mikrometerschraube verstellt wurde.
 Anschließend wurde eine Linse in den Strahlgang gestellt, um den Laserstrahl zu kollimieren. Nun wurde die Messung im Abstand von $\SI{3}{m}$ wiederholt, diesmal wurde alle $\SI{0,5}{mm}$ ein Messwert genommen. Da die Leistung des Laserstrahls stark schwankte, wurde für alle Messungen zur Divergenz am Oszilloskop der Mittelwert der Spannung aus 64 Werten gebildet.
 
 \begin{figure}[h!]
@@ -137,5 +137,32 @@ Als nächstes soll die Impulsdauer eines einzelnen Impulses bestimmt werden. Die
 	\caption{Genau Auflösung eines Pulses zur Bestimmung der Pulsdauer}
 	\label{Pulsdauer}
 \end{figure}
+
+\subsection{Divergenz}
+Die Intensitätsverteilung des Laserstrahls in unterschiedlichen Abständen vom Laser ist in \cref{breite} dargestellt.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.7]{breite.png}
+	\caption{Intensität des Laserstrahls aufgetragen gegen den waagerechten Abstand vom Maximum der Intensität in 30cm und 3m Entfernung, einmal mit und einmal ohne Linse im Strahlgang}
+	\label{breite}
+\end{figure}
+
+Die Messung im Abstand von 30cm ergibt eine schmale, hohe Gaußkurve, da der Laserstrahl an diesem Punkt noch einen kleinen Durchmesser besitzt. In $\SI{3}{m}$ Entfernung ist der Strahl bereits deutlich breiter, außerdem liegt das Intensitätsmaximum etwa $\SI{80}{V}$ niedriger als in $\SI{30}{cm}$ Entfernung. Diese beiden Kurven entsprechen den intuitiven Erwartungen. Die Verbreiterung des Strahls ist auch in \cref{strahlprofil} deutlich sichtbar, wo das Strahlprofil des Lasers linear genähert wurde. Als Rand des Lasers wurden hier die Orte definiert, an denen die Intensität auf die Hälfte des Maximums abgefallen war. Der Strahl verbreitert sich offenbar ohne die Verwendung optischer Instrumente um $\SI{1,056\pm0,025}{mm}$ pro Zentimeter Abstand zum Laser.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.7]{strahlprofil.png}
+	\caption{Strahlprofil des unveränderten und des kollimierten Strahls.}
+	\label{strahlprofil}
+\end{figure}
+
+Um diesen Effekt, der die Strahlqualität deutlich reduziert, zu verhindern, wird nun zur Kollimierung des Strahls in einem Abstand von $\SI{55,5}{cm}$ eine Sammellinse positioniert. Mit dieser Linse im Strahlgang wurde die dritte Messreihe aufgenommen. An den Rändern verhält sich der Laser ähnlich wie in den vorherigen Messreihen, die Intensität steigt zuerst stark an. In der Mitte des Strahls allerdings, wo das Intensitätsmaximum erwartet wird, fällt die Intensität stark ab, sodass der Laserstrahl fast komplett verschwindet. Dieses Verhalten war so nicht erwartet worden, die Intensitätsverteilung weicht stark von der charakteristischen Intensitätsverteilung eines Lasers, wie sie in den beiden vorherigen Messreihen beobachtet werden konnte, ab. Vielmehr ähnelt sie zwei parallel nebeneinander verlaufenden Laserstrahlen.
+
+In \cref{strahlprofil} wurden zur Ermittlung des Strahlprofils die äußeren Halbwertsbreiten zu den beiden Maxima als Breite des gesamten Strahls verwendet. Hieraus ergab sich, dass sich der Strahl hier nicht verbreitert, sondern sogar um $\SI{0,130\pm0,025}{mm}$ pro Zentimeter Abstand vom Laser schmaler wird. Die Linse wurde also nicht optimal positioniert, da sie den Strahl zu stark fokussiert.
+
+Ein möglicher Grund für die untypische Strahlcharakteristik der letzten Messreihe ist, dass die Sammellinse nicht optimal positioniert wurde. Da sie den Strahl nicht nur kollimiert, sondern sogar schmaler werden lässt, wäre es möglich, das die äußeren Anteile des Strahls, die in die Mitte gebrochen werden, mit den Anteilen im Zentrum des Strahls destruktiv interferieren, sodass keine Intensität gemessen wurde. Außerdem lieferte der Laser zu diesem Zeitpunkt des Versuch nur eine sehr stark schwankende Leistung, was die Messwerte weiter verfälscht haben könnte.
+
+Die Unsicherheit bei der Messung der Breite beträgt nur $\SI{\pm0,005}{mm}$, da sich die Position mit der Mikrometerschraube präzise bestimmen ließ, und spielt daher in der Berechnung keine Rolle. Eine etwas größere Rolle spielt die Unsicherheit beim Ablesen der Halbwertsbreite. Da nur alle $\SI{0,5}{mm}$ bzw. alle $\SI{1}{mm}$ ein Messwert genommen wurde, kann die Unsicherheit der Position der Halbwertsbreite auf $\SI{\pm0,5}{mm}$ abgeschätzt werden. Mithilfe der Fehlerfortpflanzung kann so die Unsicherheit der Verbreiterung des Strahls bestimmt werden. Diese beträgt $\SI{\pm0,025}{mm}$.
 
 \end{document}
