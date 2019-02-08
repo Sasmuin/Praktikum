@@ -64,7 +64,7 @@
 	\centering
 	{\scshape\LARGE Versuchsbericht zu \par}
 	\vspace{1cm}
-	{\scshape\huge Raster-Tunnel-Mikroskopie, Spitzenpräparation und Messungen an Graphit und Gold     \par}
+	{\scshape\huge Stickstofflaser, Untersuchung der Eigenschaften eines Lasers am Beispiel des Stickstofflasers     \par}
 	\vspace{2.5cm}
 	{\LARGE Gruppe 6 Mo\par}
 	\vspace{0.5cm}
@@ -72,10 +72,10 @@
 	{\large Oliver Brune (E-Mail: o\_brun02@wwu.de) \par}
 	{\large Anthony Pietz (E-Mail: a\_piet09@wwu.de) \par}
 	\vfill
-	durchgeführt am 17.12.2018\par
+	durchgeführt am 14.01.2019\par
 	
 	\vfill
-	betreut von Alexander Timmer\par
+	betreut von Tobias Reiker\par
 	
 	\vfill
 	{\large \today\par}
@@ -100,7 +100,7 @@ Anschließend wurde eine Linse in den Strahlgang gestellt, um den Laserstrahl zu
 \end{figure}
 
 Im nächsten Abschnitt sollte mithilfe des Laserstrahls die Lichtgeschwindigkeit bestimmt werden. Dazu wird zuerst der Strahl mithilfe eines Strahlteilers im Abstand von $\SI{13,5}{cm}$ zum Laser teilweise um $90$° abgelenkt. Im um $90$° reflektierten Strahl wurde eine Photodiode im Abstand von $\SI{8,3}{cm}$ platziert. Diese wird mit dem Oszilloskop verbunden. Auch in den nicht reflektierten Strahl wird im Abstand von $\SI{8,3}{cm}$ eine Photodiode platziert. Diese wird auch mit Oszilloskop verbunden, allerdings mit einem deutlich längeren Kabel. Da das Signal im längeren Kabel einen längeren Weg zurücklegen muss als das Signal im kürzeren Kabel, erreichen die Signale das Oszilloskop zu unterschiedlichen Zeiten.
-Anschließend wird die zweite Photodiode um drei Meter vom Laser entfernt und die Messung wiederholt. Die Entfernung, die das Licht zur zweiten Photodiode zurücklegen muss, wird nun in Schritten von drei Metern immer weiter erhöht. Hierzu werden, wie in \cref{skizze_c} dargestellt, Spiegel verwendet, die den Laserstrahl über immer größere Strecken zur Photodiode lenken.
+Anschließend wird die zweite Photodiode um drei Meter vom Laser entfernt und der Strahl, wie bereits im vorherigen Versuchsteil, mit einer Sammellinse, die in einem Abstand von $\SI{55,5}{cm}$ zum Laser positioniert wird, kollimiert. Unter diesen veränderten Parametern wird die Messung wiederholt. Die Entfernung, die das Licht zur zweiten Photodiode zurücklegen muss, wird nun in Schritten von drei Metern immer weiter erhöht. Hierzu werden, wie in \cref{skizze_c} dargestellt, Spiegel verwendet, die den Laserstrahl über immer größere Strecken zur Photodiode lenken.
 Aus der Zeitdifferenz zwischen den beiden Signalen und der Distanz zwischen den optischen Instrumenten lässt sich nun die Lichtgeschwindigkeit bestimmen.
 
 \section{Ergebnis}
@@ -164,5 +164,14 @@ In \cref{strahlprofil} wurden zur Ermittlung des Strahlprofils die äußeren Hal
 Ein möglicher Grund für die untypische Strahlcharakteristik der letzten Messreihe ist, dass die Sammellinse nicht optimal positioniert wurde. Da sie den Strahl nicht nur kollimiert, sondern sogar schmaler werden lässt, wäre es möglich, das die äußeren Anteile des Strahls, die in die Mitte gebrochen werden, mit den Anteilen im Zentrum des Strahls destruktiv interferieren, sodass keine Intensität gemessen wurde. Außerdem lieferte der Laser zu diesem Zeitpunkt des Versuch nur eine sehr stark schwankende Leistung, was die Messwerte weiter verfälscht haben könnte.
 
 Die Unsicherheit bei der Messung der Breite beträgt nur $\SI{\pm0,005}{mm}$, da sich die Position mit der Mikrometerschraube präzise bestimmen ließ, und spielt daher in der Berechnung keine Rolle. Eine etwas größere Rolle spielt die Unsicherheit beim Ablesen der Halbwertsbreite. Da nur alle $\SI{0,5}{mm}$ bzw. alle $\SI{1}{mm}$ ein Messwert genommen wurde, kann die Unsicherheit der Position der Halbwertsbreite auf $\SI{\pm0,5}{mm}$ abgeschätzt werden. Mithilfe der Fehlerfortpflanzung kann so die Unsicherheit der Verbreiterung des Strahls bestimmt werden. Diese beträgt $\SI{\pm0,025}{mm}$.
+
+\subsection{Lichtgeschwindigkeit}
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=0.6]{lichtgeschwindigkeit.png}
+	\caption{Die Zeitdifferenz zwischen der Detektion der Laserpulse in den beiden Photodioden. Dagegen aufgetragen ist der Laufzeitunterschied des Laserstrahls zwischen den beiden Photodioden.}
+	\label{lichtgeschwindigkeit}
+\end{figure}
 
 \end{document}
