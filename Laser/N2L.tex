@@ -99,7 +99,7 @@ Bei der Impulsdauer wurden wiederum ein Impuls aufgenommen und die Dauer dieses 
 Die ersten beiden Messungen werden, dabei mit einer "langsameren" Diode gemessen, während für die letztere die schnelle Diode zu benutzten ist. Das ist der Fall, weil die schnellere Photodiode zwar schneller auf Änderungen reagiert, allerdings den Nachteil hat, dass sie ebenso schnell übersteuert.
 
 Der untersuchte Stickstofflaser kommt aufgrund seiner Konstruktionsweise ohne Resonator aus, mit dem normalerweise eine bestimmte Wellenlänge und ein festgelegtes Strahlprofil erzeugt werden. Daher wurde im nächsten Versuchsteil die Divergenz des Strahls bestimmt. Hierzu wurde die Intensität des Strahls an verschiedenen Stellen vertikal entlang des Strahldurchmessers im Abstand von $\SI{30}{cm}$ und $\SI{3}{m}$ zum Laser mit einer Photodiode gemessen. Hierfür wurde im Abstand von $\SI{30}{cm}$ alle $\SI{0,5}{mm}$ ein Messwert genommen, im Abstand von $\SI{3}{m}$ wurde jeden Millimeter ein Messwert genommen. Um Messung in diesem feinen Abständen zu realisieren, wurde die Photodiode auf einem Verschiebetisch positioniert, der senkrecht zum Strahl mithilfe einer Mikrometerschraube verstellt wurde.
-Anschließend wurde eine Linse in den Strahlgang gestellt, um den Laserstrahl zu kollimieren. Nun wurde die Messung im Abstand von $\SI{3}{m}$ wiederholt, diesmal wurde alle $\SI{0,5}{mm}$ ein Messwert genommen. Da die Leistung des Laserstrahls stark schwankte, wurde für alle Messungen zur Divergenz am Oszilloskop der Mittelwert der Spannung aus 64 Werten gebildet.
+Anschließend wurde eine Linse in den Strahlgang gestellt, um den Laserstrahl zu kollimieren. Nun wurde die Messung im Abstand von $\SI{3}{m}$ wiederholt, diesmal wurde alle $\SI{0,5}{mm}$ ein Messwert genommen. Da die Leistung des Laserstrahls stark schwankte, wurde für alle Messungen zur Divergenz am Oszilloskop mithilfe der Funktion "Aquire" der Mittelwert der Spannung aus 64 Werten gebildet.
 
 \begin{figure}[h!]
 	\centering
@@ -111,6 +111,7 @@ Anschließend wurde eine Linse in den Strahlgang gestellt, um den Laserstrahl zu
 Im nächsten Abschnitt sollte mithilfe des Laserstrahls die Lichtgeschwindigkeit bestimmt werden. Dazu wird zuerst der Strahl mithilfe eines Strahlteilers im Abstand von $\SI{13,5}{cm}$ zum Laser teilweise um $90$° abgelenkt. Im um $90$° reflektierten Strahl wurde eine Photodiode im Abstand von $\SI{8,3}{cm}$ platziert. Diese wird mit dem Oszilloskop verbunden. Auch in den nicht reflektierten Strahl wird im Abstand von $\SI{8,3}{cm}$ eine Photodiode platziert. Diese wird auch mit Oszilloskop verbunden, allerdings mit einem deutlich längeren Kabel. Da das Signal im längeren Kabel einen längeren Weg zurücklegen muss als das Signal im kürzeren Kabel, erreichen die Signale das Oszilloskop zu unterschiedlichen Zeiten.
 Anschließend wird die zweite Photodiode um drei Meter vom Laser entfernt und der Strahl, wie bereits im vorherigen Versuchsteil, mit einer Sammellinse, die in einem Abstand von $\SI{55,5}{cm}$ zum Laser positioniert wird, kollimiert. Unter diesen veränderten Parametern wird die Messung wiederholt. Die Entfernung, die das Licht zur zweiten Photodiode zurücklegen muss, wird nun in Schritten von drei Metern immer weiter erhöht. Hierzu werden, wie in \cref{skizze_c} dargestellt, Spiegel verwendet, die den Laserstrahl über immer größere Strecken zur Photodiode lenken.
 Aus der Zeitdifferenz zwischen den beiden Signalen und der Distanz zwischen den optischen Instrumenten lässt sich nun die Lichtgeschwindigkeit bestimmen.
+Auch bei dieser Messreihe wurde aufgrund der stark schwankenden Leistung des Lasers am Oszilloskop mithilfe der Funktion "Aquire" der Mittelwert aus $64$ Messungen verwendet.
 
 \section{Ergebnis}
 Zuerst wird versucht die Pulsenergie des Lasers zu bestimmen. Dazu muss zuerst die niedrigste Spannung ermittelt werden. Um das herauszufinden, wird der niedrigste Weert aus \cref{Energie} genommen. 
@@ -187,6 +188,7 @@ Ein möglicher Grund für die untypische Strahlcharakteristik der letzten Messre
 Die Unsicherheit bei der Messung der Breite beträgt nur $\SI{\pm0,005}{mm}$, da sich die Position mit der Mikrometerschraube präzise bestimmen ließ, und spielt daher in der Berechnung keine Rolle. Eine etwas größere Rolle spielt die Unsicherheit beim Ablesen der Halbwertsbreite. Da nur alle $\SI{0,5}{mm}$ bzw. alle $\SI{1}{mm}$ ein Messwert genommen wurde, kann die Unsicherheit der Position der Halbwertsbreite auf $\SI{\pm0,5}{mm}$ abgeschätzt werden. Mithilfe der Fehlerfortpflanzung kann so die Unsicherheit der Verbreiterung des Strahls bestimmt werden. Diese beträgt $\SI{\pm0,025}{mm}$.
 
 \subsection{Lichtgeschwindigkeit}
+Die Laserpulse haben, wie in \cref{Pulsdauer} zu erkennen ist, die Form einer Gaußkurve. Um nun die Zeitdifferenz zwischen beiden Signalen zu bestimmen, wird jeweils der früheste Zeitpunkt gewählt, an dem das Signal sichtbar wird. In \cref{lichtgeschwindigkeit} ist gegen diese Zeitdifferenz der Laufzeitunterschied zwischen dem um $90$° abgelenkten Laserstrahl und dem nicht abgelenkten Laserstrahl aufgetragen. Durch diese Messpunkte wird eine lineare Fitgerade gelegt. Die Steigung dieser Geraden entspricht der Geschwindigkeit des Lichts in der Einheit \SI{}{m/ns}. Die Gerade ist entlang der $y$-Achse nach unten verschoben, da in der Messung des Laufzeitunterschieds nicht die unterschiedliche Länge der beiden Kabel berücksichtigt wurde. Da diese jedoch in allen Messungen konstant ist, kann sie vernachlässigt werden. Umgerechnet ergibt sich aus diesen Messungen eine Lichtgeschwindigkeit von $\SI{301370\pm3970}{km/s}$. In diesem Bereich liegt auch der tatsächliche Wert von etwa $\SI{299 792}{km/s}$. Dies deutet auf eine korrekt durchgeführte Messung hin und stützt den bekannten Wert der Lichtgeschwindigkeit.
 
 \begin{figure}[ht!]
 	\centering
@@ -195,4 +197,10 @@ Die Unsicherheit bei der Messung der Breite beträgt nur $\SI{\pm0,005}{mm}$, da
 	\label{lichtgeschwindigkeit}
 \end{figure}
 
+Die Unsicherheit in der Entfernungsmessung, die durch die analoge Messung mit einem Maßband zustande kommt, kann auf $\SI{\pm0,005}{m}$ abgeschätzt werden. Die Unsicherheit der Zeitmessungen bei Verwendung der Funktion "Aquire" ist in der Anleitung des Oszilloskops mit \cref{eq:ut2} angegeben.
+\begin{equation}
+	u(\Delta t)_\text{Mittelwert} = \pm(\text{Abtastintervall} + \SI{100}{ppm} * \text{Ablesung} + \SI{0,4}{ns})
+	\label{eq:ut2}
+\end{equation}
+Unter Berücksichtigung dieser Unsicherheiten ergibt sich für die Steigung insgesamt eine Unsicherheit von $\SI{\pm0,00397}{m/ns}$.
 \end{document}
