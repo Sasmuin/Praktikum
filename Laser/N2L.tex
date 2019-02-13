@@ -102,9 +102,11 @@ Bei der Impulsdauer wurden wiederum ein Impuls aufgenommen und die Dauer dieses 
 
 Die ersten beiden Messungen werden, dabei mit einer "langsameren" Diode gemessen, während für die letztere die schnelle Diode zu benutzten ist. Das ist der Fall, weil die schnellere Photodiode zwar schneller auf Änderungen reagiert, allerdings den Nachteil hat, dass sie ebenso schnell übersteuert.
 
+\subsection{Divergenz}
 Der untersuchte Stickstofflaser kommt aufgrund seiner Konstruktionsweise ohne Resonator aus, mit dem normalerweise eine bestimmte Wellenlänge und ein festgelegtes Strahlprofil erzeugt werden. Daher wurde im nächsten Versuchsteil die Divergenz des Strahls bestimmt. Hierzu wurde die Intensität des Strahls an verschiedenen Stellen vertikal entlang des Strahldurchmessers im Abstand von $\SI{30}{cm}$ und $\SI{3}{m}$ zum Laser mit einer Photodiode gemessen. Hierfür wurde im Abstand von $\SI{30}{cm}$ alle $\SI{0,5}{mm}$ ein Messwert genommen, im Abstand von $\SI{3}{m}$ wurde jeden Millimeter ein Messwert genommen. Um Messung in diesem feinen Abständen zu realisieren, wurde die Photodiode auf einem Verschiebetisch positioniert, der senkrecht zum Strahl mithilfe einer Mikrometerschraube verstellt wurde.
 Anschließend wurde eine Linse in den Strahlgang gestellt, um den Laserstrahl zu kollimieren. Nun wurde die Messung im Abstand von $\SI{3}{m}$ wiederholt, diesmal wurde alle $\SI{0,5}{mm}$ ein Messwert genommen. Da die Leistung des Laserstrahls stark schwankte, wurde für alle Messungen zur Divergenz am Oszilloskop mithilfe der Funktion "Aquire" der Mittelwert der Spannung aus 64 Werten gebildet.
 
+\subsection{Lichtgeschwindigkeit}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.9]{skizze_c.png}
@@ -117,7 +119,49 @@ Anschließend wird die zweite Photodiode um drei Meter vom Laser entfernt und de
 Aus der Zeitdifferenz zwischen den beiden Signalen und der Distanz zwischen den optischen Instrumenten lässt sich nun die Lichtgeschwindigkeit bestimmen.
 Auch bei dieser Messreihe wurde aufgrund der stark schwankenden Leistung des Lasers am Oszilloskop mithilfe der Funktion "Aquire" der Mittelwert aus $64$ Messungen verwendet.
 
-\section{Ergebnis}
+\subsubsection{Übergänge}
+In einem Stickstofflaser können verschiedene Übergänge auftreten. Die Elektonen werden vom Grundzustand $X^1\Sigma_u$ in den $C^3\Pi_u$ gehoben und gehen dann in den Metastabilen Zustand $B^3\Pi_g$ über. Diese drei Übergänge stehen, wie folgt in Verbindung zueinander.
+\begin{align}
+\lambda_{C^3\Pi_u-B^3\Pi_g} =  \frac{\lambda_{C^3\Pi_u-X^1\Sigma_u}\lambda_{X^1\Sigma_u-B^3\Pi_g}}{\lambda_{C^3\Pi_u-X^1\Sigma_u}-\lambda_{C^3\Pi_u-X^1\Sigma_u}} 
+\end{align}
+
+\subsubsection{Linienverbreiterung}
+Das Spektrum eines Lasers weißt aufgrund gewisser Effekte eine Verbreiterung einzelner Peaks auf. Hier werden drei Faktoren berechnet. Die drei Effekte sind die natürliche Linienverbreiterung, die Dopplerverbreiterung und die Stoß- und Druckverbreiterung.
+Die natürliche Linienverbreiterung ergibt sich quantenmechanisch aus der Energieunbestimmtheit und wird durch 
+\begin{align}
+\Delta\nu &= \frac{1}{2\pi\tau}
+\end{align}
+beschrieben. Dabei stellt $\nu$ die Frequenz und $\tau$ die Lebensdauer dar. In unserem Fall beträgt die Lebensdauer $10$ns.
+Daraus errechnete sich ein Wert von 
+\begin{align*}
+\Delta\nu &= 1,6 \cdot 10^7 Hz
+\end{align*}
+Die Dopplerverbreiterung findet statt, da sich die Moleküle mit einer gewissen Geschwindigkeit bewegen. Diese wird durch 
+\begin{align}
+\Delta\nu_\text{D} &= 7,16 \cdot 10^{-7} \sqrt{\frac{T}{M}} \nu_0
+\end{align}
+berechnet. Hierbei stellt T die Raumtemperatur ($300$K)  und M die molare Masse für $\text{N}^2$ dar.
+Daraus errechnete sich ein Wert von
+\begin{align*}
+\Delta\nu_\text{D} &= 2,95 \cdot 10^9 Hz
+\end{align*}
+Der letzte Effekt ist die Druckverbreiterung. Diese wurde durch 
+\begin{align}
+\Delta\nu_\text{p} &= \frac{\sqrt{\frac{8}{\pi}}pd^2}{\sqrt{mkT}}
+\end{align}
+berechnet, wobei p der Druck, d der Teilchendurchmesser und m die Teilchenmasse ist. Daraus errechnete sich ein Wert von
+\begin{align*}
+\Delta\nu_\text{p} &= 3 \cdot 10^8.
+\end{align*}
+Die gesamte Linienverbreiterung ist die Summe aller Effekte und beträgt
+\begin{align*}
+\Delta\nu + \Delta\nu_\text{D} +  \Delta\nu_\text{p} &= 3,3 \cdot 10^{-9}Hz.
+\end{align*}
+Im Ortsraum entspricht das $0,0012$nm.
+
+
+\section{Auswertung}
+\subsection{Pulsenergie}
 Zuerst wird versucht die Pulsenergie des Lasers zu bestimmen. Dazu muss zuerst die niedrigste Spannung ermittelt werden. Um das herauszufinden, wird der niedrigste Weert aus \cref{Energie} genommen. 
 
 \begin{figure}[h!]
@@ -136,6 +180,7 @@ lässt sich dann die Energie des Pulses bestimmen.
 
 Die Unsicherheit für die Messung der Spannung liegt bei Einzelmessungen bei 3\%. Daraus folgt die Unsicherheit in \cref{eq:Energie}
 
+\subsection{Repititionsrate}
 Daraufhin soll die Repetitionsrate des Lasers bestimmt werden. Dazu wurden mehrere Pulse in \cref{Rep} aufgenommen und jeweils der Abstand zwischen ihnen bestimmt. Dazu wird jeweils der größte Zeitpunkt gewählt an dem der Puls noch messbar ist und dann die Differenz gebildet. Aus dem Mittelwert ergibt sich eine Repetitionsrate von $t_{Rep}$ = $\SI{0,0814 \pm 0,0006}{s]}$, was einer Frequenz von f = $\SI{12,29 \pm 0,09}{Hz}$ entspricht. Das stimmt auch mit dem vom Oszilloskop abgelesenen Wert von f = $\SI{12,15}{Hz}$ überein.
 
 \begin{figure}[h!]
@@ -152,7 +197,7 @@ u(\Delta t)[\text{s}] = \text{Abtastintervall} + \text{Ablesung} *10^{-4} +0,6*1
 \end{equation}
 Aus der Bildung des Mittelwerts folgt die Unsicherheit von $t_{Rep}$.
 
-
+\subsection{Impulsdauer}
 Als nächstes soll die Impulsdauer eines einzelnen Impulses bestimmt werden. Dies wird mithilfe von \cref{Pulsdauer} versucht. Dort ist auch sichtbar, dass die Pulse näherungsweise einer Gaußkurve haben. Die Halbwertsdauer lässt sich relativ einfach bestimmen. Dazu wird einfach geschaut, ab wann die Spannung auf die Hälfte des Maximalwertes abfällt. Daraus ergibt sich eine Halbwertsdauer von $t_{\tfrac{1}{2}} = \SI{13,3 \pm 0,6}{ns}$. Schwieriger ist es die Gesamtdauer des Pulses zu bestimmen, da die Spannung für kleine Werte anfängt zu schwanken. Wenn die Gesamtdauer so definiert ist, dass der Puls zu Ende ist, sobald die Spannung unter 0,24V fällt, dann ergibt sich eine Dauer des Gesamtimpulses von $t = \SI{14,180 \pm 0,0014}{ns}$. Die Definition wurde so gewählt, da ab diesem Wert die Spannung anfangen hat stark zu schwanken, allerdings ist diese Definition relativ willkürlich gewählt. 
 
 Die Unsicherheit wurde dabei analog mit \cref{eq:ut} berechnet.
@@ -208,50 +253,9 @@ Die Unsicherheit in der Entfernungsmessung, die durch die analoge Messung mit ei
 \end{equation}
 Unter Berücksichtigung dieser Unsicherheiten ergibt sich für die Steigung insgesamt eine Unsicherheit von $\SI{\pm0,00397}{m/ns}$.
 
-\subsection{Methoden}
-\subsubsection{Übergänge}
-In einem Stickstofflaser können verschiedene Übergänge auftreten. Die Elektonen werden vom Grundzustand $X^1\Sigma_u$ in den $C^3\Pi_u$ gehoben und gehen dann in den Metastabilen Zustand $B^3\Pi_g$ über. Diese drei Übergänge stehen, wie folgt in Verbindung zueinander.
-\begin{align}
-    \lambda_{C^3\Pi_u-B^3\Pi_g} =  \frac{\lambda_{C^3\Pi_u-X^1\Sigma_u}\lambda_{X^1\Sigma_u-B^3\Pi_g}}{\lambda_{C^3\Pi_u-X^1\Sigma_u}-\lambda_{C^3\Pi_u-X^1\Sigma_u}} 
-\end{align}
-
-\subsubsection{Linienverbreiterung}
-Das Spektrum eines Lasers weißt aufgrund gewisser Effekte eine Verbreiterung einzelner Peaks auf. Hier werden drei Faktoren berechnet. Die drei Effekte sind die natürliche Linienverbreiterung, die Dopplerverbreiterung und die Stoß- und Druckverbreiterung.
-Die natürliche Linienverbreiterung ergibt sich quantenmechanisch aus der Energieunbestimmtheit und wird durch 
-\begin{align}
-    \Delta\nu &= \frac{1}{2\pi\tau}
-\end{align}
-beschrieben. Dabei stellt $\nu$ die Frequenz und $\tau$ die Lebensdauer dar. In unserem Fall beträgt die Lebensdauer $10$ns.
-Daraus errechnete sich ein Wert von 
-\begin{align*}
-     \Delta\nu &= 1,6 \cdot 10^7 Hz
-\end{align*}
-Die Dopplerverbreiterung findet statt, da sich die Moleküle mit einer gewissen Geschwindigkeit bewegen. Diese wird durch 
-\begin{align}
-    \Delta\nu_\text{D} &= 7,16 \cdot 10^{-7} \sqrt{\frac{T}{M}} \nu_0
-\end{align}
-berechnet. Hierbei stellt T die Raumtemperatur ($300$K)  und M die molare Masse für $\text{N}^2$ dar.
-Daraus errechnete sich ein Wert von
-\begin{align*}
-      \Delta\nu_\text{D} &= 2,95 \cdot 10^9 Hz
-\end{align*}
-Der letzte Effekt ist die Druckverbreiterung. Diese wurde durch 
-\begin{align}
-    \Delta\nu_\text{p} &= \frac{\sqrt{\frac{8}{\pi}}pd^2}{\sqrt{mkT}}
-\end{align}
-berechnet. Wobei p der Druck, d der Teilchendurchmesser und m die Teilchenmasse ist. Daraus errechnete sich ein Wert von
-\begin{align*}
-       \Delta\nu_\text{p} &= 3 \cdot 10^8
-\end{align*}
-Die gesamte Linienverbreiterung beträgt die Summe aller Effekte und beträgt.
-\begin{align*}
-       \Delta\nu + \Delta\nu_\text{D} +  \Delta\nu_\text{p} &= 3,3 \cdot 10^{-9}Hz
-\end{align*}
-Im Ortsraum entspricht das $0,0012$nm.
-
-\subsection{Auswertung}
+\subsection{Wellenlänge}
 \subsubsection{Beschreibung des Spektrums}
-In \cref{Spektrumges} sieht man die gesamte Aufnahme des Spektrums. Es ist ein Hauptintensitätsmaximum bei einer Wellenlänge von etwa 337nm festzustellen. Desweiteren kann ein Nebenmaxima bei ca. 800nm begutachtet werden. An der Abbildung ist zu erkennen, das bei 800nm nur ein einzelner Punkt vorliegt, welcher als Maxima interpretiert werden kann. So lässt sich über diesen Peak aussagen, dass er sehr schmal sein muss.
+In \cref{Spektrumges} sieht man die gesamte Aufnahme des Spektrums. Es ist ein Hauptintensitätsmaximum bei einer Wellenlänge von etwa 337nm festzustellen. Desweiteren kann ein Nebenmaxima bei ca. 800nm begutachtet werden. An der Abbildung ist zu erkennen, dass bei 800nm nur ein einzelner Punkt vorliegt, welcher als Maximum interpretiert werden kann. So lässt sich über diesen Peak aussagen, dass er sehr schmal sein muss.
 \begin{figure}[h!] 
 	\centering
 	\includegraphics[scale = 1]{gesamt.png}
@@ -259,7 +263,7 @@ In \cref{Spektrumges} sieht man die gesamte Aufnahme des Spektrums. Es ist ein H
 	\label{Spektrumges}
 \end{figure}
 
-Anhand dieses Bildes ist zu erkennen,dass es sich bei dem großen Peak im allgemeinen nicht nur um ein Peak gehandelt hat, sondern um zwei. Der Hauptpeak, der bereits in Sättigung verläuft. Dies ist zu erkennen, da bei einer Impulsrate von ca. $4 \cdot 10^6$ Impulsen pro Sekunde eine konstante Zählrate zu beobachten ist. Ebenfalls ist der zweite Peak zu beobachten, dessen Energieniveau nur knapp oberhalb des Energieniveaus des Hauptpeaks liegt.
+Anhand dieses Bildes ist zu erkennen, dass es sich bei dem großen Peak im Allgemeinen nicht nur um ein Peak gehandelt hat, sondern um zwei. Der Hauptpeak ist der, der bereits in Sättigung verläuft. Dies ist zu erkennen, da bei einer Impulsrate von ca. $4 \cdot 10^6$ Impulsen pro Sekunde eine konstante Zählrate zu beobachten ist. Ebenfalls ist der zweite Peak zu beobachten, dessen Energieniveau nur knapp oberhalb des Energieniveaus des Hauptpeaks liegt.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale = 1.5]{fitbilfuns.png}
@@ -269,22 +273,22 @@ Anhand dieses Bildes ist zu erkennen,dass es sich bei dem großen Peak im allgem
 
 \subsubsection{Übergänge}
 In diesem Teil wird das Spektrum des Stickstofflasers untersucht. Dabei treten, die in dem Methodenteil genannten Übergänge auf. Anhand von \cref{naherpeak} ist zu erkennen, dass der Übergang von $X^1\Sigma_u$ in den $B^3\Pi_g$ den Peak darstellen muss, welcher bei $337 \pm 3$nm sein Maximum besitzt. Der Übergang von 
-$X^1\Sigma_u$ in den $C^3\Pi_u$-Zustand kann dem kleinen Peak bei etwa $330 \pm 0,1$nm beobachtet werden. Der letzte Peak der im Spektrum zu sehen ist müsste somit den Übergang von $C^3\Pi_u$ in den $B^3\Pi_g$ darstellen. Dieser muss genau die Energie besitzen der Differenz der anderen Peaks, deshalb liegt der im nahen Infrarotbereich, da hier die Übergänge Nah aneinander liegen. Nach dem Methodenteil folgt jedoch, dass der Peak bei $800$nm nicht aus den anderen Beiden Übergängen folgen kann, sodass wir hier den Ursprung des Peaks nicht kennen. 
+$X^1\Sigma_u$ in den $C^3\Pi_u$-Zustand kann in dem kleinen Peak bei etwa $330 \pm 0,1$nm beobachtet werden. Der letzte Peak, der im Spektrum zu sehen ist, müsste somit den Übergang von $C^3\Pi_u$ in den $B^3\Pi_g$ darstellen. Dieser muss genau die Energie der Differenz der anderen Peaks besitzen, deshalb liegt er im nahen Infrarotbereich, da hier die Übergänge nah aneinander liegen. Nach dem Methodenteil folgt jedoch, dass der Peak bei $800$nm nicht aus den anderen beiden Übergängen folgen kann, sodass wir hier den Ursprung des Peaks nicht kennen. 
 
 \subsubsection{Bandbreite}
-Um die Bandbreite des Peaks zu bestimmen wurde die Graphik \cref{naherpeak} herangezogen. Für die Bandbreite interessiert nur der Hauptpeak, da der kleine Peak nur kaum zu der Gesamtfläche beiträgt. Anhand der Modellierung des Hauptpeaks kann dann der kleinere Peak unbeachtet gelassen werden. Ebenfalls die Sättigungsgrenze des Hauptpeak ist für eine geeignete Modellierung nicht erwünscht. Wenn ein Peak in Sättigung aufgenommen wird, ist es logisch, dass wenn die Sättigung als Maximum betrachtet wird, die Halbwärtsbreite stark anwächst. Somit ist anhand der Messwerte aufjedenfall eine obere Grenze für die Halbwärtsbreite gegeben.
+Um die Bandbreite des Peaks zu bestimmen wurde \cref{naherpeak} herangezogen. Für die Bandbreite interessiert nur der Hauptpeak, da der kleine Peak kaum zu der Gesamtfläche beiträgt. Anhand der Modellierung des Hauptpeaks kann dann der kleinere Peak unbeachtet gelassen werden. Auch die Sättigungsgrenze des Hauptpeak ist für eine geeignete Modellierung nicht erwünscht. Wenn ein Peak in Sättigung aufgenommen wird, ist es logisch, dass, wenn die Sättigung als Maximum betrachtet wird, die Halbwertsbreite stark anwächst. Somit ist anhand der Messwerte auf jeden Fall eine obere Grenze für die Halbwertsbreite gegeben.
 Somit entsteht \cref{bilfun}. 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale = 1]{fitsnip.png}
+	\includegraphics[scale = 0.9]{fitsnip.png}
 	\caption{Die Messpunkte sind die Manipulierten Punkte aus \cref{naherpeak}. Die rote Kurve ist die mit OriginPro gefittete Kurve. Es handelt sich bei der Kurve um eine Gaußkurve die mittels der Levenberg Marquardt Iterationsmethode gefittet wurde.}
 	\label{bilfun}
 \end{figure}
-Dieser Fit scheint eine gute Näherung für diese Werte zu sein. Die Halbwärtsbreite des Fits wurde zu $5,1 \pm 0,2$nm berechnet. Dieser Wert ist zu der errechneten Halbwärtsbreite von $0,0012$nm um einen Faktor 1000 zu groß. Somit scheint der Fit keine gute Näherung zu bieten, sondern nur wie erwartet eine obere Grenze der Halbwärtsbreite darzustellen.
+Dieser Fit scheint eine gute Näherung für diese Werte zu sein. Die Halbwertsbreite des Fits wurde zu $5,1 \pm 0,2$nm berechnet. Dieser Wert ist zu der errechneten Halbwertsbreite von $0,0012$nm um einen Faktor 1000 zu groß. Somit scheint der Fit keine gute Näherung zu bieten, sondern nur wie erwartet eine obere Grenze der Halbwertsbreite darzustellen.
 
 
 \subsubsection{Farbstofflaser}
-In diesem Teil wurde der Stickstofflaser auf eine Farbstoffküvette geleitet. Der Farbstoff emittierte dabei Licht. Dabei konnte das Spektrum in \cref{Farbstoff} aufgenommen werden. Deutlich zu bemerken ist, dass sich das Spektrum vom Stickstoff in hohen Frequenzbereichen durch Anregung der Farbstoffküvette fast komplett aufgehoben hat. Stattdessen ist ein weiterer Peak hinzu gekommen, der durch den Farbstoff induziert wurde. Dieser ist bei einer Wellenlänge von ca. 600nm zu beobachten. Der kleinere Peak der ebenfalls beim Sticksoff zu erkennen war, ist auch hier zu erkennen. Da die Energie unterhalb der Anregungszustände im Farbstoff war, konnte sich dieser Peak nicht abbauen. 
+In diesem Teil wurde der Stickstofflaser auf eine Farbstoffküvette geleitet. Der Farbstoff emittierte dabei Licht. Dabei konnte das Spektrum in \cref{Farbstoff} aufgenommen werden. Deutlich zu bemerken ist, dass sich das Spektrum vom Stickstoff in hohen Frequenzbereichen durch Anregung der Farbstoffküvette fast komplett aufgehoben hat. Stattdessen ist ein weiterer Peak hinzu gekommen, der durch den Farbstoff induziert wurde. Dieser ist bei einer Wellenlänge von ca. 600nm zu beobachten. Der kleinere Peak, der ebenfalls beim Stickstoff zu erkennen war, ist auch hier zu erkennen. Da die Energie unterhalb der Anregungszustände im Farbstoff war, konnte sich dieser Peak nicht abbauen. 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale = 1.5]{peak.png}
@@ -303,18 +307,18 @@ Ein Vergleich mit folgender Tabelle führt uns auf zwei Stoffe.
 	\centering
 	\includegraphics[scale = 1]{data.png}
 	\caption{Dies stellt eine Vergrößerung von \cref{Farbstoff} dar.}
-	\label{cool}
+	\label{data}
 \end{figure}
 Coumarin 153 und Rhodamine 6G könnten beide Stoffe sein. Da der Peak im gesamten Bereich vorhanden ist, ist der Farbstoff ein Gemisch aus beiden Stoffen.
 
-\subsection{Unsicherheiten}
+\subsubsection{Unsicherheiten}
 Die theoretische Berechnung der Linienbreite wurde als exakt angenommen, da die einzelnen Komponenten alle einen so geringen Fehler besitzen, dass diese zu der angegebenen Anzahl an Stellen des theoretisch berechneten Ergebnisses vernachlässigbar klein sind.
 Hingegen sind die Fehler des experimentellen Versuchs auf 3\% für die Messung der Intensität festgesetzt worden und für die Wellenlängenmessung auf
 $0,02$nm. Die Messfehler wurden nur in den Grafiken eingebaut, mit deren Graphen Rechnungen durchgeführt worden sind. Die Unsicherheiten für die Halbwärtsbreite wurden durch das Program OriginPro berechnet. 
 
 
-\subsection{Diskussion}
+\subsubsection{Diskussion}
 In diesem Teil muss man sich mit zwei zentralen Aufgabenstellungen nochmal auseinandersetzen. Der erste Teil bezieht sich auf das aufgenommene Spektrum. 
 Innerhalb der Auswertung konnte keine Zuordnung des Nebenpeaks gefunden werden, sodass hier ein Effekt zu beobachten ist, der durch die Theorie nicht beschrieben wurde. 
-Der zweite Aspekt der zu diskutiere übrig bleibt, ist die Diskrepanz zwischen Experiment und Theorie. Hier liegt ein Größenunterschied von einem Faktor 1000 dazwischen. Da der Peak in Sättigung betrieben wurde ist, wie bereits oben erklärt, nur eine obere Grenze festzustellen. Dennoch sollte diese Grenze nicht um einen Faktor 1000 daneben liegen, da es bereits eine Korrektur der Messdaten vorgenommen wurde und ein Gaußförmiger Verlauf angenommen wurde. Der verlauf kann als gute Approximation angenommen werden, da diese genau die Wahrscheinlichkeitsverteilungen aus theoretischen Überlegnungen entsprechen. Sodass wir zu dem Schluss kommen, dass auf der theoretsichen Seite etwas schief gelaufen sein musste. Da es sich um einen faktor 1000 handelt, der diese Ergebnisse proportional voneinander trennt ist ein Fehler in den Einheiten zu vermuten.
+Der zweite Aspekt der zu diskutiere übrig bleibt, ist die Diskrepanz zwischen Experiment und Theorie. Hier liegt ein Größenunterschied von einem Faktor 1000 dazwischen. Da der Peak in Sättigung betrieben wurde ist, wie bereits oben erklärt, nur eine obere Grenze festzustellen. Dennoch sollte diese Grenze nicht um einen Faktor 1000 daneben liegen, da es bereits eine Korrektur der Messdaten vorgenommen wurde und ein gaußförmiger Verlauf angenommen wurde. Der Verlauf kann als gute Approximation angenommen werden, da diese genau die Wahrscheinlichkeitsverteilungen aus theoretischen Überlegungen entsprechen, sodass wir zu dem Schluss kommen, dass auf der theoretischen Seite etwas schief gelaufen sein musste. Da es sich um einen Faktor 1000 handelt, der diese Ergebnisse proportional voneinander trennt ist ein Fehler in den Einheiten zu vermuten.
 \end{document}
