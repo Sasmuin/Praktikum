@@ -1,5 +1,0 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {ngerman}
-\contentsline {section}{\numberline {1}Test-\IeC {\"U}berschrift}{1}{section.1}
-\contentsline {section}{\numberline {A}Anhang}{2}{appendix.A}
