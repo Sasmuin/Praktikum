@@ -1,36 +1,16 @@
 \section{Methoden und Durchführung}
-Zuerst soll die Kennlinie der Diode bestimmt werden. Dazu wird diese nach \cref{Aufbau} gemessen. Dabei wird die die Leistung der Mikrowellenstrahlung in Spannung umgewandelt. Dies wird auch in allen weiteren Messungen verwendet, da sich die Spannung einfacher direkt messen lässt.
-
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[scale=0.4]{../Diode_Aufbau.PNG}
-%	\caption{Skizze des Versuchaufbaus}
-%	\label{Aufbau}
-%\end{figure}
-
-Zuletzt sollen in zwei verschiedenen Koaxialkabeln stehende Wellen erzeugt und die Resonanzfrequenzen, bei denen die stehenden Wellen beobachtet werden, gemessen werden. Aus den Abständen zwischen den Resonanzen soll anschließend mit \cref{eq:c} die Ausbreitungsgeschwindigkeit der Welle im Kabel berechnet werden.
-\begin{equation}
-c = 2l(f_{n+1} - f_n)
-\label{eq:c}
-\end{equation}
-Zuletzt soll dann mit \cref{eq:er} die relative Permittivität bestimmt werden.
-\begin{equation}
-\epsilon_r = \left( \frac{c_0}{c}\right) ^2
-\label{eq:er}
-\end{equation}
-
-\section{Ergebnis}
 \subsection{Kennlinie}
-Zuerst wird die Kennlinie der Diode bestimmt. Diese wird in \cref{fuck_scidavis} dargestellt. Dabei wird mit einer e-Funktion gefittet, durch die beschrieben wird, welche Leistung in wie viel Spannung umgewandelt wird. 
+Zuerst soll die Kennlinie der Diode bestimmt werden. Dazu wird diese nach \cref{Aufbau} gemessen. Dabei wird die die Leistung der Mikrowellenstrahlung in Spannung umgewandelt. Dies wird auch in allen weiteren Messungen verwendet, da sich die Spannung einfacher direkt messen lässt.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{fuck_scidavis.PNG}
-	\caption{Kennlinie der Diode}
-	\label{fuck_scidavis}
+	\includegraphics[scale=0.4]{Diode_Aufbau.PNG}
+	\caption{Skizze des Versuchaufbaus}
+	\label{Aufbau}
 \end{figure}
 
-\section{Methoden}
+
+
 \subsection{Zirkulator}
 Ein Zirkulator ist ein Dreitor, welches eine stehende Welle nach dem Prinzip in \cref{ZB} weiterleitet.
 \begin{figure}[h!]
@@ -42,8 +22,8 @@ Ein Zirkulator ist ein Dreitor, welches eine stehende Welle nach dem Prinzip in 
 Bei einem idealen Zirkulator geht der gesamte Stromfluss ohne Verlust  durch den Zirkulator hindurch. Somit tritt kein Energieverlust zwischen den Toren auf. Die gesamte Energie von Tor 1 tritt an Tor 2 aus. Analog der Pfeile tritt die gesamte Energie, die in Tor 2 bzw. in Tor 3 einläuft, bei Tor 3 bzw. bei Tor 1 aus. Wichtige Größen zur Charkterisierung des Zirkulators sind die Bandbreite, die Durchlassrichtung und die Sperrdämpfung.
 
 \begin{align}
-    \text{Durchlassdämpfung} = 10 \cdot \ln{\frac{P_1}{P_2}}dB \\
-    \text{Sperrdämpfung} =  10 \cdot \ln{\frac{P_1}{P_3}}dB 
+\text{Durchlassdämpfung} = 10 \cdot \ln{\frac{P_1}{P_2}}dB \\
+\text{Sperrdämpfung} =  10 \cdot \ln{\frac{P_1}{P_3}}dB 
 \end{align}
 
 \subsection{Isolator}
@@ -60,18 +40,18 @@ Ein Richtkoppler ermöglicht es Wellen mit verschiedenen Ausbreitungsrichtungen 
 Der Richtkoppler ist in eine Hauptleitung und in eine Nebenleitung eingeteilt. Er funktioniert über das Prinzip von konstruktiver und destruktiver Interferenz. Dazu werden die Haupt- und Nebenleitungen über einen Draht mit  einer Länge von $\frac{\lambda}{4}$ verbunden. Betrachten wir den Fall,dass eine Welle in Tor 1 ein läuft, so spaltet sich die Welle im ersten Kopplungspunkt in zwei Teilwellen auf. Einmal folgt die Welle der Hauptleitung und einmal wird diese auf die Nebenleitung übertragen. Bis die Welle die Nebenleitung erreicht, vergeht eine Länge von $\frac{\lambda}{4}$. Ebenso vergeht eine Länge von $\frac{\lambda}{4}$, bis die Welle den zweiten Kopplungspunkt auf der Hauptleitung erreicht. Hier spaltet sich die Welle wieder auf und benötigt wiederum eine Länge von $\frac{\lambda}{4}$ um die Nebenleitung zu erreichen. Wenn jetzt eine Welle von Tor 1 zu Tor 4 betrachtet wird, kann aufgrund von konstruktiver Interferenz ein Leistungsübertrag beobachtet werden, wohingegen bei einer Welle von Tor 1 zu Tor 3 eine destruktive Interferenz beobachtet wird. Das hängt damit zusammen, da die Welle im zweiten Fall genau eine Wellenlängenänderung von $\frac{\lambda}{2}$ erfährt.
 Wie viel Leistung der Hauptleitung auf die Nebenleitung übertragen wird hängt von der Stärke der Kopplung ab. Sie wird durch die Koppeldämpfung beschrieben.
 \begin{align}
-    \text{Koppeldämpfung} = 10\cdot \ln{\frac{P_1}{P_4}}dB
-    \label{KppF}
+\text{Koppeldämpfung} = 10\cdot \ln{\frac{P_1}{P_4}}dB
+\label{KppF}
 \end{align}
 Die Isolation gibt an wie viel der Welle von Tor 1 ungewollt an Tor 3 ausgegeben wird.
 \begin{align}
-    \text{Isolation} = 10\cdot \ln{\frac{P_2}{P_4}}dB
-    \label{IsoF}
+\text{Isolation} = 10\cdot \ln{\frac{P_2}{P_4}}dB
+\label{IsoF}
 \end{align}
 Die Dämpfung auf der Hauptleitung gibt die Einfügedämpfung an. 
 \begin{align}
-     \text{Einfügedämpfung} = 10\cdot \ln{\frac{P_1}{P_2}}dB
-     \label{EinF}
+\text{Einfügedämpfung} = 10\cdot \ln{\frac{P_1}{P_2}}dB
+\label{EinF}
 \end{align}
 Um die Bauteile zu messen wird folgende Apparatur verwendet.
 \begin{figure}[h!]
@@ -82,11 +62,33 @@ Um die Bauteile zu messen wird folgende Apparatur verwendet.
 \end{figure}
 Der Aufbau ähnelt dem vom vorherigen Versuch zur Bestimmung der Diodenkennnlinie. Jetzt wird ein Messobjekt zwischen dem Mikrowellengenerator und der Diode eingebaut. Zuerst betrachten wir ein Isolator, danach ein Zirkulator und zum Schluss einen Richtkoppler. Zum messen all dieser Bauteile wird ein vorprogrammiertes LabVIEW Programm benutzt. Dieses zeichnet die Spannung in Abhängigkeit von der Frequenz auf. Die Messwerte werden in Dämpfung pro Frequenz aufgetragen, sodass die folgende Umrechnung erfolgen muss, wobei P die Leistung darstellen soll.
 \begin{align}
-    \text{dB} = 10\text{dBm} - \text{P}
-    \label{F1}
+\text{dB} = 10\text{dBm} - \text{P}
+\label{F1}
 \end{align}
 
+\subsection{Ausbreitungsgeschwindigkeit und relative Permittivität}
+Zuletzt sollen in zwei verschiedenen Koaxialkabeln stehende Wellen erzeugt und die Resonanzfrequenzen, bei denen die stehenden Wellen beobachtet werden, gemessen werden. Aus den Abständen zwischen den Resonanzen soll anschließend mit \cref{eq:c} die Ausbreitungsgeschwindigkeit der Welle im Kabel berechnet werden.
+\begin{equation}
+c = 2l(f_{n+1} - f_n)
+\label{eq:c}
+\end{equation}
+Zuletzt soll dann mit \cref{eq:er} die relative Permittivität bestimmt werden.
+\begin{equation}
+\epsilon_r = \left( \frac{c_0}{c}\right) ^2
+\label{eq:er}
+\end{equation}
+
 \section{Auswertung}
+\subsection{Kennlinie}
+Zuerst wird die Kennlinie der Diode bestimmt. Diese wird in \cref{fuck_scidavis} dargestellt. Dabei wird mit einer e-Funktion gefittet, durch die beschrieben wird, welche Leistung in wie viel Spannung umgewandelt wird. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{fuck_scidavis.PNG}
+	\caption{Kennlinie der Diode}
+	\label{fuck_scidavis}
+\end{figure}
+
 \subsection{Bauteile der Hochfrequenztechnik}
 In diesem Teil werden die Dämpfungen der Bauteile in Abhängigkeit der Frequenz dargestellt. Da in allen Messungen die Spannung in Abhängigkeit der Frequenz dargestellt wird, muss die Spannung zunächst mit der Formel der Diodenkennlinie in Leistung umgerechnet werden. Die Umrechnung von Leitung in Dämpfung erfolgt über \cref{F1}. Alle Grafiken wurden mit dem Programm OriginPro erstellt.
 \subsubsection{Isolator}
@@ -133,20 +135,35 @@ Im letzten Abschnitt werden Lichtgeschwindigkeit und Permittivität zwei verschi
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.7]{gleiches_Kabel.png}
+	\includegraphics[scale=0.6]{gleiches_Kabel.png}
 	\caption{Leistung in Abhängigkeit der Frequenz für offenes und kurzgeschlossenes Kabelende für Kabel 1. Deutlich erkennbar sind die Resonanzfrequenzen.}
 	\label{gleich}
 \end{figure}
 
-Außerhalb der Resonanzen beträgt die Leistung konstant etwa $\SI{8}{dBm}$, an den Resonanzen fällt sie um mehrere Größenordnungen ab. Für beide Messungen wurde der mittlere Abstand zwischen zwei Resonanzfrequenzen ermittelt. Hierfür wurde der Mittelwert aus allen Frequenzabständen benachbarter Resonanzen gebildet. Es ergeben sich Werte von $\SI{0,094\pm0,002}{GHz}$ für das offene Kabelende und $\SI{0,093\pm0,002}{GHz}$ für das geschlossene Kabelende. Die Unsicherheit ergeben sich aus direkt aus der Standardabweichung vom Mittelwert. Die Fehler der Geräte liegen unter $0,01\%$ und können daher vernachlässigt werden. Der mittlere Abstand der beiden Resonanzfrequenzen ist im Rahmen der Unsicherheit gleich. Die Art des Abschlusswiderstands hat damit offenbar keine Auswirkung auf den Abstand der Resonanzen. Allerdings treten die Resonanzen bei kurzgeschlossenem Ende jeweils bei um etwa $\SI{300}{MHz}$ höheren Frequenzen auf als die Resonanzen bei offenem Ende.
-
-Für ein anderes Kabel (im folgenden Kabel 2) wurde anschließend die gleiche Messung mit offenem Ende durchgeführt. In \cref{anderes} werden die Ergebnisse der Messungen mit offenem Ende beider Kabel verglichen. Direkt erkennbar ist, dass hier der Abstand zwischen zwei Resonanzen unterschiedlich ist.
+Außerhalb der Resonanzen beträgt die Leistung konstant etwa $\SI{8}{dBm}$, an den Resonanzen fällt sie um mehrere Größenordnungen ab. Für beide Messungen wurde der mittlere Abstand zwischen zwei Resonanzfrequenzen ermittelt. Hierfür wurde der Mittelwert aus allen Frequenzabständen benachbarter Resonanzen gebildet.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.8]{anderes_Kabel.png}
+	\includegraphics[scale=0.6]{anderes_Kabel.png}
 	\caption{Leistung in Abhängigkeit der Frequenz für offenes Kabelende für Kabel 1 und 2. Deutlich erkennbar sind die unterschiedlichen Abstände zwischen den Resonanzen.}
 	\label{anderes}
 \end{figure}
 
-Auf die gleiche Weise wie oben wurde anschließend der mittlere Abstand zweier benachbarter Resonanzen bestimmt, hierfür ergibt sich ein Wert von $\SI{0,106\pm0,002}{GHz}$. Dieser ist signifikant größer als der von Kabel 1.
+Es ergeben sich Werte von $\SI{0,094\pm0,002}{GHz}$ für das offene Kabelende und $\SI{0,093\pm0,002}{GHz}$ für das geschlossene Kabelende. Die Unsicherheit ergeben sich aus direkt aus der Standardabweichung vom Mittelwert. Die Fehler der Geräte liegen unter $0,01\%$ und können daher vernachlässigt werden. Der mittlere Abstand der beiden Resonanzfrequenzen ist im Rahmen der Unsicherheit gleich. Die Art des Abschlusswiderstands hat damit offenbar keine Auswirkung auf den Abstand der Resonanzen. Allerdings treten die Resonanzen bei kurzgeschlossenem Ende jeweils bei um etwa $\SI{300}{MHz}$ höheren Frequenzen auf als die Resonanzen bei offenem Ende.
+
+Für ein anderes Kabel (im folgenden Kabel 2) wurde anschließend die gleiche Messung mit offenem Ende durchgeführt. In \cref{anderes} werden die Ergebnisse der Messungen mit offenem Ende beider Kabel verglichen. Direkt erkennbar ist, dass hier der Abstand zwischen zwei Resonanzen unterschiedlich ist.
+
+
+Auf die gleiche Weise wie oben wurde anschließend der mittlere Abstand zweier benachbarter Resonanzen bestimmt, hierfür ergibt sich ein Wert von $\SI{0,106\pm0,002}{GHz}$. Dieser ist signifikant größer als der von Kabel 1. Aus den mittleren Frequenzabständen kann nun mit \cref{eq:c} die Ausbreitungsgeschwindigkeit der Wellen im Koaxialkabel bestimmt werden. Die hierfür erforderliche Länge des Kabel wurde mit einem Maßband gemessen. Es ergibt sich für Kabel 1 bei offenem Ende ein Wert von $\SI{235000\pm5088}{km/h}$ und bei kurzgeschlossenem Ende ein Wert von $\SI{233333\pm5966}{km/h}$.Wie erwartet ist die Ausbreitungsgeschwindigkeit der Welle im Kabel unabhängig vom gewählten Abschlusswiderstand. Für Kabel 2 ergibt sich ein Wert von $\SI{254363\pm5859}{km/h}$. Die Unsicherheiten wurden über die Fehlerfortpflanzung mit \cref{eq:uc} berechnet.
+
+\begin{equation}
+	u(c) = \sqrt{\left( 2u(l)\Delta f\right) ^2 +\left( 2u(\Delta f)l\right) ^2}
+	\label{eq:uc}
+\end{equation}
+
+Mithilfe der Ausbreitungsgeschwindigkeit kann nun über \cref{eq:er} die relative Permittivität bestimmt werden. Diese beträgt für Kabel 1 $\SI{1,627\pm0,070}{}$ bei offenem Ende bzw. $\SI{1,651\pm0,084}{}$. Es besteht also auch hier kein Unterschied bei verschiedenen Abschlusswiderständen. Für Kabel 2 beträgt die relative Permittivität $\SI{1,389\pm0,064}{}$. Die Unsicherheit wurde mit \cref{eq:uer} bestimmt.
+
+\begin{equation}
+	u(\epsilon_r) = \frac{2u(c)c^2}{c^3}
+	\label{eq:uer}
+\end{equation}
