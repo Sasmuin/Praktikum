@@ -1,0 +1,19 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Abstract}{1}{section.1}
+\contentsline {section}{\numberline {2}Methoden und Durchf\IeC {\"u}hrung}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Kennlinie}{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Zirkulator}{1}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Isolator}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Richtkoppler}{3}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Ausbreitungsgeschwindigkeit und relative Permittivit\IeC {\"a}t}{4}{subsection.2.5}
+\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Kennlinie}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Bauteile der Hochfrequenztechnik}{6}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Isolator}{6}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Richtkoppler}{7}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Zirkulator}{9}{subsubsection.3.2.3}
+\contentsline {subsection}{\numberline {3.3}Ausbreitungsgeschwindigkeit und relative Permittivit\IeC {\"a}t}{9}{subsection.3.3}
+\contentsline {section}{\numberline {4}Diskussion}{13}{section.4}
+\contentsline {section}{\nonumberline Literatur}{15}{section*.12}

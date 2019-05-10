@@ -1,0 +1,17 @@
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'Mikrowellen_D-01.blg'
+[26] biber-MSWIN64:303> INFO - === 
+[47] Biber.pm:359> INFO - Reading 'Mikrowellen_D-01.bcf'
+[120] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[132] Biber.pm:3670> INFO - Processing section 0
+[149] Biber.pm:3840> INFO - Looking for bibtex format file 'res/literatur.bib' for section 0
+[152] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[156] bibtex.pm:1292> INFO - Found BibTeX data source 'res/literatur.bib'
+[158] Utils.pm:164> WARN - month field 'Oktober' in entry 'anleitung-ws2014' is not an integer - this will probably not sort properly.
+[167] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[167] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[167] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[167] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
+[169] bbl.pm:608> INFO - Writing 'Mikrowellen_D-01.bbl' with encoding 'UTF-8'
+[169] bbl.pm:712> INFO - Output to Mikrowellen_D-01.bbl
+[170] Biber.pm:109> INFO - WARNINGS: 1
