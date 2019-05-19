@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.6)  5 MAY 2019 22:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.6)  19 MAY 2019 18:31
 entering extended mode
 **./protokoll.tex
 (protokoll.tex
@@ -1834,7 +1834,14 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              on input line 42.
 
 1: section
-(protokoll.aux)
+(protokoll.aux
+
+LaTeX Warning: Label `Fourier' multiply defined.
+
+
+LaTeX Warning: Label `Fourier@cref' multiply defined.
+
+)
 \openout1 = `protokoll.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -1919,9 +1926,9 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `protokoll.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'protokoll.bbl' not found.
+Package biblatex Info: ... file 'protokoll.bbl' found.
 
-No file protokoll.bbl.
+(protokoll.bbl)
 Package biblatex Info: Reference section=0 on input line 42.
 Package biblatex Info: Reference segment=0 on input line 42.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1929,7 +1936,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box61
 Package hyperref Info: Link coloring OFF on input line 42.
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -2072,22 +2079,57 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
 
-<Fourier.png, id=36, 248.42813pt x 188.20313pt>
+<Fourier.png, id=46, 248.42813pt x 188.20313pt>
 File: Fourier.png Graphic file (type png)
  <use Fourier.png>
-Package pdftex.def Info: Fourier.png used on input line 9.
+Package pdftex.def Info: Fourier.png used on input line 10.
 (pdftex.def)             Requested size: 201.65755pt x 152.77393pt.
 
-<Fourier_Filter.png, id=37, 225.09094pt x 198.7425pt>
+<Fourier_Filter.png, id=47, 225.09094pt x 198.7425pt>
 File: Fourier_Filter.png Graphic file (type png)
  <use Fourier_Filter.png>
-Package pdftex.def Info: Fourier_Filter.png used on input line 15.
+Package pdftex.def Info: Fourier_Filter.png used on input line 16.
 (pdftex.def)             Requested size: 201.65755pt x 178.05992pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 7--19
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 8--20
 []$[]$ $[]$ 
  []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+<Bruch.png, id=54, 161.85469pt x 225.84375pt>
+File: Bruch.png Graphic file (type png)
+ <use Bruch.png>
+Package pdftex.def Info: Bruch.png used on input line 32.
+(pdftex.def)             Requested size: 134.44064pt x 187.60188pt.
+
+<Filter_Bruch.png, id=56, 161.85469pt x 240.9pt>
+File: Filter_Bruch.png Graphic file (type png)
+ <use Filter_Bruch.png>
+Package pdftex.def Info: Filter_Bruch.png used on input line 38.
+(pdftex.def)             Requested size: 129.95837pt x 193.43703pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 30--42
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: Reference `fig:Bruch_Filter' on page 1 undefined on input line 4
+2.
+
+
+LaTeX Warning: Reference `fig:Bruch_Filter' on page 1 undefined on input line 4
+2.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
 Package cleveref Info: loaded `ngerman' language definitions on input line 77.
@@ -2102,6 +2144,16 @@ Package babel Info: Redefining ngerman shorthand "~
  [1
 
  <./Fourier.png> <./Fourier_Filter.png>]
+Package cleveref Info: loaded `ngerman' language definitions on input line 77.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 77.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 77.
+ [2 <./Bruch.png> <./Filter_Bruch.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2116,7 +2168,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 83.
- [2
+ [3
 
 ]
 
@@ -2130,30 +2182,38 @@ Package cleveref Info: loaded `ngerman' language definitions on input line 27.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `protokoll.out' has not changed.
-(rerunfilecheck)             Checksum: 8A947D876F30C496A591C2C6FA63C3E8;297.
+(rerunfilecheck)             Checksum: DE1927B5289CD18FF2D0F1ED95E0CA11;668.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'protokoll.run.xml'.
 \openout1 = `protokoll.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41403 strings out of 493323
- 798837 string characters out of 3139069
- 1383218 words of memory out of 3000000
- 44389 multiletter control sequences out of 15000+200000
- 603605 words of font info for 89 fonts, out of 3000000 for 9000
+ 41438 strings out of 493323
+ 799393 string characters out of 3139069
+ 1386498 words of memory out of 3000000
+ 44410 multiletter control sequences out of 15000+200000
+ 603961 words of font info for 93 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 68i,19n,106p,10401b,2125s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
-r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/lm/lmro12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pf
-b>
-Output written on protokoll.pdf (4 pages, 326987 bytes).
+ 68i,19n,106p,10401b,2127s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on protokoll.pdf (5 pages, 433025 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 26659 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
+ 26685 words of extra memory for PDF output out of 29859 (max. 10000000)
 
