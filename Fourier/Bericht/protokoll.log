@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.6)  19 MAY 2019 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.6)  20 MAY 2019 02:08
 entering extended mode
 **./protokoll.tex
 (protokoll.tex
@@ -1834,14 +1834,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              on input line 42.
 
 1: section
-(protokoll.aux
-
-LaTeX Warning: Label `Fourier' multiply defined.
-
-
-LaTeX Warning: Label `Fourier@cref' multiply defined.
-
-)
+(protokoll.aux)
 \openout1 = `protokoll.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -2084,13 +2077,13 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 
-<Fourier.png, id=46, 248.42813pt x 188.20313pt>
+<Fourier.png, id=61, 248.42813pt x 188.20313pt>
 File: Fourier.png Graphic file (type png)
  <use Fourier.png>
 Package pdftex.def Info: Fourier.png used on input line 10.
 (pdftex.def)             Requested size: 201.65755pt x 152.77393pt.
 
-<Fourier_Filter.png, id=47, 225.09094pt x 198.7425pt>
+<Fourier_Filter.png, id=62, 225.09094pt x 198.7425pt>
 File: Fourier_Filter.png Graphic file (type png)
  <use Fourier_Filter.png>
 Package pdftex.def Info: Fourier_Filter.png used on input line 16.
@@ -2104,13 +2097,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 26.
-<Bruch.png, id=54, 161.85469pt x 225.84375pt>
+<Bruch.png, id=70, 161.85469pt x 225.84375pt>
 File: Bruch.png Graphic file (type png)
  <use Bruch.png>
 Package pdftex.def Info: Bruch.png used on input line 32.
 (pdftex.def)             Requested size: 134.44064pt x 187.60188pt.
 
-<Filter_Bruch.png, id=56, 161.85469pt x 240.9pt>
+<Filter_Bruch.png, id=72, 161.85469pt x 240.9pt>
 File: Filter_Bruch.png Graphic file (type png)
  <use Filter_Bruch.png>
 Package pdftex.def Info: Filter_Bruch.png used on input line 38.
@@ -2120,16 +2113,119 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 30--42
 []$[]$ $[]$ 
  []
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 42.
 
-LaTeX Warning: Reference `fig:Bruch_Filter' on page 1 undefined on input line 4
-2.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 46.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 47.
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package cleveref Info: loaded `ngerman' language definitions on input line 48.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 48.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 48.
+ [1
 
-LaTeX Warning: Reference `fig:Bruch_Filter' on page 1 undefined on input line 4
-2.
+ <./Fourier.png> <./Fourier_Filter.png>] <Quadratgitter.png, id=92, 255.95625pt
+ x 173.14688pt>
+File: Quadratgitter.png Graphic file (type png)
+
+<use Quadratgitter.png>
+Package pdftex.def Info: Quadratgitter.png used on input line 60.
+(pdftex.def)             Requested size: 224.06548pt x 151.57448pt.
+
+<0Grad_Tiefpass_quadrat.png, id=93, 255.95625pt x 173.14688pt>
+File: 0Grad_Tiefpass_quadrat.png Graphic file (type png)
+
+<use 0Grad_Tiefpass_quadrat.png>
+Package pdftex.def Info: 0Grad_Tiefpass_quadrat.png used on input line 66.
+(pdftex.def)             Requested size: 224.06548pt x 151.57448pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 58--70
+[]$[]$ $[]$ 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+<45Grad_Tiefpass_quadrat.png, id=98, 255.95625pt x 173.14688pt>
+File: 45Grad_Tiefpass_quadrat.png Graphic file (type png)
+
+<use 45Grad_Tiefpass_quadrat.png>
+Package pdftex.def Info: 45Grad_Tiefpass_quadrat.png used on input line 80.
+(pdftex.def)             Requested size: 224.06548pt x 151.57448pt.
+
+<90Grad_Tiefpass_quadrat.png, id=99, 255.95625pt x 173.14688pt>
+File: 90Grad_Tiefpass_quadrat.png Graphic file (type png)
+
+<use 90Grad_Tiefpass_quadrat.png>
+Package pdftex.def Info: 90Grad_Tiefpass_quadrat.png used on input line 86.
+(pdftex.def)             Requested size: 224.06548pt x 151.57448pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 78--90
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 97.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 97.
+Package cleveref Info: loaded `ngerman' language definitions on input line 99.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 99.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 99.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 99.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 99.
+[2 <./Bruch.png> <./Filter_Bruch.png>]
+<Schraube_ohneFilter.png, id=115, 242.40562pt x 273.27094pt>
+File: Schraube_ohneFilter.png Graphic file (type png)
+
+<use Schraube_ohneFilter.png>
+Package pdftex.def Info: Schraube_ohneFilter.png used on input line 103.
+(pdftex.def)             Requested size: 224.06548pt x 252.60901pt.
+
+<Schraube.png, id=116, 242.40562pt x 273.27094pt>
+File: Schraube.png Graphic file (type png)
+ <use Schraube.png>
+Package pdftex.def Info: Schraube.png used on input line 109.
+(pdftex.def)             Requested size: 224.06548pt x 252.60901pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 101--113
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 117.
+<Flamme.png, id=121, 246.9225pt x 262.73157pt>
+File: Flamme.png Graphic file (type png)
+ <use Flamme.png>
+Package pdftex.def Info: Flamme.png used on input line 122.
+(pdftex.def)             Requested size: 246.92188pt x 262.73091pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 Package cleveref Info: loaded `ngerman' language definitions on input line 77.
@@ -2141,9 +2237,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 77.
- [1
-
- <./Fourier.png> <./Fourier_Filter.png>]
+ [3 <./Quadratgitter.png> <./0Grad_Tiefpass_quadrat.png>]
 Package cleveref Info: loaded `ngerman' language definitions on input line 77.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 77.
@@ -2153,7 +2247,18 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 77.
- [2 <./Bruch.png> <./Filter_Bruch.png>]
+ [4 <./45Grad_Tiefpass_quadrat.png> <./90Grad_Tiefpass_quadrat.png> <./Schraube
+_ohneFilter.png> <./Schraube.png>]
+Package cleveref Info: loaded `ngerman' language definitions on input line 77.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 77.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 77.
+ [5 <./Flamme.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2168,7 +2273,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 83.
- [3
+ [6
 
 ]
 
@@ -2182,38 +2287,32 @@ Package cleveref Info: loaded `ngerman' language definitions on input line 27.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `protokoll.out' has not changed.
-(rerunfilecheck)             Checksum: DE1927B5289CD18FF2D0F1ED95E0CA11;668.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: B85B31A6B19DFFAD1AA1BAE564F23AEC;1304.
 Package logreq Info: Writing requests to 'protokoll.run.xml'.
 \openout1 = `protokoll.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41438 strings out of 493323
- 799393 string characters out of 3139069
- 1386498 words of memory out of 3000000
- 44410 multiletter control sequences out of 15000+200000
- 603961 words of font info for 93 fonts, out of 3000000 for 9000
+ 41589 strings out of 493323
+ 802391 string characters out of 3139069
+ 1389912 words of memory out of 3000000
+ 44524 multiletter control sequences out of 15000+200000
+ 612736 words of font info for 113 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 68i,19n,106p,10401b,2127s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
-m/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on protokoll.pdf (5 pages, 433025 bytes).
+ 68i,20n,106p,10401b,2131s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/
+MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/
+dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
+lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmtt12.pfb>
+Output written on protokoll.pdf (8 pages, 904655 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 26685 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 32376 words of extra memory for PDF output out of 35830 (max. 10000000)
 
