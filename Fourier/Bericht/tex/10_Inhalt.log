@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.4)  20 MAY 2019 21:59
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.28)  21 MAY 2019 12:35
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./10_Inhalt.tex
 (./10_Inhalt.tex
 LaTeX2e <2017-04-15>
+<<<<<<< HEAD
 Babel <3.13> and hyphenation patterns for 10 language(s) loaded.
+=======
+Babel <3.13> and hyphenation patterns for 84 language(s) loaded.
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 ! Undefined control sequence.
 l.1 \section
             {Theorie}
@@ -416,19 +424,29 @@ Missing character: There is no f in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: Environment subfigure undefined.
+=======
+! LaTeX Error: Environment figure undefined.
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.3 \begin{subfigure}
                      [c]{1.5\textwidth}
+=======
+l.3 \begin{figure}
+                  [h!]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 Missing character: There is no [ in font nullfont!
+<<<<<<< HEAD
 Missing character: There is no c in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no 1 in font nullfont!
@@ -458,6 +476,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Undefined control sequence.
 l.4 	\includegraphics
                      [width=0.9\textwidth]{abstande.png}
+=======
+Missing character: There is no h in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+l.5 	\includegraphics
+                     [scale = 1.5]{abstande.png}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -465,6 +491,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no [ in font nullfont!
+<<<<<<< HEAD
 Missing character: There is no w in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no d in font nullfont!
@@ -495,6 +522,17 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
+=======
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 Missing character: There is no ] in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no b in font nullfont!
@@ -515,7 +553,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.5 	\caption
+=======
+l.6 	\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
              {Fresnel- und Frauenhofer Näherung. Im Fernfeld kann die Fraue...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -659,14 +701,23 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: \begin{document} ended by \end{subfigure}.
+=======
+! LaTeX Error: \begin{document} ended by \end{figure}.
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.7 \end{subfigure}
                    
+=======
+l.8 \end{figure}
+                
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1052,8 +1103,13 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.9 \section
             {Übergang von Nah- zu Fernfeld}
+=======
+l.10 \section
+             {Übergang von Nah- zu Fernfeld}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1257,9 +1313,15 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 LaTeX Font Info:    External font `cmex10' loaded for size
+<<<<<<< HEAD
 (Font)              <7> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 10.
+=======
+(Font)              <7> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 11.
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no f in font nullfont!
@@ -1693,7 +1755,11 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.10 ...Schirm und Gitter beobachtet werden. \cref
+=======
+l.11 ...Schirm und Gitter beobachtet werden. \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {alle} zeigt den Verlauf d...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1931,19 +1997,29 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: Environment subfigure undefined.
+=======
+! LaTeX Error: Environment figure undefined.
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.11 \begin{subfigure}
                       [c]{0.7\textwidth}
+=======
+l.12 \begin{figure}
+                   [h!]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 Missing character: There is no [ in font nullfont!
+<<<<<<< HEAD
 Missing character: There is no c in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no 0 in font nullfont!
@@ -1973,6 +2049,14 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Undefined control sequence.
 l.12 	\includegraphics
                       [width=0.9\textwidth]{alleabstande.png}
+=======
+Missing character: There is no h in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+l.14 	\includegraphics
+                      [scale = 0.9]{abstande.png}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1980,15 +2064,24 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no [ in font nullfont!
+<<<<<<< HEAD
 Missing character: There is no w in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
+=======
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 Missing character: There is no = in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 9 in font nullfont!
+<<<<<<< HEAD
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
@@ -2016,6 +2109,10 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no a in font nullfont!
+=======
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 Missing character: There is no b in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -2034,7 +2131,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.13 	\caption
+=======
+l.15 	\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
               {Es sind die Beugungsbilder in Abhängigkeit der Abstände zwi...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -2350,14 +2451,23 @@ Missing character: There is no z in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no . in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: \begin{document} ended by \end{subfigure}.
+=======
+! LaTeX Error: \begin{document} ended by \end{figure}.
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.15 \end{subfigure}
                     
+=======
+l.17 \end{figure}
+                 
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2365,7 +2475,11 @@ or  <return>  to continue without it.
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.16 In \cref
+=======
+l.18 In \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
              {alle} kann in einem Abstand von $500 mm$ bis $1400 mm$ das Nah...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2771,7 +2885,11 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.16 ... $2000 mm$. Diese Angaben wurden mit \cref
+=======
+l.18 ... $2000 mm$. Diese Angaben wurden mit \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {Theoriebild} erhoben. Gr�...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3214,7 +3332,11 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.16 ...kteristiken können im Vergleich von \cref
+=======
+l.18 ...kteristiken können im Vergleich von \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {Theoriebild} und \cref{al...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3237,7 +3359,11 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.16 ...Vergleich von \cref{Theoriebild} und \cref
+=======
+l.18 ...Vergleich von \cref{Theoriebild} und \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {alle} an den oben genannt...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3292,67 +3418,119 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (16.38887pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (16.38887pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 \OML/cmm/m/it/10 ^^U \OT1/cmr/m/n/10 =
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (29.78253pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (29.78253pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 \OT1/cmr/m/n/10 633\OML/cmm/m/it/10 nm$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (32.56032pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (32.56032pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 \OT1/cmr/m/n/10 500\OML/cmm/m/it/10 mm$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 \OT1/cmr/m/n/10 1400\OML/cmm/m/it/10 mm$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 \OT1/cmr/m/n/10 1700\OML/cmm/m/it/10 mm$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 \OT1/cmr/m/n/10 2600\OML/cmm/m/it/10 mm$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 \OT1/cmr/m/n/10 2900\OML/cmm/m/it/10 mm$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 \OT1/cmr/m/n/10 3800\OML/cmm/m/it/10 mm$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (32.56032pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (32.56032pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 \OT1/cmr/m/n/10 500\OML/cmm/m/it/10 mm$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 \OT1/cmr/m/n/10 3800\OML/cmm/m/it/10 mm$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--17
+=======
+Overfull \hbox (37.56033pt too wide) in paragraph at lines 1--19
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 \OT1/cmr/m/n/10 2000\OML/cmm/m/it/10 mm$
  []
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.18 \section
+=======
+l.20 \section
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
              {Fourierfilterung}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3367,7 +3545,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.18 \section{F
+=======
+l.20 \section{F
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                ourierfilterung}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3389,7 +3571,11 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.19 \subsection
+=======
+l.21 \subsection
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                 {Ergebnis}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3406,7 +3592,11 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.20 \subsection
+=======
+l.22 \subsection
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                 {Fourier Schriftzug}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3632,7 +3822,11 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 18--22
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 20--24
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
@@ -3643,7 +3837,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.24 \begin{figure}
+=======
+l.26 \begin{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                    [h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3656,7 +3854,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.24 \begin{figure}[
+=======
+l.26 \begin{figure}[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     h]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3671,7 +3873,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.25 \begin{subfigure}
+=======
+l.27 \begin{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       [c]{0.5\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3686,7 +3892,11 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.25 \begin{subfigure}[c]{0.5\textwidth}
+=======
+l.27 \begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                         
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3695,7 +3905,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.25 \begin{subfigure}[c]{0.5\textwidth}
+=======
+l.27 \begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                         
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3705,12 +3919,20 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 24--26
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 26--28
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.27 \includegraphics
+=======
+l.29 \includegraphics
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                      [width=0.9\textwidth]{Fourier.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3725,7 +3947,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.27 \includegraphics[
+=======
+l.29 \includegraphics[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       width=0.9\textwidth]{Fourier.png}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3743,7 +3969,11 @@ Missing character: There is no 9 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.27 \includegraphics[width=0.9\textwidth]
+=======
+l.29 \includegraphics[width=0.9\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           {Fourier.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3752,7 +3982,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.27 \includegraphics[width=0.9\textwidth]
+=======
+l.29 \includegraphics[width=0.9\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           {Fourier.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3780,13 +4014,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.28 	      \caption
+=======
+l.30 	      \caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     {}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 27--30
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 29--32
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
@@ -3797,7 +4039,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.31 \end{subfigure}
+=======
+l.33 \end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3810,7 +4056,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.32 \begin{subfigure}
+=======
+l.34 \begin{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       [c]{0.5\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3823,7 +4073,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.32 \begin{subfigure}[
+=======
+l.34 \begin{subfigure}[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        c]{0.5\textwidth}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3837,7 +4091,11 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.32 \begin{subfigure}[c]{0.5\textwidth}
+=======
+l.34 \begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                         
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3846,7 +4104,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.32 \begin{subfigure}[c]{0.5\textwidth}
+=======
+l.34 \begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                         
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3856,7 +4118,11 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.33 	\includegraphics
+=======
+l.35 	\includegraphics
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       [width=0.9\textwidth]{Fourier_Filter.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3877,7 +4143,11 @@ Missing character: There is no 9 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.33 	\includegraphics[width=0.9\textwidth]
+=======
+l.35 	\includegraphics[width=0.9\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                            {Fourier_Filter.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3886,7 +4156,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.33 	\includegraphics[width=0.9\textwidth]
+=======
+l.35 	\includegraphics[width=0.9\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                            {Fourier_Filter.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3906,13 +4180,21 @@ Missing character: There is no r in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.33 ...ludegraphics[width=0.9\textwidth]{Fourier_
+=======
+l.35 ...ludegraphics[width=0.9\textwidth]{Fourier_
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   Filter.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.33 ...s[width=0.9\textwidth]{Fourier_Filter.png}
+=======
+l.35 ...s[width=0.9\textwidth]{Fourier_Filter.png}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3927,7 +4209,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.34 	      \caption
+=======
+l.36 	      \caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     {}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3939,7 +4225,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.36 \end{subfigure}
+=======
+l.38 \end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3948,7 +4238,11 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.36 \end{subfigure}
+=======
+l.38 \end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3959,7 +4253,11 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
+<<<<<<< HEAD
 l.36 \end{subfigure}
+=======
+l.38 \end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3974,7 +4272,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.37 \caption
+=======
+l.39 \caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
              {In \cref{fig:NiceImage1} ist der "Fourier" Schriftzug ohne Fil...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -3983,7 +4285,11 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.37 \caption{In \cref
+=======
+l.39 \caption{In \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       {fig:NiceImage1} ist der "Fourier" Schriftzug ohne Fil...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4051,7 +4357,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.37 ... Schriftzug ohne Filter zu sehen; in \cref
+=======
+l.39 ... Schriftzug ohne Filter zu sehen; in \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:NiceImage2} mit einem...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4103,19 +4413,31 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.39 \end{figure}
+=======
+l.41 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 32--40
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 34--42
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (44.71469pt too wide) in paragraph at lines 32--40
+=======
+Overfull \hbox (44.71469pt too wide) in paragraph at lines 34--42
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []\OML/cmm/m/it/10 ilter:png[][]$
  []
 
@@ -4126,7 +4448,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.41 I
+=======
+l.43 I
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
       n \cref{Fourier} ist zu sehen, wie sich der Tiefpassfilter auf das Bil...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -4135,7 +4461,11 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.41 In \cref
+=======
+l.43 In \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
              {Fourier} ist zu sehen, wie sich der Tiefpassfilter auf das Bil...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4263,12 +4593,20 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 41--42
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 43--44
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.43 \subsection
+=======
+l.45 \subsection
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                 {Nenner eines Bruches entfernen}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4283,7 +4621,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.43 \subsection{N
+=======
+l.45 \subsection{N
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                   enner eines Bruches entfernen}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4369,7 +4711,11 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.44 ...}{2}$ Bruchs entfernt werden. Wie in \cref
+=======
+l.46 ...}{2}$ Bruchs entfernt werden. Wie in \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:Bruch} zu sehen ist, ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4701,7 +5047,11 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.44 ...Das hat sehr gut funktioniert, da in \cref
+=======
+l.46 ...Das hat sehr gut funktioniert, da in \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:Bruch_filter} die Zwe...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4721,13 +5071,21 @@ Missing character: There is no h in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.44 ...r gut funktioniert, da in \cref{fig:Bruch_
+=======
+l.46 ...r gut funktioniert, da in \cref{fig:Bruch_
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   filter} die Zwei, also der...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.44 ...unktioniert, da in \cref{fig:Bruch_filter}
+=======
+l.46 ...unktioniert, da in \cref{fig:Bruch_filter}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                    die Zwei, also der Nenner...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4738,23 +5096,39 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.45 
+=======
+l.47 
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 43--45
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--47
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (6.38612pt too wide) in paragraph at lines 43--45
+=======
+Overfull \hbox (6.38612pt too wide) in paragraph at lines 45--47
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (241.22275pt too wide) in paragraph at lines 43--45
+=======
+Overfull \hbox (241.22275pt too wide) in paragraph at lines 45--47
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []\OML/cmm/m/it/10 ilterdieZwei; alsoderNennernichtmehrerkennbarist:$ 
  []
 
@@ -4765,7 +5139,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.46 \begin{figure}
+=======
+l.48 \begin{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                    [h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4778,7 +5156,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.46 \begin{figure}[
+=======
+l.48 \begin{figure}[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     h]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4793,7 +5175,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.47 	\begin{subfigure}
+=======
+l.49 	\begin{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        [c]{0.5\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4808,7 +5194,11 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.47 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.49 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -4817,7 +5207,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.47 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.49 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                          
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4827,12 +5221,20 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 46--48
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 48--50
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.49 		\includegraphics
+=======
+l.51 		\includegraphics
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        [width=0.6\textwidth]{Bruch.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4847,7 +5249,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.49 		\includegraphics[
+=======
+l.51 		\includegraphics[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         width=0.6\textwidth]{Bruch.png}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4865,7 +5271,11 @@ Missing character: There is no 6 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.49 		\includegraphics[width=0.6\textwidth]
+=======
+l.51 		\includegraphics[width=0.6\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                             {Bruch.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -4874,7 +5284,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.49 		\includegraphics[width=0.6\textwidth]
+=======
+l.51 		\includegraphics[width=0.6\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                             {Bruch.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4900,13 +5314,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.50 		\caption
+=======
+l.52 		\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                {}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 49--52
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 51--54
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
@@ -4917,7 +5339,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.53 	\end{subfigure}
+=======
+l.55 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4930,7 +5356,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.54 	\begin{subfigure}
+=======
+l.56 	\begin{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        [c]{0.5\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4943,7 +5373,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.54 	\begin{subfigure}[
+=======
+l.56 	\begin{subfigure}[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         c]{0.5\textwidth}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4957,7 +5391,11 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.54 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.56 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -4966,7 +5404,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.54 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.56 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                          
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4976,7 +5418,11 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.55 		\includegraphics
+=======
+l.57 		\includegraphics
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        [width=0.58\textwidth]{Filter_Bruch.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4998,7 +5444,11 @@ Missing character: There is no 8 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.55 		\includegraphics[width=0.58\textwidth]
+=======
+l.57 		\includegraphics[width=0.58\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                              {Filter_Bruch.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -5007,7 +5457,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.55 		\includegraphics[width=0.58\textwidth]
+=======
+l.57 		\includegraphics[width=0.58\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                              {Filter_Bruch.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -5026,13 +5480,21 @@ Missing character: There is no r in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.55 ...ludegraphics[width=0.58\textwidth]{Filter_
+=======
+l.57 ...ludegraphics[width=0.58\textwidth]{Filter_
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   Bruch.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.55 ...cs[width=0.58\textwidth]{Filter_Bruch.png}
+=======
+l.57 ...cs[width=0.58\textwidth]{Filter_Bruch.png}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5047,7 +5509,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.56 		\caption
+=======
+l.58 		\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                {}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5059,7 +5525,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.58 	\end{subfigure}
+=======
+l.60 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5068,7 +5538,11 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.58 	\end{subfigure}
+=======
+l.60 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5079,7 +5553,11 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
+<<<<<<< HEAD
 l.58 	\end{subfigure}
+=======
+l.60 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5094,7 +5572,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.59 	\caption
+=======
+l.61 	\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
               {In \cref{fig:Bruch} ist der $\frac{1}{2}$ Bruch ohne Filter z...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -5103,7 +5585,11 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.59 	\caption{In \cref
+=======
+l.61 	\caption{In \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        {fig:Bruch} ist der $\frac{1}{2}$ Bruch ohne Filter z...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5152,7 +5638,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.59 ...}{2}$ Bruch ohne Filter zu sehen; in \cref
+=======
+l.61 ...}{2}$ Bruch ohne Filter zu sehen; in \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:Bruch_filter} mit ein...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5172,13 +5662,21 @@ Missing character: There is no h in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.59 ... ohne Filter zu sehen; in \cref{fig:Bruch_
+=======
+l.61 ... ohne Filter zu sehen; in \cref{fig:Bruch_
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   filter} mit einem Hochpass...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.59 ...ilter zu sehen; in \cref{fig:Bruch_filter}
+=======
+l.61 ...ilter zu sehen; in \cref{fig:Bruch_filter}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                    mit einem Hochpassfilter,...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5187,7 +5685,11 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.59 ...sfilter, wodurch die Zwei entfernt wurde.}
+=======
+l.61 ...sfilter, wodurch die Zwei entfernt wurde.}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5202,7 +5704,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.61 \end{figure}
+=======
+l.63 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5211,7 +5717,11 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.61 \end{figure}
+=======
+l.63 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5222,7 +5732,11 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
+<<<<<<< HEAD
 l.61 \end{figure}
+=======
+l.63 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5233,7 +5747,11 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
+<<<<<<< HEAD
 l.61 \end{figure}
+=======
+l.63 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5242,28 +5760,48 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 54--62
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 56--64
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (46.42593pt too wide) in paragraph at lines 54--62
+=======
+Overfull \hbox (46.42593pt too wide) in paragraph at lines 56--64
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []\OML/cmm/m/it/10 ruch:png[][]$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (6.38612pt too wide) in paragraph at lines 54--62
+=======
+Overfull \hbox (6.38612pt too wide) in paragraph at lines 56--64
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []$
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (285.88332pt too wide) in paragraph at lines 54--62
+=======
+Overfull \hbox (285.88332pt too wide) in paragraph at lines 56--64
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []\OML/cmm/m/it/10 iltermiteinemHochpassfilter; wodurchdieZweientferntwurde:[]$
  
  []
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.63 \subsection
+=======
+l.65 \subsection
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                 {Tiefpassfilterung bei einem Quadratgitter}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5278,7 +5816,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.63 \subsection{T
+=======
+l.65 \subsection{T
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                   iefpassfilterung bei einem Quadratgitter}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5510,7 +6052,11 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.64 ...t wird. Das ungefilterte Bild ist in \cref
+=======
+l.66 ...t wird. Das ungefilterte Bild ist in \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:Gitter} zu sehen. Daz...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5559,7 +6105,11 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.64 ...zu sehen. Dazu im Vergleich wurde in \cref
+=======
+l.66 ...zu sehen. Dazu im Vergleich wurde in \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:0Gitter} ein Tiefpass...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5861,7 +6411,11 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 63--65
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 65--67
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
@@ -5872,7 +6426,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.66 �
+=======
+l.68 �
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
       �hnliche Probleme gibt es auch in \cref{fig:45Gitter} und \cref{fig:90...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -5908,7 +6466,11 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.66 Ähnliche Probleme gibt es auch in \cref
+=======
+l.68 Ähnliche Probleme gibt es auch in \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                              {fig:45Gitter} und \cref{fig:90...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5932,7 +6494,11 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.66 ...t es auch in \cref{fig:45Gitter} und \cref
+=======
+l.68 ...t es auch in \cref{fig:45Gitter} und \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:90Gitter}, in denen d...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6021,7 +6587,11 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.66 ... und 90° gedreht sind. Besonders in \cref
+=======
+l.68 ... und 90° gedreht sind. Besonders in \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:45Gitter} lässt sich...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6154,7 +6724,11 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 66--67
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 68--69
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
@@ -6165,7 +6739,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.68 D
+=======
+l.70 D
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
       iese hellen Strahlen, die sich an der räumlichen Ausrichtung des Filt...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -6459,7 +7037,11 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 68--69
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 70--71
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
@@ -6470,7 +7052,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.74 \begin{figure}
+=======
+l.76 \begin{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                    [h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6483,7 +7069,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.74 \begin{figure}[
+=======
+l.76 \begin{figure}[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     h]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6498,7 +7088,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.75 	\begin{subfigure}
+=======
+l.77 	\begin{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        [c]{0.5\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6513,7 +7107,11 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.75 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.77 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -6522,7 +7120,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.75 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.77 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                          
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -6532,12 +7134,20 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 74--76
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 76--78
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.77 		\includegraphics
+=======
+l.79 		\includegraphics
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        [width=1\textwidth]{Quadratgitter.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6552,7 +7162,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.77 		\includegraphics[
+=======
+l.79 		\includegraphics[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         width=1\textwidth]{Quadratgitter.png}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6568,7 +7182,11 @@ Missing character: There is no 1 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.77 		\includegraphics[width=1\textwidth]
+=======
+l.79 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           {Quadratgitter.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -6577,7 +7195,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.77 		\includegraphics[width=1\textwidth]
+=======
+l.79 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           {Quadratgitter.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -6611,13 +7233,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.78 		\caption
+=======
+l.80 		\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                {}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 77--80
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 79--82
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
@@ -6628,7 +7258,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.81 	\end{subfigure}
+=======
+l.83 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6641,7 +7275,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.82 	\begin{subfigure}
+=======
+l.84 	\begin{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        [c]{0.5\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6654,7 +7292,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.82 	\begin{subfigure}[
+=======
+l.84 	\begin{subfigure}[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         c]{0.5\textwidth}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6668,7 +7310,11 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.82 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.84 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -6677,7 +7323,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.82 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.84 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                          
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -6687,7 +7337,11 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.83 		\includegraphics
+=======
+l.85 		\includegraphics
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        [width=1\textwidth]{0Grad_Tiefpass_quadrat.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6706,7 +7360,11 @@ Missing character: There is no 1 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.83 		\includegraphics[width=1\textwidth]
+=======
+l.85 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           {0Grad_Tiefpass_quadrat.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -6715,7 +7373,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.83 		\includegraphics[width=1\textwidth]
+=======
+l.85 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           {0Grad_Tiefpass_quadrat.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -6733,13 +7395,21 @@ Missing character: There is no d in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.83 		\includegraphics[width=1\textwidth]{0Grad_
+=======
+l.85 		\includegraphics[width=1\textwidth]{0Grad_
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                  Tiefpass_quadrat.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.83 ...h=1\textwidth]{0Grad_Tiefpass_quadrat.png}
+=======
+l.85 ...h=1\textwidth]{0Grad_Tiefpass_quadrat.png}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -6754,7 +7424,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.84 		\caption
+=======
+l.86 		\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                {}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6766,7 +7440,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.86 	\end{subfigure}
+=======
+l.88 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6775,7 +7453,11 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.86 	\end{subfigure}
+=======
+l.88 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -6786,7 +7468,11 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
+<<<<<<< HEAD
 l.86 	\end{subfigure}
+=======
+l.88 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -6801,7 +7487,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.87 	\caption
+=======
+l.89 	\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
               {In \cref{fig:Gitter} ist das Quadratgitter ohne einen Filter ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -6810,7 +7500,11 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.87 	\caption{In \cref
+=======
+l.89 	\caption{In \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        {fig:Gitter} ist das Quadratgitter ohne einen Filter ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6873,7 +7567,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.87 ...itter ohne einen Filter zu sehen; in \cref
+=======
+l.89 ...itter ohne einen Filter zu sehen; in \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:0Gitter} mit einem Ti...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6932,19 +7630,31 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.89 \end{figure}
+=======
+l.91 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 82--90
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 84--92
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (93.32333pt too wide) in paragraph at lines 82--90
+=======
+Overfull \hbox (93.32333pt too wide) in paragraph at lines 84--92
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []\OML/cmm/m/it/10 iefpass[]uadrat:png[][]$
  []
 
@@ -6955,7 +7665,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.94 \begin{figure}
+=======
+l.96 \begin{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                    [h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6968,7 +7682,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.94 \begin{figure}[
+=======
+l.96 \begin{figure}[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     h]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -6983,7 +7701,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.95 	\begin{subfigure}
+=======
+l.97 	\begin{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        [c]{0.5\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6998,7 +7720,11 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.95 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.97 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -7007,7 +7733,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.95 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.97 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                          
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -7017,12 +7747,20 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 94--96
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 96--98
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.97 		\includegraphics
+=======
+l.99 		\includegraphics
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        [width=1\textwidth]{45Grad_Tiefpass_quadrat.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7037,7 +7775,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.97 		\includegraphics[
+=======
+l.99 		\includegraphics[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         width=1\textwidth]{45Grad_Tiefpass_quadrat.png}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7053,7 +7795,11 @@ Missing character: There is no 1 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.97 		\includegraphics[width=1\textwidth]
+=======
+l.99 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           {45Grad_Tiefpass_quadrat.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -7062,7 +7808,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.97 		\includegraphics[width=1\textwidth]
+=======
+l.99 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           {45Grad_Tiefpass_quadrat.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -7081,13 +7831,21 @@ Missing character: There is no d in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.97 		\includegraphics[width=1\textwidth]{45Grad_
+=======
+l.99 		\includegraphics[width=1\textwidth]{45Grad_
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   Tiefpass_quadrat.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.97 ...=1\textwidth]{45Grad_Tiefpass_quadrat.png}
+=======
+l.99 ...=1\textwidth]{45Grad_Tiefpass_quadrat.png}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -7102,21 +7860,34 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.98 		\caption
                {}
+=======
+l.100 		\caption
+                {}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.100 
+=======
+l.102 
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
+<<<<<<< HEAD
 Overfull \hbox (113.32333pt too wide) in paragraph at lines 97--100
+=======
+Overfull \hbox (113.32333pt too wide) in paragraph at lines 99--102
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []$[]\OML/cmm/m/it/10 iefpass[]uadrat:png[][]$ 
  []
 
@@ -7127,7 +7898,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.101 	\end{subfigure}
+=======
+l.103 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7136,7 +7911,11 @@ or  <return>  to continue without it.
 ! Missing } inserted.
 <inserted text> 
                 }
+<<<<<<< HEAD
 l.101 	\end{subfigure}
+=======
+l.103 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -7151,7 +7930,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.102 	\begin{subfigure}
+=======
+l.104 	\begin{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         [c]{0.5\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7164,7 +7947,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.102 	\begin{subfigure}[
+=======
+l.104 	\begin{subfigure}[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                          c]{0.5\textwidth}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7178,7 +7965,11 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.102 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.104 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -7187,7 +7978,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.102 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.104 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -7197,7 +7992,11 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.103 		\includegraphics
+=======
+l.105 		\includegraphics
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         [width=1\textwidth]{90Grad_Tiefpass_quadrat.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7216,7 +8015,11 @@ Missing character: There is no 1 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.103 		\includegraphics[width=1\textwidth]
+=======
+l.105 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                            {90Grad_Tiefpass_quadrat.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -7225,7 +8028,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.103 		\includegraphics[width=1\textwidth]
+=======
+l.105 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                            {90Grad_Tiefpass_quadrat.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -7244,13 +8051,21 @@ Missing character: There is no d in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.103 ...ncludegraphics[width=1\textwidth]{90Grad_
+=======
+l.105 ...ncludegraphics[width=1\textwidth]{90Grad_
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   Tiefpass_quadrat.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.103 ...1\textwidth]{90Grad_Tiefpass_quadrat.png}
+=======
+l.105 ...1\textwidth]{90Grad_Tiefpass_quadrat.png}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -7265,7 +8080,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.104 		\caption
+=======
+l.106 		\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                 {}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7277,7 +8096,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.106 	\end{subfigure}
+=======
+l.108 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7286,7 +8109,11 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.106 	\end{subfigure}
+=======
+l.108 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -7297,7 +8124,11 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
+<<<<<<< HEAD
 l.106 	\end{subfigure}
+=======
+l.108 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -7312,7 +8143,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.107 	\caption
+=======
+l.109 	\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                {In \cref{fig:45Gitter} ist das Quadratgitter mit einem Tiefp...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -7321,7 +8156,11 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.107 	\caption{In \cref
+=======
+l.109 	\caption{In \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         {fig:45Gitter} ist das Quadratgitter mit einem Tiefp...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7330,6 +8169,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no f in font nullfont!
+<<<<<<< HEAD
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no : in font nullfont!
@@ -7337,6 +8177,15 @@ Missing character: There is no 4 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no G in font nullfont!
 Missing character: There is no i in font nullfont!
+=======
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no i in font nullfont!
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 Missing character: There is no t in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -7405,7 +8254,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.107 ...sfilter im 45° Winkel zu sehen; in \cref
+=======
+l.109 ...sfilter im 45° Winkel zu sehen; in \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:90Gitter} im 90° Win...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7445,24 +8298,40 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.109 \end{figure}
+=======
+l.111 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 102--110
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 104--112
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (93.32333pt too wide) in paragraph at lines 102--110
+=======
+Overfull \hbox (93.32333pt too wide) in paragraph at lines 104--112
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []\OML/cmm/m/it/10 iefpass[]uadrat:png[][]$
  []
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.114 \subsection
+=======
+l.116 \subsection
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                  {Hochpassfilterung einer Schraube}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7477,7 +8346,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.114 \subsection{H
+=======
+l.116 \subsection{H
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                    ochpassfilterung einer Schraube}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7573,7 +8446,11 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.115 ...er Hochpassfilterung unterzogen. In \cref
+=======
+l.117 ...er Hochpassfilterung unterzogen. In \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {Schraube} sind die Bilder...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7629,7 +8506,11 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.115 ...er mit und ohne Filter zu sehen. In \cref
+=======
+l.117 ...er mit und ohne Filter zu sehen. In \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:Schraube_Filter} ist ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7652,13 +8533,21 @@ Missing character: There is no e in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.115 ...e Filter zu sehen. In \cref{fig:Schraube_
+=======
+l.117 ...e Filter zu sehen. In \cref{fig:Schraube_
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   Filter} ist dabei nur noch...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.115 ...r zu sehen. In \cref{fig:Schraube_Filter}
+=======
+l.117 ...r zu sehen. In \cref{fig:Schraube_Filter}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                    ist dabei nur noch der Um...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -7669,7 +8558,11 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.116 
+=======
+l.118 
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -7677,12 +8570,20 @@ you left one out. Proceed, with fingers crossed.
 Missing character: There is no � in font cmr10!
 Missing character: There is no � in font cmr10!
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 114--116
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 116--118
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (1458.67203pt too wide) in paragraph at lines 114--116
+=======
+Overfull \hbox (1458.67203pt too wide) in paragraph at lines 116--118
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []\OML/cmm/m/it/10 ilteristdabeinurnochderUmrissderSchraubezusehen:DasowohlderL
 aserselbstalsauchdieSchraubeselbstnahezuhomogensind; werdendafrfastnurniedrigeF
 requenzenbenutzt:DerRandderSchraubehatallerdingsmehrekleineKanten; diedurchhohe
@@ -7696,7 +8597,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.117 \begin{figure}
+=======
+l.119 \begin{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     [h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7709,7 +8614,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.117 \begin{figure}[
+=======
+l.119 \begin{figure}[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                      h]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7724,7 +8633,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.118 	\begin{subfigure}
+=======
+l.120 	\begin{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         [c]{0.5\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7739,7 +8652,11 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.118 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.120 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -7748,7 +8665,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.118 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.120 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -7758,12 +8679,20 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 117--119
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 119--121
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.120 		\includegraphics
+=======
+l.122 		\includegraphics
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         [width=1\textwidth]{Schraube_ohneFilter.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7778,7 +8707,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.120 		\includegraphics[
+=======
+l.122 		\includegraphics[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                          width=1\textwidth]{Schraube_ohneFilter.png}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7794,7 +8727,11 @@ Missing character: There is no 1 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.120 		\includegraphics[width=1\textwidth]
+=======
+l.122 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                            {Schraube_ohneFilter.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -7803,7 +8740,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.120 		\includegraphics[width=1\textwidth]
+=======
+l.122 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                            {Schraube_ohneFilter.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -7824,13 +8765,21 @@ Missing character: There is no e in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.120 ...ludegraphics[width=1\textwidth]{Schraube_
+=======
+l.122 ...ludegraphics[width=1\textwidth]{Schraube_
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   ohneFilter.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.120 ...dth=1\textwidth]{Schraube_ohneFilter.png}
+=======
+l.122 ...dth=1\textwidth]{Schraube_ohneFilter.png}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -7845,7 +8794,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.121 		\caption
+=======
+l.123 		\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                 {}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7853,13 +8806,21 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.123 
+=======
+l.125 
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
+<<<<<<< HEAD
 Overfull \hbox (86.75362pt too wide) in paragraph at lines 120--123
+=======
+Overfull \hbox (86.75362pt too wide) in paragraph at lines 122--125
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []$[]\OML/cmm/m/it/10 hneFilter:png[][]$ 
  []
 
@@ -7870,7 +8831,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.124 	\end{subfigure}
+=======
+l.126 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7879,7 +8844,11 @@ or  <return>  to continue without it.
 ! Missing } inserted.
 <inserted text> 
                 }
+<<<<<<< HEAD
 l.124 	\end{subfigure}
+=======
+l.126 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -7894,7 +8863,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.125 	\begin{subfigure}
+=======
+l.127 	\begin{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         [c]{0.5\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7907,7 +8880,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.125 	\begin{subfigure}[
+=======
+l.127 	\begin{subfigure}[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                          c]{0.5\textwidth}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7921,7 +8898,11 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.125 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.127 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -7930,7 +8911,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
+<<<<<<< HEAD
 l.125 	\begin{subfigure}[c]{0.5\textwidth}
+=======
+l.127 	\begin{subfigure}[c]{0.5\textwidth}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                           
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -7940,7 +8925,11 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.126 		\includegraphics
+=======
+l.128 		\includegraphics
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         [width=1\textwidth]{Schraube.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7959,7 +8948,11 @@ Missing character: There is no 1 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.126 		\includegraphics[width=1\textwidth]
+=======
+l.128 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                            {Schraube.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -7968,7 +8961,11 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
+<<<<<<< HEAD
 l.126 		\includegraphics[width=1\textwidth]
+=======
+l.128 		\includegraphics[width=1\textwidth]
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                            {Schraube.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -7997,7 +8994,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.127 		\caption
+=======
+l.129 		\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                 {}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -8009,7 +9010,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.129 	\end{subfigure}
+=======
+l.131 	\end{subfigure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -8022,7 +9027,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.130 	\caption
+=======
+l.132 	\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                {In \cref{fig:Schraube} ist die Schraube ohne Filter zu sehen...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -8031,7 +9040,11 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.130 	\caption{In \cref
+=======
+l.132 	\caption{In \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                         {fig:Schraube} ist die Schraube ohne Filter zu sehen...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8086,7 +9099,11 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.130 ...e Schraube ohne Filter zu sehen, in \cref
+=======
+l.132 ...e Schraube ohne Filter zu sehen, in \cref
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   {fig:Schraube_Filter} wurd...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8109,13 +9126,21 @@ Missing character: There is no e in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.130 ...e Filter zu sehen, in \cref{fig:Schraube_
+=======
+l.132 ...e Filter zu sehen, in \cref{fig:Schraube_
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   Filter} wurde noch ein Hoc...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.130 ...r zu sehen, in \cref{fig:Schraube_Filter}
+=======
+l.132 ...r zu sehen, in \cref{fig:Schraube_Filter}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                    wurde noch ein Hochpassfi...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -8124,7 +9149,11 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Extra }, or forgotten $.
+<<<<<<< HEAD
 l.130 ...} wurde noch ein Hochpassfilter benutzt.}
+=======
+l.132 ...} wurde noch ein Hochpassfilter benutzt.}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -8139,7 +9168,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.132 \end{figure}
+=======
+l.134 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -8148,7 +9181,11 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
 l.132 \end{figure}
+=======
+l.134 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -8159,7 +9196,11 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
+<<<<<<< HEAD
 l.132 \end{figure}
+=======
+l.134 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -8170,7 +9211,11 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
+<<<<<<< HEAD
 l.132 \end{figure}
+=======
+l.134 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -8179,17 +9224,29 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 125--133
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 127--135
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (194.34955pt too wide) in paragraph at lines 125--133
+=======
+Overfull \hbox (194.34955pt too wide) in paragraph at lines 127--135
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []\OML/cmm/m/it/10 ilterwurdenocheinHochpassfilterbenutzt:[]$ 
  []
 
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.134 \subsection
+=======
+l.136 \subsection
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                  {Dunkelfeldmethode}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8204,7 +9261,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.134 \subsection{D
+=======
+l.136 \subsection{D
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                    unkelfeldmethode}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -8323,7 +9384,11 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no t in font nullfont!
 
+<<<<<<< HEAD
 Overfull \hbox (20.0pt too wide) in paragraph at lines 134--136
+=======
+Overfull \hbox (20.0pt too wide) in paragraph at lines 136--138
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
 []
  []
 
@@ -8334,7 +9399,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.137 \begin{figure}
+=======
+l.139 \begin{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                     [h!]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -8347,7 +9416,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.137 \begin{figure}[
+=======
+l.139 \begin{figure}[
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                      h!]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -8357,7 +9430,11 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
+<<<<<<< HEAD
 l.139 	\includegraphics
+=======
+l.141 	\includegraphics
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                        [scale = 1]{Flamme.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8391,7 +9468,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.140 	\caption
+=======
+l.142 	\caption
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                {}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -8403,7 +9484,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
+<<<<<<< HEAD
 l.142 \end{figure}
+=======
+l.144 \end{figure}
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -8417,11 +9502,20 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  11 strings out of 494838
  208 string characters out of 6177689
  49815 words of memory out of 5000000
  3442 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
+=======
+ 11 strings out of 492990
+ 208 string characters out of 6136334
+ 57148 words of memory out of 5000000
+ 3669 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+>>>>>>> 3667fdb0a1ed7d0d2740171b019aaf8efc28a6e5
  18i,2n,12p,1183b,56s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
