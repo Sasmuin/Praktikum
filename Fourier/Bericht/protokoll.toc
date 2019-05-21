@@ -1,11 +1,13 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {ngerman}
-\contentsline {section}{\numberline {1}Fourierfilterung}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}Ergebnis}{1}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Fourier Schriftzug}{1}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Nenner eines Bruches entfernen}{1}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Tiefpassfilterung bei einem Quadratgitter}{2}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}Hochpassfilterung einer Schraube}{3}{subsection.1.5}
-\contentsline {subsection}{\numberline {1.6}Dunkelfeldmethode}{3}{subsection.1.6}
-\contentsline {section}{\numberline {A}Anhang}{6}{appendix.A}
+\contentsline {section}{\numberline {1}Theorie}{1}{section.1}
+\contentsline {section}{\numberline {2}\IeC {\"U}bergang von Nah- zu Fernfeld}{2}{section.2}
+\contentsline {section}{\numberline {3}Fourierfilterung}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Ergebnis}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Fourier Schriftzug}{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Nenner eines Bruches entfernen}{3}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Tiefpassfilterung bei einem Quadratgitter}{4}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Hochpassfilterung einer Schraube}{6}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Dunkelfeldmethode}{6}{subsection.3.6}
+\contentsline {section}{\numberline {A}Anhang}{8}{appendix.A}
