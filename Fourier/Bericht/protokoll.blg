@@ -1,9 +1,0 @@
-[0] Config.pm:354> INFO - This is Biber 2.7
-[0] Config.pm:357> INFO - Logfile is 'protokoll.blg'
-[35] biber-MSWIN64:303> INFO - === 
-[91] Biber.pm:359> INFO - Reading 'protokoll.bcf'
-[163] Biber.pm:835> INFO - Found 0 citekeys in bib section 0
-[170] Utils.pm:164> WARN - The file 'protokoll.bcf' does not contain any citations!
-[175] bbl.pm:608> INFO - Writing 'protokoll.bbl' with encoding 'UTF-8'
-[175] bbl.pm:712> INFO - Output to protokoll.bbl
-[176] Biber.pm:109> INFO - WARNINGS: 1
