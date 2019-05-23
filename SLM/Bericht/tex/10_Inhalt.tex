@@ -95,5 +95,59 @@ In diesem Teil werden Beugungsbilder verschiedener DOE's aufgenommen. Darunter b
 \subsubsection{Diskussion}
 
 
+\section{Computergenerierte Hologramme (CGH)}
+Zuletzt wird der Aufbau, welcher in \cref{cghskizze} zu sehen ist realisiert. Das heißt LC-Modulator und Analysator in optimaler Konfiguration, eine 200mm Linse und eine Kamera zur Aufnahme der Bilder. Dieser wird für den kommenden, letzten Versuchsteil nicht mehr verändert.
 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{cgh_skizze.png}
+	\caption{Aufbau des Versuchsteils zu computergenerierten Hologrammen}
+	\label{cghskizze}
+\end{figure}
 
+\subsection{Brennweite der diffraktiven Linse}
+Mithilfe der Software wird ein DOE in Form eines Blank Screens erzeugt. Anschließend wird eine Linsenphasenfunktion hinzuaddiert. Dies verändert den Fokus des Aufbaus, der nun neu bestimmt werden muss. Dies wird für vier verschiedene Linsenphasen (100,75,50,25) durchgeführt. Die Ergebnisse sind in \cref{tab} aufgeführt. Wie in \cref{linsenphase} erkennbar ist, verhält sich die Brennweite zur Linsenphase wie ein Wurzelfunktion.
+
+\begin{table}[h]
+	\caption{Die Brennweite für vier verschiedene Linsenphasen.}
+	\begin{tabular}{ll}
+		Linsenphase & Brennweite[cm]\\
+		$25$ & $89\pm0,3$\\
+		$50$ & $95\pm0,3$\\
+		$75$ & $99\pm0,3$\\
+		$100$ & $100,5\pm0,3$
+	\end{tabular}
+	\label{tab}
+\end{table}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{linsenphase.png}
+	\caption{Die Brennweite in cm aufgetragen gegen die eingestellte Linsenphase. Die wurzelförmige Abhängigkeit ist deutlich erkennbar.}
+	\label{linsenphase}
+\end{figure}
+
+\subsection{Berechnung beliebiger diffraktiver optischer Elemente als CGH}
+Mit Hilfe der OptiXplorer Sofware können ebenfalls Hologramme erzeugt werden. Dazu wird zunächst ein Bild aus den vorgegebenen Beispielbildern ausgesucht. Durch die gegebene Funktion "generate CGH" kann der sogenannte Iterative Fourier-Transformations-Algorithmus ausgeführt werden. Das Bild wird an den LC-Modulator übergeben, mit dem Laser durchleuchtet und anschließend mit einer Kamera aufgenommen und gespeichert. Danach wird der selbe Vorgang mit einem weiteren Beispielbild wiederholt. In  \cref{hologram} sind die beiden mit Hilfe der Kamera aufgenommenen Bilder zu sehen. Man erkennt, dass die Beispielbilder, die auf den LC-Modulator geschickt wurden, mit hoher Genauigkeit wiedergegeben wurden. Die Holografie funktioniert aufgrund der zugrundeliegenden Beugungstheorie, welche besagt, dass durch eine Fouriertransformation das Bild rekonstruiert werden kann.
+
+\begin{figure}[h]
+	\begin{subfigure}[c]{0.5\textwidth}
+		\includegraphics[width=0.9\textwidth]{Holo1.png}
+		
+	\end{subfigure}
+	\begin{subfigure}[c]{0.5\textwidth}
+		\includegraphics[width=0.9\textwidth]{Holo2.png}
+	\end{subfigure}
+	\caption{Zwei computergenerierte Hologramme, die mit "generate CHG" der OptiXplorer Software erstellt wurden.}
+	\label{hologram}
+\end{figure}
+
+\subsection{Darstellung zweier DOEs auf einem Bildschirm}
+Im letzten Versuchsteil wird untersucht, was passiert, wenn beide vorher erstellten Hologramme gleichzeitig erzeugt werden. Hierfür werden beide jeweils auf die Hälfte des Bildschirms projeziert. In \cref{holo2} ist das mit Hilfe der Kamera aufgenommene Bild der Überlagerung zweier DOE’s zu sehen. Es sind beide Muster klar erkennbar, jedoch liegen die Bilder nicht nebeneinander, wie man zunächst vermuten könnte, sondern übereinander. Dies folgt aus der doppelten Fouriertransformation. Da diese das im Ortsraum befindliche Bild in den Frequenzraum transformiert und andersherum, werden dabei die Frequenzen überlagert und nicht wie im Ortsraum ursprünglich räumlich getrennt gesehen. Werden dann die überlagerten Frequenzen zurück in den Ortsraum transformiert, erhält man nicht mehr das räumlich getrennte Bild von Ringen und Quadraten, sondern eine Überlagerung der beiden Bilder.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{holobeide.png}
+	\caption{Das mit der Kamera aufgezeichnete Bild, wenn beide Hologramme gleichzeitig nebeneinander erzeugt werden.}
+	\label{holo2}
+\end{figure}

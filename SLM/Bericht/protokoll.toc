@@ -20,4 +20,8 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Auswertung}{6}{subsubsection.3.1.3}
 \contentsline {subsubsection}{\numberline {3.1.4}Unsicherheiten}{6}{subsubsection.3.1.4}
 \contentsline {subsubsection}{\numberline {3.1.5}Diskussion}{6}{subsubsection.3.1.5}
-\contentsline {section}{\numberline {A}Anhang}{7}{appendix.A}
+\contentsline {section}{\numberline {4}Computergenerierte Hologramme (CGH)}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Brennweite der diffraktiven Linse}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Berechnung beliebiger diffraktiver optischer Elemente als CGH}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Darstellung zweier DOEs auf einem Bildschirm}{9}{subsection.4.3}
+\contentsline {section}{\numberline {A}Anhang}{11}{appendix.A}
