@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.4)  23 MAY 2019 23:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.4)  30 MAY 2019 21:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./protokoll.tex
-(./protokoll.tex
+**"./NaJ- und Ge-Detektoren.tex"
+(./NaJ- und Ge-Detektoren.tex
 LaTeX2e <2017-04-15>
 Babel <3.13> and hyphenation patterns for 10 language(s) loaded.
 (c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -1759,7 +1759,7 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2230.
 LaTeX Info: Redefining \labelcref on input line 2230.
 LaTeX Info: Redefining \labelcpageref on input line 2230.
 )
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 87.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 88.
 
 (c:/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1780,7 +1780,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 62.9806pt
 (typearea)              \baselineskip   = 17.99446pt
-(typearea)              on input line 87.
+(typearea)              on input line 88.
 Package csquotes Info: Allocating character ".
 ) (./tex/02_EigeneBefehle.tex) (./tex/03_Variablen.tex)
 Package csquotes Info: Checking for multilingual support...
@@ -1823,8 +1823,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              on input line 42.
 
 1: section
-(./protokoll.aux)
-\openout1 = `protokoll.aux'.
+(./NaJ- und Ge-Detektoren.aux)
+\openout1 = `"NaJ- und Ge-Detektoren.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
 LaTeX Font Info:    ... okay on input line 42.
@@ -1840,7 +1840,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
 LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
- (c:/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(c:/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 42.
@@ -1909,12 +1910,12 @@ File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `protokoll.bcf'.
+\openout4 = `"NaJ- und Ge-Detektoren.bcf"'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'protokoll.bbl' not found.
+Package biblatex Info: ... file '"NaJ- und Ge-Detektoren".bbl' not found.
 
-No file protokoll.bbl.
+No file "NaJ- und Ge-Detektoren".bbl.
 Package biblatex Info: Reference section=0 on input line 42.
 Package biblatex Info: Reference segment=0 on input line 42.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1934,9 +1935,9 @@ LaTeX Info: Redefining \ref on input line 42.
 LaTeX Info: Redefining \pageref on input line 42.
 LaTeX Info: Redefining \nameref on input line 42.
 
-(./protokoll.out) (./protokoll.out)
+(./NaJ- und Ge-Detektoren.out) (./NaJ- und Ge-Detektoren.out)
 \@outlinefile=\write5
-\openout5 = `protokoll.out'.
+\openout5 = `"NaJ- und Ge-Detektoren.out"'.
 
 \c__siunitx_mathsf_int=\count441
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 42.
@@ -2040,11 +2041,11 @@ Package babel Info: Redefining ngerman shorthand "~
 {c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 Package tocbasic Info: character protrusion at toc deactivated on input line 60
 .
- (./protokoll.toc
+ (./NaJ- und Ge-Detektoren.toc
 Package cleveref Info: loaded `ngerman' language definitions on input line 3.
 )
 \tf@toc=\write6
-\openout6 = `protokoll.toc'.
+\openout6 = `"NaJ- und Ge-Detektoren.toc"'.
 
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 60.
@@ -2062,61 +2063,94 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 2.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 16.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 16.
-<4.2.1-Aufbau.png, id=143, 399.99437pt x 184.18813pt>
-File: 4.2.1-Aufbau.png Graphic file (type png)
-<use 4.2.1-Aufbau.png>
-Package pdftex.def Info: 4.2.1-Aufbau.png  used on input line 21. on input line
- 21.
-Package pdftex.def Info: Requested size: 399.9934pt x 184.18765pt on input line
- 21.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 27.
-Package cleveref Info: loaded `ngerman' language definitions on input line 29.
+(babel)             in language  on input line 8.
+Package cleveref Info: loaded `ngerman' language definitions on input line 14.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 14.
 [1
 
 ]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 16.
+ (c:/texlive/2017/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 18.
+<streuung.png, id=91, 377.91188pt x 354.57469pt>
+File: streuung.png Graphic file (type png)
+<use streuung.png>
+Package pdftex.def Info: streuung.png  used on input line 23. on input line 23.
+
+Package pdftex.def Info: Requested size: 403.31511pt x 378.4119pt on input line
+ 23.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 30.
+Package cleveref Info: loaded `ngerman' language definitions on input line 32.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+ [2]
+Package cleveref Info: loaded `ngerman' language definitions on input line 32.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+ [3 <./streuung.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 33.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 36.
 Package cleveref Info: loaded `ngerman' language definitions on input line 38.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 38.
@@ -2126,202 +2160,42 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 38.
- [2 <./4.2.1-Aufbau.png>]
+ [4]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 48.
-<4.2.2-Aufbau.png, id=167, 398.99063pt x 163.61125pt>
-File: 4.2.2-Aufbau.png Graphic file (type png)
-<use 4.2.2-Aufbau.png>
-Package pdftex.def Info: 4.2.2-Aufbau.png  used on input line 52. on input line
- 52.
-Package pdftex.def Info: Requested size: 398.98965pt x 163.61084pt on input lin
-e 52.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 56.
-<horizundvertik.png, id=169, 287.0725pt x 211.79124pt>
-File: horizundvertik.png Graphic file (type png)
-<use horizundvertik.png>
-Package pdftex.def Info: horizundvertik.png  used on input line 60. on input li
-ne 60.
-Package pdftex.def Info: Requested size: 287.0718pt x 211.79073pt on input line
- 60.
+(babel)             in language  on input line 42.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 42.
 
-Package cleveref Info: loaded `ngerman' language definitions on input line 66.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 66.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 66.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 66.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 66.
-[3 <./4.2.2-Aufbau.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 72.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 72.
-Package cleveref Info: loaded `ngerman' language definitions on input line 74.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 74.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 74.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 74.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 74.
- [4 <./horizundvertik.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 75.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 76.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 76.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 77.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 77.
-<Kamera111.png, id=190, 434.62375pt x 188.705pt>
-File: Kamera111.png Graphic file (type png)
-<use Kamera111.png>
-Package pdftex.def Info: Kamera111.png  used on input line 81. on input line 81
-.
-Package pdftex.def Info: Requested size: 434.62268pt x 188.70453pt on input lin
-e 81.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 85.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 85.
-<pixelverg.png, id=191, 410.03188pt x 259.97125pt>
-File: pixelverg.png Graphic file (type png)
-<use pixelverg.png>
-Package pdftex.def Info: pixelverg.png  used on input line 89. on input line 89
-.
-Package pdftex.def Info: Requested size: 410.03087pt x 259.97061pt on input lin
-e 89.
-Package cleveref Info: loaded `ngerman' language definitions on input line 93.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 93.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 93.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 93.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 93.
- [5 <./Kamera111.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 94.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 94.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 95.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 95.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 98.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 98.
-<cgh_skizze.png, id=200, 602.25pt x 196.48407pt>
-File: cgh_skizze.png Graphic file (type png)
-<use cgh_skizze.png>
-Package pdftex.def Info: cgh_skizze.png  used on input line 103. on input line 
-103.
-Package pdftex.def Info: Requested size: 481.80064pt x 157.18745pt on input lin
-e 103.
 
-Overfull \hbox (33.6697pt too wide) in paragraph at lines 103--104
- [][] 
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 42.
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 108.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 108.
-Package cleveref Info: loaded `ngerman' language definitions on input line 110.
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 110.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 110.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 110.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 110.
-[6 <./pixelverg.png>]
-<linsenphase.png, id=210, 774.7344pt x 592.8549pt>
-File: linsenphase.png Graphic file (type png)
-<use linsenphase.png>
-Package pdftex.def Info: linsenphase.png  used on input line 125. on input line
- 125.
-Package pdftex.def Info: Requested size: 403.31511pt x 308.63008pt on input lin
-e 125.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 130.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 130.
-Package cleveref Info: loaded `ngerman' language definitions on input line 132.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 42.
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 132.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 132.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 132.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 132.
- [7 <./cgh_skizze.png>]
-Package cleveref Info: loaded `ngerman' language definitions on input line 132.
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 132.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 132.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 132.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 132.
- [8 <./linsenphase.png>]
-<Holo1.png, id=225, 1284.8pt x 1027.84pt>
-File: Holo1.png Graphic file (type png)
-<use Holo1.png>
-Package pdftex.def Info: Holo1.png  used on input line 135. on input line 135.
-Package pdftex.def Info: Requested size: 201.65755pt x 161.32104pt on input lin
-e 135.
-<Holo2.png, id=226, 1284.8pt x 1027.84pt>
-File: Holo2.png Graphic file (type png)
-<use Holo2.png>
-Package pdftex.def Info: Holo2.png  used on input line 139. on input line 139.
-Package pdftex.def Info: Requested size: 201.65755pt x 161.32104pt on input lin
-e 139.
+LaTeX Warning: Reference `idealized_spectrum' on page 1 undefined on input line
+ 43.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 134--141
-[]$[]$ $[]$ 
- []
-
+Package cleveref Info: loaded `ngerman' language definitions on input line 53.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 145.
-<holobeide.png, id=228, 1284.8pt x 1027.84pt>
-File: holobeide.png Graphic file (type png)
-<use holobeide.png>
-Package pdftex.def Info: holobeide.png  used on input line 150. on input line 1
-50.
-Package pdftex.def Info: Requested size: 403.31511pt x 322.64209pt on input lin
-e 150.
-)
+(babel)             in language  on input line 53.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 53.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 53.
+[5])
 Package cleveref Info: loaded `ngerman' language definitions on input line 77.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 77.
@@ -2331,17 +2205,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 77.
- [9 <./Holo1.png> <./Holo2.png>]
-Package cleveref Info: loaded `ngerman' language definitions on input line 77.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 77.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 77.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 77.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 77.
- [10 <./holobeide.png>]
+ [6]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2356,8 +2220,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 83.
-
-[11
+ [7
 
 ]
 
@@ -2365,41 +2228,51 @@ LaTeX Warning: Empty bibliography on input line 83.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
-(./protokoll.aux
+(./NaJ- und Ge-Detektoren.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 27.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
-Package rerunfilecheck Info: File `protokoll.out' has not changed.
-(rerunfilecheck)             Checksum: DE292B33D2CD710F0822D0511172C0C9;4055.
-Package logreq Info: Writing requests to 'protokoll.run.xml'.
-\openout1 = `protokoll.run.xml'.
+Package rerunfilecheck Info: File `"NaJ- und Ge-Detektoren".out' has not change
+d.
+(rerunfilecheck)             Checksum: 8431BB27598149B08DE5EC633FAB8695;1434.
+
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to '"NaJ- und Ge-Detektoren".run.xml'.
+\openout1 = `"NaJ- und Ge-Detektoren.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41361 strings out of 494838
- 797331 string characters out of 6177689
- 1377681 words of memory out of 5000000
+ 41367 strings out of 494838
+ 797977 string characters out of 6177689
+ 1376778 words of memory out of 5000000
  44035 multiletter control sequences out of 15000+600000
- 612105 words of font info for 119 fonts, out of 8000000 for 9000
+ 637716 words of font info for 154 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 68i,20n,106p,10401b,2153s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2017/tex
-mf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2017/texmf-dist/fonts/enc/dvip
-s/lm/lm-mathsy.enc}{c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
-}<c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2017/
-texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2017/texmf-dist/fonts/t
-ype1/public/lm/lmmi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr
-10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/
-2017/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2017/texmf-dist/fon
-ts/type1/public/lm/lmr8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/l
-mro12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/te
-xlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2017/texmf-d
-ist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on protokoll.pdf (13 pages, 2762977 bytes).
+ 68i,20n,106p,10416b,2142s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2017/tex
+mf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2017/texmf-dist/fonts/enc/dvi
+ps/lm/lm-rm.enc}{c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c
+:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2017/tex
+mf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}<c:/texlive/2017/texmf-dist/fonts/type
+1/public/lm/lmbx10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx12
+.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2
+017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2017/texmf-dist/fon
+ts/type1/public/lm/lmmi6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/
+lmmi8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texli
+ve/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2017/texmf-dist/
+fonts/type1/public/lm/lmr17.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/
+lm/lmr6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texl
+ive/2017/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2017/texmf-dis
+t/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pu
+blic/lm/lmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+<c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on "NaJ- und Ge-Detektoren.pdf" (9 pages, 311722 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 254 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
- 27891 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 36446 words of extra memory for PDF output out of 42996 (max. 10000000)
 
