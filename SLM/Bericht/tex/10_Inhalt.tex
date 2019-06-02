@@ -72,7 +72,7 @@ Dabei wird deutlich, dass die Bilder \cref{45} und \cref{135} genau die invertie
 Daraufhin wird die Kamera mit einer Linse und dem Intensitätsmessgerät ersetzt. Bei dem LC-Modul, wird ein rein weißer bzw. schwarzer Bildschirm statt des geteilten benutzt. Für diese beiden Konfigurationen wird jeweils eine Intensitätsmessung durchgeführt, welche ergeben haben $I_{max} = \SI{1,336}{mW}$ und $I_{min} = \SI{0,106}{mW}$. Daraus folgt mit \cref{eq:Kontrast} ein Kontrast von C = 0,853, was deutlich niedriger als der vorherige Kontrast ist. 
 Das lässt sich damit erklären, dass der LC-Modulator auch als Phasenmodulator fungiert, was den Kontrast verschlechtert.
 \subsection{Pixelgröße des LC-Displays}
-Als nächstes soll die Pixelgröße des Displays bestimmt werden. Dafür wird der Versuch nach \cref{413} aufgebaut. Dabei hat die Linse eine Brennweite von $f = \SI{16}{cm}$ und der Schirm ist b = $\SI{78,5 \ pm 0,2}{cm}$ von der Linse entfernt. Daraufhin wird ein weißes Bild mit einem 200 x 200 großen schwarzen Quadrat an den LC-Modulator adressiert und die Bildgröße mit einem Lineal auf dem Schirm gemessen. Diese ist auf $B = \SI{2,6 \pm 0,3}{cm}$
+Als nächstes soll die Pixelgröße des Displays bestimmt werden. Dafür wird der Versuch nach \cref{413} aufgebaut. Dabei hat die Linse eine Brennweite von $f = \SI{16}{cm}$ und der Schirm ist b = $\SI{78,5 \pm 0,2}{cm}$ von der Linse entfernt. Daraufhin wird ein weißes Bild mit einem 200 x 200 großen schwarzen Quadrat an den LC-Modulator adressiert und die Bildgröße mit einem Lineal auf dem Schirm gemessen. Diese ist auf $B = \SI{2,6 \pm 0,3}{cm}$
 bestimmt worden.
 \begin{figure}[h!]
 	\centering
@@ -88,6 +88,57 @@ Die Pixelgröße kann dann über die Formel
 berechnet werden. Da das benutzte Quadrat eine Pixelgröße von 200 Pixeln hat , muss die Formel noch durch 200 geteilt werden um  auf das Endergebnis mit $G = \SI{0,033 \pm 0,001}{mm}$ zu kommen. 
 
 \subsection{Zusammenhang zwischen Grauwert und Polarisationszustand}
+Im nächsten Versuchsteil soll der Zusammenhang zwischen Grauwert und Polarisationszustand behandelt werden. Dazu wird der Versuch, wie in \cref{414} gezeigt, aufgebaut. Dabei werden verschiedene Grauwerte eingestellt und die maximale und minimale Intensität, bei verschiedenen Einstellungen des Analysators, sowie der dazugehörige Winkel aufgeschrieben. Diese Messungen sind in \cref{tab:grauwert} zu sehen.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.6]{4.1.4-Aufbau.png}
+	\caption{Aufbau zur Erforschung zum Zusammenhang zwischen Grauwert und Polarisationszustand}
+	\label{414}
+\end{figure}
+
+\begin{table}[]
+	\caption{Messung der intensität für verschiedene Grauwerte }
+	\label{tab:grauwert}
+	\begin{tabular}{l|llll}
+		Graustufen & max Winkel & max Intensität & min Winkel & min Intensität \\ \hline
+		0          & 50         & 1              & 140        & 0,014          \\
+		50         & 50         & 0,985          & 145        & 0,036          \\
+		100        & 59         & 0,923          & 148        & 0,075          \\
+		150        & 103        & 0,869          & 195        & 0,186          \\
+		200        & 123        & 0,968          & 211        & 0,03           \\
+		250        & 123        & 0,98           & 212        & 0,028         
+	\end{tabular}
+\end{table}
+
+
+
+Die Grauwerte entsprechen dabei einer angelegten Spannung am LC-Modulator. Da dieser aus Twisted nematic Flüssigkristallzellen besteht, die bei nicht angelegter Spannung die Polarisation des Lasers um 90° drehen und der Laser immer noch in die -45° Richtung polarisiert ist, scheint es klar zu sein, dass bei einer Graustufe von 0 auch keine Spannung angelegt wird. Sobald eine bestimmte Spannung am LC-Modulator überschritten ist, ändert dieser auch die Polarisation des Lichts nicht mehr. Auch das stimmt näherungsweise mit den Messwerten überein. Wie in \cref{tab:grauwert} zu sehen ist, wird bei einem fast maximalem Grauwert von 250(Maximum ist bei 255), auch wieder eine ähnliche Polarisation, wie sie der Laser am Anfang hat, vorgefunden. 
+
+Die Änderung der Polarisation liegt am Aufbau des LC-Modulators bzw. der einzelnen Zellen. Eine schematische Aufzeichnung davon ist in \cref{LC-Modul} zu sehen. Bei keiner angelegten Spannung sind die einzelnen Moleküle in einer Raumrichtung leicht zueinander verschoben, wodurch sich langsam  bei jedem Schritt die Polarisation ändert, 
+bis sie 90° erreicht hat. Bei einem schwachem angelegten Feld sind die Moleküle zudem noch in eine Zweite Raumrichtung ineinander verdreht. Erst sobald ein gewisser Grenzwert erreicht wird, richten sich die Moleküle vollkommen parallel zueinander aus und ändern die Polarisation gar nicht mehr. 
+
+ 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.6]{LC-Zelle.png}
+	\caption{Verhaltensweise einer Flüssigkristallzelle bei verschiedenen Spannung. a) Keine Spannung b) Spannung unter Grenzwert c) Spannung über Grenzwert}
+	\label{LC-Modul}
+\end{figure}
+
+
+Es ist möglich die Exzentrizität des Lichts bildlich zu bestimmen, indem die maximale Intensität als die große Halbachse und die minimale Intensität, als die kleine Halbachse einer Ellipse angesehen werden. Der Winkel der maximalen Intensität entspricht dabei der Drehung der Ellipse. Beispielhaft ist das für einige ausgewählte Grauwerte in \cref{Ellipse} zu sehen. Dabei wird besonders deutlich, dass der maximale und minimale Grauwert um annähernd 90° zueinander gedreht sind, wie es auch erwartet wurde.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.6]{Ellipse.png}
+	\caption{Exzentrizität des Lichts für ausgewählte Grauwerte}
+	\label{Ellipse}
+\end{figure}
+
+
+
 
 
 \section{LC-Modulator als DOE}
