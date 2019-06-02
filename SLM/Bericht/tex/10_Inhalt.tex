@@ -1,3 +1,95 @@
+\section{Amplitudenmodulation und Projektion}
+\subsection{Winkelverteilung von linear polarisiertem Licht}
+Zuerst wird der Versuch nach \cref{411} aufgebaut. Der laser zeigt dabei entlang des Strahlengangs, auf dem auch die anderen Objekte angebracht sind. Die Linse fokussiert dabei den Laserstrahl auf das Intensitätsmessgerät.
+Die Brennweite beträgt dabei 160mm. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.6]{4.1.1-Aufbau.png}
+	\caption{Aufbau zur Untersuchung von Amplitudenmodulation und Projektion}
+	\label{411}
+\end{figure}
+
+Zunächst wird die Polarisationsrichtung des Lasers bestimmt, indem der Analysator so eingestellt wird, dass die größte Intensität gemessen werden kann. Von diesem Punkt aus wird in 10° Schritten der Analysator gedreht und jeweils die Intensität gemessen. Dabei ergibt sich \cref{Malus}, wobei erkennbar ist, dass  sich die Intensität wie zu erwarten nach dem Gesetz von Malus verhält, welches besagt, dass 
+\begin{equation}
+	I = I_{0}*cos(\alpha)^{2}
+\end{equation}
+ist.$\alpha$ ist dabei der Winkel in Radiant. In diesem Fall ist die Funktion allerdings um den Startwinkel, die der Laser zum Analysator hat, verschoben.
+Nach unserer Messung lag dieser bei $\beta = \SI{45 \pm 1}{^\circ}$ im Vergleich dazu liegt der Fit bei $\beta = \SI{43,5 \pm 0,3}{^\circ}$. Das bedeutet, dass das Maximum und Minimum wahrscheinlich nicht perfekt getroffen wurde.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.6]{GesetzvonMalus.png}
+	\caption{Intensität unter verschiedenen Winkeln des Analysators}
+	\label{Malus}
+\end{figure}
+
+Daraufhin können die maximal und minimale gemessene Intensität verglichen werden, um den Kontrast zu bestimmen:
+\begin{equation}
+	C = \frac{I_{max} - I_{min}}{I_{max} + I_{min}} = \SI{0,9943 \pm 0,0004}{}
+	\label{eq:Kontrast}
+\end{equation}
+Bei der Unsicherheit wurde allerdings nicht betrachtet, dass womöglich nicht das perfekte Minimum getroffen wurde, es ist also möglich, dass der Kontrast sogar noch größer ist. 
+
+\subsection{Vorbereitungen zur optimierten Funktion des LC-Modulators}
+Der nächste Versuch wird nach \cref{412} aufgebaut. Da die Polarisation des Lasers jetzt bekannt ist, kann er so gedreht werden, dass sie im -45° Winkel zum LC-Modulator liegt, da er dort den maximalen Kontrast hat. Hinter dem LC-Modulator folgt ein Analysator, der auf einen Polarisationswinkel von -135° eingestellt werden soll. Mit der Kamera kann das Bild beobachten werden.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.6]{4.1.2-Aufbau.png}
+	\caption{Aufbau zur Variation des Kontrasts}
+	\label{412}
+\end{figure}
+
+Als nächstes wird der LC-Modulator angesteuert, sodass die eine Seite des Bildschirms schwarz ist und die andere weiß. Dabei werden vier Bilder gemacht, wobei der Analysator jeweils um 45° weiter gedreht wird, wie sie auch in \cref{Kontrast} zu sehen sind. 
+
+\begin{figure}
+	\begin{subfigure}[]{0.5\textwidth}
+		\includegraphics[width=0.6\textwidth]{4.1.2_0Grad.png}
+		\caption{0° gedreht}
+	\end{subfigure}
+	\begin{subfigure}[]{0.5\textwidth}
+		\includegraphics[width=0.6\textwidth]{4.1.2_45Grad.png}
+		\caption{45° gedreht}
+		\label{45}
+	\end{subfigure}
+
+
+	\begin{subfigure}[]{0.5\textwidth}
+		\includegraphics[width=0.6\textwidth]{4.1.2_90Grad.png}
+		\caption{90° gedreht}
+	\end{subfigure}
+	\begin{subfigure}[]{0.5\textwidth}
+		\includegraphics[width=0.6\textwidth]{4.1.2_135Grad.png}
+		\caption{135° gedreht}
+		\label{135}
+	\end{subfigure}
+\label{Kontrast}
+\end{figure}
+
+Dabei wird deutlich, dass die Bilder \cref{45} und \cref{135} genau die invertierten voneinander sind. Die beiden anderen Bilder ähneln sich sehr stark. Somit wird klar, dass sich der Kontrast mit der Stellung des Analysators ändert, wobei 45° die optimale Einstellung ist und für den Rest des Versuches beibehalten wird. 
+
+Daraufhin wird die Kamera mit einer Linse und dem Intensitätsmessgerät ersetzt. Bei dem LC-Modul, wird ein rein weißer bzw. schwarzer Bildschirm statt des geteilten benutzt. Für diese beiden Konfigurationen wird jeweils eine Intensitätsmessung durchgeführt, welche ergeben haben $I_{max} = \SI{1,336}{mW}$ und $I_{min} = \SI{0,106}{mW}$. Daraus folgt mit \cref{eq:Kontrast} ein Kontrast von C = 0,853, was deutlich niedriger als der vorherige Kontrast ist. 
+Das lässt sich damit erklären, dass der LC-Modulator auch als Phasenmodulator fungiert, was den Kontrast verschlechtert.
+\subsection{Pixelgröße des LC-Displays}
+Als nächstes soll die Pixelgröße des Displays bestimmt werden. Dafür wird der Versuch nach \cref{413} aufgebaut. Dabei hat die Linse eine Brennweite von $f = \SI{16}{cm}$ und der Schirm ist b = $\SI{78,5 \ pm 0,2}{cm}$ von der Linse entfernt. Daraufhin wird ein weißes Bild mit einem 200 x 200 großen schwarzen Quadrat an den LC-Modulator adressiert und die Bildgröße mit einem Lineal auf dem Schirm gemessen. Diese ist auf $B = \SI{2,6 \pm 0,3}{cm}$
+bestimmt worden.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.6]{4.1.3-Aufbau.png}
+	\caption{Aufbau zur Bestimmung der Pixelgröße}
+	\label{413}
+\end{figure}
+
+Die Pixelgröße kann dann über die Formel
+\begin{equation}
+	G = \frac{B}{\frac{b}{f} - 1} 
+\end{equation}
+berechnet werden. Da das benutzte Quadrat eine Pixelgröße von 200 Pixeln hat , muss die Formel noch durch 200 geteilt werden um  auf das Endergebnis mit $G = \SI{0,033 \pm 0,001}{mm}$ zu kommen. 
+
+\subsection{Zusammenhang zwischen Grauwert und Polarisationszustand}
+
+
 \section{LC-Modulator als DOE}
 \subsection{Berechnung der Pixelgröße}
 \subsubsection{Theorie}
@@ -6,7 +98,7 @@ Zur Bestimmung der Breite eines Pixels innerhalb des LC-Modulators wird mit der 
 	g\sin{\alpha} = m\lambda
 	\label{gbestimm}
 \end{align}
-Dabei stellt g die Gitterkonstante, $\alpha$ den Winkel zwischen der nullten und m.ten Beugungsordnungen, m die entsprechende Beugungsordnung und $\lambda$ die Wellenlänge des Lasers ($\lambda = 650nm$) dar.
+Dabei stellt g die Gitterkonstante, $\alpha$ den Winkel zwischen der nullten und m-ten Beugungsordnung, m die entsprechende Beugungsordnung und $\lambda$ die Wellenlänge des Lasers ($\lambda = 650nm$) dar.
 Die Bestimmung von $\alpha$ kann aus der Optik durch
 \begin{align}
 	\alpha \approx \frac{d}{2f}
