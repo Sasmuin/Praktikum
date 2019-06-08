@@ -170,8 +170,7 @@ Um \cref{gbestimm} möglichst genau zu berechnen wurde bei der Berechnung von \c
 \subsubsection{Unsicherheiten}
 Die Unsicherheit von d wurde mit einer Genauigkeit von $\pm 0,2cm$ angenommen. Daraus resultiert für die Unsicherheit der Gitterkonstanten mittels Fehlerfortpflanzung ein Wert von $g = (29 \pm 3) \mu m$.
 \subsubsection{Diskussion}
-Somit liegt das Ergebnis der Pixelgröße innerhalb der angegebenen Pixelgröße von $g = 32 \mu m$.
-Die Diskussion mit dem Aufgabenteil 1 muss auch noch geschrieben werden.
+Somit liegt das Ergebnis der Pixelgröße von $g = (29 \pm 3) \mu m$ innerhalb der angegebenen Pixelgröße von $g = 32 \mu m$. In Aufgabenteil 1.3 Pixelgröße eines LC-Displays wurde die Größe eines Pixels auf $g = (33 \pm 1) \mu m$ gemessen. Ebenfalls diese beiden Ergebnisse stimmen in Abhängigkeit der Unsicherheiten miteinander überein.
 
 \subsection{Intensitätsverteilung in den Beugungsordnungen des unadressierten Displays}
 \subsubsection{Theorie}
@@ -210,13 +209,19 @@ Daraus ergibt sich ein duty cycle und ein Füllfaktor von
 	\text{duty cycle} = (5 \pm 0,4)\% \\
 	\text{Füllfaktor} = (4,7 \pm 0,3)\%
 \end{align}
-\section{Unsicherheiten}
-Die Unsicherheiten wurden durch die oben genanten Unsicherheitsannahmen mittels Fehlerfortpflanzung berechnet.
-\section{Diskussion}
+\subsubsection{Unsicherheiten}
+Die Unsicherheiten wurden mittels Fehlerfortpflanzung berechnet. Es wurden dieselben Unsicherheiten benutzt, die in 2.1 Berechnung der Pixelgröße verwendet wurden.
+\subsubsection{Diskussion}
 Der Füllfaktor, welcher durch die obige Auswertung berechnet wurde, ist nicht gleich mit der Angabe des Herstellers, welcher in [1] aufgelistet wurde. In den Angaben des Herstellers ist der geringste Füllfaktor bei einem Wert von $58 \%$. Der oben ausgerechnete Wert unterscheidet sich in einer Zehnerpotenz von dem Soll Wert. Hingegen ist die Pixelbreite von $g = (29 \pm 3) \mu m$ den Angaben entsprechend. Hieraus resultiert auch die abweichende Zehnerpotenz, sodass der Fehler innerhalb des zweiten Teils der Auswertung liegen muss.
 
 \subsection{Aufnahme von verschiedenen Beugungsbildern mittels der Kamera}
 \subsubsection{Theorie}
+Der Beugungswirkungsgrad $\nu$ einer DOE-Zelle bei einem vorgegebenen Grauwert ist durch folgende Formel definiert.
+\begin{align}
+	\nu = \frac{I_\text{1,max}}{I_\text{0,max}}
+	\label{fff}
+\end{align}
+Der Beugungswirkungsgrad ist je nach eingestelltem Grauwert unterschiedlich. Der Grauwert wird in der DOE-Zelle eingestellt.
 \subsubsection{Aufbau}
 Der Aufbau in \cref{423} ist identisch mit dem Aufbau in \cref{421} mit dem Unterschied, dass statt des Schirms eine Kamera integriert wurde.
 \begin{figure}[h!]
@@ -226,17 +231,33 @@ Der Aufbau in \cref{423} ist identisch mit dem Aufbau in \cref{421} mit dem Unte
 	\label{423}
 \end{figure}
 \subsubsection{Auswertung}
-In diesem Teil werden Beugungsbilder verschiedener DOE's aufgenommen. Darunter befinden sich der Einzelspalt, der Doppelspalt und das Gitter. Bei dem Einzelspalt werden zwei verschiedene Strukturgrößen benutzt.
+In diesem Teil werden Beugungsbilder verschiedener DOE's aufgenommen. Darunter befinden sich der Einzelspalt, der Doppelspalt und das Gitter. Bei dem Einzelspalt werden zwei verschiedene Strukturgrößen benutzt. Aufgrund der Aufnahmen die gemacht wurden, kann man nur das Hauptmaximum beobachten, sowie die Untermodulation. Die Nebenmaxima, welche dieselbe Form haben,welche vertikal und horizonatal verschoben und dunkler sind, können nicht beobachtet werden. 
+Einmal wurde eine Dicke des Spaltabstandes von 20 Pixeln und einmal von 40 Pixeln verwendet. Es ist zu beobachten, dass die Anzahl der Maxima in horizontaler Richtung, bei einem breiteren Spaltabstand, zu nimmt. Somit können mehrere Nebenmaxima innerhalb der Untermodulation auf kleinerem Raum beobachtet werden.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale = 1]{pixelverg.png}
-	\caption{}
+	\caption{Zwei Einzelspalte. Der erste mit einer Breite von 20 Pixeln (links), der zweite mit einer Breite von 40 Pixeln (rechts)}
 	\label{verg}
 \end{figure}
+In \cref{doppel} ist das Beugungsbild eines Doppelspaltes mit einer Breite von 30 Pixeln und einem Abstand beider Spalte von 100 Pixeln zu sehen. Es ist ein Hauptmaximum in diesem Bild zu erkennen. Innerhalb des Hauptmaximums ist ein Interferenzbild zu sehen. In der Mitte ist die Intensität (bis auf die beiden Intensitätspeaks) am stärksten und fällt zu den Seiten ab. So entspricht auch das Bild der Untermodulation dem Beugungsbild eines Doppelspaltes.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.7]{doppelspalt.png}
+	\caption{Doppelspalt mit einer Breite von 30 Pixeln und einem Abstand von 100 Pixeln.}
+	\label{doppel}
+\end{figure}
 
-\subsubsection{Unsicherheiten}
+In \cref{gitter} kann das Hauptmaxima eindeutig erkannt werden. In diesem Bild kann weiterhin statt der Untermodulation, die die ganze Zeit betrachtet wurde, das Nebenmaxima in vertikaler Richtung identifiziert werden. Beide Maxima bestehen aus Untermodulationen, was für die Nutzung einer DOE spricht.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.7]{gitter.png}
+	\caption{}
+	\label{gitter}
+\end{figure}
+Desweiteren wird für ein Grauwert die Intensitäten des 0.ten und des 1.ten Beugungsmaxima gemessen. Mittels der Intensitäten lässt sich der Beugungswirkungsgrad berechnen. Dieser wurde nur für eine Graustufe aufgenommen, sodass der Beugungswirkungsgrad bei $0,21 \pm 0,01$ bei einer Graustufe von 20 lag.
+
 \subsubsection{Diskussion}
-
+Der LC-Modulator beeinflusst über die Farbe der Pixel (weiß bis schwarz) die Intensität des durchgelassenen Lichtes. Somit können Spalte, wie im Einzelspalt- oder Doppelspaltversuch, erzeugt werden, durch welche Licht hindurch gelangen kann. Dies allein reicht noch nicht aus um Interferenzen erzeugen zu können. Der zweite wichtige Punkt ist die Größe der Pixel. Da die Größenordnung der Pixel klein genug ist, ist es möglich die Lichtwellen zur Interferenz zu bringen, falls ein Pixel mehrere Größenordnungen größer wäre, wäre es problematisch Interferenzen zu erzeugen.
 
 \section{Computergenerierte Hologramme (CGH)}
 Zuletzt wird der Aufbau, welcher in \cref{cghskizze} zu sehen ist realisiert. Das heißt LC-Modulator und Analysator in optimaler Konfiguration, eine 200mm Linse und eine Kamera zur Aufnahme der Bilder. Dieser wird für den kommenden, letzten Versuchsteil nicht mehr verändert.
