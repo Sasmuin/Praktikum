@@ -1,11 +1,11 @@
 \section{Amplitudenmodulation und Projektion}
 \subsection{Winkelverteilung von linear polarisiertem Licht}
-Zuerst wird der Versuch nach \cref{411} aufgebaut. Der laser zeigt dabei entlang des Strahlengangs, auf dem auch die anderen Objekte angebracht sind. Die Linse fokussiert dabei den Laserstrahl auf das Intensitätsmessgerät.
-Die Brennweite beträgt dabei 160mm. 
+Zuerst wird der Versuch nach \cref{411} aufgebaut. Der Laser zeigt dabei entlang des Strahlengangs, auf dem auch die anderen Objekte angebracht sind. Die Linse fokussiert dabei den Laserstrahl auf das Intensitätsmessgerät.
+Die Brennweite beträgt 160mm. 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{4.1.1-Aufbau.png}
+	\includegraphics[scale=1]{4.1.1-Aufbau.png}
 	\caption{Aufbau zur Untersuchung von Amplitudenmodulation und Projektion}
 	\label{411}
 \end{figure}
@@ -19,7 +19,7 @@ Nach unserer Messung lag dieser bei $\beta = \SI{45 \pm 1}{^\circ}$ im Vergleich
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{GesetzvonMalus.png}
+	\includegraphics[scale=0.8]{GesetzvonMalus.png}
 	\caption{Intensität unter verschiedenen Winkeln des Analysators}
 	\label{Malus}
 \end{figure}
@@ -36,7 +36,7 @@ Der nächste Versuch wird nach \cref{412} aufgebaut. Da die Polarisation des Las
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{4.1.2-Aufbau.png}
+	\includegraphics[scale=1]{4.1.2-Aufbau.png}
 	\caption{Aufbau zur Variation des Kontrasts}
 	\label{412}
 \end{figure}
@@ -64,19 +64,20 @@ Als nächstes wird der LC-Modulator angesteuert, sodass die eine Seite des Bilds
 		\caption{135° gedreht}
 		\label{135}
 	\end{subfigure}
-\label{Kontrast}
+	\caption{Bilder unter verschiedenen Einstellung des LC-Modulators}
+	\label{Kontrast}
 \end{figure}
 
 Dabei wird deutlich, dass die Bilder \cref{45} und \cref{135} genau die invertierten voneinander sind. Die beiden anderen Bilder ähneln sich sehr stark. Somit wird klar, dass sich der Kontrast mit der Stellung des Analysators ändert, wobei 45° die optimale Einstellung ist und für den Rest des Versuches beibehalten wird. 
 
-Daraufhin wird die Kamera mit einer Linse und dem Intensitätsmessgerät ersetzt. Bei dem LC-Modul, wird ein rein weißer bzw. schwarzer Bildschirm statt des geteilten benutzt. Für diese beiden Konfigurationen wird jeweils eine Intensitätsmessung durchgeführt, welche ergeben haben $I_{max} = \SI{1,336}{mW}$ und $I_{min} = \SI{0,106}{mW}$. Daraus folgt mit \cref{eq:Kontrast} ein Kontrast von C = 0,853, was deutlich niedriger als der vorherige Kontrast ist. 
+Daraufhin wird die Kamera mit einer Linse und dem Intensitätsmessgerät ersetzt. Bei dem LC-Modul, wird ein rein weißer bzw. schwarzer Bildschirm statt des geteilten benutzt. Für diese beiden Konfigurationen wird jeweils eine Intensitätsmessung durchgeführt, welche ergeben haben: $I_{max} = \SI{1,336}{mW}$ und $I_{min} = \SI{0,106}{mW}$. Daraus folgt mit \cref{eq:Kontrast} ein Kontrast von C = 0,853, was deutlich niedriger als der vorherige Kontrast ist. 
 Das lässt sich damit erklären, dass der LC-Modulator auch als Phasenmodulator fungiert, was den Kontrast verschlechtert.
 \subsection{Pixelgröße des LC-Displays}
 Als nächstes soll die Pixelgröße des Displays bestimmt werden. Dafür wird der Versuch nach \cref{413} aufgebaut. Dabei hat die Linse eine Brennweite von $f = \SI{16}{cm}$ und der Schirm ist b = $\SI{78,5 \pm 0,2}{cm}$ von der Linse entfernt. Daraufhin wird ein weißes Bild mit einem 200 x 200 großen schwarzen Quadrat an den LC-Modulator adressiert und die Bildgröße mit einem Lineal auf dem Schirm gemessen. Diese ist auf $B = \SI{2,6 \pm 0,3}{cm}$
 bestimmt worden.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{4.1.3-Aufbau.png}
+	\includegraphics[scale=1]{4.1.3-Aufbau.png}
 	\caption{Aufbau zur Bestimmung der Pixelgröße}
 	\label{413}
 \end{figure}
@@ -85,7 +86,7 @@ Die Pixelgröße kann dann über die Formel
 \begin{equation}
 	G = \frac{B}{\frac{b}{f} - 1} 
 \end{equation}
-berechnet werden. Da das benutzte Quadrat eine Pixelgröße von 200 Pixeln hat , muss die Formel noch durch 200 geteilt werden um  auf das Endergebnis mit $G = \SI{0,033 \pm 0,001}{mm}$ zu kommen. 
+berechnet werden. Da das benutzte Quadrat eine Pixelgröße von 200 Pixeln hat , muss die Formel noch durch 200 geteilt werden um  auf das Endergebnis mit $G = \SI{33 \pm 1}{\mu m}$ zu kommen. 
 
 \subsection{Zusammenhang zwischen Grauwert und Polarisationszustand}
 Im nächsten Versuchsteil soll der Zusammenhang zwischen Grauwert und Polarisationszustand behandelt werden. Dazu wird der Versuch, wie in \cref{414} gezeigt, aufgebaut. Dabei werden verschiedene Grauwerte eingestellt und die maximale und minimale Intensität, bei verschiedenen Einstellungen des Analysators, sowie der dazugehörige Winkel aufgeschrieben. Diese Messungen sind in \cref{tab:grauwert} zu sehen.
@@ -93,7 +94,7 @@ Im nächsten Versuchsteil soll der Zusammenhang zwischen Grauwert und Polarisati
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{4.1.4-Aufbau.png}
+	\includegraphics[scale=1]{4.1.4-Aufbau.png}
 	\caption{Aufbau zur Erforschung zum Zusammenhang zwischen Grauwert und Polarisationszustand}
 	\label{414}
 \end{figure}
@@ -166,7 +167,7 @@ Zuerst wird der Laser auf einen LC-Modulator gerichtet, welcher in dem Abstand d
 	\label{421}
 \end{figure}
 \subsubsection{Auswertung}
-Um \cref{gbestimm} möglichst genau zu berechnen wurde bei der Berechnung von \cref{abestimm} der Abstand der siebten Ordnungen benutzt, um d zu messen. Dieser Abstand wurde mittels eines Lineals gemessen. Aus diesen Berechnungen kann die Gitterkonstante bestimmt werden $g = (29 \pm 3) \mu m$.
+Um \cref{gbestimm} möglichst genau zu berechnen, wurde bei der Berechnung von \cref{abestimm} der Abstand der siebten Ordnungen benutzt, um d zu messen. Dieser Abstand wurde mittels eines Lineals gemessen. Aus diesen Berechnungen kann die Gitterkonstante bestimmt werden $g = (29 \pm 3) \mu m$.
 \subsubsection{Unsicherheiten}
 Die Unsicherheit von d wurde mit einer Genauigkeit von $\pm 0,2cm$ angenommen. Daraus resultiert für die Unsicherheit der Gitterkonstanten mittels Fehlerfortpflanzung ein Wert von $g = (29 \pm 3) \mu m$.
 \subsubsection{Diskussion}
@@ -174,16 +175,16 @@ Somit liegt das Ergebnis der Pixelgröße von $g = (29 \pm 3) \mu m$ innerhalb d
 
 \subsection{Intensitätsverteilung in den Beugungsordnungen des unadressierten Displays}
 \subsubsection{Theorie}
-Eine LCD-Zelle besitzt eine Untermodulation. Dies ist deshalb der Fall, da in einem einfachen Pixel es einen transparenten Anteil gibt, sowie einen Lichtundurchlässigen Anteil. Die Modulation wird durch das Gitter beschrieben, welches im vorherigen Aufgabenteil behandelt wurde. Die Untermodulation wird durch die Substruktur im Pixel erzeugt. An dieser Stelle wird der duty cycle definiert. Dieser beschreibt das Verhältnis zwischen transparentem und lichtundurchlässigem Teil. 
+Eine LCD-Zelle besitzt eine Untermodulation. Dies ist deshalb der Fall, da in einem einfachen Pixel es einen transparenten Anteil gibt, sowie einen lichtundurchlässigen Anteil. Die Modulation wird durch das Gitter beschrieben, welches im vorherigen Aufgabenteil behandelt wurde. Die Untermodulation wird durch die Substruktur im Pixel erzeugt. An dieser Stelle wird der duty cycle definiert. Dieser beschreibt das Verhältnis zwischen transparentem und lichtundurchlässigem Teil. 
 Dieser wird berechnet, indem sinc-Funktionen an die Untermodulation angepasst werden. Die Breiten der sinc-Funktionen entsprechen dann dem durchlässigen Anteil in der jeweiligen Richtung. 
 Der duty cycle ergibt sich dann durch
 \begin{align}
-	duty cycle = \frac{xy}{g^{2}-xy}
+	\text{duty cycle} = \frac{xy}{g^{2}-xy}
 	\label{dutycyc}
 \end{align}
 Ebenfalls kann auf den Füllfaktor geschlossen werden für den transparenten Teil des Pixels. Dieser entspricht gerade dem Anteil des durchlässigen Pixels zur Gesamtpixelgröße.
 \begin{align}
-	FF = \frac{xy}{g^{2}}
+	\text{Füllfaktor} = \frac{xy}{g^{2}}
 	\label{ff}
 \end{align}
 
@@ -203,7 +204,7 @@ Im weiteren wurden die ersten zehn Beugungsordnungen in horizontaler und vertika
 	\caption{Intensitätsverteilung der horizonatlen und vertikalen Beugungsordnungen}
 	\label{horiz}
 \end{figure}
-Aus den Messwerten kann auf den duty cycle geschlossen werden, sowie auf den Füllfaktor des transparaneten Teils der LCD-Zelle in Bezug auf das Gesamte Pixel. Um den duty cycle zu berechnen wird \cref{dutycyc} benutzt. Hierfür werden die Breiten der sinc-Funktionen nicht durch den Fit bestimmt, welcher Aufgrund der wenigen Messdaten nicht funktioniert hat, sondern es wird visuell das Minimum der sinc-Funktionen gesucht und damit den Stauch- bzw. Streckfaktor innerhalb der sinc-Funktion berechnet. Über einen Vergleich des Stauchfaktors kann die Breite des Peaks entnommen werden.
+Aus den Messwerten kann auf den duty cycle geschlossen werden, sowie auf den Füllfaktor des transparaneten Teils der LCD-Zelle in Bezug auf das Gesamte Pixel. Um den duty cycle zu berechnen wird \cref{dutycyc} benutzt. Hierfür werden die Breiten der sinc-Funktionen nicht durch den Fit bestimmt, welcher aufgrund der wenigen Messdaten nicht funktioniert hat, sondern es wird visuell das Minimum der sinc-Funktionen gesucht und damit den Stauch- bzw. Streckfaktor innerhalb der sinc-Funktion berechnet. Über einen Vergleich des Stauchfaktors kann die Breite des Peaks entnommen werden.
 Daraus ergibt sich ein duty cycle und ein Füllfaktor von 
 \begin{align}
 	\text{duty cycle} = (5 \pm 0,4)\% \\
@@ -212,7 +213,7 @@ Daraus ergibt sich ein duty cycle und ein Füllfaktor von
 \subsubsection{Unsicherheiten}
 Die Unsicherheiten wurden mittels Fehlerfortpflanzung berechnet. Es wurden dieselben Unsicherheiten benutzt, die in 2.1 Berechnung der Pixelgröße verwendet wurden.
 \subsubsection{Diskussion}
-Der Füllfaktor, welcher durch die obige Auswertung berechnet wurde, ist nicht gleich mit der Angabe des Herstellers, welcher in [1] aufgelistet wurde. In den Angaben des Herstellers ist der geringste Füllfaktor bei einem Wert von $58 \%$. Der oben ausgerechnete Wert unterscheidet sich in einer Zehnerpotenz von dem Soll Wert. Hingegen ist die Pixelbreite von $g = (29 \pm 3) \mu m$ den Angaben entsprechend. Hieraus resultiert auch die abweichende Zehnerpotenz, sodass der Fehler innerhalb des zweiten Teils der Auswertung liegen muss.
+Der Füllfaktor, welcher durch die obige Auswertung berechnet wurde, ist nicht gleich mit der Angabe des Herstellers, welcher in LC 2012 Spatial Light Modulator (transmissive) aufgelistet wurde. In den Angaben des Herstellers ist der Füllfaktor bei einem Wert von $58 \%$. Der oben ausgerechnete Wert unterscheidet sich in einer Zehnerpotenz von dem Soll Wert. Hingegen ist die Pixelbreite von $g = (29 \pm 3) \mu m$ den Angaben entsprechend. Hieraus resultiert auch die abweichende Zehnerpotenz, sodass der Fehler innerhalb des zweiten Teils der Auswertung liegen muss.
 
 \subsection{Aufnahme von verschiedenen Beugungsbildern mittels der Kamera}
 \subsubsection{Theorie}
@@ -232,7 +233,7 @@ Der Aufbau in \cref{423} ist identisch mit dem Aufbau in \cref{421} mit dem Unte
 \end{figure}
 \subsubsection{Auswertung}
 In diesem Teil werden Beugungsbilder verschiedener DOE's aufgenommen. Darunter befinden sich der Einzelspalt, der Doppelspalt und das Gitter. Bei dem Einzelspalt werden zwei verschiedene Strukturgrößen benutzt. Aufgrund der Aufnahmen die gemacht wurden, kann man nur das Hauptmaximum beobachten, sowie die Untermodulation. Die Nebenmaxima, welche dieselbe Form haben,welche vertikal und horizonatal verschoben und dunkler sind, können nicht beobachtet werden. 
-Einmal wurde eine Dicke des Spaltabstandes von 20 Pixeln und einmal von 40 Pixeln verwendet. Es ist zu beobachten, dass die Anzahl der Maxima in horizontaler Richtung, bei einem breiteren Spaltabstand, zu nimmt. Somit können mehrere Nebenmaxima innerhalb der Untermodulation auf kleinerem Raum beobachtet werden.
+Einmal wurde eine Dicke des Spaltabstandes von 20 Pixeln und einmal von 40 Pixeln verwendet. Es ist zu beobachten, dass die Anzahl der Maxima in horizontaler Richtung, bei einem breiteren Spaltabstand, zunimmt. Somit können mehrere Nebenmaxima innerhalb der Untermodulation auf kleinerem Raum beobachtet werden.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale = 1]{pixelverg.png}
@@ -250,8 +251,8 @@ In \cref{doppel} ist das Beugungsbild eines Doppelspaltes mit einer Breite von 3
 In \cref{gitter} kann das Hauptmaxima eindeutig erkannt werden. In diesem Bild kann weiterhin statt der Untermodulation, die die ganze Zeit betrachtet wurde, das Nebenmaxima in vertikaler Richtung identifiziert werden. Beide Maxima bestehen aus Untermodulationen, was für die Nutzung einer DOE spricht.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale = 0.7]{gitter.png}
-	\caption{}
+	\includegraphics[scale = 0.6]{gitter.png}
+	\caption{Das Beugungsbild eines Gitters in erster und zweiter Ordnung mit Beobachtbarer Untermodulation.}
 	\label{gitter}
 \end{figure}
 Desweiteren wird für ein Grauwert die Intensitäten des 0.ten und des 1.ten Beugungsmaxima gemessen. Mittels der Intensitäten lässt sich der Beugungswirkungsgrad berechnen. Dieser wurde nur für eine Graustufe aufgenommen, sodass der Beugungswirkungsgrad bei $0,21 \pm 0,01$ bei einer Graustufe von 20 lag.
@@ -264,7 +265,7 @@ Zuletzt wird der Aufbau, welcher in \cref{cghskizze} zu sehen ist realisiert. Da
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.8]{cgh_skizze.png}
+	\includegraphics[scale=1]{4.1.2-Aufbau2.png}
 	\caption{Aufbau des Versuchsteils zu computergenerierten Hologrammen}
 	\label{cghskizze}
 \end{figure}
@@ -315,3 +316,5 @@ Im letzten Versuchsteil wird untersucht, was passiert, wenn beide vorher erstell
 	\caption{Das mit der Kamera aufgezeichnete Bild, wenn beide Hologramme gleichzeitig nebeneinander erzeugt werden.}
 	\label{holo2}
 \end{figure}
+
+

@@ -16,5 +16,42 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{anleitung-ws2014}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=cbf5499e1c199ffb28880518170810a5}{%
+           family={Janis\bibnamedelima Benscheidt},
+           familyi={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Jörg\bibnamedelima Imbrock},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%}
+        {Physikalisches Institut}%
+      }
+      \strng{namehash}{cbf5499e1c199ffb28880518170810a5}
+      \strng{fullhash}{cbf5499e1c199ffb28880518170810a5}
+      \strng{authornamehash}{cbf5499e1c199ffb28880518170810a5}
+      \strng{authorfullhash}{cbf5499e1c199ffb28880518170810a5}
+      \field{sortinit}{J}
+      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{Oktober}
+      \field{title}{Anleitung zu den Experimentellen Übungen zur Mechanik und Elektrizitätslehre}
+      \field{year}{2010}
+    \endentry
+    \entry{Hersteller}{misc}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labeltitlesource}{title}
+      \field{note}{eingesehen am 25.05.2019}
+      \field{title}{LC 2012 Spatial Light Modulator (transmissive)}
+      \verb{url}
+      \verb https://holoeye.com/spatial-light-modulators/lc-2012-spatial-light-modulator/
+      \endverb
+
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 

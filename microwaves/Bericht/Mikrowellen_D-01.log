@@ -1,11 +1,15 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.4)  11 JUN 2019 20:56
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.28)  11 JUN 2019 18:35
+>>>>>>> bcceeb579bbd0adb0052b54e9997ddb2759fa91d
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./Mikrowellen_D-01.tex
 (./Mikrowellen_D-01.tex
 LaTeX2e <2017-04-15>
-Babel <3.13> and hyphenation patterns for 10 language(s) loaded.
+Babel <3.13> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
 (c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -2510,6 +2514,7 @@ Package logreq Info: Writing requests to 'Mikrowellen_D-01.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  41714 strings out of 494838
  803209 string characters out of 6177689
  1384336 words of memory out of 5000000
@@ -2517,6 +2522,15 @@ Here is how much of TeX's memory you used:
  636473 words of font info for 168 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  68i,20n,106p,10408b,2157s stack positions out of 5000i,500n,10000p,200000b,80000s
+=======
+ 41642 strings out of 492990
+ 802252 string characters out of 6136334
+ 1388758 words of memory out of 5000000
+ 44475 multiletter control sequences out of 15000+600000
+ 636212 words of font info for 165 fonts, out of 8000000 for 9000
+ 1145 hyphenation exceptions out of 8191
+ 68i,20n,106p,10408b,2155s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> bcceeb579bbd0adb0052b54e9997ddb2759fa91d
 {c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2017/tex
 mf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2017/texmf-dist/fonts/enc/
 dvips/lm/lm-mathit.enc}{c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
