@@ -25,12 +25,7 @@
            family={Janis\bibnamedelima Benscheidt},
            familyi={J\bibinitperiod\bibinitdelim B\bibinitperiod},
            given={Jörg\bibnamedelima Imbrock},
-           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Westfälische Wilhelms-Universität Münster}%
-      }
-      \list{publisher}{1}{%
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%}
         {Physikalisches Institut}%
       }
       \strng{namehash}{cbf5499e1c199ffb28880518170810a5}
@@ -54,6 +49,7 @@
       \verb{url}
       \verb https://holoeye.com/spatial-light-modulators/lc-2012-spatial-light-modulator/
       \endverb
+
     \endentry
   \endsortlist
 \endrefsection
