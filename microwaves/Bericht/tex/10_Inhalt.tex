@@ -1,6 +1,129 @@
 \section{Abstract}
 In diesem Versuch werden die Eigenschaften von Mikrowellen und den Bauteilen der Hochfrequenztechnik untersucht. Zuerst wird die Kennlinie der verwendeten Messdiode bestimmt, um damit die Leistung der Mikrowellen im weiteren Versuch bestimmen zu können. Anschließend werden bei einem Zirkulator, einem Isolator und einem Richtkoppler Dämpfungen in Abhängigkeit der Frequenz gemessen. Zuletzt werden in zwei verschiedenen Koaxialkabeln stehende Wellen erzeugt, welche über die dabei entstehenden Resonanzen nachgewiesen werden. Anschließend werden aus den Frequenzabständen zwischen den Resonanzen die Lichtgeschwindigkeit im Koaxialkabel und die relative Permittivität der Kabel bestimmt.
 
+\section{Theorie}
+\subsection{Hilfseinheit Bel}
+In der Leitungstheorie werden oft relative Größen betrachtet, daher wurde die Hilfseinheit Bel eingeführt. Hiermit lässt sich das Verhältnis zwischen zwei Energiegrößen, das Relativmaß $R$ (siehe \cref{eq:R}), im dekadischen Logarithmus ausdrücken. Meistens wird hier die Einheit Dezibel verwendet, die einem zehntel Bel entspricht.
+
+\begin{equation}
+	R = \log_{10} \left( \frac{P_2}{P_1}\right) \text{B} =10 \log_{10} \left( \frac{P_2}{P_1}\right) \text{dB}
+	\label{eq:R}
+\end{equation}
+
+Auch absolute Größen können in Dezibel angegeben werden. Dazu wird für $P_1$ ein Referenzwert eingesetzt. Dies ist sinnvoll bei Größen, deren Werte in verschiedenen Größenordnungen liegen. Ein Größe, die häufig auf diese Weise angegeben wird, ist der Leistungspegel (siehe \cref{eq:Lp}). Dabei ist der Referenzwert $\SI{1}{mW}$ und die Einheit dBm.
+
+\begin{equation}
+	L_P = 10\log_{10}\left( \frac{P}{1\text{mW}}\right) \text{dBm}
+\end{equation}
+
+\subsection{Grundlagen der Leitungstheorie}
+\subsubsection{Stationäre Leitungsgleichungen}
+Mikrowellen können mithilfe der Maxwell-Gleichungen als elektromagnetische Wellen mit E- und B-Feld betrachtet werden. Bei sogenannte TEM-Leitern (transversalelektromagnetische Leiter) erfüllen diese Felder bestimmte Randbedingungen an Grenzflächen und können daher auf die Größen $I$ und $U$ reduziert werden. TEM-Leiter bestehen immer aus einem Hin- und Rückleiter. Außerdem werden stationäre Zustände betrachtet, sodass Einschwingvorgänge keine Rolle spielen. In \cref{ersatz} ist das Ersatzschaltbild eines homogenen Leiterabschnitts der Länge $\Delta x$ dargestellt. Dieser Abschnitt lässt sich durch vier Impedanzen beschreiben.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Ersatzschaltbild.png}
+	\caption{Ersatzschaltbild eines homogenen Leitungsabschnitts mit Länge $\Delta x$.}
+	\label{ersatz}
+\end{figure}
+
+Diese werden als Beläge definiert. Bei verlustlosen Leitungen sind dies der Induktivitätsbelag $L'$ und der Kapazitätsbelag $C'$. Bei verlustbehafteten Leitungen spielen ebenfalls der Widerstandsbelag $R'$ und der Ableitungsbelag $G'$ eine Rolle. Die Übertragungsfunktion dieses LTI-Systems (lineares zeitinvariantes System) lässt sich über die Kirchhoffschen Regeln (\cref{eq:masche} und \Cref{eq:knoten}) bestimmen, wobei $G' \Delta x$ das Inverse eines Widerstands ist.
+
+\begin{equation}
+	\text{Maschenregel}: U(x + \Delta x) - U(x) = -(R' + i\omega L')I(x) \Delta x
+	\label{eq:masche}
+\end{equation}
+
+\begin{equation}
+	\text{Knotenregel}: I(x + \Delta x) - I(x) = -(G' + i\omega C')U(x) \Delta x
+	\label{eq:knoten}
+\end{equation}
+
+Daraus lassen sich nun die stationären Leitungsgleichungen (\cref{eq:sl1} und \cref{eq:sl2}) aufstellen.
+
+\begin{equation}
+	\frac{\text{d}U(x)}{\text{d}x} = -(R' + i\omega L')I(x)
+	\label{eq:sl1}
+\end{equation}
+
+\begin{equation}
+	\frac{\text{d}I(x)}{\text{d}x} = -(G' + i\omega C')U(x)
+	\label{eq:sl2}
+\end{equation}
+
+Diese können mit einem Ansatz, bei dem eine hinlaufende ($U_h$)und eine rücklaufende ($U_r$) Welle betrachet werden, gelöst werden. (siehe \cref{eq:i} und \cref{eq:u})
+
+\begin{equation}
+	I(x) = I_h e^{-\gamma x} + I_r e^{\gamma x}
+	\label{eq:i}
+\end{equation}
+
+\begin{equation}
+U(x) = U_h e^{-\gamma x} + U_r e^{\gamma x}
+\label{eq:u}
+\end{equation}
+
+\begin{equation*}
+	\text{mit} \gamma = \sqrt{(R' + i\omega L')(G' + i\omega C')}
+\end{equation*}
+
+\subsubsection{Wellenwiderstand}
+An \cref{eq:sl1} und \cref{eq:sl2} wird deutlich, dass Spannung und Stromstärke über einen frequenzabhängigen Faktor voneinander abhängen, den sogenannten Wellenwiderstand $Z_\text{L}$. Anhand von \cref{eq:zl} ist erkennbar, dass der Wellenwiderstand nur von den Belägen, also der Geometrie und dem Material des Leiters, abhängt.
+
+\begin{equation}
+	Z_\text{L} = \frac{U(x)}{I(x)} = \sqrt{\frac{R' + i\omega L'}{G' + i\omega C'}}
+	\label{eq:zl}
+\end{equation}
+
+Betrachtet man den einfachen Fall einer verlustfreien Leitung, ergibt sich:
+
+\begin{equation}
+	Z_\text{L} = \sqrt{\frac{R'}{C'}}
+	\label{eq:zl2}
+\end{equation}
+
+\subsubsection{Reflexionskoeffizient}
+Bei TEM-Leitern treten immer ein hinlaufende und eine rücklaufende Welle auf. Die hinlaufende Welle ist das zu übertragene Signal, die rücklaufende Welle ist meist eine unerwünschte Reflexion. Die Reflexion findet dabei am Kabelende statt und wird durch \cref{eq:reflexion} beschrieben.
+
+\begin{equation}
+	r = \frac{Z_a - Z_L}{Z_a + Z_L}
+	\label{eq:reflexion}
+\end{equation}
+
+$Z_a$ ist hier der Abschlusswiderstand. Das Kabel wird als abgeschlossen bezeichnet, wenn  $Z_a = Z_L$. Für den Grenzfall eines offenen Kabelendes geht $Z_a$ gegen $\inf$ und daher $r$ gegen $1$. Beim Grenzfall eines kurzgeschlossenen Kabels geht dagegen $Z_a$ gegen $0$ und $r$ gegen $-1$.
+
+\subsubsection{Stehende Wellen}
+Existieren eine hinlaufende und eine rücklaufende Welle gleicher Frequenz, bilden sie eine stehende Welle. Diese hat Knotenpunkte, deren Position zeitlich konstant ist. Für diese Art von Welle muss im Leiter Reflexion stattfinden. Die Amplitude der stehenden Welle ist abhängig vom Reflexionskoeffizienten. Tritt vollständige Reflexion auf, also $r=1$, dann bildet sich eine ideale stehende Welle, ansonsten bilden sich Wanderwellen.
+
+\subsubsection{Mehrfachreflexion}
+Mehrfachreflexionen treten auf, wenn die Abschlusswiderstände an Kabeln falsch gewählt sind oder am Kabel selbst Defekte auftreten. Durch die Reflexion tritt Interferenz zwischen den verschieden häufig reflektierten Wellen gleicher Frequenz auf. Interferieren die Wellen konstruktiv miteinander entsteht eine Resonanz. Die transmittierte Leistung einer verlustlosen Leitung lässt sich dann mit \cref{eq:trans} beschreiben.
+
+\begin{equation}
+	P_t = \frac{|U_h|^2}{Z_L}\left( \frac{T}{1-R}\right) ^2 \frac{1}{1 + F \sin^2\left( \frac{\Phi}{2}\right) }
+	\label{eq:trans}
+\end{equation}
+
+Dabei ist $T$ der Transmissionkoeffizient, $R$ der Reflexionskoeffizient und $F$ der Finesse Faktor (siehe \cref{eq:finesse}).
+
+\begin{equation}
+	F = \frac{4R}{\left( 1-R\right) ^2}
+	\label{eq:finesse}
+\end{equation}
+
+\cref{eq:trans} bezeichnet man als Airy-Funktion. Damit kann das Transmissionsverhalten eines optischen Resonators beschrieben werden. Wenn Reflexionskoeffizient und Transmissionkoeffizient konstant sind, dann wird die transmittierte Leistung offenbar maximal, wenn der Sinus in \cref{eq:trans} verschwindet. Daraus folgt für $\Phi$:
+
+\begin{equation}
+	\Phi = 2\pi n
+\end{equation}
+
+Die meiste Leistung wird also reflektiert, wenn
+
+\begin{equation}
+	2 k_n l - \phi_1 -\phi_2 = 2\pi n
+\end{equation}
+
+erfüllt ist, wobei $\phi_1$ und $\phi_2$ die Phasensprünge sind, um die die Welle and er jeweiligen Stelle reflektiert wird. Während des Durchgangs durch den Resonator muss die Welle also für Resonanz eine Phase zurücklegen, die ein ganzzahliges Vielfaches von $2\pi$ ist.
+
 \section{Methoden und Durchführung}
 Zur Erzeugung der Mikrowellen wird ein Mikrowellengenerator Wiltron 6759B verwendet. Die Wellen werden dann durch Koaxialkabel und verschiedene Bauteile geleitet. Anschließend werden sie an einer Messdiode in Gleichstrom umgewandelt, dessen Spannung von einem Digitalmultimeter TTi 1906 gemessen wird. Die Spannung ist dabei abhängig von der Leistung der Mikrowellen.
 \subsection{Kennlinie}
