@@ -16,5 +16,24 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{anleitung-ws2014}{manual}{}
+      \list{organization}{1}{%
+        {Westfälische Wilhelms-Universität Münster}%
+      }
+      \list{publisher}{1}{%
+        {Angewandte Physik}%
+      }
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Räumlicher LC-Modulatorund diffraktive Optik}
+      \field{year}{2019}
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 
