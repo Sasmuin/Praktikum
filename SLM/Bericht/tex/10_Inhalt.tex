@@ -5,7 +5,7 @@ Die Brennweite beträgt dabei 160mm.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{4.1.1-Aufbau.png}
+	\includegraphics[scale=1]{4.1.1-Aufbau.png}
 	\caption{Aufbau zur Untersuchung von Amplitudenmodulation und Projektion}
 	\label{411}
 \end{figure}
@@ -19,7 +19,7 @@ Nach unserer Messung lag dieser bei $\beta = \SI{45 \pm 1}{^\circ}$ im Vergleich
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{GesetzvonMalus.png}
+	\includegraphics[scale=0.8]{GesetzvonMalus.png}
 	\caption{Intensität unter verschiedenen Winkeln des Analysators}
 	\label{Malus}
 \end{figure}
@@ -36,7 +36,7 @@ Der nächste Versuch wird nach \cref{412} aufgebaut. Da die Polarisation des Las
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{4.1.2-Aufbau.png}
+	\includegraphics[scale=1]{4.1.2-Aufbau.png}
 	\caption{Aufbau zur Variation des Kontrasts}
 	\label{412}
 \end{figure}
@@ -76,7 +76,7 @@ Als nächstes soll die Pixelgröße des Displays bestimmt werden. Dafür wird de
 bestimmt worden.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{4.1.3-Aufbau.png}
+	\includegraphics[scale=1]{4.1.3-Aufbau.png}
 	\caption{Aufbau zur Bestimmung der Pixelgröße}
 	\label{413}
 \end{figure}
@@ -93,7 +93,7 @@ Im nächsten Versuchsteil soll der Zusammenhang zwischen Grauwert und Polarisati
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.6]{4.1.4-Aufbau.png}
+	\includegraphics[scale=1]{4.1.4-Aufbau.png}
 	\caption{Aufbau zur Erforschung zum Zusammenhang zwischen Grauwert und Polarisationszustand}
 	\label{414}
 \end{figure}
@@ -178,12 +178,12 @@ Eine LCD-Zelle besitzt eine Untermodulation. Dies ist deshalb der Fall, da in ei
 Dieser wird berechnet, indem sinc-Funktionen an die Untermodulation angepasst werden. Die Breiten der sinc-Funktionen entsprechen dann dem durchlässigen Anteil in der jeweiligen Richtung. 
 Der duty cycle ergibt sich dann durch
 \begin{align}
-	duty cycle = \frac{xy}{g^{2}-xy}
+	\text{duty cycle} = \frac{xy}{g^{2}-xy}
 	\label{dutycyc}
 \end{align}
 Ebenfalls kann auf den Füllfaktor geschlossen werden für den transparenten Teil des Pixels. Dieser entspricht gerade dem Anteil des durchlässigen Pixels zur Gesamtpixelgröße.
 \begin{align}
-	FF = \frac{xy}{g^{2}}
+	\text{Füllfaktor} = \frac{xy}{g^{2}}
 	\label{ff}
 \end{align}
 
@@ -212,7 +212,7 @@ Daraus ergibt sich ein duty cycle und ein Füllfaktor von
 \subsubsection{Unsicherheiten}
 Die Unsicherheiten wurden mittels Fehlerfortpflanzung berechnet. Es wurden dieselben Unsicherheiten benutzt, die in 2.1 Berechnung der Pixelgröße verwendet wurden.
 \subsubsection{Diskussion}
-Der Füllfaktor, welcher durch die obige Auswertung berechnet wurde, ist nicht gleich mit der Angabe des Herstellers, welcher in [1] aufgelistet wurde. In den Angaben des Herstellers ist der geringste Füllfaktor bei einem Wert von $58 \%$. Der oben ausgerechnete Wert unterscheidet sich in einer Zehnerpotenz von dem Soll Wert. Hingegen ist die Pixelbreite von $g = (29 \pm 3) \mu m$ den Angaben entsprechend. Hieraus resultiert auch die abweichende Zehnerpotenz, sodass der Fehler innerhalb des zweiten Teils der Auswertung liegen muss.
+Der Füllfaktor, welcher durch die obige Auswertung berechnet wurde, ist nicht gleich mit der Angabe des Herstellers, welcher in LC 2012 Spatial Light Modulator (transmissive) aufgelistet wurde. In den Angaben des Herstellers ist der Füllfaktor bei einem Wert von $58 \%$. Der oben ausgerechnete Wert unterscheidet sich in einer Zehnerpotenz von dem Soll Wert. Hingegen ist die Pixelbreite von $g = (29 \pm 3) \mu m$ den Angaben entsprechend. Hieraus resultiert auch die abweichende Zehnerpotenz, sodass der Fehler innerhalb des zweiten Teils der Auswertung liegen muss.
 
 \subsection{Aufnahme von verschiedenen Beugungsbildern mittels der Kamera}
 \subsubsection{Theorie}
@@ -264,7 +264,7 @@ Zuletzt wird der Aufbau, welcher in \cref{cghskizze} zu sehen ist realisiert. Da
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.8]{cgh_skizze.png}
+	\includegraphics[scale=1]{4.1.2-Aufbau2.png}
 	\caption{Aufbau des Versuchsteils zu computergenerierten Hologrammen}
 	\label{cghskizze}
 \end{figure}
@@ -315,3 +315,5 @@ Im letzten Versuchsteil wird untersucht, was passiert, wenn beide vorher erstell
 	\caption{Das mit der Kamera aufgezeichnete Bild, wenn beide Hologramme gleichzeitig nebeneinander erzeugt werden.}
 	\label{holo2}
 \end{figure}
+
+

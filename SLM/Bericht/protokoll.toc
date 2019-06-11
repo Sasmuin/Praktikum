@@ -10,22 +10,23 @@
 \contentsline {subsection}{\numberline {2.1}Berechnung der Pixelgr\IeC {\"o}\IeC {\ss }e}{7}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}Theorie}{7}{subsubsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.2}Aufbau}{7}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Auswertung}{7}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.3}Auswertung}{8}{subsubsection.2.1.3}
 \contentsline {subsubsection}{\numberline {2.1.4}Unsicherheiten}{8}{subsubsection.2.1.4}
 \contentsline {subsubsection}{\numberline {2.1.5}Diskussion}{8}{subsubsection.2.1.5}
-\contentsline {subsection}{\numberline {2.2}Intensit\IeC {\"a}tsverteilung in den Beugungsordnungen des unadressierten Displays}{8}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Theorie}{8}{subsubsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2}Intensit\IeC {\"a}tsverteilung in den Beugungsordnungen des unadressierten Displays}{9}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Theorie}{9}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Aufbau}{9}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Auswertung}{9}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Unsicherheiten}{10}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.3}Auswertung}{10}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Unsicherheiten}{11}{subsubsection.2.2.4}
 \contentsline {subsubsection}{\numberline {2.2.5}Diskussion}{11}{subsubsection.2.2.5}
 \contentsline {subsection}{\numberline {2.3}Aufnahme von verschiedenen Beugungsbildern mittels der Kamera}{11}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Theorie}{11}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Aufbau}{11}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Auswertung}{11}{subsubsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.4}Diskussion}{12}{subsubsection.2.3.4}
-\contentsline {section}{\numberline {3}Computergenerierte Hologramme (CGH)}{13}{section.3}
-\contentsline {subsection}{\numberline {3.1}Brennweite der diffraktiven Linse}{13}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Berechnung beliebiger diffraktiver optischer Elemente als CGH}{14}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Darstellung zweier DOEs auf einem Bildschirm}{15}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {2.3.2}Aufbau}{12}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Auswertung}{12}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Diskussion}{14}{subsubsection.2.3.4}
+\contentsline {section}{\numberline {3}Computergenerierte Hologramme (CGH)}{14}{section.3}
+\contentsline {subsection}{\numberline {3.1}Brennweite der diffraktiven Linse}{15}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Berechnung beliebiger diffraktiver optischer Elemente als CGH}{17}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Darstellung zweier DOEs auf einem Bildschirm}{17}{subsection.3.3}
 \contentsline {section}{\numberline {A}Anhang}{19}{appendix.A}
+\contentsline {section}{\nonumberline Literatur}{20}{section*.23}
