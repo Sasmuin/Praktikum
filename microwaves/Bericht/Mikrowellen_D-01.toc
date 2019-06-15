@@ -20,8 +20,8 @@
 \contentsline {subsection}{\numberline {4.1}Kennlinie}{9}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Bauteile der Hochfrequenztechnik}{9}{subsection.4.2}
 \contentsline {subsubsection}{\numberline {4.2.1}Isolator}{9}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Richtkoppler}{12}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Zirkulator}{12}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.2}Richtkoppler}{11}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Zirkulator}{13}{subsubsection.4.2.3}
 \contentsline {subsection}{\numberline {4.3}Ausbreitungsgeschwindigkeit und relative Permittivit\IeC {\"a}t}{15}{subsection.4.3}
 \contentsline {section}{\numberline {5}Diskussion}{17}{section.5}
 \contentsline {section}{\nonumberline Literatur}{19}{section*.13}
