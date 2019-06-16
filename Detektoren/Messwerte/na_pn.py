@@ -6,19 +6,17 @@ Dies ist eine temporäre Skriptdatei.
 """
 import numpy as np
 import matplotlib.pyplot as plt
-Probe = "Mischquelle_sz_"
-Dateinamen = ["background"]
+Probe = "na_pn_"
+Dateinamen = ["SEP","FEP","background"]
 Anzahl = np.shape(Dateinamen)
 Zahlen = [0] * Anzahl[0]
 m = 0.1876
 E_0 = -26
 m_ec=511
-Literatur_FEPCO1 = 1332.5
-Literatur_FEPCO2 = 1173.2
-Literatur_FEP_CS = 661.6
-Literatur_FEP_CS2 = 32.2
-FEP1 = 7226.14*m+E_0
-FEP2 = 6391.91*m+E_0
+Literatur_FEP = 1274.5
+Literatur_SEP = 511
+FEP1 = 6931.29*m+E_0
+FEP2 = 2863.46*m+E_0
 Compton1 = FEP1*(1-1/(1+2*FEP1/(m_ec)))
 Compton2 = FEP2*(1-1/(1+2*FEP2/(m_ec)))
 Backscatter1 = FEP1 - Compton1
@@ -64,17 +62,20 @@ for i in range(Anzahl[0]):
      infile.close()
     
 
-plt.ylim(0.1,10**4)
+plt.ylim(5,10**5)
 plt.yscale('log')
 plt.plot(x,y,".",color = "blue",label = "aktive Messwerte")  
 plt.plot(x_d,y_d,".",color = "gray",label = "deaktivierte Messwerte")
 for i in range(Anzahl[0]):
     plt.plot(x,Zahlen[i],label = Dateinamen[i])
 plt.plot(x,f,color ="darkred", label = "Model")
-plt.vlines(Literatur_FEPCO1, ymin = 5, ymax = 300,label = "Literatur FEP2 Co-60 1332.5 keV",color = "lime")
-plt.vlines(Literatur_FEPCO2, ymin = 5, ymax = 600,label = "Literatur FEP1 Co-60 1173.2 keV",color = "lime",linestyle = "--")
-plt.vlines(Literatur_FEP_CS, ymin = 50, ymax = 3000,label = "Literatur FEP Cs-137 661.6 keV",color = "aqua",linestyle = "-.")
-plt.vlines(Literatur_FEP_CS2, ymin = 50, ymax = 10000,label = "Literatur FEP Cs-137 661.6 keV",color = "aqua",linestyle = "-.")
+plt.vlines(Literatur_FEP, ymin = 20, ymax = 1000,label = "Literatur FEP 1274 keV",color = "lime")
+plt.vlines(Literatur_SEP, ymin = 50, ymax = 800,label = "Literatur 511 keV",color = "lime",linestyle = "--")
+plt.vlines(Compton1, ymin = 1, ymax = 100,label = "Compon-Kante FEP")
+plt.vlines(Compton2, ymin = 10, ymax = 500, linestyle = "--",label = "Compon-Kante SEP")
+plt.vlines(60, ymin = 20, ymax = 500,label = "Blei-Röntgen-Strahlung")
+plt.vlines(Backscatter1, ymin = 20, ymax = 500,color = "red", label = "Backscatter-Kante FEP")
+plt.vlines(Backscatter2, ymin = 20, ymax = 500,color = "red",linestyle = "--",label = "Backscatter-Kante SEP")
 
 plt.legend(loc='lower left',ncol=2,prop={'size': 7})
 plt.xlabel("Energie")

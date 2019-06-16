@@ -72,7 +72,7 @@ for i in range(Anzahl[0]):
     plt.plot(x,Zahlen[i],label = Dateinamen[i])
 plt.plot(x,f,color ="darkred", label = "Model")
 plt.vlines(Literatur_FEP2, ymin = 10, ymax = 500,label = "Literatur FEP2 1332.5 keV",color = "lime")
-plt.vlines(Literatur_FEP1, ymin = 10, ymax = 500,label = "Literatur FEP1 1332.5 keV",color = "lime",linestyle = "--")
+plt.vlines(Literatur_FEP1, ymin = 10, ymax = 500,label = "Literatur FEP1 1173.2 keV",color = "lime",linestyle = "--")
 plt.vlines(Compton2, ymin = 10, ymax = 500,label = "Compon-Kante FEP2")
 plt.vlines(Compton1, ymin = 10, ymax = 500, linestyle = "--",label = "Compon-Kante FEP1")
 plt.vlines(60, ymin = 80, ymax = 1000,label = "Blei-Röntgen-Strahlung")
