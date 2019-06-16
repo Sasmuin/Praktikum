@@ -52,3 +52,39 @@ Die Signale, die auf die verschiedenen Channels des MCA verteilt wurden, können
 Der Hauptpeak ist der sogenannte Full Energy Peak. Er tritt auf, wenn die gesamte Energie des $\gamma$-Quants im Detektor gemessen wird. Dies ist vor allem der Fall beim Photoeffekt. Er tritt außerdem beim Comptoneffekt auf, wenn sowohl das gestreute Photon als auch das Elektron detektiert werden. Bei der Paarbildung zerstrahlt nach kurzer Zeit das Positronium und erzeugt dabei meist zwei Photonen. Wenn diese beide noch im Detektor durch andere Wechselwirkungen Elektronen erzeugen, die vom Detektor erfasst werden, trägt auch dieser Effekt um Full Energy Peak bei. Wenn jedoch eines der Photonen nicht mehr im Detektor wechselwirkt, trägt dieser Vorgang zum Single Escape Peak bei. Dieser ist zum Full Energy Peak um $\SI{511}{keV}$ zu tieferer Energie verschoben. Entkommen beide Photonen aus dem Detektor entsteht der Double Escape Peak, welcher um $\SI{1022}{keV}$ zum Full Energy Peak verschoben ist. Da beim Comptoneffekt ein kontinuierliches Spektrum an Elektronen, abhängig vom Streuwinkel, entsteht, ist dieser Effekt auch als kontinuierliche Verteilung zwischen den Energien $0$ und $E_\text{max}$ sichtbar. Ab $E_\text{max}$ tritt dieser Effekt nicht mehr auf, daher ist an dieser Stelle die bereits erwähnte Comptonkante zu sehen.
 
 Es auch werden aber auch noch andere Elektronenenergien gemessen, um die das Ergebnis am Ende bereinigt werden muss. Der sogenannte Backscatteruntergrund entsteht durch Compton-Streuung der $\gamma$-Quanten am Abschirmmaterial. Dabei kann ein Photon mit Energien zwischen $E_\text{min}$ und $E_\gamma$ zurück in den Detektor gelangen und dort zum Signal beitragen. So entsteht eine weitere kontinuierliche Verteilung mit Energien zwischen $E_\text{min}$ und $E_\gamma$. Außerdem können durch Photoeffekt am Abschirmmaterial weitere Peaks entstehen, die genau den Energieabständen zwischen zwei Schalen in der Atomhülle dieser Elemente entsprechen.
+
+\section{Auswertung}
+\subsection{Kalibration}
+Zunächst muss die Kalibrierung bestimmt werden. Dies ist nötig, da die verschiedenen Zählungen in "Channels" unterteilt wurden. Um die Messungen allerdings sinnvoll zu verwenden, ist es nötig die korrespondierenden Energien, zu den jeweiligen Channels zu kennen. Dafür wird zunächst die Messung der $^{22}$Na in \cref{Kali} betrachtet.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{na.png}
+	\caption{Messung des $^{22}$Na Spektrums mithilfe des Szintillators.}
+	\label{Kali}
+\end{figure}
+
+in der Messung sind deutlich zwei Peaks zu sehen, einen Full Energy Peak(FEP) und einen Single Escape Peak(SEP). Da die Literaturwerte der beiden Peaks mit $E_{FEP} = \SI{1274.5}{keV}$ und $E_{SEP} = \SI{511}{keV}$ bekannt sind und außerdem ein linearer Zusammenhang zwischen den Channels und den zugehörigen Energien besteht, kann eine Umrechnung stattfinden.
+Das passiert mit der Formel:
+\begin{equation}
+	E = m \cdot Ch + E_{0},
+\end{equation}  
+wobei
+\begin{equation}
+	m = \frac{E_{FEP} - E_{SEP}}{Ch_{FEP} - Ch_{SEP}}
+\end{equation}
+und 
+\begin{equation}
+	E_{0} = E_{FEP} - m \cdot Ch_{FEP}
+\end{equation}
+mit $Ch$ dem jeweilig zugehörigem Channel. Für den Szintillator ergibt das eine Umrechnung von $m = \SI{0,187 \pm 0,007}{\frac{keV}{Ch}}$ und $E_{0} = \SI{-26 \pm 46}{keV}$. Die Umrechnung für den Halbleiter funktioniert analog und ergibt einen Faktor von $m = \SI{0,1699 \pm 0,0004}{\frac{keV}{Ch}}$ und $E_{0} = \SI{0 \pm 3}{keV}$. 
+
+\subsection{$\gamma$-Spektren}
+\subsubsection{$^{22}$Na Szintillator}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{na_sz_.png}
+	\caption{$^{22}$Na Szintillator Spektrums auf die korrekten Energien kalibriert.}
+	\label{na_sz}
+\end{figure}
+
