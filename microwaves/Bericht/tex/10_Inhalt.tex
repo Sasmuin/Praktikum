@@ -14,6 +14,7 @@ Auch absolute Größen können in Dezibel angegeben werden. Dazu wird für $P_1$
 
 \begin{equation}
 	L_P = 10\log_{10}\left( \frac{P}{1\text{mW}}\right) \text{dBm}
+	\label{eq:Lp}
 \end{equation}
 
 \subsection{Grundlagen der Leitungstheorie}
@@ -145,8 +146,8 @@ In \cref{Mikrostreifen} ist der Aufbau einer Mikrostreifenleitung zu sehen. Dies
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale = 1]{mikrostreifen.png}
-	\caption{Aufbau eines Zirkulators}
-	\label{ZB}
+	\caption{Aufbau einer Mikrostreifenleitung}
+	\label{Mikrostreifen}
 \end{figure}
 Der Vorteil dieser Technik ist, dass der Aufbau klein gegenüber eines Koakialkabels ist. Der Nachteil ist, dass das elektomagnetische Feld teilweise außerhalb der Vorrichtung liegt. Somit entsteht ein größerer Verlust. Ebenfalls ist die Vorrichtung störanfälliger.
 
@@ -322,7 +323,7 @@ Auf die gleiche Weise wie oben wurde anschließend der mittlere Abstand zweier b
 	\label{eq:uc}
 \end{equation}
 
-Mithilfe der Ausbreitungsgeschwindigkeit kann nun über \cref{eq:er} die relative Permittivität bestimmt werden. Diese beträgt für Kabel 1 $\SI{1,627\pm0,070}{}$ bei offenem Ende bzw. $\SI{1,651\pm0,084}{}$. Es besteht also auch hier kein Unterschied bei verschiedenen Abschlusswiderständen. Für Kabel 2 beträgt die relative Permittivität $\SI{1,389\pm0,064}{}$. Die Unsicherheit wurde mit \cref{eq:uer} bestimmt.
+Mithilfe der Ausbreitungsgeschwindigkeit kann nun über \cref{eq:er} die relative Permittivität bestimmt werden. Diese beträgt für Kabel 1 $\SI{1,627\pm0,070}{}$ bei offenem Ende bzw. $\SI{1,651\pm0,084}{}$. Es besteht also auch hier kein Unterschied bei verschiedenen Abschlusswiderständen. Für Kabel 2 beträgt die relative Permittivität $\SI{1,389\pm0,064}{}$. Die Unsicherheit wurde mit \cref{eq:uer} bestimmt. Diese Werte sind niedriger als zu erwarten war, allerdings aus uns nicht bekannten Gründen. 
 
 \begin{equation}
 	u(\epsilon_r) = \frac{2u(c)c^2}{c^3}
@@ -332,4 +333,4 @@ Mithilfe der Ausbreitungsgeschwindigkeit kann nun über \cref{eq:er} die relativ
 \section{Diskussion}
 Es konnte eine Charakterisierung aller vorhandenen Bauteile durchgeführt werden. Die Sperr- und Durchlassrichtungen der Bauteile ergaben in ihrer Bandbreite Geraden mit geringer Steigung. Bei den Zirkulatoren gab es innerhalb der Bandbreite Resonanzen, sodass hier allerhöchstens qualitativ eine Aussage getroffen werden konnte. Dennoch war ein klarer Unterschied der Dämpfung bei Sperr- und Durchlassrichtung zu erkennen. Ein weiterer Effekt, welcher erst im Laufe des Berichtes korrigiert wurde, war der, wie bereits oben erwähnte, kurze Draht mit einer starken Biegung. Dieser wurde später durch einen längeren ersetzt. Durch die starke Biegung des Drahtes kam es zur Reflexion. So beobachtet man Resonanzen in den ersten Charakterisierungen der Bauteile. Diese Resonanzen wären nicht aufgetreten, wenn von vornherein ein längerer Kabel genutzt werden würde. 
 
-Wie erwartet war sowohl der Frequenzabstand zwischen zwei Resonanzen, als auch die Ausbreitungsgeschwindigkeit und die relative Permittivität unabhängig von der Wahl des Abschlusswiderstands. Dieser sorgte nur für eine Verschiebung der Resonanzen um einige $100$ MHz. Da die beiden Kabel unterschiedliche Ausbreitungsgeschwindigkeiten und relative Permittivitäten besitzen, bestehen sie offenbar aus unterschiedlichen Stoffen oder eins der Kabel ist beschädigt oder verunreinigt. 
+Wie erwartet war sowohl der Frequenzabstand zwischen zwei Resonanzen, als auch die Ausbreitungsgeschwindigkeit und die relative Permittivität unabhängig von der Wahl des Abschlusswiderstands. Dieser sorgte nur für eine Verschiebung der Resonanzen um einige $100$ MHz. Da die beiden Kabel unterschiedliche Ausbreitungsgeschwindigkeiten und relative Permittivitäten besitzen, bestehen sie offenbar aus unterschiedlichen Stoffen oder eins der Kabel ist beschädigt oder verunreinigt. Außerdem sind beide Werte insgesamt deutlich niedriger als zu erwarten war. Dies könnte auch daran liegen, dass die Kabel beschädigt oder verunreinigt sind. Eine andere mögliche Erklärung ist, dass die Unsicherheit der Messung deutlich größer ist als angenommen. Auch uns unbekannte physikalische oder technische Ursachen sind nicht auszuschließen.
