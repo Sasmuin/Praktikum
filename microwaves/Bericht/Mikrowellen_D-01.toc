@@ -10,40 +10,22 @@
 \contentsline {subsubsection}{\numberline {2.2.3}Reflexionskoeffizient}{4}{subsubsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.4}Stehende Wellen}{4}{subsubsection.2.2.4}
 \contentsline {subsubsection}{\numberline {2.2.5}Mehrfachreflexion}{4}{subsubsection.2.2.5}
-<<<<<<< HEAD
-\contentsline {section}{\numberline {3}Methoden und Durchf\IeC {\"u}hrung}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Kennlinie}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Zirkulator}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Isolator}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Richtkoppler}{7}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Ausbreitungsgeschwindigkeit und relative Permittivit\IeC {\"a}t}{9}{subsection.3.5}
-\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Kennlinie}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Bauteile der Hochfrequenztechnik}{9}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Isolator}{9}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Richtkoppler}{11}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Zirkulator}{13}{subsubsection.4.2.3}
-\contentsline {subsection}{\numberline {4.3}Ausbreitungsgeschwindigkeit und relative Permittivit\IeC {\"a}t}{15}{subsection.4.3}
-\contentsline {section}{\numberline {5}Diskussion}{17}{section.5}
-\contentsline {section}{\nonumberline Literatur}{19}{section*.13}
-=======
 \contentsline {subsection}{\numberline {2.3}Bauteile der Hochfrequenztechnik}{5}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Koaxialkabel}{5}{subsubsection.2.3.1}
-\contentsline {subsection}{\numberline {2.4}Zirkulator}{6}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Isolator}{7}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Richtkoppler}{7}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Diode bzw. Detektor}{8}{subsection.2.7}
+\contentsline {subsubsection}{\numberline {2.3.2}Mikrostreifenleitung}{6}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Zirkulator}{6}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Isolator}{7}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}Richtkoppler}{7}{subsubsection.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}Diode bzw. Detektor}{8}{subsubsection.2.3.6}
 \contentsline {section}{\numberline {3}Methoden und Durchf\IeC {\"u}hrung}{9}{section.3}
 \contentsline {subsection}{\numberline {3.1}Kennlinie}{9}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Messung der Bauteile}{9}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Ausbreitungsgeschwindigkeit und relative Permittivit\IeC {\"a}t}{10}{subsection.3.3}
-\contentsline {section}{\numberline {4}Auswertung}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Kennlinie}{10}{subsection.4.1}
+\contentsline {section}{\numberline {4}Auswertung}{11}{section.4}
+\contentsline {subsection}{\numberline {4.1}Kennlinie}{11}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Bauteile der Hochfrequenztechnik}{11}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Isolator}{11}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Richtkoppler}{13}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Zirkulator}{13}{subsubsection.4.2.3}
-\contentsline {subsection}{\numberline {4.3}Ausbreitungsgeschwindigkeit und relative Permittivit\IeC {\"a}t}{16}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.2.1}Isolator}{12}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Richtkoppler}{12}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Zirkulator}{15}{subsubsection.4.2.3}
+\contentsline {subsection}{\numberline {4.3}Ausbreitungsgeschwindigkeit und relative Permittivit\IeC {\"a}t}{15}{subsection.4.3}
 \contentsline {section}{\numberline {5}Diskussion}{19}{section.5}
-\contentsline {section}{\nonumberline Literatur}{20}{section*.14}
->>>>>>> 671a9117c234b4f6aef477b7013d2003c3a0a32e

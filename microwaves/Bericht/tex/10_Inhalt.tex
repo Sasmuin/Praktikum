@@ -140,7 +140,17 @@ Wenn die relative Permittivität ($\epsilon_r$) und der Außen- ($d_i$) sowie In
 \end{align*}
 Dabei stellt $\mu_0$ und $\mu_r$ die magnetische Feldkonstante im Vakuum bzw. im Material.
 
-\subsection{Zirkulator}
+\subsubsection{Mikrostreifenleitung}
+In \cref{Mikrostreifen} ist der Aufbau einer Mikrostreifenleitung zu sehen. Dieser besteht aus einem schmalen metallischen Streifen, welcher auf einem Dielektrikum verbaut ist. Unterhalb des Dieelektrikums befindet sich eine Platine.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 1]{mikrostreifen.png}
+	\caption{Aufbau eines Zirkulators}
+	\label{ZB}
+\end{figure}
+Der Vorteil dieser Technik ist, dass der Aufbau klein gegenüber eines Koakialkabels ist. Der Nachteil ist, dass das elektomagnetische Feld teilweise außerhalb der Vorrichtung liegt. Somit entsteht ein größerer Verlust. Ebenfalls ist die Vorrichtung störanfälliger.
+
+\subsubsection{Zirkulator}
 Ein Zirkulator ist ein Dreitor, welches eine stehende Welle nach dem Prinzip in \cref{ZB} weiterleitet.
 \begin{figure}[h!]
 	\centering
@@ -155,10 +165,10 @@ Bei einem idealen Zirkulator geht der gesamte Stromfluss ohne Verlust  durch den
 	\text{Sperrdämpfung} =  10 \cdot \ln{\frac{P_1}{P_3}}dB 
 \end{align}
 
-\subsection{Isolator}
+\subsubsection{Isolator}
 Ein Isolator ist ein Zirkulator, welcher an Tor 3 ein angepassten Abschlusswiderstand besitzt. Das führt dazu, dass ein Isolator eine Welle in eine Richtung nahezu durchlässt, wohingegen es die Welle in entgegengesetzter Richtung absorbiert. Sie werden genutzt um Mikrowellengeneratoren vor Reflexion zu schützen.
 
-\subsection{Richtkoppler}
+\subsubsection{Richtkoppler}
 Ein Richtkoppler ermöglicht es Wellen mit verschiedenen Ausbreitungsrichtungen voneinander zu trennen. Das kann dazu dienen, dass man die einzelnen Wellen messen kann. Ein Richtkoppler ist ein Viertor. Somit besitzt er vier Ein- bzw. Ausgänge. Der schematische Aufbau eines Richtkopplers findet man in \cref{RB}. 
 \begin{figure}[h!]
 	\centering
@@ -184,11 +194,11 @@ Die Dämpfung auf der Hauptleitung gibt die Einfügedämpfung an.
 \end{align}
 
 
-\subsection{Diode bzw. Detektor}
+\subsubsection{Diode bzw. Detektor}
 Für die verwendeten Messgeräte ist es notwendig die Mikrowellen vor dem Messen gleich zu richten. Dafür wird eine Diode verwendet. In einer Richtung ist die Diode in Durchlassrichtung geschaltet, wohingegen in die entgegen gesetzte Richtung die Diode in Sperrrichtung geschaltet ist. So lässt diese nur eine Stromrichtung zu.
-Es gibt mehrere Arten von Dioden. 
-Die Halbleiter-Halbleiter-Dioden beruhen auf dem Prinzip, dass eine p- und ein n-Dotierte Schicht vorliegt. Die p-Dotierte Schicht senkt das Ferminiveau des Leiters, wohingegen die n-Dotierte Schicht das Ferminiveau anhebt. Wenn beide Materialien zusammengebracht werden, gleicht sich das Ferminiveau aus und es entsteht in der Mitte des Halbleiters eine Raumladungszone, in der ein elektrisches Feld existiert. Wenn nun eine äußere Spannung mit Pluspol am p-dotierten Halbleiter anlegt, vergrößert sich die Raumladungszone und es kann kein Strom fließen. Falls der Pluspol am n-dotierten Übergang angelegt wird, wird das innere Elektrische Feld abgebaut und es entsteht ein Stromfluss.
-Eine andere Methode eine Diode zu bauen, ist die Möglichkeit der Schottky-Diode. Diese Dioden reagieren schneller. Schottky-dioden sind Metall-Halbleiter-Dioden. Anstelle des p-dotierten Halbleiters tritt eine Metallelektrode. Somit liegt das Ferminiveau oberhalb der Standartnorm. Diese wirkt alleine für die Sperrschicht. 
+Es gibt mehrere Arten von Dioden. Eine Art ist die Halbleiter-Halbleiter-Diode.
+Die Halbleiter-Halbleiter-Dioden beruhen auf dem Prinzip, dass eine p- und eine n-Dotierte Schicht vorliegt. Die p-Dotierte Schicht senkt das Ferminiveau des Leiters, wohingegen die n-Dotierte Schicht das Ferminiveau anhebt. Wenn beide Materialien zusammengebracht werden, gleicht sich das Ferminiveau aus und es entsteht in der Mitte des Halbleiters eine Raumladungszone, in der ein elektrisches Feld existiert. Wenn nun eine äußere Spannung mit Pluspol am p-dotierten Halbleiter angelegt wird, vergrößert sich die Raumladungszone und es kann kein Strom fließen. Falls der Pluspol am n-dotierten Übergang angelegt wird, wird das innere Elektrische Feld abgebaut und es entsteht ein Stromfluss.
+Eine andere Methode eine Diode zu bauen, ist die Möglichkeit der Schottky-Diode. Diese Dioden reagieren schneller. Schottky-Dioden sind Metall-Halbleiter-Dioden. Anstelle des p-dotierten Halbleiters tritt eine Metallelektrode auf. Somit liegt das Ferminiveau oberhalb der Standartnorm. Diese wirkt alleine für die Sperrschicht. 
 
 
 \section{Methoden und Durchführung}
@@ -204,12 +214,12 @@ Zuerst soll die Kennlinie der Diode bestimmt werden. Dazu wird diese nach \cref{
 \end{figure}
 
 \subsection{Messung der Bauteile}
-Um die Bauteile zu messen wird folgende Apparatur verwendet.
+Um die Bauteile zu messen wird die Apparatur in \cref{Mess} verwendet.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale = 1]{Mess.PNG}
+	\includegraphics[scale = 1]{Mess.png}
 	\caption{}
-	\label{}
+	\label{Mess}
 \end{figure}
 Der Aufbau ähnelt dem vom vorherigen Versuch zur Bestimmung der Diodenkennnlinie. Jetzt wird ein Messobjekt zwischen dem Mikrowellengenerator und der Diode eingebaut. Zuerst betrachten wir ein Isolator, danach ein Zirkulator und zum Schluss einen Richtkoppler. Zum messen all dieser Bauteile wird ein vorprogrammiertes LabVIEW Programm benutzt. Dieses zeichnet die Spannung in Abhängigkeit von der Frequenz auf. Die Messwerte werden in Dämpfung pro Frequenz aufgetragen, sodass die folgende Umrechnung erfolgen muss, wobei P die Leistung darstellen soll.
 \begin{align}
