@@ -175,14 +175,23 @@ Somit liegt das Ergebnis der Pixelgröße von $g = (29 \pm 3) \mu m$ innerhalb d
 
 \subsection{Intensitätsverteilung in den Beugungsordnungen des unadressierten Displays}
 \subsubsection{Theorie}
-Eine LCD-Zelle besitzt eine Untermodulation. Dies ist deshalb der Fall, da in einem einfachen Pixel es einen transparenten Anteil gibt, sowie einen lichtundurchlässigen Anteil. Die Modulation wird durch das Gitter beschrieben, welches im vorherigen Aufgabenteil behandelt wurde. Die Untermodulation wird durch die Substruktur im Pixel erzeugt. An dieser Stelle wird der duty cycle definiert. Dieser beschreibt das Verhältnis zwischen transparentem und lichtundurchlässigem Teil. 
-Dieser wird berechnet, indem sinc-Funktionen an die Untermodulation angepasst werden. Die Breiten der sinc-Funktionen entsprechen dann dem durchlässigen Anteil in der jeweiligen Richtung. 
+Eine LCD-Zelle besitzt eine Untermodulation. Dies ist deshalb der Fall, da in einem einfachen Pixel es einen transparenten Anteil gibt, sowie einen lichtundurchlässigen Anteil. Die Modulation wird durch das Gitter beschrieben, welches im vorherigen Aufgabenteil behandelt wurde. Die Untermodulation wird durch die Substruktur im Pixel erzeugt. An dieser Stelle wird der duty cycle definiert. Dieser beschreibt das Verhältnis zwischen transparentem und lichtundurchlässigem Teil. Der Füllfaktor kann ebenfalls an dieser Stelle definiert werden. Dieser entspricht gerade dem Anteil des durchlässigen Pixels zur Gesamtpixelgröße.
+Anhand von \cref{gesh} können die Formeln für den duty cycle und den Füllfaktor veranschaulicht werden. abei stellt das Quadrat ein Pixel dar. Das schwarze Rechteck ist dabei der lichtunduchlässige Teil, wohingegen der noch vorhandene Teil den lichtdurchlässigen Anteil darstellt
+Dabei steht x für die Breite des Undurchlässigen Anteils des LC-Modulators und y steht für die Höhe des undurchlässigen Anteils des LC-Modulators.
+Die Breite des Pixels ist g.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 1]{dutyyy.png}
+	\caption{Schematische Darstellung zur Berechnung des duty cycle und des Füllfaktors.}
+	\label{gesh}
+\end{figure}
+Der duty cycle wird berechnet, indem sinc-Funktionen an die Untermodulation angepasst werden. Die Breiten der sinc-Funktionen entsprechen dann dem durchlässigen Anteil in der jeweiligen Richtung. 
 Der duty cycle ergibt sich dann durch
 \begin{align}
 	\text{duty cycle} = \frac{xy}{g^{2}-xy}
 	\label{dutycyc}
 \end{align}
-Ebenfalls kann auf den Füllfaktor geschlossen werden für den transparenten Teil des Pixels. Dieser entspricht gerade dem Anteil des durchlässigen Pixels zur Gesamtpixelgröße.
+Ebenfalls kann auf den Füllfaktor geschlossen werden für den transparenten Teil des Pixels. 
 \begin{align}
 	\text{Füllfaktor} = \frac{xy}{g^{2}}
 	\label{ff}
@@ -258,7 +267,9 @@ In \cref{gitter} kann das Hauptmaxima eindeutig erkannt werden. In diesem Bild k
 Desweiteren wird für ein Grauwert die Intensitäten des 0.ten und des 1.ten Beugungsmaxima gemessen. Mittels der Intensitäten lässt sich der Beugungswirkungsgrad berechnen. Dieser wurde nur für eine Graustufe aufgenommen, sodass der Beugungswirkungsgrad bei $0,21 \pm 0,01$ bei einer Graustufe von 20 lag.
 
 \subsubsection{Diskussion}
-Der LC-Modulator beeinflusst über die Farbe der Pixel (weiß bis schwarz) die Intensität des durchgelassenen Lichtes. Somit können Spalte, wie im Einzelspalt- oder Doppelspaltversuch, erzeugt werden, durch welche Licht hindurch gelangen kann. Dies allein reicht noch nicht aus um Interferenzen erzeugen zu können. Der zweite wichtige Punkt ist die Größe der Pixel. Da die Größenordnung der Pixel klein genug ist, ist es möglich die Lichtwellen zur Interferenz zu bringen, falls ein Pixel mehrere Größenordnungen größer wäre, wäre es problematisch Interferenzen zu erzeugen.
+Das ein LC-Modulator Beugungsilder erzeugen kann leigt an der Anordnung der Flüssigkristalle. Dies ist in \cref{LC-Modul} zu sehen. Durch das Anlegen von Spannung kann eine Verkippung und eine Verdrehung erzeugt werden. Einfallendes Licht wird durch die Kristalle in ihrer Polarisation verändert. Fällt das Licht jetzt auf einen Analysator wird das Licht in abhängigkeit seiner Polarisation entweder transmittiert oder nicht transmittiert.
+Der zweite wichtige Punkt ist die Größe der Pixel. Da die Größenordnung der Pixel klein genug ist, ist es möglich die Lichtwellen zur Interferenz zu bringen, falls ein Pixel mehrere Größenordnungen größer wäre, wäre es problematisch Interferenzen zu erzeugen.
+Durch diese beiden Methoden ist der LC-Modulator in der Lage Beugungsbilder hervorzurufen.
 
 \section{Computergenerierte Hologramme (CGH)}
 Zuletzt wird der Aufbau, welcher in \cref{cghskizze} zu sehen ist realisiert. Das heißt LC-Modulator und Analysator in optimaler Konfiguration, eine 200mm Linse und eine Kamera zur Aufnahme der Bilder. Dieser wird für den kommenden, letzten Versuchsteil nicht mehr verändert.
