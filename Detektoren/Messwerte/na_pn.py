@@ -10,8 +10,8 @@ Probe = "na_pn_"
 Dateinamen = ["SEP","FEP","background"]
 Anzahl = np.shape(Dateinamen)
 Zahlen = [0] * Anzahl[0]
-m = 0.1876
-E_0 = -26
+m = 0.1698
+E_0 = 0
 m_ec=511
 Literatur_FEP = 1274.5
 Literatur_SEP = 511
@@ -66,16 +66,15 @@ plt.ylim(5,10**5)
 plt.yscale('log')
 plt.plot(x,y,".",color = "blue",label = "aktive Messwerte")  
 plt.plot(x_d,y_d,".",color = "gray",label = "deaktivierte Messwerte")
+plt.plot(x,f,color ="darkred", label = "Model")
 for i in range(Anzahl[0]):
     plt.plot(x,Zahlen[i],label = Dateinamen[i])
-plt.plot(x,f,color ="darkred", label = "Model")
-plt.vlines(Literatur_FEP, ymin = 20, ymax = 1000,label = "Literatur FEP 1274 keV",color = "lime")
-plt.vlines(Literatur_SEP, ymin = 50, ymax = 800,label = "Literatur 511 keV",color = "lime",linestyle = "--")
-plt.vlines(Compton1, ymin = 1, ymax = 100,label = "Compon-Kante FEP")
-plt.vlines(Compton2, ymin = 10, ymax = 500, linestyle = "--",label = "Compon-Kante SEP")
-plt.vlines(60, ymin = 20, ymax = 500,label = "Blei-Röntgen-Strahlung")
-plt.vlines(Backscatter1, ymin = 20, ymax = 500,color = "red", label = "Backscatter-Kante FEP")
-plt.vlines(Backscatter2, ymin = 20, ymax = 500,color = "red",linestyle = "--",label = "Backscatter-Kante SEP")
+plt.vlines(Literatur_FEP, ymin = 20, ymax = 100000,label = "Literatur FEP 1274 keV",color = "lime")
+plt.vlines(Literatur_SEP, ymin = 50, ymax = 100000,label = "Literatur 511 keV",color = "lime",linestyle = "--")
+plt.vlines(Compton1, ymin = 50, ymax = 5000,label = "Compon-Kante FEP")
+plt.vlines(Compton2, ymin = 200, ymax = 10000, linestyle = "--",label = "Compon-Kante SEP")
+plt.vlines(Backscatter1, ymin = 200, ymax = 10000,color = "red", label = "Backscatter-Kante FEP")
+plt.vlines(Backscatter2, ymin = 200, ymax = 10000,color = "red",linestyle = "--",label = "Backscatter-Kante SEP")
 
 plt.legend(loc='lower left',ncol=2,prop={'size': 7})
 plt.xlabel("Energie")

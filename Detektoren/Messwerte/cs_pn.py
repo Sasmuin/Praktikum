@@ -6,12 +6,12 @@ Dies ist eine temporäre Skriptdatei.
 """
 import numpy as np
 import matplotlib.pyplot as plt
-Probe = "cs_sz_"
+Probe = "cs_pn_"
 Dateinamen = ["FEP","background"]
 Anzahl = np.shape(Dateinamen)
 Zahlen = [0] * Anzahl[0]
-m = 0.1876
-E_0 = -26
+m = 0.1698
+E_0 = 0
 m_ec=511
 Literatur_FEP = 661.6
 FEP1 = 3676.35*m+E_0
@@ -59,17 +59,16 @@ for i in range(Anzahl[0]):
      infile.close()
     
 
-plt.ylim(0.1,5*10**3)
+plt.ylim(0.1,5*10**5)
 plt.yscale('log')
 plt.plot(x,y,".",color = "blue",label = "aktive Messwerte")  
 plt.plot(x_d,y_d,".",color = "gray",label = "deaktivierte Messwerte")
 plt.plot(x,f,color ="darkred", label = "Model")
 for i in range(Anzahl[0]):
     plt.plot(x,Zahlen[i],label = Dateinamen[i])
-plt.vlines(Literatur_FEP, ymin = 100, ymax = 3000,label = "Literatur FEP 661.6 keV",color = "lime")
-plt.vlines(Compton1, ymin = 20, ymax = 700,label = "Compon-Kante FEP")
-plt.vlines(60, ymin = 50, ymax = 1000,label = "Blei-Röntgen-Strahlung")
-plt.vlines(Backscatter1, ymin = 100, ymax = 3000,color = "red", label = "Backscatter-Kante FEP")
+plt.vlines(Literatur_FEP, ymin = 100, ymax = 1000000,label = "Literatur FEP 661.6 keV",color = "lime")
+plt.vlines(Compton1, ymin = 100, ymax = 10000,label = "Compon-Kante FEP")
+plt.vlines(Backscatter1, ymin = 100, ymax = 20000,color = "red", label = "Backscatter-Kante FEP")
 
 plt.legend(loc='lower left',ncol=2,prop={'size': 7})
 plt.xlabel("Energie")

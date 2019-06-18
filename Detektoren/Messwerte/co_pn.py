@@ -6,17 +6,22 @@ Dies ist eine temporäre Skriptdatei.
 """
 import numpy as np
 import matplotlib.pyplot as plt
-Probe = "cs_sz_"
-Dateinamen = ["FEP","background"]
+Probe = "co_pn_"
+Dateinamen = ["FEP1","FEP2","background"]
 Anzahl = np.shape(Dateinamen)
 Zahlen = [0] * Anzahl[0]
-m = 0.1876
-E_0 = -26
+m = 0.1698
+E_0 = 0
 m_ec=511
-Literatur_FEP = 661.6
-FEP1 = 3676.35*m+E_0
+Literatur_FEP1 = 1173.2
+Literatur_FEP2 = 1332.5
+FEP1 = 6409.55*m+E_0
+FEP2 = 7260.52*m+E_0
 Compton1 = FEP1*(1-1/(1+2*FEP1/(m_ec)))
+Compton2 = FEP2*(1-1/(1+2*FEP2/(m_ec)))
 Backscatter1 = FEP1 - Compton1
+Backscatter2 = FEP2 - Compton2
+
 
 
 filename = Probe + "all.dat"
@@ -59,17 +64,19 @@ for i in range(Anzahl[0]):
      infile.close()
     
 
-plt.ylim(0.1,5*10**3)
+plt.ylim(0.5,3*10**4)
 plt.yscale('log')
 plt.plot(x,y,".",color = "blue",label = "aktive Messwerte")  
 plt.plot(x_d,y_d,".",color = "gray",label = "deaktivierte Messwerte")
 plt.plot(x,f,color ="darkred", label = "Model")
 for i in range(Anzahl[0]):
     plt.plot(x,Zahlen[i],label = Dateinamen[i])
-plt.vlines(Literatur_FEP, ymin = 100, ymax = 3000,label = "Literatur FEP 661.6 keV",color = "lime")
-plt.vlines(Compton1, ymin = 20, ymax = 700,label = "Compon-Kante FEP")
-plt.vlines(60, ymin = 50, ymax = 1000,label = "Blei-Röntgen-Strahlung")
-plt.vlines(Backscatter1, ymin = 100, ymax = 3000,color = "red", label = "Backscatter-Kante FEP")
+plt.vlines(Literatur_FEP2, ymin = 10, ymax = 10000,label = "Literatur FEP2 1332.5 keV",color = "lime")
+plt.vlines(Literatur_FEP1, ymin = 10, ymax = 10000,label = "Literatur FEP1 1173.2 keV",color = "lime",linestyle = "--")
+plt.vlines(Compton2, ymin = 10, ymax = 500,label = "Compon-Kante FEP2")
+plt.vlines(Compton1, ymin = 10, ymax = 500, linestyle = "--",label = "Compon-Kante FEP1")
+plt.vlines(Backscatter2, ymin = 100, ymax = 1000,color = "red",label = "Backscatter-Kante FEP2")
+plt.vlines(Backscatter1, ymin = 100, ymax = 1000,color = "red", linestyle = "--",label = "Backscatter-Kante FEP1")
 
 plt.legend(loc='lower left',ncol=2,prop={'size': 7})
 plt.xlabel("Energie")
