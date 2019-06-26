@@ -74,8 +74,8 @@ for i in range(Anzahl[0]):
 plt.vlines(Literatur_FEPCO1, ymin = 5, ymax = 300,label = "Literatur FEP2 Co-60 1332.5 keV",color = "lime")
 plt.vlines(Literatur_FEPCO2, ymin = 5, ymax = 600,label = "Literatur FEP1 Co-60 1173.2 keV",color = "lime",linestyle = "--")
 plt.vlines(Literatur_FEP_CS, ymin = 50, ymax = 3000,label = "Literatur FEP Cs-137 661.6 keV",color = "aqua",linestyle = "-.")
-plt.vlines(46, ymin = 50, ymax = 10000,label = "Literatur FEP Cs-137 661.6 keV",color = "aqua",linestyle = "--")
-plt.vlines(Compton1, ymin = 20, ymax = 700,label = "Compon-Kante FEP")
+plt.vlines(46, ymin = 50, ymax = 10000,label = "Literatur FEP Cs-137 31.8/32.2 keV",color = "aqua",linestyle = "--")
+
 
 
 plt.legend(loc='lower left',ncol=2,prop={'size': 7})

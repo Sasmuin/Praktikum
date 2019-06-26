@@ -1,5 +1,6 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
 \contentsline {section}{\numberline {1}Theorie}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}Wechselwirkung von $\gamma $-Strahlung mit Materie}{1}{subsection.1.1}
 \contentsline {subsubsection}{\numberline {1.1.1}Photoeffekt}{1}{subsubsection.1.1.1}
@@ -14,6 +15,12 @@
 \contentsline {subsection}{\numberline {2.1}Kalibration}{7}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}$\gamma $-Spektren}{9}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}$^{22}$Na Szintillator}{9}{subsubsection.2.2.1}
-\contentsline {subsection}{\numberline {2.3}$^{60}$Co Szintillator}{10}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}$^{137}$Cs Szintillator}{10}{subsection.2.4}
-\contentsline {section}{\numberline {A}Anhang}{12}{appendix.A}
+\contentsline {subsubsection}{\numberline {2.2.2}$^{60}$Co Szintillator}{10}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}$^{137}$Cs Szintillator}{10}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Mischquelle Szintillator}{11}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}$^{22}$Na Halbleiterdetektor}{12}{subsubsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.6}$^{60}$Co Halbleiterdetektor}{13}{subsubsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.7}$^{137}$Cs Halbleiterdetektor}{14}{subsubsection.2.2.7}
+\contentsline {subsection}{\numberline {2.3}Erz Halbleiterdetektor}{15}{subsection.2.3}
+\contentsline {section}{\numberline {3}Diskussion}{16}{section.3}
+\contentsline {section}{\nonumberline Literatur}{17}{section*.13}

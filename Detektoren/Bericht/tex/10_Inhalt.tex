@@ -94,7 +94,7 @@ In \cref{na_sz} ist das mithilfe des Szintillators aufgenommene Spektrum der $^{
 
 Da die Kalibrierung mit diesem Spektrum stattgefunden hat, ist es nicht möglich mit  damit die Genauigkeit der Peaks selbst zu diskutieren. Allerdings passen die ausgerechneten Compton- und Backscatterkanten gut mit den im Spektrum sichtbaren Kanten überein. Ein weiterer Peak bei etwa 70 keV lässt sich allerdings nur über die Funktionsweise des Szintillators erklären, der mit Blei abgeschirmt wird. Durch diese Abschirmung kann Röntgenstrahlung entstehen, wenn ein Elektron in der innersten Schale durch einen Stoß mit einem Photon oder freiem Elektron entfernt wird, weshalb ein Elektron aus einer höheren Schale in die niedrigere Schale springen muss, wobei es Energie abgibt. Es ist also die K-Linie von Blei dort zu sehen.
 
-\subsection{$^{60}$Co Szintillator}
+\subsubsection{$^{60}$Co Szintillator}
 Als nächstes wird das Co-Spektrum in \cref{co_sz} betrachtet. Die Probe hat zwei verschiedene Übergänge, die auch beide bei deutlich zu sehen sind. Allerdings ist ihr Mittelpunkt mit $E_{FEP1} = \SI{1176,1 \pm 0,7}{keV}$ und $E_{FEP2} = \SI{1335,8 \pm 0,8}{keV}$ jeweils etwa 3keV größer als der Literaturwert. Trotzdem passen die Compton und - Backscatterkanten wieder gut mit dem sichtbaren Spektrum überein, wobei insbesondere interessant ist, dass die beiden Backscatterkanten übereinander liegen und damit einen größeren Peak als sonst erzeugen.
 
 
@@ -106,8 +106,8 @@ Als nächstes wird das Co-Spektrum in \cref{co_sz} betrachtet. Die Probe hat zwe
 	\label{co_sz}
 \end{figure}
 
-\subsection{$^{137}$Cs Szintillator}
-Danach wird das Spektrum der $^{137}$Cs-Probe betrachtet, das in \cref{cs_sz} zu sehen ist. In diesem Fall gibt es nur einen Übergang und damit auch nur einen Full Energy Peak. Allerdings ist auch hier wieder der Mittelpunkt dieses Peaks mit $E_{FEP1} = \SI{663,5 \pm 0,6}{keV}$ etwa 2keV größer als der Literaturwert. Daraus lässt sich schließen, dass es mit großer Wahrscheinlichkeit zu einem Fehler bei der Kalibrierung, insbesondere $E_{0}$ gekommen ist, da konstant alle Werte einige keV größer als die Literaturwerte sind. Die Compton- und Backscatterkante passen allerdings wieder gut ins Spektrum rein.
+\subsubsection{$^{137}$Cs Szintillator}
+Danach wird das Spektrum der $^{137}$Cs-Probe betrachtet, das in \cref{cs_sz} zu sehen ist. In diesem Fall gibt es nur einen Übergang und damit auch nur einen Full Energy Peak. Allerdings ist auch hier wieder der Mittelpunkt dieses Peaks mit $E_{FEP1} = \SI{663,5 \pm 0,6}{keV}$ etwa 2keV größer als der Literaturwert. Allerdings passen die Compton- und Backscatterkante wieder gut ins Spektrum rein.
 
 
 
@@ -119,4 +119,77 @@ Danach wird das Spektrum der $^{137}$Cs-Probe betrachtet, das in \cref{cs_sz} zu
 \end{figure}
 
 
-\subsection{title}
+
+\subsubsection{Mischquelle Szintillator}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{Mischquelle_sz_.png}
+	\caption{Mischquelle mit einem Szintillator aufgenommen.}
+	\label{Mischquelle_sz}
+\end{figure}
+
+
+Daraufhin wird eine Mischquelle betrachtet, die aus mehreren Elementen besteht und zugeordnet werden sollen. Die beiden Elemente die sich ohne Probleme zuordnen lassen sind $^{137}$Cs und $^{60}$Co. Die Peaks im gemessenen Spektrum befinden sich für das Cobalt bei $E = \SI{662,2 \pm 0,7}{keV}$ und für Cäsium bei $E = \SI{1172,8 \pm 0,9}{keV}$ und $E = \SI{1329,3 \pm 1}{keV}$, wobei nur der größte $^{137}$Cs Peak etwas vom Literaturwert abweicht. Es lassen sich allerdings noch vier weitere Peaks im niedrigeren Energiebereich erkennen, die schwieriger zuzuordnen sind. Der Größte davon liegt bei $E = \SI{44,8 \pm 0,6}{keV}$ und könnte am ehesten mit weiteren möglichen Übergängen von $^{137}$Cs erklärt werden, die bei $\SI{31,8/32.2}{keV}$ stattfinden. Die drei kleineren Peaks, die ineinander übergehen befinden sich nach der Messung zwischen 9,6 und -5,5 keV, was offensichtlich keinen Sinn ergibt, da negative Energien nicht auftreten können. Allerdings handelt es sich dabei höchstwahrscheinlich wieder um Röntgenstrahlung und die einzelnen Peaks korrespondieren mit der $K_{\alpha}$ bis $K_{\gamma}$ Linie. Allerdings wird dabei deutlich, dass die Annahmen der Linearität zwischen Channels und Energie bei der Kalibrierung im niedrigen Energiebereich nicht mehr gilt und dann zu deutlich größeren Fehlern führt.
+
+
+
+
+
+
+
+
+\subsubsection{$^{22}$Na Halbleiterdetektor}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{na_pn_.png}
+	\caption{$^{22}$Na Spektrum mit einem Halbleiterdetektor aufgenommen.}
+	\label{na_pn}
+\end{figure}
+
+Die Kalibrierung hat auch für den Halbleiterdetektor wieder über die $^{22}$Na Probe stattgefunden, weshalb die Peaks natürlich wieder mit den Literaturwerten übereinstimmen. Im Vergleich zu dem Szintillatormessung in \cref{na_sz} fällt allerdings auf, dass die Peaks eine sehr viele kleiner sind und damit eine geringere Energieunschärfe besitzen. Außerdem werden beim Halbleiterdetektor keine Röntgenstrahlung mehr festgestellt, da kein Blei als Abschirmung vorhanden ist. Ungewöhnlich ist auch, dass die Comptonkante des FEP fast 100keV von der Kante im Bild entfernt ist.
+
+
+
+\newpage
+\subsubsection{$^{60}$Co Halbleiterdetektor}
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{co_pn_.png}
+	\caption{$^{60}$Co Spektrum mit einem Halbleiterdetektor aufgenommen}
+	\label{co_pn}
+\end{figure}
+
+
+Als nächstes ist die $^{60}$Co probe, die mit einem Halbleiterdetektor gemessen wurde, in \cref{co_pn} zu sehen. Die beiden FEPs befinden sich bei $E_{FEP1} = \SI{1172,6 \pm 0,1}{keV}$ und $E_{FEP2} = \SI{1331,7 \pm 0,1}{keV}$, was jeweils etwa 1keV kleiner als der Literaturwert ist. Beide Comptonkanten sind außerdem wieder kleiner als die gemessen Kanten im Spektrum. 
+
+\newpage
+\subsubsection{$^{137}$Cs Halbleiterdetektor}
+
+In \cref{cs_pn} ist das Spektrum vom Cäsium durch den Halbleiterdetektor aufgenommen
+zu sehen. Der FEP befindet sich bei $\SI{661,5 \pm 0,1}{keV}$, was mit dem Literaturwert übereinstimmt. Die Comptonkante und Backscatterkante sind wieder etwas zu klein, liegen allerdings grundsätzlich im richtigen Bereich.
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{cs_pn_.png}
+	\caption{$^{137}$Cs Spektrum mit einem Halbleiterdetektor aufgenommen}
+	\label{cs_pn}
+\end{figure}
+
+\newpage
+\subsection{Erz Halbleiterdetektor}
+Als letztes soll ein vorher unbekanntes Erz untersucht werden und einer der drei natürlichen Zerfallsreihe zugewiesen werden.  Das Spektrum ist in \cref{Erz_pn} zu sehen. Alle Elemente die im Bild eingezeichnet sind, sind Teil der Uran-238 Reihe und stimmen, außer bei sehr großen und sehr niedrigen Energien, immer gut mit den eingezeichneten Peaks überein. Für die beiden anderen Zerfallsreihen waren keine solche Übereinstimmungen zu sehen. Somit kann davon ausgegangen werden, dass es sich um diese Zerfallsreihe handelt.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{Erz_pn_.png}
+	\caption{$^{137}$Cs Spektrum mit einem Halbleiterdetektor aufgenommen}
+	\label{Erz_pn}
+\end{figure}
+\newpage
+\section{Diskussion}
+Insgesamt passen die Ergebnisse ziemlich gut, die Peaks haben sich meistens nur wenige keV vom Literaturwert unterschieden und auch Compton- und Backscatterkanten konnten immer gut zugeordnet werden. Außerdem ließen sich sowohl die Mischquelle als auch das Erz ohne Problem zuordnen. Allerdings waren die Unsicherheit fast immer zu klein, wobei zwei grundsätzliche Fehler der Grund sein könnten. Erstens wurde die Unsicherheit der Detektoren überhaupt nicht betrachtet und wenn diese einen signifikanten Teil der Unsicherheit ausmachen kann das dazu führen , dass die Unsicherheiten zu klein sind. Ein andere Möglichkeit ist, dass die Unsicherheiten der Gauß-Fits und damit auch der Kalibration zu klein waren.
