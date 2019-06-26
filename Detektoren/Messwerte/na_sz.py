@@ -78,7 +78,7 @@ plt.vlines(Backscatter1, ymin = 20, ymax = 500,color = "red", label = "Backscatt
 plt.vlines(Backscatter2, ymin = 20, ymax = 500,color = "red",linestyle = "--",label = "Backscatter-Kante SEP")
 
 plt.legend(loc='lower left',ncol=2,prop={'size': 7})
-plt.xlabel("Energie")
+plt.xlabel("Energie [keV]")
 plt.ylabel("Zählungen")
 plt.savefig(Probe + ".png")
 plt.show()

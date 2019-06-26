@@ -71,7 +71,7 @@ plt.vlines(Compton1, ymin = 100, ymax = 10000,label = "Compon-Kante FEP")
 plt.vlines(Backscatter1, ymin = 100, ymax = 20000,color = "red", label = "Backscatter-Kante FEP")
 
 plt.legend(loc='lower left',ncol=2,prop={'size': 7})
-plt.xlabel("Energie")
+plt.xlabel("Energie [keV]")
 plt.ylabel("Zählungen")
 plt.savefig(Probe + ".png")
 plt.show()

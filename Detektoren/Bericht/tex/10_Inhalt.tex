@@ -20,7 +20,7 @@ Der dritte auftretende Effekt nennt sich Paarbildung. Hierbei erzeugt das Photon
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\textwidth]{streuung.png}
+	\includegraphics[width=0.9\textwidth]{streuung.PNG}
 	\caption{Dargestellt ist der Wirkungsquerschnitt der einzelnen Effekte in Abhängigkeit von der Energie des Photons in Blei. Bei niedrigen Energien dominiert der Photoeffekt, bei mittleren der Comptoneffekt, bei hohen die Paarbildung. Die Kanten beim Photoeffekt kommen zustande, da genau bei dieser Energie das Photon genug Energie hat, um Elektronen aus einer weiteren, tieferen Schale zu lösen.}
 	\label{streuung}
 \end{figure}
@@ -54,8 +54,69 @@ Der Hauptpeak ist der sogenannte Full Energy Peak. Er tritt auf, wenn die gesamt
 Es werden aber auch noch andere Elektronenenergien gemessen, um die das Ergebnis am Ende bereinigt werden muss. Der sogenannte Backscatteruntergrund entsteht durch Compton-Streuung der $\gamma$-Quanten am Abschirmmaterial. Dabei kann ein Photon mit Energien zwischen $E_\text{min}$ und $E_\gamma$ zurück in den Detektor gelangen und dort zum Signal beitragen. So entsteht eine weitere kontinuierliche Verteilung mit Energien zwischen $E_\text{min}$ und $E_\gamma$. Außerdem können durch Photoeffekt am Abschirmmaterial weitere Peaks entstehen, die genau den Energieabständen zwischen zwei Schalen in der Atomhülle dieser Elemente entsprechen.
 
 
+\section{Auswertung}
+\subsection{Kalibration}
+Zunächst muss die Kalibrierung bestimmt werden. Dies ist nötig, da die verschiedenen Zählungen in "Channels" unterteilt wurden. Um die Messungen allerdings sinnvoll zu verwenden, ist es nötig die korrespondierenden Energien, zu den jeweiligen Channels zu kennen. Dafür wird zunächst die Messung der $^{22}$Na in \cref{Kali} betrachtet.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{na.png}
+	\caption{Messung des $^{22}$Na Spektrums mithilfe des Szintillators.}
+	\label{Kali}
+\end{figure}
+
+in der Messung sind deutlich zwei Peaks zu sehen, einen Full Energy Peak(FEP) und einen Single Escape Peak(SEP). Da die Literaturwerte der beiden Peaks mit $E_{FEP} = \SI{1274.5}{keV}$ und $E_{SEP} = \SI{511}{keV}$ bekannt sind und außerdem ein linearer Zusammenhang zwischen den Channels und den zugehörigen Energien besteht, kann eine Umrechnung stattfinden.
+Das passiert mit der Formel:
+\begin{equation}
+E = m \cdot Ch + E_{0},
+\end{equation}  
+wobei
+\begin{equation}
+m = \frac{E_{FEP} - E_{SEP}}{Ch_{FEP} - Ch_{SEP}}
+\end{equation}
+und 
+\begin{equation}
+E_{0} = E_{FEP} - m \cdot Ch_{FEP}
+\end{equation}
+mit $Ch$ dem jeweilig zugehörigem Channel. Für den Szintillator ergibt das eine Umrechnung von $m = \SI{0,18769 \pm 0,00007}{\frac{keV}{Ch}}$ und $E_{0} = \SI{-26,5 \pm 0,56}{keV}$. Die Umrechnung für den Halbleiter funktioniert analog und ergibt einen Faktor von $m = \SI{0,169868 \pm 0,000002}{\frac{keV}{Ch}}$ und $E_{0} = \SI{0,01 \pm 0,01}{keV}$. 
+
+\subsection{$\gamma$-Spektren}
+
+\subsubsection{$^{22}$Na Szintillator}
+In \cref{na_sz} ist das mithilfe des Szintillators aufgenommene Spektrum der $^{22}$Na-Quelle zu sehen. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{na_sz_.png}
+	\caption{$^{22}$Na Szintillator Spektrums auf die korrekten Energien kalibriert.}
+	\label{na_sz}
+\end{figure}
+
+Da die Kalibrierung mit diesem Spektrum stattgefunden hat, ist es nicht möglich mit  damit die Genauigkeit der Peaks selbst zu diskutieren. Allerdings passen die ausgerechneten Compton- und Backscatterkanten gut mit den im Spektrum sichtbaren Kanten überein. Ein weiterer Peak bei etwa 70 keV lässt sich allerdings nur über die Funktionsweise des Szintillators erklären, der mit Blei abgeschirmt wird. Durch diese Abschirmung kann Röntgenstrahlung entstehen, wenn ein Elektron in der innersten Schale durch einen Stoß mit einem Photon oder freiem Elektron entfernt wird, weshalb ein Elektron aus einer höheren Schale in die niedrigere Schale springen muss, wobei es Energie abgibt. Es ist also die K-Linie von Blei dort zu sehen.
+
+\subsection{$^{60}$Co Szintillator}
+Als nächstes wird das Co-Spektrum in \cref{co_sz} betrachtet. Die Probe hat zwei verschiedene Übergänge, die auch beide bei deutlich zu sehen sind. Allerdings ist ihr Mittelpunkt mit $E_{FEP1} = \SI{1176,1 \pm 0,7}{keV}$ und $E_{FEP2} = \SI{1335,8 \pm 0,8}{keV}$ jeweils etwa 3keV größer als der Literaturwert. Trotzdem passen die Compton und - Backscatterkanten wieder gut mit dem sichtbaren Spektrum überein, wobei insbesondere interessant ist, dass die beiden Backscatterkanten übereinander liegen und damit einen größeren Peak als sonst erzeugen.
 
 
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{co_sz_.png}
+	\caption{$^{60}$Co Spektrum mit einem Szintillator aufgenommen.}
+	\label{co_sz}
+\end{figure}
+
+\subsection{$^{137}$Cs Szintillator}
+Danach wird das Spektrum der $^{137}$Cs-Probe betrachtet, das in \cref{cs_sz} zu sehen ist. In diesem Fall gibt es nur einen Übergang und damit auch nur einen Full Energy Peak. Allerdings ist auch hier wieder der Mittelpunkt dieses Peaks mit $E_{FEP1} = \SI{663,5 \pm 0,6}{keV}$ etwa 2keV größer als der Literaturwert. Daraus lässt sich schließen, dass es mit großer Wahrscheinlichkeit zu einem Fehler bei der Kalibrierung, insbesondere $E_{0}$ gekommen ist, da konstant alle Werte einige keV größer als die Literaturwerte sind. Die Compton- und Backscatterkante passen allerdings wieder gut ins Spektrum rein.
 
 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{cs_sz_.png}
+	\caption{$^{60}$Cs Spektrum mit einem Szintillator aufgenommen.}
+	\label{cs_sz}
+\end{figure}
+
+
+\subsection{title}

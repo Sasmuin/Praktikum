@@ -77,7 +77,7 @@ plt.vlines(Literatur_FEP_CS, ymin = 50, ymax = 3000,label = "Literatur FEP Cs-13
 plt.vlines(Literatur_FEP_CS2, ymin = 50, ymax = 10000,label = "Literatur FEP Cs-137 661.6 keV",color = "aqua",linestyle = "-.")
 
 plt.legend(loc='lower left',ncol=2,prop={'size': 7})
-plt.xlabel("Energie")
+plt.xlabel("Energie [keV]")
 plt.ylabel("Zählungen")
 plt.savefig(Probe + ".png")
 plt.show()
