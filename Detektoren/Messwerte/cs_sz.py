@@ -72,7 +72,7 @@ plt.vlines(60, ymin = 50, ymax = 1000,label = "Blei-Röntgen-Strahlung")
 plt.vlines(Backscatter1, ymin = 100, ymax = 3000,color = "red", label = "Backscatter-Kante FEP")
 
 plt.legend(loc='lower left',ncol=2,prop={'size': 7})
-plt.xlabel("Energie")
+plt.xlabel("Energie [keV]")
 plt.ylabel("Zählungen")
 plt.savefig(Probe + ".png")
 plt.show()

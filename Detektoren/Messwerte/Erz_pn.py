@@ -68,7 +68,9 @@ plt.vlines(Po214, ymin = 10, ymax = 10000,label = "Po214",color = "darkred")
 plt.vlines(46.5, ymin = 10, ymax = 10000,label = "Pb210",color = "darkslategray")  
 plt.vlines(803, ymin = 10, ymax = 10000,label = "Po210",color = "purple")   
 
-plt.xlabel("Energie")
+
+
+plt.xlabel("Energie [keV]")
 plt.ylabel("Zählungen")   
 plt.legend(loc='lower left',ncol=2,prop={'size': 7})
 plt.savefig(Probe + ".png")

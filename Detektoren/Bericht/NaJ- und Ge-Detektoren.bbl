@@ -16,5 +16,34 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{anleitung-ws2014}{manual}{}
+      \list{organization}{1}{%
+        {Westfälische Wilhelms-Universität Münster}%
+      }
+      \list{publisher}{1}{%
+        {Kern Physik}%
+      }
+      \field{sortinit}{N}
+      \field{sortinithash}{1163c28585427c673ad5a010cbf82f52}
+      \field{labeltitlesource}{title}
+      \field{month}{Oktober}
+      \field{title}{Naj(TI)- und Ge-Detektoren}
+      \field{year}{2018}
+    \endentry
+    \entry{Zerfallsreihe}{misc}{}
+      \field{sortinit}{Z}
+      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{labeltitlesource}{title}
+      \field{note}{eingesehen am 20.06.2019}
+      \field{title}{Zerfallsreihen}
+      \verb{url}
+      \verb https://www.cpp.edu/~pbsiegel/decaychain/
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 
