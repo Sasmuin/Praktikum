@@ -13,20 +13,20 @@
 \contentsline {subsection}{\numberline {1.4}$\gamma $-Spektrum}{5}{subsection.1.4}
 \contentsline {section}{\numberline {2}Auswertung}{7}{section.2}
 \contentsline {subsection}{\numberline {2.1}Kalibration}{7}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}$\gamma $-Spektren}{9}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}$^{22}$Na Szintillator}{9}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}$^{60}$Co Szintillator}{10}{subsubsection.2.2.2}
-\contentsline {subsection}{\numberline {2.3}Unsicherheiten}{10}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}$^{137}$Cs Szintillator}{11}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Mischquelle Szintillator}{11}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}$^{22}$Na Halbleiterdetektor}{12}{subsubsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.4}$^{60}$Co Halbleiterdetektor}{13}{subsubsection.2.3.4}
-\contentsline {subsubsection}{\numberline {2.3.5}$^{137}$Cs Halbleiterdetektor}{14}{subsubsection.2.3.5}
+\contentsline {subsection}{\numberline {2.2}Unsicherheiten}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}$\gamma $-Spektren}{9}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}$^{22}$Na Szintillator}{9}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}$^{60}$Co Szintillator}{10}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}$^{137}$Cs Szintillator}{10}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Mischquelle Szintillator}{11}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}$^{22}$Na Halbleiterdetektor}{12}{subsubsection.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}$^{60}$Co Halbleiterdetektor}{13}{subsubsection.2.3.6}
+\contentsline {subsubsection}{\numberline {2.3.7}$^{137}$Cs Halbleiterdetektor}{14}{subsubsection.2.3.7}
 \contentsline {subsection}{\numberline {2.4}Erz Halbleiterdetektor}{15}{subsection.2.4}
-\contentsline {section}{\numberline {3}Diskussion}{16}{section.3}
-\contentsline {section}{\numberline {4}Detektoreigenschaften}{16}{section.4}
-\contentsline {subsection}{\numberline {4.1}Relative Abweichung von den Referenzwerten.}{16}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Energieaufl\IeC {\"o}sung}{17}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Mittlere Ionisationsenergie}{19}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Effizienz}{19}{subsection.4.4}
-\contentsline {section}{\nonumberline Literatur}{22}{section*.17}
+\contentsline {subsection}{\numberline {2.5}Diskussion}{16}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Detektoreigenschaften}{16}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Relative Abweichung von den Referenzwerten.}{16}{subsubsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.2}Energieaufl\IeC {\"o}sung}{17}{subsubsection.2.6.2}
+\contentsline {subsubsection}{\numberline {2.6.3}Mittlere Ionisationsenergie}{18}{subsubsection.2.6.3}
+\contentsline {subsubsection}{\numberline {2.6.4}Effizienz}{19}{subsubsection.2.6.4}
+\contentsline {section}{\nonumberline Literatur}{21}{section*.17}

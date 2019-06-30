@@ -65,7 +65,7 @@ Zunächst muss die Kalibrierung bestimmt werden. Dies ist nötig, da die verschi
 	\label{Kali}
 \end{figure}
 
-in der Messung sind deutlich zwei Peaks zu sehen, einen Full Energy Peak(FEP) und einen Single Escape Peak(SEP). Da die Literaturwerte der beiden Peaks mit $E_{FEP} = \SI{1274.5}{keV}$ und $E_{SEP} = \SI{511}{keV}$ bekannt sind und außerdem ein linearer Zusammenhang zwischen den Channels und den zugehörigen Energien besteht, kann eine Umrechnung stattfinden.
+in der Messung sind deutlich zwei Peaks zu sehen, einen Full Energy Peak(FEP) und einen Single Escape Peak(SEP). Da die Literaturwerte der beiden Peaks mit $E_{FEP} = \SI{1274,5}{keV}$ und $E_{SEP} = \SI{511}{keV}$ bekannt sind und außerdem ein linearer Zusammenhang zwischen den Channels und den zugehörigen Energien besteht, kann eine Umrechnung stattfinden.
 Das passiert mit der Formel:
 \begin{equation}
 E = m \cdot Ch + E_{0},
@@ -79,6 +79,12 @@ und
 E_{0} = E_{FEP} - m \cdot Ch_{FEP}
 \end{equation}
 mit $Ch$ dem jeweilig zugehörigem Channel. Für den Szintillator ergibt das eine Umrechnung von $m = \SI{0,18769 \pm 0,00007}{\frac{keV}{Ch}}$ und $E_{0} = \SI{-26,5 \pm 0,56}{keV}$. Die Umrechnung für den Halbleiter funktioniert analog und ergibt einen Faktor von $m = \SI{0,169868 \pm 0,000002}{\frac{keV}{Ch}}$ und $E_{0} = \SI{0,01 \pm 0,01}{keV}$. 
+
+
+
+\subsection{Unsicherheiten}
+Innerhalb der Fehlerrechnung wurden zwei Fehlerquellen angenommen. Der erste Fehler ist vom Fit-Programm fityk ausgegeben worden. Dieser hat für die Werte eine Genauigkeit angegeben. Der zweite Fehler ist durch die Kalibrierung hinein gekommen. Alle weiteren Fehler wurden mittels Fehlerfortpflanzung ermittelt.
+
 
 \subsection{$\gamma$-Spektren}
 
@@ -94,12 +100,13 @@ In \cref{na_sz} ist das mithilfe des Szintillators aufgenommene Spektrum der $^{
 
 Da die Kalibrierung mit diesem Spektrum stattgefunden hat, ist es nicht möglich mit  damit die Genauigkeit der Peaks selbst zu diskutieren. Allerdings passen die ausgerechneten Compton- und Backscatterkanten gut mit den im Spektrum sichtbaren Kanten überein. Ein weiterer Peak bei etwa 70 keV lässt sich allerdings nur über die Funktionsweise des Szintillators erklären, der mit Blei abgeschirmt wird. Durch diese Abschirmung kann Röntgenstrahlung entstehen, wenn ein Elektron in der innersten Schale durch einen Stoß mit einem Photon oder freiem Elektron entfernt wird, weshalb ein Elektron aus einer höheren Schale in die niedrigere Schale springen muss, wobei es Energie abgibt. Es ist also die K-Linie von Blei dort zu sehen.
 
+
+
+
 \subsubsection{$^{60}$Co Szintillator}
 Als nächstes wird das Co-Spektrum in \cref{co_sz} betrachtet. Die Probe hat zwei verschiedene Übergänge, die auch beide bei deutlich zu sehen sind. Allerdings ist ihr Mittelpunkt mit $E_{FEP1} = \SI{1176,1 \pm 0,7}{keV}$ und $E_{FEP2} = \SI{1335,8 \pm 0,8}{keV}$ jeweils etwa 3keV größer als der Literaturwert. Trotzdem passen die Compton und - Backscatterkanten wieder gut mit dem sichtbaren Spektrum überein, wobei insbesondere interessant ist, dass die beiden Backscatterkanten übereinander liegen und damit einen größeren Peak als sonst erzeugen.
->>>>>>> 47e279b2681eebc8748a7bdb6d089738b0c9ad92
 
-\subsection{Unsicherheiten}
-Innerhalb der Fehlerrechnung wurden zwei Fehlerquellen angenommen. Der erste Fehler ist vom Fit-Programm fityk ausgegeben worden. Dieser hat für die Werte eine Genauigkeit angegeben. Der zweite Fehler ist durch die Kalibrierung hinein gekommen. Alle weiteren Fehler wurden mittels Fehlerfortpflanzung ermittelt.
+
 
 \begin{figure}[ht]
 	\centering
@@ -192,13 +199,18 @@ Als letztes soll ein vorher unbekanntes Erz untersucht werden und einer der drei
 	\caption{$^{137}$Cs Spektrum mit einem Halbleiterdetektor aufgenommen}
 	\label{Erz_pn}
 \end{figure}
+
+
+
+
+
 \newpage
-\section{Diskussion}
+\subsection{Diskussion}
 Insgesamt passen die Ergebnisse ziemlich gut, die Peaks haben sich meistens nur wenige keV vom Literaturwert unterschieden und auch Compton- und Backscatterkanten konnten immer gut zugeordnet werden. Außerdem ließen sich sowohl die Mischquelle als auch das Erz ohne Problem zuordnen. Allerdings waren die Unsicherheit fast immer zu klein, wobei zwei grundsätzliche Fehler der Grund sein könnten. Erstens wurde die Unsicherheit der Detektoren überhaupt nicht betrachtet und wenn diese einen signifikanten Teil der Unsicherheit ausmachen kann das dazu führen , dass die Unsicherheiten zu klein sind. Ein andere Möglichkeit ist, dass die Unsicherheiten der Gauß-Fits und damit auch der Kalibration zu klein waren.
 
 
-\section{Detektoreigenschaften}
-\subsection{ Relative Abweichung von den Referenzwerten.}
+\subsection{Detektoreigenschaften}
+\subsubsection{ Relative Abweichung von den Referenzwerten.}
 In \cref{ee} ist die relatve Differenz von gemessener zur Referenzenergie gegen die Referenzenergie aufgetragen. Die Fehlerbalken wurden durch die Fehler, welche das Programm fityk ausgerechnet hat mittels Fehlerfortpflanzung berechnet.Es ist zu erkennen, dass die relativen Abweichungen der gemessenen Werte vom Halbleiterdetektor näher an den Referenzwerten liegen, als die Werte die mittels des Szintillators berechnet wurden. Dies kann bei drei Werten erkannt werden. Die anderen beiden Werte liefern unabhängig von ihrern Fehlern dieselben Ergebnisse. Hier ist anzufügen, dass die Fehlerbalken mittels des Szintillators größer ausgefallen sind, als die Fehlerbalken des Halbleiter Detektors.
 \begin{figure}[h!]
 	\centering
@@ -206,7 +218,7 @@ In \cref{ee} ist die relatve Differenz von gemessener zur Referenzenergie gegen 
 	\caption{Auf der $y$-Achse ist die relative Differenz zwischen gemessenen Energien und auf der $x$-Achse die Referenzenergie aufgetragen.}
 	\label{ee}
 \end{figure}
-\subsection{Energieauflösung}
+\subsubsection{Energieauflösung}
 Als weiteren Vergleichspunkt wird die Energieauflösung ($\Delta E$) der beiden Detektoren berechnet.
 Die Energieauflösung ($\Delta E = \frac{\sigma}{E}$) beschreibt die Energiebreite des Peaks zur jeweiligen Energie. Dabei wurde die Breite des Gaußpeaks ($\sigma$) über das Full Width at Half Maximum bestimmt.
 In \cref{sig} sieht man beide Energieauflösungen aufgetragen. Die Unsicherheiten sind zu klein, dass diese im Diagramm zu erkennen wären.
@@ -220,7 +232,7 @@ Dies veranlasst uns dazu, die Erzprobe nicht mit dem Szintillator, sondern mit d
 	\caption{}
 	\label{sig}
 \end{figure}
-\subsection{Mittlere Ionisationsenergie}
+\subsubsection{Mittlere Ionisationsenergie}
 Die Ionisationsenergie ($I = \frac{E}{N}$), wobei N die Anzahl von Zählungen ist, kann mittels der Energieauflösung und der Annahme, dass $\sigma$ Poisson verteilt ist zu $I = \frac{\sigma^2}{E}$ umgeformt werden.
 In \cref{sig2} ist die Ionisierungsenergie bezüglich der Energie aufgetragen. Aufgrund der unterschiedlichen Skalierung der Achsen für Szintillator und Halbleiter-Detektor ist zu erkennen, dass die Ionisierungsenergien beim Halbleiter-Detektor geringer sind als beim Szintillator. Die Ionisationsenergie des Szintillators liegen bei maximal $0,2$ keV, wohingegen die Ionisationsenergien beim Halbleiter-Detektor maximal bei $0,001$ keV liegen.
 \begin{figure}[h!]
@@ -229,7 +241,7 @@ In \cref{sig2} ist die Ionisierungsenergie bezüglich der Energie aufgetragen. A
 	\caption{Mittlere Ionisationsenergie für beide Detektoren in Abhängigkeit der Energie}
 	\label{sig2}
 \end{figure}
-\subsection{Effizienz}
+\subsubsection{Effizienz}
 Die Effizienz ist ein Maß für den Anteil der detektierten Photonen von der Gesamtzahl theoretisch nachweisbarer Photonen. Dieser Parameter ist von verschiedenen Parametern abhängig. Die Effizienz ist von der Aktivität der Stoffe und von geometrischen Eigenschaften, wie vom Raumwinkel, abhängig. Somit kann die Effizienz vom Szintillator nicht mit der Effizienz vom Halbleiter-Detektor verglichen werden. Ebenfalls kann die Effizienz nicht von unterschiedlichen Quellen verglichen werden. So kann nur die Effizienz der Mischquelle am Szintillator oder Halbleiter-Detektor untersucht werden. In diesem Versuch wurde die Effizienz nur an dem Szintillator untersucht. Die Effizienz ist definiert als, 
 \begin{align}
 	\epsilon = \frac{\frac{Area}{A}}{|\frac{Area}{A}|}
