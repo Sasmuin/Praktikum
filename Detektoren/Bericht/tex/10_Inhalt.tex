@@ -54,8 +54,54 @@ Der Hauptpeak ist der sogenannte Full Energy Peak. Er tritt auf, wenn die gesamt
 Es werden aber auch noch andere Elektronenenergien gemessen, um die das Ergebnis am Ende bereinigt werden muss. Der sogenannte Backscatteruntergrund entsteht durch Compton-Streuung der $\gamma$-Quanten am Abschirmmaterial. Dabei kann ein Photon mit Energien zwischen $E_\text{min}$ und $E_\gamma$ zurück in den Detektor gelangen und dort zum Signal beitragen. So entsteht eine weitere kontinuierliche Verteilung mit Energien zwischen $E_\text{min}$ und $E_\gamma$. Außerdem können durch Photoeffekt am Abschirmmaterial weitere Peaks entstehen, die genau den Energieabständen zwischen zwei Schalen in der Atomhülle dieser Elemente entsprechen.
 
 
+\section{Detektoreigenschaften}
+\subsection{ Relative Abweichung von den Referenzwerten.}
+In \cref{ee} ist die relatve Differenz von gemessener zur Referenzenergie gegen die Referenzenergie aufgetragen. Die Fehlerbalken wurden durch die Fehler, welche das Programm fityk ausgerechnet hat mittels Fehlerfortpflanzung berechnet.Es ist zu erkennen, dass die relativen Abweichungen der gemessenen Werte vom Halbleiterdetektor näher an den Referenzwerten liegen, als die Werte die mittels des Szintillators berechnet wurden. Dies kann bei drei Werten erkannt werden. Die anderen beiden Werte liefern unabhängig von ihrern Fehlern dieselben Ergebnisse. Hier ist anzufügen, dass die Fehlerbalken mittels des Szintillators größer ausgefallen sind, als die Fehlerbalken des Halbleiter Detektors.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{1minEdurchE.png}
+	\caption{Auf der $y$-Achse ist die relative Differenz zwischen gemessenen Energien und auf der $x$-Achse die Referenzenergie aufgetragen.}
+	\label{ee}
+\end{figure}
+\subsection{Energieauflösung}
+Als weiteren Vergleichspunkt wird die Energieauflösung ($\Delta E$) der beiden Detektoren berechnet.
+Die Energieauflösung ($\Delta E = \frac{\sigma}{E}$) beschreibt die Energiebreite des Peaks zur jeweiligen Energie. Dabei wurde die Breite des Gaußpeaks ($\sigma$) über das Full Width at Half Maximum bestimmt.
+In \cref{sig} sieht man beide Energieauflösungen aufgetragen. Die Unsicherheiten sind zu klein, dass diese im Diagramm zu erkennen wären.
+Die Nullniveaus der beiden Achsen sind unterschiedlich aufgetragen. Das Nullniveau des Szintillators ist nach oben verschoben, wohingegen das Nullniveau des Halbleiter-Detektors nach unten verschoben ist. Anhand der Grafik kann abgelesen werden, dass die Energieauflösung beider Detektoren mit zunehmender Energie zunimmt.
+Weiterhin sind die Skalierungen der Achsen nicht gleich, sodass das Auflösungsvermögen des Halbleiterdetektors weniger um das Nullniveau schwankt, als dass des Szintillators. Somit besitzt der Halbleiter-Detektor eine bessere Auflösung als der Szintillator.
+Beim Halbleiter-Detektor befindet sich das Auflösungsvermögen im Bereich von $10^{-4}$ bis $10^{-3}$, wohingegen sich das Auflösungsvermögen beim Szintillator in einem Bereich von $10^{-2}$ bis $2*10^{-2}$ befindet.
+Dies veranlasst uns dazu, die Erzprobe nicht mit dem Szintillator, sondern mit dem Halbleiter-Detektor auf zu nehmen.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{sigma.png}
+	\caption{}
+	\label{sig}
+\end{figure}
+\subsection{Mittlere Ionisationsenergie}
+Die Ionisationsenergie ($I = \frac{E}{N}$), wobei N die Anzahl von Zählungen ist, kann mittels der Energieauflösung und der Annahme, dass $\sigma$ Poisson verteilt ist zu $I = \frac{\sigma^2}{E}$ umgeformt werden.
+In \cref{sig2} ist die Ionisierungsenergie bezüglich der Energie aufgetragen. Aufgrund der unterschiedlichen Skalierung der Achsen für Szintillator und Halbleiter-Detektor ist zu erkennen, dass die Ionisierungsenergien beim Halbleiter-Detektor geringer sind als beim Szintillator. Die Ionisationsenergie des Szintillators liegen bei maximal $0,2$ keV, wohingegen die Ionisationsenergien beim Halbleiter-Detektor maximal bei $0,001$ keV liegen.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{sigma2.png}
+	\caption{Mittlere Ionisationsenergie für beide Detektoren in Abhängigkeit der Energie}
+	\label{sig2}
+\end{figure}
+\subsection{Effizienz}
+Die Effizienz ist ein Maß für den Anteil der detektierten Photonen von der Gesamtzahl theoretisch nachweisbarer Photonen. Dieser Parameter ist von verschiedenen Parametern abhängig. Die Effizienz ist von der Aktivität der Stoffe und von geometrischen Eigenschaften, wie vom Raumwinkel, abhängig. Somit kann die Effizienz vom Szintillator nicht mit der Effizienz vom Halbleiter-Detektor verglichen werden. Ebenfalls kann die Effizienz nicht von unterschiedlichen Quellen verglichen werden. So kann nur die Effizienz der Mischquelle am Szintillator oder Halbleiter-Detektor untersucht werden. In diesem Versuch wurde die Effizienz nur an dem Szintillator untersucht. Die Effizienz ist definiert als, 
+\begin{align}
+	\epsilon = \frac{\frac{Area}{A}}{|\frac{Area}{A}|}
+\end{align}
+Die Normierung ist von dem Stoff höchster Aktivität pro Fläche zu nehmen.
+In \cref{eff} ist zu sehen, dass die Effizienz im niederenergetischen Bereich maximal ist, wohingegen die Effizienz mit zunehmender Energie abfällt. Da der Wirkungsquerschnitt im niederenergetischen Bereich am größten ist, ist die Effizienz heir ebenfalls am größten. Der Wirkungsquerschnitt fällt mit zunehmender Energie ab, sodass hier die Effizienz abnimmt.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Effizienz.png}
+	\caption{}
+	\label{eff}
+\end{figure}
 
-
+\subsection{Unsicherheiten}
+Innerhalb der Fehlerrechnung wurden zwei Fehlerquellen angenommen. Der erste Fehler ist vom Fit-Programm fityk ausgegeben worden. Dieser hat für die Werte eine Genauigkeit angegeben. Der zweite Fehler ist durch die Kalibrierung hinein gekommen. Alle weiteren Fehler wurden mittels Fehlerfortpflanzung ermittelt.
 
 
 
