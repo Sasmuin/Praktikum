@@ -1,5 +1,13 @@
+\section{Einleitung}
+In diesem Versuch geht es darum Gamma-Strahlung zu detektieren und verschiedene Spektren zu analysieren. Dabei wurden die Spektren von $^{22}$Na, $^{60}$Co, $^{137}$Cs, einer Mischprobe und einem Erz analysiert. Diese Spektren werden jeweils mit zwei Detektoren untersucht, einem Halbleiterdetektor und einem Szintillator. Sowohl die gemessenen Spektren als auch die beiden Messgeräte werden danach näher betrachtet. Zuerst werden die aufgenommenen Spektren untersucht und die jeweils gemessen Peakpositionen mit Literaturwerten verglichen und zugeordnet. Dabei sollte speziell beim Erz, dieses zu einer bestimmten Zerfallsreihe zugeordnet werden, was mit der Uran-238 auch gelungen ist.
+Danach wurden die Detektoreigenschaften von dem Szintallations- und dem Halbleiter-Detektor untersucht. Hier wurden die Detektoren in ihrer relativen Abweichung von den Referenzwerten, der Energieauflösung und der mittleren Ionisationsenergie. Für den Szintillationsdetektor wurde zusätzlich die Effizienz überprüft.
+
+
+
+
 \section{Theorie}
 Die Strahlung, die in diesem Versuch untersucht wird, ist die $gamma$-Strahlung. Diese elektromagnetische Strahlung ist höherenergetisch als Röntgenstrahlung mit Energien von mindestens $\SI{100}{keV}$. Sie entsteht bei Übergängen zwischen Anregungszuständen im Atomkern. $\gamma$-Strahlung ist nicht direkt beobachtbar, sie muss also erst mit Materie wechselwirken. Die Produkte dieser Wechselwirkung (im Normalfall Elektronen) sind dann beobachtbar.
+
 \subsection{Wechselwirkung von $\gamma$-Strahlung mit Materie}
 In diesem Versuch werden die drei häufigsten Prozesse betrachtet: der Photoeffekt, der Compton-Effekt und die Paarbildung.
 \subsubsection{Photoeffekt}
@@ -65,7 +73,7 @@ Zunächst muss die Kalibrierung bestimmt werden. Dies ist nötig, da die verschi
 	\label{Kali}
 \end{figure}
 
-in der Messung sind deutlich zwei Peaks zu sehen, einen Full Energy Peak(FEP) und einen Single Escape Peak(SEP). Da die Literaturwerte der beiden Peaks mit $E_{FEP} = \SI{1274.5}{keV}$ und $E_{SEP} = \SI{511}{keV}$ bekannt sind und außerdem ein linearer Zusammenhang zwischen den Channels und den zugehörigen Energien besteht, kann eine Umrechnung stattfinden.
+in der Messung sind deutlich zwei Peaks zu sehen, einen Full Energy Peak(FEP) und einen Single Escape Peak(SEP). Da die Literaturwerte der beiden Peaks mit $E_{FEP} = \SI{1274,5}{keV}$ und $E_{SEP} = \SI{511}{keV}$ bekannt sind und außerdem ein linearer Zusammenhang zwischen den Channels und den zugehörigen Energien besteht, kann eine Umrechnung stattfinden.
 Das passiert mit der Formel:
 \begin{equation}
 E = m \cdot Ch + E_{0},
@@ -80,6 +88,12 @@ E_{0} = E_{FEP} - m \cdot Ch_{FEP}
 \end{equation}
 mit $Ch$ dem jeweilig zugehörigem Channel. Für den Szintillator ergibt das eine Umrechnung von $m = \SI{0,18769 \pm 0,00007}{\frac{keV}{Ch}}$ und $E_{0} = \SI{-26,5 \pm 0,56}{keV}$. Die Umrechnung für den Halbleiter funktioniert analog und ergibt einen Faktor von $m = \SI{0,169868 \pm 0,000002}{\frac{keV}{Ch}}$ und $E_{0} = \SI{0,01 \pm 0,01}{keV}$. 
 
+
+
+\subsection{Unsicherheiten}
+Innerhalb der Fehlerrechnung wurden zwei Fehlerquellen angenommen. Der erste Fehler ist vom Fit-Programm fityk ausgegeben worden. Dieser hat für die Werte eine Genauigkeit angegeben. Der zweite Fehler ist durch die Kalibrierung hinein gekommen. Alle weiteren Fehler wurden mittels Fehlerfortpflanzung ermittelt.
+
+
 \subsection{$\gamma$-Spektren}
 
 \subsubsection{$^{22}$Na Szintillator}
@@ -93,6 +107,9 @@ In \cref{na_sz} ist das mithilfe des Szintillators aufgenommene Spektrum der $^{
 \end{figure}
 
 Da die Kalibrierung mit diesem Spektrum stattgefunden hat, ist es nicht möglich mit  damit die Genauigkeit der Peaks selbst zu diskutieren. Allerdings passen die ausgerechneten Compton- und Backscatterkanten gut mit den im Spektrum sichtbaren Kanten überein. Ein weiterer Peak bei etwa 70 keV lässt sich allerdings nur über die Funktionsweise des Szintillators erklären, der mit Blei abgeschirmt wird. Durch diese Abschirmung kann Röntgenstrahlung entstehen, wenn ein Elektron in der innersten Schale durch einen Stoß mit einem Photon oder freiem Elektron entfernt wird, weshalb ein Elektron aus einer höheren Schale in die niedrigere Schale springen muss, wobei es Energie abgibt. Es ist also die K-Linie von Blei dort zu sehen.
+
+
+
 
 \subsubsection{$^{60}$Co Szintillator}
 Als nächstes wird das Co-Spektrum in \cref{co_sz} betrachtet. Die Probe hat zwei verschiedene Übergänge, die auch beide bei deutlich zu sehen sind. Allerdings ist ihr Mittelpunkt mit $E_{FEP1} = \SI{1176,1 \pm 0,7}{keV}$ und $E_{FEP2} = \SI{1335,8 \pm 0,8}{keV}$ jeweils etwa 3keV größer als der Literaturwert. Trotzdem passen die Compton und - Backscatterkanten wieder gut mit dem sichtbaren Spektrum überein, wobei insbesondere interessant ist, dass die beiden Backscatterkanten übereinander liegen und damit einen größeren Peak als sonst erzeugen.
@@ -129,7 +146,7 @@ Danach wird das Spektrum der $^{137}$Cs-Probe betrachtet, das in \cref{cs_sz} zu
 \end{figure}
 
 
-Daraufhin wird eine Mischquelle betrachtet, die aus mehreren Elementen besteht und zugeordnet werden sollen. Die beiden Elemente die sich ohne Probleme zuordnen lassen sind $^{137}$Cs und $^{60}$Co. Die Peaks im gemessenen Spektrum befinden sich für das Cobalt bei $E = \SI{662,2 \pm 0,7}{keV}$ und für Cäsium bei $E = \SI{1172,8 \pm 0,9}{keV}$ und $E = \SI{1329,3 \pm 1}{keV}$, wobei nur der größte $^{137}$Cs Peak etwas vom Literaturwert abweicht. Es lassen sich allerdings noch vier weitere Peaks im niedrigeren Energiebereich erkennen, die schwieriger zuzuordnen sind. Der Größte davon liegt bei $E = \SI{44,8 \pm 0,6}{keV}$ und könnte am ehesten mit weiteren möglichen Übergängen von $^{137}$Cs erklärt werden, die bei $\SI{31,8/32.2}{keV}$ stattfinden. Die drei kleineren Peaks, die ineinander übergehen befinden sich nach der Messung zwischen 9,6 und -5,5 keV, was offensichtlich keinen Sinn ergibt, da negative Energien nicht auftreten können. Allerdings handelt es sich dabei höchstwahrscheinlich wieder um Röntgenstrahlung und die einzelnen Peaks korrespondieren mit der $K_{\alpha}$ bis $K_{\gamma}$ Linie. Allerdings wird dabei deutlich, dass die Annahmen der Linearität zwischen Channels und Energie bei der Kalibrierung im niedrigen Energiebereich nicht mehr gilt und dann zu deutlich größeren Fehlern führt.
+Daraufhin wird eine Mischquelle betrachtet, die aus mehreren Elementen besteht und zugeordnet werden sollen. Die beiden Elemente die sich ohne Probleme zuordnen lassen sind $^{137}$Cs und $^{60}$Co. Die Peaks im gemessenen Spektrum befinden sich für das Cobalt bei $E = \SI{662,2 \pm 0,7}{keV}$ und für Cäsium bei $E = \SI{1172,8 \pm 0,9}{keV}$ und $E = \SI{1329,3 \pm 1}{keV}$, wobei nur der größte $^{137}$Cs Peak etwas vom Literaturwert abweicht. Es lassen sich allerdings noch vier weitere Peaks im niedrigeren Energiebereich erkennen, die schwieriger zuzuordnen sind. Der Größte davon liegt bei $E = \SI{44,8 \pm 0,6}{keV}$ und könnte am ehesten mit weiteren möglichen Übergängen von $^{137}$Cs erklärt werden, die bei $\SI{31,8}{keV}$ und $\SI{32.2}{keV}$ stattfinden. Die drei kleineren Peaks, die ineinander übergehen befinden sich nach der Messung zwischen 9,6 und -5,5keV, was offensichtlich keinen Sinn ergibt, da negative Energien nicht auftreten können. Allerdings handelt es sich dabei höchstwahrscheinlich wieder um Röntgenstrahlung und die einzelnen Peaks korrespondieren mit der $K_{\alpha}$ bis $K_{\gamma}$ Linie. Allerdings wird dabei deutlich, dass die Annahmen der Linearität zwischen Channels und Energie, bei der Kalibrierung im niedrigen Energiebereich nicht mehr gilt und dann zu deutlich größeren Fehlern führt.
 
 
 
@@ -147,7 +164,7 @@ Daraufhin wird eine Mischquelle betrachtet, die aus mehreren Elementen besteht u
 	\label{na_pn}
 \end{figure}
 
-Die Kalibrierung hat auch für den Halbleiterdetektor wieder über die $^{22}$Na Probe stattgefunden, weshalb die Peaks natürlich wieder mit den Literaturwerten übereinstimmen. Im Vergleich zu dem Szintillatormessung in \cref{na_sz} fällt allerdings auf, dass die Peaks eine sehr viele kleiner sind und damit eine geringere Energieunschärfe besitzen. Außerdem werden beim Halbleiterdetektor keine Röntgenstrahlung mehr festgestellt, da kein Blei als Abschirmung vorhanden ist. Ungewöhnlich ist auch, dass die Comptonkante des FEP fast 100keV von der Kante im Bild entfernt ist.
+Die Kalibrierung hat auch für den Halbleiterdetektor wieder über die $^{22}$Na Probe stattgefunden, weshalb die Peaks natürlich wieder mit den Literaturwerten übereinstimmen. Im Vergleich zu der Szintillatormessung in \cref{na_sz} fällt allerdings auf, dass die Peaks eine sehr viele schmaler sind und damit eine geringere Energieunschärfe besitzen. Außerdem werden beim Halbleiterdetektor keine Röntgenstrahlung mehr festgestellt, da kein Blei als Abschirmung vorhanden ist. Ungewöhnlich ist auch, dass die Comptonkante des FEP fast 100keV von der Kante im Bild entfernt ist.
 
 
 
@@ -189,13 +206,18 @@ Als letztes soll ein vorher unbekanntes Erz untersucht werden und einer der drei
 	\caption{$^{137}$Cs Spektrum mit einem Halbleiterdetektor aufgenommen}
 	\label{Erz_pn}
 \end{figure}
+
+
+
+
+
 \newpage
-\section{Diskussion}
-Insgesamt passen die Ergebnisse ziemlich gut, die Peaks haben sich meistens nur wenige keV vom Literaturwert unterschieden und auch Compton- und Backscatterkanten konnten immer gut zugeordnet werden. Außerdem ließen sich sowohl die Mischquelle als auch das Erz ohne Problem zuordnen. Allerdings waren die Unsicherheit fast immer zu klein, wobei zwei grundsätzliche Fehler der Grund sein könnten. Erstens wurde die Unsicherheit der Detektoren überhaupt nicht betrachtet und wenn diese einen signifikanten Teil der Unsicherheit ausmachen kann das dazu führen , dass die Unsicherheiten zu klein sind. Ein andere Möglichkeit ist, dass die Unsicherheiten der Gauß-Fits und damit auch der Kalibration zu klein waren.
+\subsubsection{Diskussion}
+Insgesamt passen die Ergebnisse ziemlich gut, die Peaks unterscheiden sich meistens nur wenige keV vom Literaturwert  und auch Compton- und Backscatterkanten konnten immer gut zugeordnet werden. Außerdem ließen sich sowohl die Mischquelle als auch das Erz ohne Problem zuordnen. Allerdings waren die Unsicherheit fast immer zu klein, wobei zwei grundsätzliche Fehler der Grund sein könnten. Erstens wurde die Unsicherheit der Detektoren überhaupt nicht betrachtet und wenn diese einen signifikanten Teil der Unsicherheit ausmacht, kann das dazu führen , dass die Unsicherheiten zu klein sind. Ein andere Möglichkeit ist, dass die Unsicherheiten der Gauß-Fits und damit auch der Kalibration zu klein waren.
 
 
-\section{Detektoreigenschaften}
-\subsection{ Relative Abweichung von den Referenzwerten.}
+\subsection{Detektoreigenschaften}
+\subsubsection{ Relative Abweichung von den Referenzwerten.}
 In \cref{ee} ist die relatve Differenz von gemessener zur Referenzenergie gegen die Referenzenergie aufgetragen. Die Fehlerbalken wurden durch die Fehler, welche das Programm fityk ausgerechnet hat mittels Fehlerfortpflanzung berechnet.Es ist zu erkennen, dass die relativen Abweichungen der gemessenen Werte vom Halbleiterdetektor näher an den Referenzwerten liegen, als die Werte die mittels des Szintillators berechnet wurden. Dies kann bei drei Werten erkannt werden. Die anderen beiden Werte liefern unabhängig von ihrern Fehlern dieselben Ergebnisse. Hier ist anzufügen, dass die Fehlerbalken mittels des Szintillators größer ausgefallen sind, als die Fehlerbalken des Halbleiter Detektors.
 \begin{figure}[h!]
 	\centering
@@ -203,21 +225,21 @@ In \cref{ee} ist die relatve Differenz von gemessener zur Referenzenergie gegen 
 	\caption{Auf der $y$-Achse ist die relative Differenz zwischen gemessenen Energien und auf der $x$-Achse die Referenzenergie aufgetragen.}
 	\label{ee}
 \end{figure}
-\subsection{Energieauflösung}
+\subsubsection{Energieauflösung}
 Als weiteren Vergleichspunkt wird die Energieauflösung ($\Delta E$) der beiden Detektoren berechnet.
 Die Energieauflösung ($\Delta E = \frac{\sigma}{E}$) beschreibt die Energiebreite des Peaks zur jeweiligen Energie. Dabei wurde die Breite des Gaußpeaks ($\sigma$) über das Full Width at Half Maximum bestimmt.
-In \cref{sig} sieht man beide Energieauflösungen aufgetragen. Die Unsicherheiten sind zu klein, dass diese im Diagramm zu erkennen wären.
+In \cref{sig} sieht man beide Energieauflösungen aufgetragen. Die Unsicherheiten sind zu klein, als dass diese im Diagramm zu erkennen wären.
 Die Nullniveaus der beiden Achsen sind unterschiedlich aufgetragen. Das Nullniveau des Szintillators ist nach oben verschoben, wohingegen das Nullniveau des Halbleiter-Detektors nach unten verschoben ist. Anhand der Grafik kann abgelesen werden, dass die Energieauflösung beider Detektoren mit zunehmender Energie zunimmt.
 Weiterhin sind die Skalierungen der Achsen nicht gleich, sodass das Auflösungsvermögen des Halbleiterdetektors weniger um das Nullniveau schwankt, als dass des Szintillators. Somit besitzt der Halbleiter-Detektor eine bessere Auflösung als der Szintillator.
 Beim Halbleiter-Detektor befindet sich das Auflösungsvermögen im Bereich von $10^{-4}$ bis $10^{-3}$, wohingegen sich das Auflösungsvermögen beim Szintillator in einem Bereich von $10^{-2}$ bis $2*10^{-2}$ befindet.
-Dies veranlasst uns dazu, die Erzprobe nicht mit dem Szintillator, sondern mit dem Halbleiter-Detektor auf zu nehmen.
+Dies veranlasst uns dazu, die Erzprobe nicht mit dem Szintillator, sondern mit dem Halbleiter-Detektor aufzunehmen.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{sigma.png}
 	\caption{}
 	\label{sig}
 \end{figure}
-\subsection{Mittlere Ionisationsenergie}
+\subsubsection{Mittlere Ionisationsenergie}
 Die Ionisationsenergie ($I = \frac{E}{N}$), wobei N die Anzahl von Zählungen ist, kann mittels der Energieauflösung und der Annahme, dass $\sigma$ Poisson verteilt ist zu $I = \frac{\sigma^2}{E}$ umgeformt werden.
 In \cref{sig2} ist die Ionisierungsenergie bezüglich der Energie aufgetragen. Aufgrund der unterschiedlichen Skalierung der Achsen für Szintillator und Halbleiter-Detektor ist zu erkennen, dass die Ionisierungsenergien beim Halbleiter-Detektor geringer sind als beim Szintillator. Die Ionisationsenergie des Szintillators liegen bei maximal $0,2$ keV, wohingegen die Ionisationsenergien beim Halbleiter-Detektor maximal bei $0,001$ keV liegen.
 \begin{figure}[h!]
@@ -226,7 +248,7 @@ In \cref{sig2} ist die Ionisierungsenergie bezüglich der Energie aufgetragen. A
 	\caption{Mittlere Ionisationsenergie für beide Detektoren in Abhängigkeit der Energie}
 	\label{sig2}
 \end{figure}
-\subsection{Effizienz}
+\subsubsection{Effizienz}
 Die Effizienz ist ein Maß für den Anteil der detektierten Photonen von der Gesamtzahl theoretisch nachweisbarer Photonen. Dieser Parameter ist von verschiedenen Parametern abhängig. Die Effizienz ist von der Aktivität der Stoffe und von geometrischen Eigenschaften, wie vom Raumwinkel, abhängig. Somit kann die Effizienz vom Szintillator nicht mit der Effizienz vom Halbleiter-Detektor verglichen werden. Ebenfalls kann die Effizienz nicht von unterschiedlichen Quellen verglichen werden. So kann nur die Effizienz der Mischquelle am Szintillator oder Halbleiter-Detektor untersucht werden. In diesem Versuch wurde die Effizienz nur an dem Szintillator untersucht. Die Effizienz ist definiert als, 
 \begin{align}
 	\epsilon = \frac{\frac{Area}{A}}{|\frac{Area}{A}|}
@@ -240,5 +262,4 @@ In \cref{eff} ist zu sehen, dass die Effizienz im niederenergetischen Bereich ma
 	\label{eff}
 \end{figure}
 
-\subsection{Unsicherheiten}
-Innerhalb der Fehlerrechnung wurden zwei Fehlerquellen angenommen. Der erste Fehler ist vom Fit-Programm fityk ausgegeben worden. Dieser hat für die Werte eine Genauigkeit angegeben. Der zweite Fehler ist durch die Kalibrierung hinein gekommen. Alle weiteren Fehler wurden mittels Fehlerfortpflanzung ermittelt.
+
