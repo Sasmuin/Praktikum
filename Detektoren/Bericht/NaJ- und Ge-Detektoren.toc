@@ -1,32 +1,33 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {ngerman}
-\contentsline {section}{\numberline {1}Theorie}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}Wechselwirkung von $\gamma $-Strahlung mit Materie}{1}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Photoeffekt}{1}{subsubsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.2}Comptoneffekt}{1}{subsubsection.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.3}Paarbildung}{2}{subsubsection.1.1.3}
-\contentsline {subsection}{\numberline {1.2}Detektoren}{3}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Halbleiterdetektor}{4}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}Szintillationsdetektor}{4}{subsubsection.1.2.2}
-\contentsline {subsection}{\numberline {1.3}Methoden und Aufbau}{5}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}$\gamma $-Spektrum}{5}{subsection.1.4}
-\contentsline {section}{\numberline {2}Auswertung}{7}{section.2}
-\contentsline {subsection}{\numberline {2.1}Kalibration}{7}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Unsicherheiten}{8}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}$\gamma $-Spektren}{9}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}$^{22}$Na Szintillator}{9}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}$^{60}$Co Szintillator}{10}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}$^{137}$Cs Szintillator}{10}{subsubsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.4}Mischquelle Szintillator}{11}{subsubsection.2.3.4}
-\contentsline {subsubsection}{\numberline {2.3.5}$^{22}$Na Halbleiterdetektor}{12}{subsubsection.2.3.5}
-\contentsline {subsubsection}{\numberline {2.3.6}$^{60}$Co Halbleiterdetektor}{13}{subsubsection.2.3.6}
-\contentsline {subsubsection}{\numberline {2.3.7}$^{137}$Cs Halbleiterdetektor}{14}{subsubsection.2.3.7}
-\contentsline {subsection}{\numberline {2.4}Erz Halbleiterdetektor}{15}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Diskussion}{16}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Detektoreigenschaften}{16}{subsection.2.6}
-\contentsline {subsubsection}{\numberline {2.6.1}Relative Abweichung von den Referenzwerten.}{16}{subsubsection.2.6.1}
-\contentsline {subsubsection}{\numberline {2.6.2}Energieaufl\IeC {\"o}sung}{17}{subsubsection.2.6.2}
-\contentsline {subsubsection}{\numberline {2.6.3}Mittlere Ionisationsenergie}{18}{subsubsection.2.6.3}
-\contentsline {subsubsection}{\numberline {2.6.4}Effizienz}{19}{subsubsection.2.6.4}
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Wechselwirkung von $\gamma $-Strahlung mit Materie}{1}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Photoeffekt}{1}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Comptoneffekt}{2}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Paarbildung}{2}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}Detektoren}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Halbleiterdetektor}{3}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Szintillationsdetektor}{5}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Methoden und Aufbau}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}$\gamma $-Spektrum}{6}{subsection.2.4}
+\contentsline {section}{\numberline {3}Auswertung}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Kalibration}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Unsicherheiten}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}$\gamma $-Spektren}{9}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}$^{22}$Na Szintillator}{9}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}$^{60}$Co Szintillator}{10}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}$^{137}$Cs Szintillator}{10}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Mischquelle Szintillator}{11}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}$^{22}$Na Halbleiterdetektor}{12}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}$^{60}$Co Halbleiterdetektor}{13}{subsubsection.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.7}$^{137}$Cs Halbleiterdetektor}{14}{subsubsection.3.3.7}
+\contentsline {subsection}{\numberline {3.4}Erz Halbleiterdetektor}{15}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Diskussion}{16}{subsubsection.3.4.1}
+\contentsline {subsection}{\numberline {3.5}Detektoreigenschaften}{16}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Relative Abweichung von den Referenzwerten.}{16}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Energieaufl\IeC {\"o}sung}{17}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}Mittlere Ionisationsenergie}{18}{subsubsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.4}Effizienz}{19}{subsubsection.3.5.4}
 \contentsline {section}{\nonumberline Literatur}{21}{section*.17}
