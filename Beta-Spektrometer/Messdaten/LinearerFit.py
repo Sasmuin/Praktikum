@@ -83,7 +83,7 @@ plt.show()
 #ursprüngliche Daten ohne Untergrund Z0 und plot
 y = y - b - x*a
 y_err = (err_b**2+(err_a*x)**2)**0.5
-plt.plot(x, y, '.', label="berechnete Werte")
+plt.errorbar(x, y,y_err,ls="none",marker=".",label = "Messwerte") 
 plt.xlabel("Stromstärke (mA)")
 plt.ylabel("Zählungen")
 plt.legend()
@@ -178,8 +178,8 @@ perr = np.sqrt(np.diag(pcov))
 
 plt.xlim(250,500)
 xdata = np.array(xdata)
-plt.plot(W,WurzelN,".",)
-plt.plot(W, b + W*a, 'r', label="Linearer Fit durch ausgewählte Punkte \n mit m=({:2.0f}".format(a)  +"±{:2.0f}".format(err_a) + ")\n und  b=({:4.0f}".format(b) +"±{:3.0f}".format(err_b)+")")
+plt.plot(W, b + W*a, 'r', label="Linearer Fit durch ausgewählte Punkte \n mit m=({:3.1e}".format(a)  +"±{:2.0e}".format(err_a) + ")\n und  b=({:4.2e}".format(b) +"±{:3.0e}".format(err_b)+")")
+plt.errorbar(W, WurzelN,y_err, ls="none",marker=".") 
 plt.gca().set_ylabel(r'$\sqrt{\frac{N}{p^{2}F}}$')
 plt.xlabel("Energie(keV)")
 plt.legend()

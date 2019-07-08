@@ -1,7 +1,13 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {ngerman}
+\babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Theorie}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}$\beta $-Zerfall}{1}{subsection.1.1}
 \contentsline {section}{\numberline {2}Tr\IeC {\"o}pfchenmodell}{1}{section.2}
 \contentsline {section}{\numberline {3}Methoden}{3}{section.3}
+\contentsline {section}{\numberline {4}Ergebnis}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}Entfernung des Untergrunds $Z_{0}$}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Kalibrierung}{6}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Impulsaufl\IeC {\"o}sung}{7}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Entfernung des Untergrunds $Z_{1}$}{8}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Zusammenhang zwischen kinetischer Energie und Impuls}{9}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Kurie}{9}{subsection.4.6}
