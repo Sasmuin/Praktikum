@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.4)  2 JUL 2019 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.4)  5 JUL 2019 00:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2074,27 +2074,77 @@ Package babel Info: Redefining ngerman shorthand "~
 ]
 (./tex/10_Inhalt.tex
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-)
-Package cleveref Info: loaded `ngerman' language definitions on input line 77.
+(babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beta' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+LaTeX Warning: Reference `beta' on page 1 undefined on input line 4.
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 77.
- [1
+(babel)             in language  on input line 23.
+Package cleveref Info: loaded `ngerman' language definitions on input line 26.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+[1
 
 ]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 48.
+ (c:/texlive/2017/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package cleveref Info: loaded `ngerman' language definitions on input line 55.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 77.
- (./tex/20_Anhang.tex)
+(babel)             in language  on input line 55.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 55.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 55.
+ [2]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 59.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 59.
+
+
+LaTeX Warning: Reference `skizze' on page 1 undefined on input line 81.
+
+Package cleveref Info: loaded `ngerman' language definitions on input line 82.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 82.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 82.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 82.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 82.
+[3])
 Package cleveref Info: loaded `ngerman' language definitions on input line 83.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 83.
@@ -2104,9 +2154,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 83.
- [2
-
-]
+ [4]
 
 LaTeX Warning: Empty bibliography on input line 83.
 
@@ -2118,30 +2166,50 @@ Package cleveref Info: loaded `ngerman' language definitions on input line 27.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `Beta-Spektrometer.out' has not changed.
-(rerunfilecheck)             Checksum: DE7828651F7DD20E20BC22CE88B52331;200.
+(rerunfilecheck)             Checksum: 86555D7CB48439E24FA623711F2A3CCB;379.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'Beta-Spektrometer.run.xml'.
 \openout1 = `Beta-Spektrometer.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41174 strings out of 494838
- 794839 string characters out of 6177689
- 1371249 words of memory out of 5000000
- 43948 multiletter control sequences out of 15000+600000
- 611961 words of font info for 103 fonts, out of 8000000 for 9000
+ 41290 strings out of 494838
+ 796681 string characters out of 6177689
+ 1376950 words of memory out of 5000000
+ 44010 multiletter control sequences out of 15000+600000
+ 619946 words of font info for 124 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 68i,20n,106p,10409b,2132s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2017/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/texlive/2017/texmf-dist/fonts/type
-1/public/lm/lmbx12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12
-.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/20
-17/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2017/texmf-dist/fonts
-/type1/public/lm/lmro12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/l
-mssbx10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Beta-Spektrometer.pdf (4 pages, 156360 bytes).
+ 68i,20n,106p,10409b,2239s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{figure.caption.4} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+{c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2017/texmf
+-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2017/texmf-dist/fonts/enc/dvips
+/lm/lm-mathex.enc}{c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}
+{c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2017/t
+exmf-dist/fonts/enc/dvips/lm/lm-rm.enc}<c:/texlive/2017/texmf-dist/fonts/type1/
+public/lm/lmbx12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.p
+fb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/201
+7/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2017/texmf-dist/fonts/
+type1/public/lm/lmr12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr
+17.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2
+017/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2017/texmf-dist/fon
+ts/type1/public/lm/lmssbx10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/
+lm/lmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/t
+exlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on Beta-Spektrometer.pdf (6 pages, 218346 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 30225 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 140 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 31777 words of extra memory for PDF output out of 35830 (max. 10000000)
 
