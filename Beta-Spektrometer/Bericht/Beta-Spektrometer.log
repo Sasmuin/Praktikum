@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.6)  8 JUL 2019 22:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.6)  9 JUL 2019 17:55
 entering extended mode
 **./Beta-Spektrometer.tex
 (Beta-Spektrometer.tex
@@ -2401,7 +2401,7 @@ Package logreq Info: Writing requests to 'Beta-Spektrometer.run.xml'.
 Here is how much of TeX's memory you used:
  41906 strings out of 493323
  807620 string characters out of 3139069
- 1388490 words of memory out of 3000000
+ 1388513 words of memory out of 3000000
  44734 multiletter control sequences out of 15000+200000
  666001 words of font info for 175 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
@@ -2427,7 +2427,7 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Beta-Spektrometer.pdf (14 pages, 505329 bytes).
+Output written on Beta-Spektrometer.pdf (14 pages, 506820 bytes).
 PDF statistics:
  300 PDF objects out of 1000 (max. 8388607)
  54 named destinations out of 1000 (max. 500000)
