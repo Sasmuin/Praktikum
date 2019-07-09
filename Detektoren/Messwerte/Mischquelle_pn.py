@@ -1,23 +1,30 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
+Created on Tue Jul  9 13:14:14 2019
 
-Dies ist eine temporäre Skriptdatei.
+@author: nils
 """
+
 import numpy as np
 import matplotlib.pyplot as plt
-Probe = "cs_pn_"
-Dateinamen = ["FEP","background"]
+Probe = "Mischquelle_pn_"
+Dateinamen = ["background"]
 Anzahl = np.shape(Dateinamen)
 Zahlen = [0] * Anzahl[0]
 m = 0.1698
 E_0 = 0
 m_ec=511
-Literatur_FEP = 661.6
-FEP1 = 3894.700704*m+E_0
+Literatur_FEPCO1 = 1332.5
+Literatur_FEPCO2 = 1173.2
+Literatur_FEP_CS = 661.6
+Literatur_FEP_CS2 = 32.2
+FEP1 = 7226.14*m+E_0
+FEP2 = 6391.91*m+E_0
 Compton1 = FEP1*(1-1/(1+2*FEP1/(m_ec)))
+Compton2 = FEP2*(1-1/(1+2*FEP2/(m_ec)))
 Backscatter1 = FEP1 - Compton1
-
+Backscatter2 = FEP2 - Compton2
 
 filename = Probe + "all.dat"
 infile = open(filename, 'r')  # Open file for reading
@@ -59,16 +66,19 @@ for i in range(Anzahl[0]):
      infile.close()
     
 
-plt.ylim(0.1,5*10**5)
+plt.ylim(0.1,5*10**4)
 plt.yscale('log')
 plt.plot(x,y,".",color = "blue",label = "aktive Messwerte")  
 plt.plot(x_d,y_d,".",color = "gray",label = "deaktivierte Messwerte")
 plt.plot(x,f,color ="darkred", label = "Model")
 for i in range(Anzahl[0]):
     plt.plot(x,Zahlen[i],label = Dateinamen[i])
-plt.vlines(Literatur_FEP, ymin = 100, ymax = 1000000,label = "Literatur FEP 661.6 keV",color = "lime")
-plt.vlines(Compton1, ymin = 100, ymax = 10000,label = "Compon-Kante FEP")
-plt.vlines(Backscatter1, ymin = 100, ymax = 20000,color = "red", label = "Backscatter-Kante FEP")
+plt.vlines(Literatur_FEPCO1, ymin = 5, ymax = 8000,label = "Literatur FEP2 Co-60 1332.5 keV",color = "lime")
+plt.vlines(Literatur_FEPCO2, ymin = 5, ymax = 8000,label = "Literatur FEP1 Co-60 1173.2 keV",color = "lime",linestyle = "--")
+plt.vlines(Literatur_FEP_CS, ymin = 5, ymax = 32000,label = "Literatur FEP Cs-137 661.6 keV",color = "aqua",linestyle = "-.")
+plt.vlines(46, ymin = 50, ymax = 10000,label = "Literatur FEP Cs-137 31.8/32.2 keV",color = "aqua",linestyle = "--")
+
+
 
 plt.legend(loc='lower left',ncol=2,prop={'size': 7})
 plt.xlabel("Energie [keV]")
