@@ -31,6 +31,16 @@
       \field{labeltitlesource}{title}
       \field{title}{bereitgestellte Anleitung $\beta$-Zerfall}
     \endentry
+    \entry{Zerfallsschema}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeltitlesource}{title}
+      \field{note}{eingesehen am 09.07.2019}
+      \field{title}{Caesium-137 Decay Scheme-de.svg}
+      \verb{url}
+      \verb https://commons.wikimedia.org/wiki/File:Caesium-137_Decay_Scheme-de.svg
+      \endverb
+    \endentry
     \entry{Zerfallsreihe}{misc}{}
       \field{sortinit}{Z}
       \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
