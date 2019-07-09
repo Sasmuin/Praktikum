@@ -1,3 +1,5 @@
+\section{Einleitung}
+
 \section{Amplitudenmodulation und Projektion}
 \subsection{Winkelverteilung von linear polarisiertem Licht}
 Zuerst wird der Versuch nach \cref{411} aufgebaut. Der Laser zeigt dabei entlang des Strahlengangs, auf dem auch die anderen Objekte angebracht sind. Die Linse fokussiert dabei den Laserstrahl auf das Intensitätsmessgerät.
@@ -14,7 +16,7 @@ Zunächst wird die Polarisationsrichtung des Lasers bestimmt, indem der Analysat
 \begin{equation}
 	I = I_{0}*cos(\alpha)^{2}
 \end{equation}
-ist.$\alpha$ ist dabei der Winkel in Radiant. In diesem Fall ist die Funktion allerdings um den Startwinkel, die der Laser zum Analysator hat, verschoben.
+ist.$\alpha$ ist dabei der Winkel zwischen Polarisator und Polarisation des Lasers. In diesem Fall ist die Funktion allerdings um den Startwinkel, die der Laser zum Analysator hat, verschoben.
 Nach unserer Messung lag dieser bei $\beta = \SI{45 \pm 1}{^\circ}$ im Vergleich dazu liegt der Fit bei $\beta = \SI{43,5 \pm 0,3}{^\circ}$. Das bedeutet, dass das Maximum und Minimum wahrscheinlich nicht perfekt getroffen wurde.
 
 \begin{figure}[h!]
@@ -29,7 +31,7 @@ Daraufhin können die maximal und minimale gemessene Intensität verglichen werd
 	C = \frac{I_{max} - I_{min}}{I_{max} + I_{min}} = \SI{0,9943 \pm 0,0004}{}
 	\label{eq:Kontrast}
 \end{equation}
-Bei der Unsicherheit wurde allerdings nicht betrachtet, dass womöglich nicht das perfekte Minimum getroffen wurde, es ist also möglich, dass der Kontrast sogar noch größer ist. 
+
 
 \subsection{Vorbereitungen zur optimierten Funktion des LC-Modulators}
 Der nächste Versuch wird nach \cref{412} aufgebaut. Da die Polarisation des Lasers jetzt bekannt ist, kann er so gedreht werden, dass sie im -45° Winkel zum LC-Modulator liegt, da er dort den maximalen Kontrast hat. Hinter dem LC-Modulator folgt ein Analysator, der auf einen Polarisationswinkel von -135° eingestellt werden soll. Mit der Kamera kann das Bild beobachten werden.
@@ -64,7 +66,7 @@ Als nächstes wird der LC-Modulator angesteuert, sodass die eine Seite des Bilds
 		\caption{135° gedreht}
 		\label{135}
 	\end{subfigure}
-	\caption{Bilder unter verschiedenen Einstellung des LC-Modulators}
+	\caption{Bilder unter verschiedenen Einstellung des Analysators}
 	\label{Kontrast}
 \end{figure}
 
@@ -118,7 +120,7 @@ Im nächsten Versuchsteil soll der Zusammenhang zwischen Grauwert und Polarisati
 Die Grauwerte entsprechen dabei einer angelegten Spannung am LC-Modulator. Da dieser aus Twisted nematic Flüssigkristallzellen besteht, die bei nicht angelegter Spannung die Polarisation des Lasers um 90° drehen und der Laser immer noch in die -45° Richtung polarisiert ist, scheint es klar zu sein, dass bei einer Graustufe von 0 auch keine Spannung angelegt wird. Sobald eine bestimmte Spannung am LC-Modulator überschritten ist, ändert dieser auch die Polarisation des Lichts nicht mehr. Auch das stimmt näherungsweise mit den Messwerten überein. Wie in \cref{tab:grauwert} zu sehen ist, wird bei einem fast maximalem Grauwert von 250(Maximum ist bei 255), auch wieder eine ähnliche Polarisation, wie sie der Laser am Anfang hat, vorgefunden. 
 
 Die Änderung der Polarisation liegt am Aufbau des LC-Modulators bzw. der einzelnen Zellen. Eine schematische Aufzeichnung davon ist in \cref{LC-Modul} zu sehen. Bei keiner angelegten Spannung sind die einzelnen Moleküle in einer Raumrichtung leicht zueinander verschoben, wodurch sich langsam  bei jedem Schritt die Polarisation ändert, 
-bis sie 90° erreicht hat. Bei einem schwachem angelegten Feld sind die Moleküle zudem noch in eine Zweite Raumrichtung ineinander verdreht. Erst sobald ein gewisser Grenzwert erreicht wird, richten sich die Moleküle vollkommen parallel zueinander aus und ändern die Polarisation gar nicht mehr. 
+bis sie 90° erreicht hat. Bei einem schwachem angelegten Feld sind die Moleküle zudem noch in eine Zweite Raumrichtung ineinander verdreht. Erst sobald ein gewisser Grenzwert erreicht wird, richten sich die Moleküle vollkommen parallel zueinander aus, bis auf die Moleküle an der Endfläche, und ändern die Polarisation gar nicht mehr. 
 
  
 \begin{figure}[h!]
