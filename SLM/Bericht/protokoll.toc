@@ -1,32 +1,32 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {ngerman}
-\contentsline {section}{\numberline {1}Amplitudenmodulation und Projektion}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}Winkelverteilung von linear polarisiertem Licht}{1}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Vorbereitungen zur optimierten Funktion des LC-Modulators}{2}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Pixelgr\IeC {\"o}\IeC {\ss }e des LC-Displays}{3}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Zusammenhang zwischen Grauwert und Polarisationszustand}{4}{subsection.1.4}
-\contentsline {section}{\numberline {2}LC-Modulator als DOE}{7}{section.2}
-\contentsline {subsection}{\numberline {2.1}Berechnung der Pixelgr\IeC {\"o}\IeC {\ss }e}{7}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Theorie}{7}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Aufbau}{7}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Auswertung}{8}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}Unsicherheiten}{8}{subsubsection.2.1.4}
-\contentsline {subsubsection}{\numberline {2.1.5}Diskussion}{8}{subsubsection.2.1.5}
-\contentsline {subsection}{\numberline {2.2}Intensit\IeC {\"a}tsverteilung in den Beugungsordnungen des unadressierten Displays}{9}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Theorie}{9}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Aufbau}{10}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Auswertung}{10}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Unsicherheiten}{12}{subsubsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.5}Diskussion}{12}{subsubsection.2.2.5}
-\contentsline {subsection}{\numberline {2.3}Aufnahme von verschiedenen Beugungsbildern mittels der Kamera}{12}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Theorie}{12}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Aufbau}{12}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Auswertung}{13}{subsubsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.4}Diskussion}{14}{subsubsection.2.3.4}
-\contentsline {section}{\numberline {3}Computergenerierte Hologramme (CGH)}{16}{section.3}
-\contentsline {subsection}{\numberline {3.1}Brennweite der diffraktiven Linse}{16}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Berechnung beliebiger diffraktiver optischer Elemente als CGH}{16}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Darstellung zweier DOEs auf einem Bildschirm}{18}{subsection.3.3}
-\contentsline {section}{\numberline {A}Anhang}{20}{appendix.A}
-\contentsline {section}{\nonumberline Literatur}{21}{section*.24}
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
+\contentsline {section}{\numberline {2}Amplitudenmodulation und Projektion}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Winkelverteilung von linear polarisiertem Licht}{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Vorbereitungen zur optimierten Funktion des LC-Modulators}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Pixelgr\IeC {\"o}\IeC {\ss }e des LC-Displays}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Zusammenhang zwischen Grauwert und Polarisationszustand}{5}{subsection.2.4}
+\contentsline {section}{\numberline {3}LC-Modulator als DOE}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Berechnung der Pixelgr\IeC {\"o}\IeC {\ss }e}{7}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Theorie}{7}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Aufbau}{8}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Auswertung}{8}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Unsicherheiten}{9}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}Diskussion}{9}{subsubsection.3.1.5}
+\contentsline {subsection}{\numberline {3.2}Intensit\IeC {\"a}tsverteilung in den Beugungsordnungen des unadressierten Displays}{9}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Theorie}{9}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Aufbau}{10}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Auswertung}{11}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Unsicherheiten}{12}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Diskussion}{12}{subsubsection.3.2.5}
+\contentsline {subsection}{\numberline {3.3}Aufnahme von verschiedenen Beugungsbildern mittels der Kamera}{12}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Theorie}{12}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Aufbau}{13}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Auswertung}{13}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Diskussion}{16}{subsubsection.3.3.4}
+\contentsline {section}{\numberline {4}Computergenerierte Hologramme (CGH)}{16}{section.4}
+\contentsline {subsection}{\numberline {4.1}Brennweite der diffraktiven Linse}{17}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Berechnung beliebiger diffraktiver optischer Elemente als CGH}{17}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Darstellung zweier DOEs auf einem Bildschirm}{17}{subsection.4.3}
+\contentsline {section}{\numberline {A}Anhang}{21}{appendix.A}
+\contentsline {section}{\nonumberline Literatur}{22}{section*.24}
