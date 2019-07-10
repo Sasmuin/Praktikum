@@ -1,17 +1,17 @@
-[0] Config.pm:354> INFO - This is Biber 2.7
-[0] Config.pm:357> INFO - Logfile is 'NaJ- und Ge-Detektoren.blg'
-[26] biber-MSWIN64:303> INFO - === 
-[49] Biber.pm:359> INFO - Reading 'NaJ- und Ge-Detektoren.bcf'
-[126] Biber.pm:832> INFO - Using all citekeys in bib section 0
-[138] Biber.pm:3670> INFO - Processing section 0
-[158] Biber.pm:3840> INFO - Looking for bibtex format file 'res/literatur.bib' for section 0
-[161] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[165] bibtex.pm:1292> INFO - Found BibTeX data source 'res/literatur.bib'
-[172] Utils.pm:164> WARN - month field 'Oktober' in entry 'anleitung-ws2014' is not an integer - this will probably not sort properly.
-[182] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[182] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[182] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[182] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
-[185] bbl.pm:608> INFO - Writing 'NaJ- und Ge-Detektoren.bbl' with encoding 'UTF-8'
-[185] bbl.pm:712> INFO - Output to NaJ- und Ge-Detektoren.bbl
-[185] Biber.pm:109> INFO - WARNINGS: 1
+[1] Config.pm:302> INFO - This is Biber 2.9
+[1] Config.pm:305> INFO - Logfile is 'NaJ- und Ge-Detektoren.blg'
+[109] biber:313> INFO - === Mi Jul 10, 2019, 13:32:17
+[181] Biber.pm:371> INFO - Reading 'NaJ- und Ge-Detektoren.bcf'
+[446] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[501] Biber.pm:3981> INFO - Processing section 0
+[535] Biber.pm:4154> INFO - Looking for bibtex format file 'res/literatur.bib' for section 0
+[537] bibtex.pm:1468> INFO - LaTeX decoding ...
+[546] bibtex.pm:1294> INFO - Found BibTeX data source 'res/literatur.bib'
+[551] Utils.pm:169> WARN - month field 'Oktober' in entry 'anleitung-ws2014' is not an integer - this will probably not sort properly.
+[593] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[594] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[594] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[594] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
+[618] bbl.pm:617> INFO - Writing 'NaJ- und Ge-Detektoren.bbl' with encoding 'UTF-8'
+[620] bbl.pm:720> INFO - Output to NaJ- und Ge-Detektoren.bbl
+[621] Biber.pm:110> INFO - WARNINGS: 1
