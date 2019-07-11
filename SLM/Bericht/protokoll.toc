@@ -1,5 +1,6 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
 \contentsline {section}{\numberline {2}Amplitudenmodulation und Projektion}{1}{section.2}
 \contentsline {subsection}{\numberline {2.1}Winkelverteilung von linear polarisiertem Licht}{1}{subsection.2.1}
@@ -29,4 +30,3 @@
 \contentsline {subsection}{\numberline {4.2}Berechnung beliebiger diffraktiver optischer Elemente als CGH}{17}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Darstellung zweier DOEs auf einem Bildschirm}{17}{subsection.4.3}
 \contentsline {section}{\numberline {A}Anhang}{21}{appendix.A}
-\contentsline {section}{\nonumberline Literatur}{22}{section*.24}
