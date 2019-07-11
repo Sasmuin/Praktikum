@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.8 $
+% $ biblatex bbl format version 2.9 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,40 +18,35 @@
 
 
 \refsection{0}
-  \sortlist[entry]{nty/global/}
-    \entry{anleitung-ws2014}{manual}{}
-      \name{author}{1}{}{%
-        {{hash=cbf5499e1c199ffb28880518170810a5}{%
-           family={Janis\bibnamedelima Benscheidt},
-           familyi={J\bibinitperiod\bibinitdelim B\bibinitperiod},
-           given={Jörg\bibnamedelima Imbrock},
-           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%}
-        {Physikalisches Institut}%
-      }
-      \strng{namehash}{cbf5499e1c199ffb28880518170810a5}
-      \strng{fullhash}{cbf5499e1c199ffb28880518170810a5}
-      \strng{authornamehash}{cbf5499e1c199ffb28880518170810a5}
-      \strng{authorfullhash}{cbf5499e1c199ffb28880518170810a5}
-      \field{sortinit}{J}
-      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{Oktober}
-      \field{title}{Anleitung zu den Experimentellen Übungen zur Mechanik und Elektrizitätslehre}
-      \field{year}{2010}
-    \endentry
+  \datalist[entry]{nty/global//global/global}
     \entry{Hersteller}{misc}{}
       \field{sortinit}{L}
-      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
       \field{labeltitlesource}{title}
       \field{note}{eingesehen am 25.05.2019}
       \field{title}{LC 2012 Spatial Light Modulator (transmissive)}
+      \verb{urlraw}
+      \verb https://holoeye.com/spatial-light-modulators/lc-2012-spatial-light-modulator/
+      \endverb
       \verb{url}
       \verb https://holoeye.com/spatial-light-modulators/lc-2012-spatial-light-modulator/
       \endverb
-
     \endentry
-  \endsortlist
+    \entry{anleitung-ws2014}{manual}{}
+      \list{organization}{1}{%
+        {Westfälische Wilhelms-Universität Münster}%
+      }
+      \list{publisher}{1}{%
+        {Angewandte Physik}%
+      }
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Räumlicher LC-Modulatorund diffraktive Optik}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
 \endrefsection
 \endinput
 

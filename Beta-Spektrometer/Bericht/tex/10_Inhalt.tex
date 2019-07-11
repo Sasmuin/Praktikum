@@ -1,14 +1,9 @@
 \setlength{\multlinegap}{0pt}
+\section{Einleitung}
+In diesem Versuch soll der $\beta$-Zerfall einer $^{137}$Cs Quelle mit einem Spektrometer näher untersucht werden. Dabei ist das Ziel die Grenzenergie des häufigsten $\beta$-Zerfalls auf den angeregten Zustand von $^{137}$Ba zu berechnen. Da das aufgenommen Spektrum allerdings aus verschiedenen Zerfällen besteht, die sich gegenseitig überlagern, müssen diese Zerfälle zuerst entfernt werden, damit nur noch der angesprochene $\beta$-Zerfall betrachtet werden kann. Danach wird dieser mit einem Kurie-Plot untersucht, um auf die Grenzenergie von $E_{0} = \SI{505 \pm 18}{keV}$. Dieser Wert stimmt auch mit der Literaturwert von $E_{0} =\SI{513,97}{keV}$ \autocite{Zerfallsreihe} überein.
 \section{Theorie}
 \subsection{$\beta$-Zerfall}
-Der $\beta$-Zerfall liefert im Gegensatz zum $\alpha$- und $\gamma$-Zerfall ein kontinuierliches Energiespektrum. Das warf Fragen auf, denn als Zerfallsprodukt konnte nur ein Elektron, bzw. ein Positron, detektiert werden. Dies erfüllte aber weder Energie- noch Impuls- und Drehimpulserhaltung. Abhilfe schaffte 1931 Wolfgang Pauli, indem er ein weiteres Teilchen postulierte, das Neutrino. Da dies einen halbzahligen Spin besitzt, war damit der Drehimpuls erhalten. Außerdem trägt es den fehlenden Teil der Energie und des Impulses. Außerdem trägt auch das Nukleon einen Teil des Impulses als Rückstoß. Dargestellt ist diese Impulsverteilung in \cref{beta}.
-
-%\begin{figure}[h]
-%	\centering
-%	\imcludegraphics[width=0.9\textwidth]{betazerfall.png}
-%	\label{beta}
-%	\caption{Impulsverteilung beim $\beta^-$-Zerfall mit $p_e$ dem Impuls des Elektrons, $p_\nu$ dem Impuls des Antineutrinos und $p_r$ dem Impuls des Rückstoßes.}
-%\end{figure}
+Der $\beta$-Zerfall liefert im Gegensatz zum $\alpha$- und $\gamma$-Zerfall ein kontinuierliches Energiespektrum. Das warf Fragen auf, denn als Zerfallsprodukt konnte nur ein Elektron, bzw. ein Positron, detektiert werden. Dies erfüllte aber weder Energie- noch Impuls- und Drehimpulserhaltung. Abhilfe schaffte 1931 Wolfgang Pauli, indem er ein weiteres Teilchen postulierte, das Neutrino. Da dies einen halbzahligen Spin besitzt, war damit der Drehimpuls erhalten. Außerdem trägt es den fehlenden Teil der Energie und des Impulses. Außerdem trägt auch das Nukleon einen Teil des Impulses als Rückstoß.
 
 Es gibt drei verschiedene Arten des $\beta$-Zerfalls, die aber alle gemein haben, dass ein Nukleon umgewandelt wird. Beim $\beta^-$-Zerfall (\cref{eq:beta-}) wird ein Neutron zu einem Proton und erzeugt dabei außerdem ein Elektron und ein Elektron-Antineutrino. Beim $\beta^+$-Zerfall (\cref{eq:beta+}) wird ein Proton zu einem Neutron unter Erzeugung eines Positrons und eines Elektron-Neutrinos. Der dritte Prozess ist der Elektroneneinfang, auch electron capture genannt (\cref{eq:ec}). Hierbei muss sich ein Elektron sehr nah am Atomkern befinden, sodass es mit einem Proton zu einem Neutron und einem Elektron-Neutrino reagieren kann.
 
@@ -20,7 +15,7 @@ Es gibt drei verschiedene Arten des $\beta$-Zerfalls, die aber alle gemein haben
 
 Da die Masse des Protons geringfügig kleiner ist als die des Neutrons, können sowohl $\beta^-$-Zerfalls als auch electron capture nicht an freien Protonen stattfinden, sondern nur im Atomkern. Der $\beta^+$-Zerfalls dagegen ist auch an freien Neutronen möglich.
 
-\section{Tröpfchenmodell}
+\subsection{Tröpfchenmodell}
 Ob bei einem Kern ein $\beta$-Zerfall auftritt, hängt von der Energie und damit von der Masse des Kerns ab. Diese ist durch die Weizsäckersche Masseformel in \cref{eq:masse} beschrieben, mit $m_p$ der Masse eines Protons, $m_n$ der Masse eines Neutrons und $B$ der Bindungsenergie.
 
 \begin{equation}
@@ -56,6 +51,39 @@ Dabei wird der Atomkern ähnlich wie ein Wassertropfen betrachtet. Die Formel se
 \item Da auf jedes Energieniveau jeweils zwei Teilchen passen, muss für ein weiteres Teilchen ein neues höheres Energieniveau besetzt werden. Daher haben Kerne, die aus einer geraden Anzahl an Protonen und Neutronen bestehen, eine höhere Bindungsenergie und sind somit energetisch günstiger als Kerne mit ungerader Anzahl an Protonen und Neutronen.
 \end{itemize}
 
+\subsection{Spektrum des $\beta$-Zerfalls}
+Um das Spektrum des $\beta$-Zerfalls erklären zu können, muss zuerst das Zerfallsschema von $^{137}Cs$ betrachtet werden. Dies ist in \cref{schema} zu sehen.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{zerfallsschema.png}
+	\caption{Das Zerfallsschema von $^{137}Cs$ \cite{Zerfallsschema}}
+	\label{schema}
+\end{figure}
+
+Am wahrscheinlichsten ist mit etwa $95$\% der Zerfall in einen angeregten Zustand von $^{137}$Ba mit einem Drehimpuls von $11/2$ und negativer Parität. Die Anregungsenergie dieses Zustandes beträgt $\SI{661,65}{keV}$. Der Zerfall in den Grundzustand mit Drehimpuls $3/2$ und positiver Parität ist mit nur $5$\% deutlich weniger wahrscheinlich. Die Wahrscheinlichkeiten für die verschiedenen Zerfallsprodukte ergeben sich aus bestimmten Auswahlregeln für Quantenzahlen des Atomkerns. Das Barium im angeregten Zustand zerfällt nach einiger Zeit in den Grundzustand, entweder unter Emission von $\gamma$-Strahlung oder mithilfe von elektromagnetischer Konversion. Bei diesem Prozess geht die Anregungsenergie aus dem Kern in ein Elektron aus der K- oder L-Schale über, dass dadurch aus seiner Schale gelöst wird.
+
+Mit diesen Informationen lässt sich nun das Impulsspektrum des $\beta$-Zerfalls, das in \cref{spektrum} schematisch dargestellt ist, erklären.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Spektrum.jpg}
+	\caption{Schematisches Gesamtspektrum des Zerfalls von $^{137}$Cs \cite[27]{anleitung-ws2014}}
+	\label{spektrum}
+\end{figure}
+
+Das Spektrum lässt sich in vier Bestandteile aufteilen. Der Erste ist die Untergrundstrahlung. Diese wird vor allem durch den $\gamma$-Zerfall des angeregten Bariumzustandes. Weitere Beiträge liefern unter anderem Zerfallsprodukte der kosmischen Höhenstrahlung und andere radioaktive Isotope in der Umgebung.
+Der zweite Anteil entsteht durch den $\beta$-Zerfall des Cäsiumisotops in den Grundzustand von $^{137}$Ba, der Dritte durch den $\beta$-Zerfall in den angeregten Zustand. Der zweite Anteil ist deutlich kleiner als der Dritte, das liegt daran, dass der Zerfall in den angeregten Zustand deutlich wahrscheinlicher ist. Dafür ist beim Zerfall in den Grundzustand das Spektrum deutlich breiter als bei Zerfall in den angeregten Zustand. Das kommt daher, dass beim Zerfall in den Grundzustand mehr Energie frei wird. Da die Elektronen eine beliebige kinetische Energie zwischen \SI{0}{keV} und der insgesamt freigewordenen Energie tragen können, muss der zweite Anteil mehr verschiedene Energien einschließen.
+
+Der vierte Anteil am Spektrum tragen die sogenannten Konversionselektronen bei. Dies sind deutlich erkennbare Peaks mit einer bestimmten Energie. Diese lässt sich mit \cref{eq:konversion} berechnen, mit $E_K$ der kinetischen Energie des Konversionselektrons, $E_X$ der Anregungsenergie des Kerns und $E_B$ der Bindungsenergie des emittierten Elektrons.
+
+\begin{equation}
+E_K = E_X - E_B
+\label{eq:konversion}
+\end{equation}
+
+Es treten zwei Peaks auf, einer für Elektronen aus der K-Schale und einer für solche aus der L-Schale. Da die Elektronen der K-Schale eine höhere Bindungsenergie besitzen, haben deren Konversionselektronen eine niedrigere Energie als die aus der L-Schale. Der Peak der L-Schale besteht aufgrund der Aufspaltung der Energieniveaus eigentlich aus drei verschiedenen Peaks, die wegen der zu geringen Auflösung aber verschwimmen.
+
 \section{Methoden}
 Um ein $\beta$-Spektrum messen zu können werden die erzeugten Elektronen in einem Magnetfeld abgelenkt. Die Bahnkurve wird dabei durch Lorentz- und Zentripetalkraft gegeben. Im homogenen Magnetfeld ergibt sich mit $m$ der relativistische Masse so:
 
@@ -63,6 +91,13 @@ Um ein $\beta$-Spektrum messen zu können werden die erzeugten Elektronen in ein
 Bev = \frac{mv^2}{\rho}.
 \label{bfeld}
 \end{equation}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Skizze.jpg}
+	\caption{Schematischer Aufbau des Toroid-Spektrometers \cite[19]{anleitung-ws2014}}
+	\label{fig:skizze}
+\end{figure}
 
 Die Teilchen beschreiben dabei eine kreisförmige Bahnkurve. Da der Impuls durch $p = eB\rho$ gegeben ist, sortiert das Spektrometer die Teilchen nach Impuls. Für die Messung mit dem Spektrometer sind zwei Größen wichtig: Die Impulsauflösung und die Transmission. Die Transmission ist ein Maß dafür, wie viele der von der Quelle emittierten Elektronen vom Detektor detektiert werden. Sie wird über
 
@@ -78,40 +113,138 @@ R = \frac{\Delta p}{p} = \frac{\Delta(B\rho)}{B\rho} = \frac{\Delta\rho}{\rho}
 \label{eq:apparaturkonstante}
 \end{equation}
 
-berechnet. Die Impulsauflösung beträgt meist etwa $1\%$. Sie verschlechtert sich bei größerem Eintrittsspalt und verbessert sich bei kleinerem Eintrittsspalt. Die beiden Größen können also nicht gleichzeitig optimiert werden. Außerdem werden bei einem Spektrometer, dass die Elektronen nur in einer Ebene ablenkt, alle Elektronen nicht berücksichtigt, die nicht in dieser Ebene emittiert werden. Ein Spektrometer, der für diese Probleme eine Lösung anbietet, ist das im Versuch verwendete Toroid-Spektrometer. Der Aufbau dieses Spektrometers ist in \cref{skizze} dargestellt.
+berechnet. Die Impulsauflösung beträgt meist etwa $1\%$. Sie verschlechtert sich bei größerem Eintrittsspalt und verbessert sich bei kleinerem Eintrittsspalt. Die beiden Größen können also nicht gleichzeitig optimiert werden. Außerdem werden bei einem Spektrometer, dass die Elektronen nur in einer Ebene ablenkt, alle Elektronen nicht berücksichtigt, die nicht in dieser Ebene emittiert werden. Ein Spektrometer, der für diese Probleme eine Lösung anbietet, ist das im Versuch verwendete Toroid-Spektrometer. Der Aufbau dieses Spektrometers ist in \cref{fig:skizze} dargestellt.
 
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=0.9\textwidth]{Skizze.png}
-%	\label{skizze}
-%	\caption{Schematischer Aufbau des Toroid-Spektrometers}
-%\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Feldlinien.jpg}
+	\caption{Das B-Feld des Spektrometers als Draufsicht auf die r-$\Phi$-Ebene \cite[18]{anleitung-ws2014}}
+	\label{feldlinien}
+\end{figure}
 
 Dabei liegen Quelle und Detektor in dieser Graphik genau hintereinander, der Detektor ist allerdings um $2\rho$ nach hinten verschoben. Die Elektronen werden von der Quelle emittiert und gelangen dann in das Magnetfeld, das von den Polschuhplatten erzeugt wird. Die Lorentzkraft lenkt die Elektronen dann auf den Detektor, wo diese gemessen werden können. Die Öffnungen, an denen Quelle und Detektor liegen, sind keilförmig. Das Magnetfeld, von dem die Elektronen abgelenkt werden, ist zylindersymmetrisch und besitzt nur eine Komponente in $\Phi$-Richtung. In \cref{feldlinien} ist das B-Feld als Draufsicht auf die r-$\Phi$-Ebene gezeigt. Erkennbar ist, dass die Feldstärke bei größerem r abnimmt. Dies sorgt für die trochoide Bahn, die die Elektronen beschreiten. 
 
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=0.9\textwidth]{Feldlinien.png}
-%	\caption{Das B-Feld des Spektrometers als Draufsicht auf die r-$\Phi$-Ebene}
-%	\label{feldlinien}
-%\end{figure}
-
 Dadurch können nicht nur Elektronen aus einer Ebene detektiert werden, sondern auch solche, die in andere Raumrichtungen emittiert wurden. Das wird in \cref{ebahn} deutlich. Hier sind die Trochoiden deutlich erkennbar. Dies verbessert die Transmission deutlich, während die Auflösung gleich bleibt.
 
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=0.9\textwidth]{Elektronenbahn.png}
-%	\label{ebahn}
-%	\caption{Elekronenbahn im toroidalen Feld der Polschuhplatten. Man erkennt die Fokussierung, die dafür sorgt, dass auch Elektronen, die nicht in der Ebene von Quelle und Detektor emittiert wurden, auf den Detektor geschickt werden.}
-%\end{figure}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Elektronenbahn.jpg}
+	\caption{Elekronenbahn im toroidalen Feld der Polschuhplatten. Man erkennt die Fokussierung, die dafür sorgt, dass auch Elektronen, die nicht in der Ebene von Quelle und Detektor emittiert wurden, auf den Detektor geschickt werden. \cite[19]{anleitung-ws2014}}
+	\label{ebahn}
+\end{figure}
 
 Vom Detektor laufen sie gemäß \cref{aufbau} durch einige weitere Bauteile, bevor das Signal zur Auswertung bereit ist.
 
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=0.9\textwidth]{Aufbau.png}
-%	\label{aufbau}
-%	\caption{Schematische Darstellung des Versuchaufbaus.}
-%\end{figure}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Aufbau.jpg}
+	\caption{Schematische Darstellung des Versuchaufbaus. \cite[27]{anleitung-ws2014}}
+	\label{aufbau}
+\end{figure}
 
 Zuerst wird das Elektron von einem Szintillator detektiert. Von dort wird es in einem Photomultiplier verstärkt. Dabei wird das Elektron auf eine Dynode beschleunigt, aus der es aufgrund der hohen kinetischen Energie mehrere Elektronen lösen kann. Diese werden nun auf weitere Dynoden gelenkt, sodass am Ende viele Elektronen zum Signal beitragen. Dieses wird am Vorverstärker weiter verstärkt, bevor es am Hauptverstärker in einen Rechteckpuls umgewandelt wird. Dieser erreicht schließlich den Zähler. Zur weiteren Verarbeitung wird ein selbsterstelltes Programm in der graphischen Programmiersprache LabView verwendet.
+
+\newpage
+\section{Ergebnis}
+\subsection{Entfernung des Untergrunds $Z_{0}$}
+Zunächst soll die konstante Untergrundstrahlung entfernt werden. Diese entsteht in erster Linie über den $\gamma$-Zerfall der $^{137}$Cs Quelle und da die Photonen nicht mit den elektromagnetischen Feld reagieren, sind sie konstant verteilt. Es wird also angenommen, dass dieser Untergrund mit einem linearen Fit mit $y = mx +b$ bestimmt werden kann, wie es in \cref{z0} zu sehen ist. Für diesen Fit wurden speziell Messwerte aufgenommen, in denen sonst keine Strahlung erwartet wurde, womit sich die Messwerte $m = \SI{27 \pm 63}{\frac{1}{mA}}$ und $b = \SI{9388 \pm 110}{}$ ergeben. Die Steigung der linearen Gleichung hat dabei, wie erwartet, keine große Auswirkung.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../Messdaten/Untergrund.png}
+	\caption{Fit der Untergrundstrahlung $Z_{0}$}
+	\label{z0}
+\end{figure}
+
+
+Dieser Fit wird daraufhin von den restlichen Messwerten abgezogen, sodass sich ein neues Spektrum in \cref{z01} ergibt. 
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../Messdaten/Ohne_Untergrund.png}
+	\caption{Messwerte nach Entfernung des Untergrund $Z_{0}$}
+	\label{z01}
+\end{figure}
+
+\subsection{Kalibrierung}
+Als nächstes soll die Stromstärke in $B \rho$ umgewandelt werden, da dieser Wert multipliziert mit der Ladung e den Impuls ergibt. Dafür werden die K und L-Linien der Konversionselektronen im Spektrum mit den Literaturwerten verglichen. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../Messdaten/Kalibrierung.png}
+	\caption{Kalibrierung der Stromstärke zu $B \rho$}
+	\label{Kali}
+\end{figure}
+
+Da die Peaks der L-Linien ineinander verschwimmen, wird dieser Peak gemittelt, womit sich die Literaturwerte von $B \rho_{L} = \SI{0,3499 \pm 0,0001}{T cm}$ und $B \rho_{K} = \SI{0,33814 \pm 0,00005}{T cm}$ ergeben. Die gemessenen Peaks in \cref{Kali} hingegen liegen bei $I_{L} = \SI{1,1408 \pm 0,0004}{mA}$ und $I_{K} = \SI{1,1063 \pm 0,0002}{mA}$.
+Es wird eine lineare Abhängigkeit zwischen der angelegten Stromstärke und dem $B \rho$ Wert angenommen, sodass die Umrechnungswerte $a = \SI{0,342 \pm 0,006}{\frac{T cm}{mA}}$ und $B \rho_{0} = \SI{-0,04 \pm 0,007}{T cm}$ folgen, wobei
+\begin{equation}
+	a = \frac{\Delta B \rho [T cm]}{\Delta I [Skt]}
+\end{equation}
+und 
+\begin{equation}
+	(B \rho)_{0} = (B \rho)_{k,l} - a \cdot I_{k,l}
+\end{equation}
+
+\subsection{Impulsauflösung}
+Die Impulsauflösung des Spektrometers ist gegeben mit 
+\begin{equation}
+	R = \frac{\Delta B \rho}{B \rho},
+\end{equation}
+wobei $B \rho$: Peakposition der Linie; $\Delta B \rho$: Halbwertsbreite der Linie.
+Die Halbwertsbreite der Gauß Fits in \cref{Kali} betragen $\Delta B \rho_{K} = \SI{0,0129 \pm 0,0003}{mA}$ und $\Delta B \rho_{L} = \SI{0,0176 \pm 0,0009}{mA}$. Daraus ergeben sich zusammen mit den vorher genannten Peakpositionen die Impulsauflösung für die beiden Peaks mit $R_{K} = \SI{0,0381 \pm 0,0014}{}$ und $R_{L} = \SI{0,050\pm 0,003}{}$. Allerdings sollte die Impulsauflösung eigentlich nicht mit dem Impuls selbst zusammenhängen. Die schlechtere Auflösung der L-Linie lässt sich jedoch dadurch erklären, dass es drei Peaks sind, die allerdings nicht voneinander unterscheidbar sind. Dadurch wird auch die Halbwertsbreite breiter, was die Auflösung verschlechtert.
+
+
+\subsection{Entfernung des Untergrunds $Z_{1}$}
+Daraufhin muss der $\beta$-Zerfall, der direkt in den Grundzustand zerfällt, entfernt werden. Da das Ziel ist das Ende des $\beta$-Zerfalls in den angeregten Zustand herausgefunden werden soll, muss in diesem Fall nur der Zerfall unter eben diesem $\beta$-Peak entfernt werden. Dafür kann wieder eine lineare Näherung gemacht werden, wobei als Startpunkt ein Punkt ausgewählt wird, der ungefähr bei null liegt und als Endpunkt einer, zwischen dem Start des $\beta$-Zerfalls in den angeregten Zustand und der K-Linie der Konversionselektronen. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../Messdaten/Z1.png}
+	\caption{Messwerte nach Entfernung des Untergrund $Z_{0}$}
+	\label{z1}
+\end{figure}
+
+
+In diesem Fall wurde beim Startpunkt über einige in Frage kommende Punkte gemittelt, wodurch sich der Startwert zu $I = \SI{0,426 \pm 0,004}{mA}$ und Zählungen $N = \SI{39 \pm 113}{}$. Der Bestimmung des Endpunkts hat sich allerdings schwieriger dargestellt, da nicht viele Messwerte zwischen den beiden Peaks aufgenommen wurden. Daraus ergibt sich auch die entsprechend große Unsicherheit vom Endpunkt mit $I = \SI{1,05 \pm 0,20}{mA}$ und $N = \SI{834,86 \pm 128,7179}{}$. Der lineare Fit ist in \cref{z1} zu sehen.
+
+\subsection{Zusammenhang zwischen kinetischer Energie und Impuls}
+Um die gemessenen Impulse $p = B \rho e$ mit einer kinetischen Energie zu vergleichen muss diese vorher umgerechnet werden. Dazu wird die relativistische Gesamtenergie
+\begin{equation}
+	W^{2} = p^{2}c^{2} + m_{0}^{2} c^<{4}
+\end{equation} 
+und 
+\begin{equation}
+	W = E_{Kin} + m_{0}c^{2}
+\end{equation}	
+gleichgesetzt. Wenn das nach $E_{Kin}$ umgeformt folgt daraus
+\begin{equation}
+	E = \sqrt{p^{2}c^{2}+m_{0}^{2}c^{4}}-m_{0}c^{2} = \sqrt{e^{2}c^{2}(B \rho)^{2}+m_{0}^{2}c^{4}}-m_{0}c^{2}.
+	\label{Ekin}
+\end{equation}
+
+	
+	
+\subsection{Kurie}
+Als letztes soll die Grenzenergie $E_{0}$ bestimmt werden. Dafür wird zunächst auf die y-Achse $ K = \sqrt(\frac{N}{p^{2}F})$ aufgetragen mit
+\begin{equation}
+	F = \frac{2 \pi \mu}{1-e^{-2 \pi \mu}}
+\end{equation}
+und 
+\begin{equation}
+	\mu = \frac{Z \alpha c}{v},
+\end{equation} 
+mit Z der Kernladungszahl, $\alpha$ = $\frac{1}{137}$ und v der Geschwindigkeit des emittierten Elektrons. Die Geschwindigkeit v lässt sich dabei mit $v = \frac{p}{m}$ berechnen.
+
+Auf der x-Achse wird die vorher berechnete kinetische Energie aufgetragen.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../Messdaten/Kurie.png}
+	\caption{Messwerte nach Entfernung des Untergrund $Z_{0}$}
+	\label{Kurie}
+\end{figure}
+
+Mit dem linearen Fit in \cref{Kurie} kann dann die Grenzenergie $E_{0}$ berechnet werden. Dafür muss die linearer Gleichung gleich null gesetzt werden, woraus die Grenzenergie $E_{0} = \SI{505 \pm 18}{keV}$ folgt. Somit ist das Ziel die Unsicherheit von $E_{0}$ unter 10\% zu halten erfolgreich gewesen. Außerdem stimmt der errechnete Wert auch mit dem Literaturwert von $E_{0} =\SI{513,97}{keV}$ \autocite{Zerfallsreihe}  überein.

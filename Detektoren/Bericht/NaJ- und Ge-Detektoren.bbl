@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.8 $
+% $ biblatex bbl format version 2.9 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \sortlist[entry]{nty/global/}
+  \datalist[entry]{nty/global//global/global}
     \entry{anleitung-ws2014}{manual}{}
       \list{organization}{1}{%
         {Westfälische Wilhelms-Universität Münster}%
@@ -27,7 +27,7 @@
         {Kern Physik}%
       }
       \field{sortinit}{N}
-      \field{sortinithash}{1163c28585427c673ad5a010cbf82f52}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
       \field{labeltitlesource}{title}
       \field{month}{Oktober}
       \field{title}{Naj(TI)- und Ge-Detektoren}
@@ -35,15 +35,18 @@
     \endentry
     \entry{Zerfallsreihe}{misc}{}
       \field{sortinit}{Z}
-      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
       \field{labeltitlesource}{title}
       \field{note}{eingesehen am 20.06.2019}
       \field{title}{Zerfallsreihen}
+      \verb{urlraw}
+      \verb https://www.cpp.edu/~pbsiegel/decaychain/
+      \endverb
       \verb{url}
       \verb https://www.cpp.edu/~pbsiegel/decaychain/
       \endverb
     \endentry
-  \endsortlist
+  \enddatalist
 \endrefsection
 \endinput
 

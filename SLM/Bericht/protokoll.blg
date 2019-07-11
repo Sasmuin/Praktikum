@@ -1,35 +1,17 @@
-[0] Config.pm:354> INFO - This is Biber 2.7
-[0] Config.pm:357> INFO - Logfile is 'protokoll.blg'
-<<<<<<< HEAD
-[52] biber-MSWIN32:303> INFO - === 
-[89] Biber.pm:359> INFO - Reading 'protokoll.bcf'
-[201] Biber.pm:832> INFO - Using all citekeys in bib section 0
-[218] Biber.pm:3670> INFO - Processing section 0
-[239] Biber.pm:3840> INFO - Looking for bibtex format file 'res/literatur.bib' for section 0
-[243] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[248] bibtex.pm:1292> INFO - Found BibTeX data source 'res/literatur.bib'
-[258] Utils.pm:164> WARN - month field 'Oktober' in entry 'anleitung-ws2014' is not an integer - this will probably not sort properly.
-[273] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[273] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[273] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[273] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
-[277] bbl.pm:608> INFO - Writing 'protokoll.bbl' with encoding 'UTF-8'
-[278] bbl.pm:712> INFO - Output to protokoll.bbl
-[278] Biber.pm:109> INFO - WARNINGS: 1
-=======
-[26] biber-MSWIN64:303> INFO - === 
-[47] Biber.pm:359> INFO - Reading 'protokoll.bcf'
-[121] Biber.pm:832> INFO - Using all citekeys in bib section 0
-[133] Biber.pm:3670> INFO - Processing section 0
-[151] Biber.pm:3840> INFO - Looking for bibtex format file 'res/literatur.bib' for section 0
-[154] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[157] bibtex.pm:1292> INFO - Found BibTeX data source 'res/literatur.bib'
-[158] Utils.pm:164> WARN - month field 'April' in entry 'anleitung-ws2014' is not an integer - this will probably not sort properly.
-[166] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[166] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[167] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[167] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
-[169] bbl.pm:608> INFO - Writing 'protokoll.bbl' with encoding 'UTF-8'
-[169] bbl.pm:712> INFO - Output to protokoll.bbl
-[170] Biber.pm:109> INFO - WARNINGS: 1
->>>>>>> c1c686e99b8257484f83bd82dcb51d17d00713f3
+[1] Config.pm:302> INFO - This is Biber 2.9
+[2] Config.pm:305> INFO - Logfile is 'protokoll.blg'
+[104] biber:313> INFO - === Mi Jul 10, 2019, 12:57:26
+[186] Biber.pm:371> INFO - Reading 'protokoll.bcf'
+[419] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[477] Biber.pm:3981> INFO - Processing section 0
+[513] Biber.pm:4154> INFO - Looking for bibtex format file 'res/literatur.bib' for section 0
+[515] bibtex.pm:1468> INFO - LaTeX decoding ...
+[524] bibtex.pm:1294> INFO - Found BibTeX data source 'res/literatur.bib'
+[529] Utils.pm:169> WARN - month field 'April' in entry 'anleitung-ws2014' is not an integer - this will probably not sort properly.
+[573] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[573] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[574] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[574] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
+[600] bbl.pm:617> INFO - Writing 'protokoll.bbl' with encoding 'UTF-8'
+[604] bbl.pm:720> INFO - Output to protokoll.bbl
+[605] Biber.pm:110> INFO - WARNINGS: 1

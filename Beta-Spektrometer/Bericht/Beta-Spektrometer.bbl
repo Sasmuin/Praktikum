@@ -1,0 +1,57 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{anleitung-ws2014}{manual}{}
+      \list{organization}{1}{%
+        {Westfälische Wilhelms-Universität Münster}%
+      }
+      \list{publisher}{1}{%
+        {Kern Physik}%
+      }
+      \field{sortinit}{b}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeltitlesource}{title}
+      \field{title}{bereitgestellte Anleitung $\beta$-Zerfall}
+    \endentry
+    \entry{Zerfallsschema}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeltitlesource}{title}
+      \field{note}{eingesehen am 09.07.2019}
+      \field{title}{Caesium-137 Decay Scheme-de.svg}
+      \verb{url}
+      \verb https://commons.wikimedia.org/wiki/File:Caesium-137_Decay_Scheme-de.svg
+      \endverb
+    \endentry
+    \entry{Zerfallsreihe}{misc}{}
+      \field{sortinit}{Z}
+      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{labeltitlesource}{title}
+      \field{note}{eingesehen am 08.07.2019}
+      \field{title}{$\beta$-Zerfall $^{137}$Cs}
+      \verb{url}
+      \verb https://web.archive.org/web/20150522091637/http://ie.lbl.gov/toi/nuclide.asp?iZA=550137
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

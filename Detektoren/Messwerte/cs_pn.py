@@ -14,7 +14,7 @@ m = 0.1698
 E_0 = 0
 m_ec=511
 Literatur_FEP = 661.6
-FEP1 = 3676.35*m+E_0
+FEP1 = 3894.700704*m+E_0
 Compton1 = FEP1*(1-1/(1+2*FEP1/(m_ec)))
 Backscatter1 = FEP1 - Compton1
 
