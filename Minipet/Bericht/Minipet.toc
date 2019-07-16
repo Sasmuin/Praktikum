@@ -8,8 +8,9 @@
 \contentsline {subsection}{\numberline {2.3}Szintillator}{2}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Strahlungsquelle}{4}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Bildrekonstruktion}{4}{subsection.2.5}
-\contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Kalibration}{7}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Rekonstruktionsalgoritmen}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Positionsbestimmung}{7}{subsection.3.3}
-\contentsline {section}{\numberline {A}Anhang}{12}{appendix.A}
+\contentsline {section}{\numberline {3}Methoden}{7}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Kalibration}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Rekonstruktionsalgoritmen}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Positionsbestimmung}{9}{subsection.4.3}
+\contentsline {section}{\numberline {A}Anhang}{14}{appendix.A}
