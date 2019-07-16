@@ -1,4 +1,108 @@
-\section{Test-Überschrift}
+\section{Einleitung}
+In diesem Versuch geht es um die Positronen Emissions Tomographie (PET). Es ist ein bildgebenes Verfahren, das in der Medizin zur Tumorerkennung eingesetzt wird. Dabei wird dem Patienten ein radioaktives Material verabreicht, welches mit Detektoren, die um den Patienten in einem Kreis verteilt sind, näher untersucht werden kann. Da sich das radioaktive Material im Tumor anreichert, da es dort zu erhöhtem Stoffwechsel kommt, kann damit auch die genaue Postion des Tumors bestimmt werden.
+
+\section{Theorie}
+\subsection{$\beta^{+}$-Zerfall}
+Die PET basiert auf den $\beta^{+}$-Zerfall bei dem ein Proton im Kern in ein Neutron zerfällt und dabei ein Positron und ein Neutrino emittiert.
+
+\begin{equation}
+	^{A}_{Z}X \rightarrow ^{A}_{Z-1}Y + e^{+} + \nu_{e}
+\end{equation}
+Wenn das emittierte Positron auf ein Elektron im umgebenen Material trifft, kann sich ein sogenanntes Positronium bilden. Ein Positronium ist ein gebundener Zustand zwischen einem Elektron und einem Positron, wobei sich diese um ihren gemeinsamen Schwerpunkt bewegen. Hierbei gibt es zwei verschiedene Spin-Zustände, den Singulett (Parapositronium)- und Triplett-Zustand (Orthopositronium). Der Singulett-Zustand bedeutet, dass der Spin des Elektrons und des Positrons antiparallel zueinander ausgerichtet sind, während beim Triplett-Zustand sie genau parallel zueinander sind. Für den Versuch relevant ist nur der Singuelett-Zustand, da dieser, wegen Impuls- und Drehimpulserhaltung (Spin), nur in zwei oder mehrfache von zwei Photonen zerfallen kann. Im Normalfall zerfällt das Positronium allerdings in genau zwei Photonen, die jeweils die Energie von 511 keV besitzen und in genau gegensätzliche Richtungen emittiert werden. Der Triplett-Zustand kann nur in mindestens drei Photonen zerfallen, weshalb es eine deutlich längere Lebenszeit hat und nicht ohne weiteres ausgewertet werden kann. Allerdings kommt es durch die längere Lebenszeit vor, dass es zu Wechselwirkungen mit der Umgebung kommt und das Orthopositronium sich in ein Parapositronium umwandelt.
+
+\subsection{Wechselwirkung mit Photonen und Materie}
+Für die PET Messung müssen die zwei 511 keV Photonen in den Detektoren nachgewiesen werden. Damit das passieren kann, muss die Gamma-Strahlung in den Detektoren, in diesem Fall ein BGO Szintillationskristall, erfasst werden. Dabei gibt es drei verschiedene relevante Arten der Wechselwirkung.
+
+\begin{itemize}  
+	\item Photoeffekt: Beim Photoeffekt interagiert ein Photon mit einem Hüllenelektron, sodass die gesamte Energie des Photons auf  das absorbierende Material übertragen wird. Die Wahrscheinlichkeit, dass dies auftritt, geht mit $Z^{5}$/$E_{\gamma}^{3}$. Das bedeutet, dass die Wahrscheinlichkeit mit steigender Energie abnimmt, allerdings mit höhere Ladungszahl stark steigt.
+	\item Compton Streuung: Bei der Comptonstreuung streut ein Photon an einem quasi freien Elektron. In Wirklichkeit sind die Elektronen zwar gebunden, was aber besonders bei äußeren Elektronen vernachlässigt werden kann. Die übertragende Energie beträgt:
+	\begin{equation}
+	E_e = E_\gamma \left( 1-\frac{1}{1 + \frac{E_\gamma}{m_ec^2}\left( 1-\cos\left(\theta\right)\right)}\right)
+	\label{eq:compton}
+	\end{equation}
+	Die übertragende Energie hängt also nur vom Winkel zwischen Photon und Elektron ab. Wird der Winkel größer so nimmt auch die übertragende Energie zu, bis zu einem Maximum bei $\theta =$ 180°. 
+	\item Paarbildung: Bei der Paarbildung zerfällt ein Photon in ein Elektron und ein Proton. Das kann allerdings wegen der Ruhemasse der beiden Teilchen nur ab der Grenzenergie von $E_{\gamma} = 1022$ keV geschehen und ist in diesem Fall nur für den Zerfall von Neon in den Grundzustand relevant.
+\end{itemize}
+In \cref{Wechselwirkung} ist Beispielhaft zu sehen, wie stark die Auswirkung der drei verschiedenen Wechselwirkungen bei verschiedenen Materialien und Energien jeweils ist.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Wechselwirkung.png}
+	\caption{}
+	\label{Wechselwirkung}
+\end{figure}
+
+\subsection{Szintillator}
+Allgemein wird beim Szintillator das Material durch $\gamma$-Strahlung oder geladene Teilchen angeregt und diese deponierte Energie dann wieder als Licht emittiert. Dabei ist die Anzahl der erzeugten Photonen proportional zu der Energiemenge, die im Szintillator deponiert wurde.
+Bei diesem Versuch wird ein anorganische Szintillator aus Bismutgermanat (BGO) eingesetzt. Dieser funktioniert so, dass über eine Dotierung Aktivatorzentren geschaffen werden. Über diese Aktivatorzentren läuft dann, nachdem die Elektronen über Strahlung angeregt wurden, der Abregungsprozess, sodass Photonen entstehen, die nicht mehr zur Anregung eines anderen Elektrons ausreicht. Damit ist das Material für die erzeugten Photonen transparent. Diese Photonen, die im Normalfall im UV- oder sichtbaren Bereich liegen, werden dann an einen Photomultiplier weitergegeben, von dem die Funktionsweise in \cref{Photo} zu sehen ist. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Photo.png}
+	\caption{Funktionsweise eines Photomultipliers}
+	\label{Photo}
+\end{figure}
+
+Der elektrische Puls des Photomultipliers wird dann durch die nachgeschaltete Elektronik verstärkt und mit einem Flash Analog Digital Converter (FADC) abgetastet und digitalisiert.
+
+\subsection{Strahlungsquelle}
+Als Strahlungsquelle wird das Natrium Isotop $^{22}$Na eingesetzt. Diese Quelle beseitzt eine Halbwertszeit von 2,6 Jahren um zu $^{22}$Ne zu zerfallen. Dabei laufen 90,3\% aller Zerfälle über einen $\beta^{+}$-Zerfall un den angeregten Zustand von $^{22}$Ne, der daraufhin durch Emission eines Photons in der Grundzustand übergeht. Mit 9,64\% über einen Electron Capture Prozess. Allerdings wird dabei kein Positron freigesetzt, weshalb dieser Prozess auch nicht relevant für den versuch ist. Zuletzt kann es mit einer Wahrscheinlichkeit von 0,06\% auch zu einem direkten Übergang in den Grundzustand kommen. Für uns relevant ist also nur der indirekte $\beta^{+}$-Zerfall, bei dem zwei 511 keV Photonen durch das Positronium entstehen und ein 1275 keV Photon durch den Übergang in den Grundzustand.
+
+\subsection{Bildrekonstruktion}
+Für die Bildrekonstruktion werden nur Ereignisse untersucht, bei denen zwei Detektoren gleichzeitig ein 511 keV Photon nachweisen. Dann kann man davon ausgehen, dass es sich dabei um einen einzelnen Zerfallsprozess gehandelt hat. Es werden also nur die Ergebnisse herausgefiltert, bei denen genau dies der Fall ist. Dieses gefilterte Energiespektrum wird dann in einer 32 x 32 Matrix abgespeichert, wobei jeder Eintrag für ein Detektorpaar steht. Aus dieser Matrix kann ein Sinogramm berechnet werden, dass für die gemessenen Koinzidenzen eine Projektion mit der Formel:
+\begin{equation}
+	r = x \cos{\phi} + y \sin{\phi}
+\end{equation}
+erzeugt. Zu sehen ist das Beispielhaft in \cref{Sino} für den Eintrag zwischen Detektor 12 und 31.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Sino.png}
+	\caption{Beispielbild eines Sinogramms für den Eintrag zwischen Detektor 12 und 31.}
+	\label{Sino}
+\end{figure}
+
+Zur Rekonstruktion gibt es zwei grundsätzlich verschiedene Methoden zur Bildrekonstruktion. Die Erste ist die Backprojection, bei der eine Linie wie im Bild des Sinogramms gezogen wird. Jede dieser Linien hat eine bestimmte Anzahl an Koinzidenzen N. Jedem Pixel wird also gewichteter Wert $N \cdot w$ zugeordnet, wobei w beschreibt, wie lange die gezeichnete Linie durch den Pixel geht. Der Wert ist also größer, je mittiger die Linie durch den Pixel geht. Mathematisch gesehen lässt sich das Bild dann über:
+\begin{equation}
+	a'(x,y) = \frac{1}{N} \sum_{n = 1}^{N}s(r,\phi_{n})
+\end{equation}
+darstellen, wobei a'(x,y) das backprojected Bild ist. Das Problem ist allerdings, dass das Bild nur eine Näherung ist und auch Werte außerhalb der möglichen Grenze liefert weshalb besonders komplizierte Objekte nicht mehr zu erkennen sind. Allerdings kann das wirkliche Bild über eine Faltung bestimmt werden:
+\begin{equation}
+	a'(x,y) = a(x,y)  * \frac{1}{r}.
+\end{equation}
+Das Problem dabei ist allerdings, dass das direkte Ausrechnung sehr rechenintensiv und fehleranfällig ist, weshalb die filtered backprojection angewendet wird mit:
+\begin{equation}
+	a(x,y) = \frac{1}{N} \sum_{n = 1}^{N} s^{*}(r,\phi_{n}),
+\end{equation}
+wobei $s^{*}$ mit einem Fourierfilter $H(\nu) = |\nu|$ modifiziertes Sinogramm Daten sind.
+
+Damit lässt sich die Faltung umgehen. Allerdings gibt es neben dem schon angesprochenen Filter, noch andere die versuchen statistische Fehler zu reduzieren. Diese sind in \cref{Filter} zu sehen.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Filter.png}
+	\caption{Verschiedene Filter, die zur Modulation des Sinogramms benutzt werden können.}
+	\label{Filter}
+\end{figure}
+
+Der andere Prozess ist ein iterativer Algorithmus, wobei zuerst ein Ausgangsbild angenommen wird, dass dann mit dem projizierten Bild verglichen wird. Dieses Bild wird daraufhin anhand der Unterschiede verändert. Dieser Vorgang wird solange wiederholt, bis ein genaues Bild errechnet wurde. Damit kann mit höherem Rechenaufwand auch ein genaueres Bild rekonstruiert werden.
+
+\section{Methoden}
+Für den Versuch musst zuerst die Hochspannung langsam hochgefahren werden. Danach mussten verschiedene Parameter des FADCs bestimmt werden. 
+Daraufhin wird das grafische Interface der Datenaufnahme gestartet und nach der Einstellung der Parametern des FADCs die Integration der Signale durchgeführt. Dann werden die Einstellungen und insbesondere der Threshhold solange verändert bis das Spektrum klar erkennbar ist. In diesen Spektren sind zwei Peaks zu sehen, die nach Literaturwert bei 511 keV und 1275 keV liegen sollten. Über diese Peaks kann der Szintillator kalibriert werden, wie in \cref{Kali} zu sehen ist. Der niedrigste Peak ist dabei nicht relevant, da der von der Comptonkante stammt.
+Zuletzt wird ein Energiefenster von 450-600 keV festgelegt, damit nur die relevanten 511 keV Signale aufgenommen werden. Für die Messung wird der Behälter mit der Probe auf 0° auf der darunterliegenden Skala eingestellt. Zur Simulation von 32 Detektoren werden 20 verschiedene Winkel eingestellt, sodass eine vollständige Koinzidenzmatrix erstellt werden kann. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Energiekalibration.png}
+	\caption{Energie Spektren der acht verschiedenen Detektoren mit Peakfinder}
+	\label{Kali}
+\end{figure}
+
+Die Analyse selbst erfolgt mit verschiedenen Rekonstruktionsalgorithmen, damit ein Abbild der Aktivitätsverteilung und der X-Projektion erhalten werden kann.
+
 \section{Auswertung}
 Die Auswertung des MiniPET erfolgt in drei Schritten.
 Zuerst werden Messungen durchgeführt, mit denen das Bild einer Na22-Quelle aufgenommen wird. Diese Quelle wird dann mit verschiedenen Rekonstruktionsalgorithmen ausgewertet. Der Rekonstruktionsalgorithmus, mit dem die beste Auflösung erziehlt wurde, wurde dann für die Positionsbestimmung der Na22-Quelle im zweiten Versuchsteil benutzt.
