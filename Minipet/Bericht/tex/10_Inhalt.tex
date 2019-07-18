@@ -1,5 +1,7 @@
-\section{Einleitung}
+\section{Abstract}
 In diesem Versuch geht es um die Positronen Emissions Tomographie (PET). Es ist ein bildgebenes Verfahren, das in der Medizin zur Tumorerkennung eingesetzt wird. Dabei wird dem Patienten ein radioaktives Material verabreicht, welches mit Detektoren, die um den Patienten in einem Kreis verteilt sind, näher untersucht werden kann. Da sich das radioaktive Material im Tumor anreichert, da es dort zu erhöhtem Stoffwechsel kommt, kann damit auch die genaue Postion des Tumors bestimmt werden.
+
+Im letzten Teil wurde die Auflösung des Aufbaus bestimmt. Zwei Quellen können demnach nur unterschieden werden, wenn sie mindestens $\SI{63,3\pm34,0}{mm}$ voneinander entfernt stehen. Sowohl der Wert als auch die Unsicherheit sind sehr hoch, was vor allem am unzureichenden Versuchsaufbau und Rekonstruktionsalgorithmus liegt.
 
 \section{Theorie}
 \subsection{$\beta^{+}$-Zerfall}
@@ -176,11 +178,23 @@ Hier werden zwei Fehlerquellen angenommen. Einmal wird der Fehler aus dem filter
 \end{align}
 da der Fehler von der Position xp abhängig ist, wird der mittlere Radius (xp = 75) für die Fehlerabschätzung verwendet
 
+\subsection{Auflösung}
+Zuletzt wurde noch die Auflösung des Versuchaufbaus bestimmt. Hierfür wurden zwei $^12$Na-Quellen verwendet. Diese wurden mit verschiedenen Abständen zueinander im Detektor positioniert. Anschließend wurde mit dem Ramp-Rekonstruktionsalgorithmus der wahrscheinliche Aufenthaltsort beider Quellen bestimmt. Dieser wurde anschließend eindimensional mit einem Gauss-Fit genähert. Dazu wurde im rekonstruierten Bild nur die Informationen entlang der x-Achse verwendet. Diese Fits sind in \cref{abstand} dargestellt.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{abstand_alle.png}
+	\caption{Jeweils zwei Fits für alle verschiedenen Abstände der Quellen}
+	\label{abstand}
+\end{figure}
 
+Nun wurde für drei verschiedene Abstände (60, 80 und \SI{100}{mm}) der gemessene Abstand zwischen den Punkten, an denen die Gaussverteilung jeweils auf die Hälfte abgefallen ist, bestimmt. Die FWHM wurden mit $FWHM = 2\sqrt{2\ln(2)}$ berechnet. Diese Werte wurden anschließend in \cref{abstand_fit} eingetragen.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{abstand_fit.png}
+	\caption{Der Abstand zwischen den zueinanderzeigenden FWHM der Gaussfits, aufgetragen gegen den tatsächlichen Abstand zwischen den beiden Quellen.}
+	\label{abstand_fit}
+\end{figure}
 
-
-
-
-
+Unterschieden werden können Quellen nach dieser Definition, solange sich die FWHM der beiden Peaks nicht überschneiden. Die Nullstelle des linearen Fits zeigt nun an, bis zu welchem Abstand die beiden Quellen unterschieden werden können. Der gesuchte Wert beträgt $\SI{63,3\pm34,0}{mm}$. Zwei Quellen können also, wenn sie näher aneinander positioniert werden, nicht unterschieden werden. Sowohl der berechnete Wert als auch die dazugehörige Unsicherheit liegen im Zentimeterbereich. Damit ist die hier verwendete Kombination von Aufbau und Rekombinationsalgorithmus nicht für den eigentlichen Zweck von PET, der genauen Lokalisierung von Tumoren, geeignet. Das liegt zum Beispiel daran, dass hier nur acht Detektoren verwendet werden, die im Kreis um die Quelle verschoben werden. Außerdem sind alle hier verwendeten Rekonstruktionsalgorithmen immer noch deutlich schlechter als die iterative Methode. Die Ungenauigkeit der Daten zeigt sich auch am Wert für den messbaren Abstand bei 6cm Abstand zwischen den Quellen. Laut Bild (\cref{abstand}) und Nullstelle der Fitgerade sollten die beiden Quellen in diesem Fall nicht mehr unterscheidbar sein, laut Rechnung (in \cref{abstand_fit} eingetragener Wert) sind sie allerdings noch unterscheidbar. Das liegt vor allem an den vom Programm erstellten Gauss-Fits, die die Messwerte unzureichend darstellen.

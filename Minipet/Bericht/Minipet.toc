@@ -1,16 +1,15 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {ngerman}
-\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
+\contentsline {section}{\numberline {1}Abstract}{1}{section.1}
 \contentsline {section}{\numberline {2}Theorie}{1}{section.2}
 \contentsline {subsection}{\numberline {2.1}$\beta ^{+}$-Zerfall}{1}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Wechselwirkung mit Photonen und Materie}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Szintillator}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Szintillator}{3}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Strahlungsquelle}{4}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Bildrekonstruktion}{4}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.5}Bildrekonstruktion}{5}{subsection.2.5}
 \contentsline {section}{\numberline {3}Methoden}{7}{section.3}
 \contentsline {section}{\numberline {4}Auswertung}{8}{section.4}
-\contentsline {subsection}{\numberline {4.1}Kalibration}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Rekonstruktionsalgoritmen}{9}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Positionsbestimmung}{9}{subsection.4.3}
-\contentsline {section}{\numberline {A}Anhang}{14}{appendix.A}
+\contentsline {subsection}{\numberline {4.1}Rekonstruktionsalgoritmen}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Positionsbestimmung}{12}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Aufl\IeC {\"o}sung}{13}{subsection.4.3}
