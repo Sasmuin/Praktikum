@@ -107,41 +107,41 @@ Die Analyse selbst erfolgt mit verschiedenen Rekonstruktionsalgorithmen, damit e
 
 \section{Auswertung}
 \subsection{Rekonstruktionsalgoritmen}
-Zuerst wird ein 22Na-Strahler in den Koordinatenurspung des MiniPET gestellt. Dann wird durch verschiedene Rekonstruktionalgorithmen ein 2D Bild dargestellt. Durch den Maximalwert der Intensitätsverteilung wird eine Gerade durchgezogen, welche die Intensität auf die Channelnummer aufträgt. Über den zu sehenden 511 keV-Peak wird ein Gaußfit angepasst, mittels dessen die Halbwertsbreite bestimmt wird.
+Zuerst wird ein 22Na-Strahler in den Koordinatenurspung des MiniPET gestellt. Dann wird durch verschiedene Rekonstruktionalgorithmen ein 2D Bild dargestellt. Durch den Maximalwert der Intensitätsverteilung wird eine Gerade gelegt, welche die Intensität auf die Channelnummer aufträgt. Über den zu sehenden 511 keV-Peak wird ein Gaußfit angepasst, mittels dessen die Halbwertsbreite bestimmt werden.
 Es werden vier verschiedene Rekonstruktionsalgorithmen verwendet. \\
-Pixel Driven Bakprojektion \\
-filtered Backprojection Hann \\
-filtered Backprojection Shepp-Logan \\ 
-filtered Backprojection Ramp \\
+1.Pixel Driven Bakprojektion \\
+2.filtered Backprojection Hann \\
+3.filtered Backprojection Shepp-Logan \\ 
+4.filtered Backprojection Ramp \\
 Für jeden Filter wird die Aktivitätsverteilung über alle verschiedenen Winkeleinstellungen gemessen. Wie oben beschrieben wurden danach die Gaußfits erstellt.
-Diese sind in \cref{ooo},\cref{ooh},\cref{oos} und \cref{oor} zu sehen. Die jeweiligen Werte und Unsicherheiten ergeben sich aus den Fits. Die Halbwertsbreite muss über ($FWHM = 2,35\sigma$) zu berechnen. Diese sind in \cref{oot} berechnet worden.
+Diese sind in \cref{ooo},\cref{ooh},\cref{oos} und \cref{oor} zu sehen. Die jeweiligen Werte und Unsicherheiten ergeben sich aus den Fits. Die Halbwertsbreiten müssen über ($FWHM = 2,35\sigma$) berechnet werden. Diese sind in \cref{oot} berechnet worden.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Ohne-Filter.png}
-	\caption{Hier wurde der Pixel Driven Backprojektion Rekonstruktionsalgorithmus benutzt. Das maximum liegt bei $-0,08 \pm 0,2$ und die Standartabweichung beträgt $19,8 \pm 0,3$.}
+	\caption{Hier wurde der Pixel Driven Backprojektion Rekonstruktionsalgorithmus benutzt. Das Maximum liegt bei $-0,08 \pm 0,2$ und die Standartabweichung beträgt $19,8 \pm 0,3$.}
 	\label{ooo}
 \end{figure}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Hann-Filter.png}
-	\caption{Hier wurde der filtered Backprojection Hann Rekonstruktionsalgorithmus benutzt. Das maximum liegt bei $-0,12 \pm 0,8$ und die Standartabweichung beträgt $23,7 \pm 1$.}
+	\caption{Hier wurde der filtered Backprojection Hann Rekonstruktionsalgorithmus benutzt. Das Maximum liegt bei $-0,12 \pm 0,8$ und die Standartabweichung beträgt $23,7 \pm 1$.}
 	\label{ooh}
 \end{figure}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Shepp-Logan-Filter.png}
-	\caption{Hier wurde der filtered Backprojection Shepp-Logan  Rekonstruktionsalgorithmus benutzt. Das maximum liegt bei $-0,05 \pm 0,3$ und die Standartabweichung beträgt $14,6 \pm 0,3$.}
+	\caption{Hier wurde der filtered Backprojection Shepp-Logan  Rekonstruktionsalgorithmus benutzt. Das Maximum liegt bei $-0,05 \pm 0,3$ und die Standartabweichung beträgt $14,6 \pm 0,3$.}
 	\label{oos}
 \end{figure}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Ramp-Filter.png}
-	\caption{Hier wurde der filtered Backprojection Ramp Rekonstruktionsalgorithmus benutzt. Das maximum liegt bei $-0,02 \pm 0,3$ und die Standartabweichung beträgt $13,7 \pm 0,3$.}
+	\caption{Hier wurde der filtered Backprojection Ramp Rekonstruktionsalgorithmus benutzt. Das Maximum liegt bei $-0,02 \pm 0,3$ und die Standartabweichung beträgt $13,7 \pm 0,3$.}
 	\label{oor}
 \end{figure}
-Werden die Halbwertsbreiten der verschiedenen Rekonstruktionsalgorithmen miteinander verglichen fällt auf, dass die Halbwertsbreiten von filtered backprojection Shepp-Logan und filtered backprojektion Ramp deutlich genauer sind, als die der anderen beiden.
-Dabei ist der filtered backprojektion Ramp ein wenig genauer als filtered backprojection Shepp-Logan. Der filtered backprojection Hann zeigt hingegen  den breitesten Peak, mt höchster Halbwertszeit.
-Ein weiterer interessanter Vergleichspunkt ist die Anzahl der Detektionen. Der pixel driven backprojection besitzt, wie in \cref{ooo} zu sehen ist, mit großen Abstand die meisten Einträge. Der Peak ist jedoch nicht am schärfsten. Es ist zu beobachten, dass dieser Rekonstruktionsalgorithmus ein Untergrund mit detektiert hat, da sich der Graf an den Rändern mehr verläuft. Ebenfalls kann hier ein Untrgrund erkannt werden. Dieses Verhalten ist bei den anderen Algorithmen nicht vorhanden.
+Werden die Halbwertsbreiten der verschiedenen Rekonstruktionsalgorithmen miteinander verglichen, fällt auf, dass die Halbwertsbreiten von filtered backprojection Shepp-Logan und filtered backprojektion Ramp deutlich genauer sind, als die der anderen beiden.
+Dabei ist der filtered backprojektion Ramp ein wenig genauer als filtered backprojection Shepp-Logan. Der filtered backprojection Hann zeigt hingegen  den breitesten Peak, mt höchster Halbwertsbreite.
+Ein weiterer interessanter Vergleichspunkt ist die Anzahl der Detektionen. Der pixel driven backprojection besitzt, wie in \cref{ooo} zu sehen ist, mit großen Abstand die meisten Einträge. Der Peak ist jedoch nicht am schärfsten. Es ist zu beobachten, dass dieser Rekonstruktionsalgorithmus einen Untergrund mit detektiert hat. Dies ist zu sehen, da sich der Graf an den Rändern verläuft. Ebenfalls kann hier ein Untergrund erkannt werden. Dieses Verhalten ist bei den anderen Algorithmen nicht vorhanden.
 \begin{tabular}{|c|c|c|c|}
 	\hline 
 	Algorithmus & Sigma & FWHM (keV) & Unsicherheiten FWHM (keV) \\ 
@@ -160,7 +160,7 @@ Anhand der Halbwertsbreiten ist zu erkennen, dass der filtered backprojektion Ra
 Das iterative Rekonstruktionsverfahren wurde in diesem Bericht weggelassen.
 
 \subsection{Positionsbestimmung}
-Bei den rekonstruierten Bildern ist die Intensität in einem Graphen von 300x300 Pixeln gegeben. Somit muss die pixelabhängigkeit in den Gaphen erst in Positionen im Raum umgerechnet werden. Dazu werden weitere Messungen mit dem filtered backprojektion Ramp Algorithmus durchgeführt an  verschiedenen Stellen im Raum. Mit diesen Messungen kann eine Kalibration im Raum vorgenommen werden. In \cref{oop} ist die Position der Gaußmaxima gegen die tatsächliche Position aufgetragen.
+Bei den rekonstruierten Bildern ist die Intensität in einem Graphen von 300x300 Pixeln gegeben. Somit muss die Pixelabhängigkeit in den Graphen erst in Positionen im Raum umgerechnet werden. Dazu werden weitere Messungen mit dem filtered backprojektion Ramp Algorithmus , an  verschiedenen Stellen im Raum, durchgeführt. Mit diesen Messungen kann eine Kalibration im Raum vorgenommen werden. In \cref{oop} ist die Position der Gaußmaxima gegen die tatsächliche Position aufgetragen.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Position.png}
@@ -176,7 +176,7 @@ Hier werden zwei Fehlerquellen angenommen. Einmal wird der Fehler aus dem filter
 \begin{align}
 	u(x) &= \sqrt{(xpu(m))^2 + (m\sigma)^2} &= 2,6cm
 \end{align}
-da der Fehler von der Position xp abhängig ist, wird der mittlere Radius (xp = 75) für die Fehlerabschätzung verwendet
+da der Fehler von der Position xp abhängig ist, wird der mittlere Radius (xp = 75) für die Fehlerabschätzung verwendet.
 
 \subsection{Auflösung}
 Zuletzt wurde noch die Auflösung des Versuchaufbaus bestimmt. Hierfür wurden zwei $^12$Na-Quellen verwendet. Diese wurden mit verschiedenen Abständen zueinander im Detektor positioniert. Anschließend wurde mit dem Ramp-Rekonstruktionsalgorithmus der wahrscheinliche Aufenthaltsort beider Quellen bestimmt. Dieser wurde anschließend eindimensional mit einem Gauss-Fit genähert. Dazu wurde im rekonstruierten Bild nur die Informationen entlang der x-Achse verwendet. Diese Fits sind in \cref{abstand} dargestellt.
