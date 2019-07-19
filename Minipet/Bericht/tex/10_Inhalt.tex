@@ -49,7 +49,7 @@ Bei diesem Versuch wird ein anorganische Szintillator aus Bismutgermanat (BGO) e
 Der elektrische Puls des Photomultipliers wird dann durch die nachgeschaltete Elektronik verstärkt und mit einem Flash Analog Digital Converter (FADC) abgetastet und digitalisiert.
 
 \subsection{Strahlungsquelle}
-Als Strahlungsquelle wird das Natrium Isotop $^{22}$Na eingesetzt. Diese Quelle beseitzt eine Halbwertszeit von 2,6 Jahren um zu $^{22}$Ne zu zerfallen. Dabei laufen 90,3\% aller Zerfälle über einen $\beta^{+}$-Zerfall un den angeregten Zustand von $^{22}$Ne, der daraufhin durch Emission eines Photons in der Grundzustand übergeht. Mit 9,64\% über einen Electron Capture Prozess. Allerdings wird dabei kein Positron freigesetzt, weshalb dieser Prozess auch nicht relevant für den versuch ist. Zuletzt kann es mit einer Wahrscheinlichkeit von 0,06\% auch zu einem direkten Übergang in den Grundzustand kommen. Für uns relevant ist also nur der indirekte $\beta^{+}$-Zerfall, bei dem zwei 511 keV Photonen durch das Positronium entstehen und ein 1275 keV Photon durch den Übergang in den Grundzustand.
+Als Strahlungsquelle wird das Natrium Isotop $^{22}$Na eingesetzt. Diese Quelle beseitzt eine Halbwertszeit von 2,6 Jahren um zu $^{22}$Ne zu zerfallen. Dabei laufen 90,3\% aller Zerfälle über einen $\beta^{+}$-Zerfall in den angeregten Zustand von $^{22}$Ne, der daraufhin durch Emission eines Photons in der Grundzustand übergeht. Mit 9,64\% läuft der Zerfall über einen Electron Capture Prozess. Allerdings wird dabei kein Positron freigesetzt, weshalb dieser Prozess auch nicht relevant für den versuch ist. Zuletzt kann es mit einer Wahrscheinlichkeit von 0,06\% auch zu einem direkten Übergang in den Grundzustand kommen. Für uns relevant ist also nur der indirekte $\beta^{+}$-Zerfall, bei dem zwei 511 keV Photonen durch das Positronium entstehen und ein 1275 keV Photon durch den Übergang in den Grundzustand.
 
 \subsection{Bildrekonstruktion}
 Für die Bildrekonstruktion werden nur Ereignisse untersucht, bei denen zwei Detektoren gleichzeitig ein 511 keV Photon nachweisen. Dann kann man davon ausgehen, dass es sich dabei um einen einzelnen Zerfallsprozess gehandelt hat. Es werden also nur die Ergebnisse herausgefiltert, bei denen genau dies der Fall ist. Dieses gefilterte Energiespektrum wird dann in einer 32 x 32 Matrix abgespeichert, wobei jeder Eintrag für ein Detektorpaar steht. Aus dieser Matrix kann ein Sinogramm berechnet werden, dass für die gemessenen Koinzidenzen eine Projektion mit der Formel:
@@ -65,7 +65,7 @@ erzeugt. Zu sehen ist das Beispielhaft in \cref{Sino} für den Eintrag zwischen 
 	\label{Sino}
 \end{figure}
 
-Zur Rekonstruktion gibt es zwei grundsätzlich verschiedene Methoden zur Bildrekonstruktion. Die Erste ist die Backprojection, bei der eine Linie wie im Bild des Sinogramms gezogen wird. Jede dieser Linien hat eine bestimmte Anzahl an Koinzidenzen N. Jedem Pixel wird also gewichteter Wert $N \cdot w$ zugeordnet, wobei w beschreibt, wie lange die gezeichnete Linie durch den Pixel geht. Der Wert ist also größer, je mittiger die Linie durch den Pixel geht. Mathematisch gesehen lässt sich das Bild dann über:
+Zur Rekonstruktion gibt es zwei grundsätzlich verschiedene Methoden zur Bildrekonstruktion. Die Erste ist die Backprojection, bei der eine Linie wie im Bild des Sinogramms gezogen wird. Jede dieser Linien hat eine bestimmte Anzahl an Koinzidenzen N. Jedem Pixel wird also gewichteter Wert $N \cdot w$ zugeordnet, wobei $w$ beschreibt, wie lange die gezeichnete Linie durch den Pixel geht. Der Wert ist also größer, je mittiger die Linie durch den Pixel geht. Mathematisch gesehen lässt sich das Bild dann über:
 \begin{equation}
 	a'(x,y) = \frac{1}{N} \sum_{n = 1}^{N}s(r,\phi_{n})
 \end{equation}
@@ -79,7 +79,7 @@ Das Problem dabei ist allerdings, dass das direkte Ausrechnung sehr rechenintens
 \end{equation}
 wobei $s^{*}$ mit einem Fourierfilter $H(\nu) = |\nu|$ modifiziertes Sinogramm Daten sind.
 
-Damit lässt sich die Faltung umgehen. Allerdings gibt es neben dem schon angesprochenen Filter, noch andere die versuchen statistische Fehler zu reduzieren. Diese sind in \cref{Filter} zu sehen.
+Damit lässt sich die Faltung umgehen. Allerdings gibt es neben dem schon angesprochenen Filter noch andere, die versuchen statistische Fehler zu reduzieren. Diese sind in \cref{Filter} zu sehen.
 
 
 \begin{figure}[h!]

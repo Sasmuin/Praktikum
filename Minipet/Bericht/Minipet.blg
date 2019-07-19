@@ -1,9 +1,15 @@
-[0] Config.pm:354> INFO - This is Biber 2.7
-[0] Config.pm:357> INFO - Logfile is 'Minipet.blg'
-[123] biber-MSWIN32:303> INFO - === 
-[262] Biber.pm:359> INFO - Reading 'Minipet.bcf'
-[395] Biber.pm:835> INFO - Found 0 citekeys in bib section 0
-[408] Utils.pm:164> WARN - The file 'Minipet.bcf' does not contain any citations!
-[418] bbl.pm:608> INFO - Writing 'Minipet.bbl' with encoding 'UTF-8'
-[418] bbl.pm:712> INFO - Output to Minipet.bbl
-[419] Biber.pm:109> INFO - WARNINGS: 1
+[1] Config.pm:302> INFO - This is Biber 2.9
+[2] Config.pm:305> INFO - Logfile is 'Minipet.blg'
+[208] biber:313> INFO - === Fr Jul 19, 2019, 15:05:14
+[399] Biber.pm:371> INFO - Reading 'Minipet.bcf'
+[956] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[1102] Biber.pm:3981> INFO - Processing section 0
+[1187] Biber.pm:4154> INFO - Looking for bibtex format file 'res/literatur.bib' for section 0
+[1192] bibtex.pm:1468> INFO - LaTeX decoding ...
+[1206] bibtex.pm:1294> INFO - Found BibTeX data source 'res/literatur.bib'
+[1310] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1311] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1311] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[1311] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
+[1324] bbl.pm:617> INFO - Writing 'Minipet.bbl' with encoding 'UTF-8'
+[1326] bbl.pm:720> INFO - Output to Minipet.bbl

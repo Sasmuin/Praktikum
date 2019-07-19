@@ -1,6 +1,5 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {ngerman}
+\babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Abstract}{1}{section.1}
 \contentsline {section}{\numberline {2}Theorie}{1}{section.2}
 \contentsline {subsection}{\numberline {2.1}$\beta ^{+}$-Zerfall}{1}{subsection.2.1}
@@ -13,3 +12,4 @@
 \contentsline {subsection}{\numberline {4.1}Rekonstruktionsalgoritmen}{8}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Positionsbestimmung}{12}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Aufl\IeC {\"o}sung}{13}{subsection.4.3}
+\contentsline {section}{\nonumberline Literatur}{17}{section*.14}
