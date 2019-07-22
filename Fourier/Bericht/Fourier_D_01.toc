@@ -10,7 +10,8 @@
 \contentsline {subsection}{\numberline {6.1}Ergebnis}{6}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Fourier Schriftzug}{6}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Nenner eines Bruches entfernen}{6}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Tiefpassfilterung bei einem Quadratgitter}{8}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Hochpassfilterung einer Schraube}{9}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Dunkelfeldmethode}{10}{subsection.6.6}
-\contentsline {section}{\nonumberline Literatur}{12}{section*.12}
+\contentsline {subsection}{\numberline {6.4}Tiefpassfilterung bei einem Quadratgitter}{7}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Hochpassfilterung einer Schraube}{8}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Dunkelfeldmethode}{8}{subsection.6.6}
+\contentsline {section}{\numberline {A}Anhang}{12}{appendix.A}
+\contentsline {section}{\nonumberline Literatur}{13}{section*.13}
