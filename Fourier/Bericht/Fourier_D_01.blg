@@ -1,15 +1,17 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
-[0] Config.pm:357> INFO - Logfile is 'Fourier_D_01.blg'
-[27] biber-MSWIN64:303> INFO - === 
-[48] Biber.pm:359> INFO - Reading 'Fourier_D_01.bcf'
-[128] Biber.pm:832> INFO - Using all citekeys in bib section 0
-[140] Biber.pm:3670> INFO - Processing section 0
-[159] Biber.pm:3840> INFO - Looking for bibtex format file 'res/literatur.bib' for section 0
-[162] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[165] bibtex.pm:1292> INFO - Found BibTeX data source 'res/literatur.bib'
-[175] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[175] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[175] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[175] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
-[178] bbl.pm:608> INFO - Writing 'Fourier_D_01.bbl' with encoding 'UTF-8'
-[178] bbl.pm:712> INFO - Output to Fourier_D_01.bbl
+[2] Config.pm:357> INFO - Logfile is 'Fourier_D_01.blg'
+[117] biber-MSWIN32:303> INFO - === 
+[519] Biber.pm:359> INFO - Reading 'Fourier_D_01.bcf'
+[681] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[708] Biber.pm:3670> INFO - Processing section 0
+[886] Biber.pm:3840> INFO - Looking for bibtex format file 'res/literatur.bib' for section 0
+[925] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[1000] bibtex.pm:1292> INFO - Found BibTeX data source 'res/literatur.bib'
+[1004] Utils.pm:164> WARN - month field 'November' in entry 'anleitung-ws2014' is not an integer - this will probably not sort properly.
+[1071] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1080] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1080] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[1081] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
+[1138] bbl.pm:608> INFO - Writing 'Fourier_D_01.bbl' with encoding 'UTF-8'
+[1139] bbl.pm:712> INFO - Output to Fourier_D_01.bbl
+[1142] Biber.pm:109> INFO - WARNINGS: 1

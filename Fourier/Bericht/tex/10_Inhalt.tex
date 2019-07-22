@@ -1,18 +1,129 @@
 \section{Abstract}
 Dieser Versuch beschäftigt sich mit der optischen Fouriertransformation eines Laserstrahls an einem Objekt und den Möglichkeiten, die sich daraus ergeben. Zuerst wird das Interferenzbild eines Gitters in unterschiedlichen Entfernungen betrachtet, um so den Übergang von der Fresnel- zur Fraunhoferbeugung darzustellen. Anschließend werden die Gitterkonstanten fünf verschiedener Gitter mithilfe des Abstands der Beugungsmaxima im Fernfeld bestimmt.
 
-\section{Methoden}
-Die optische Fouriertransformation wird in diesem Versuch mit einem Helium-Neon-Laser durchgeführt. Dieser strahlt entlang einer optischen Bank, auf der verschiedene optische Instrumente befestigt sind, auf eine Kamera. Das Bild der Kamera wird direkt auf einen Computer übertragen. Zur Fouriertransformation wird ausgenutzt, dass das Beugungsbild eines Objekts im Unendlichen die Fouriertransformation ist. Mithilfe einer Linse kann die Fouriertransformation in der Brennebene der Linse sichtbar gemacht werden. Dieser Aufbau wird auch als 2-f-Aufbau bezeichnet. Wird hinter der Brennebene der ersten Linse eine zweite Linse aufgestellt, wird die Fouriertransformation rückgängig gemacht und in der Brennebene der zweiten Linse wird das ursprüngliche Bild wieder sichtbar. Dies ist unter dem Namen 4-f-Aufbau bekannt. Wird nun in der Fourierebene ein Teil des Strahls geblockt, werden einzelne Frequenzen des Bildes gefiltert. Diesen Vorgang bezeichnet man als optische Fourierfilterung.
 
-\section{Theorie}
-Um die Vorgänge an einem Gitter im Nah- bzw. Fernfeld zu beschreiben wird die skalare Beugungstheorie herangezogen. Dabei entsteht nach dem Huygenschen Prinzip Elementarwellen, welche kohärent sind. Diese interferieren konstruktiv oder destruktiv miteinander. Die Beobachtungen von Interferenz an einem Spalt können durch die Fresnel- und Frauenhofertheorie beschrieben werden. \cref{Theoriebild} zeigt die grafischen Verläufe.
+
+\section{Theorie\cite{anleitung-ws2014}}
+\subsection{Fouriertransformation}
+Die Fouriertransformation wird in der Signalverarbeitung verwendet, um Signale in den Frequenzraum und zurück zu transformieren. Dabei können sowohl zeitliche Signale in ihre zeitlichen Frequenzen zerlegt werden, als auch räumliche Signale in ihre räumlichen Frequenzen. \cref{eq:tfourier} zeigt die Gleichung für die Umwandlung zeitlicher Signale, \cref{eq:xyfourier} zeigt die Gleichung für die Umwandlung zweidimensionaler räumlicher Signale.
+
+\begin{equation}
+	\mathcal{F}\left[ f\left( t\right) \right] \left( \nu\right) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f\left( t\right) e^{-2\pi i \nu t} \text{d}t = F\left( \nu\right) 
+	\label{eq:tfourier}
+\end{equation}
+
+\begin{equation}
+	\mathcal{F}\left[ f\left( x,y\right) \right] \left( \nu_x, \nu_y\right) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f\left( x, y\right) e^{-2\pi i (\nu_x x + \nu_y y)} \text{d}x \text{d}y = F\left( \nu_x, \nu_y\right) 
+	\label{eq:xyfourier}
+\end{equation}
+
+Dabei sind $F\left( \nu\right)$ bzw. $F\left( \nu_x, \nu_y\right)$ die Funktion im Frequenzraum, $f\left( t\right)$ die Funktion im Zeitraum, $f\left( x,y\right)$ die Funktion im Ortsraum, $t$ die Zeit, $x$ und $y$ die räumlichen Koordinaten, $\nu$ die zeitliche Frequenz und $\nu_x$ und $\nu_y$ die räumlichen Frequenzen. Die jeweiligen Rücktransformationen werden durch \cref{eq:trück}(zeitlich) und \cref{eq:xyrück}(räumlich) beschrieben.
+
+\begin{equation}
+	\mathcal{F}^{-1}\left[ f\left( \nu\right) \right] \left( t\right) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} F\left( \nu\right) e^{-2\pi i \nu t} \text{d}\nu = f\left( t\right) 
+	\label{eq:trück}
+\end{equation}
+
+\begin{equation}
+	\mathcal{F}^{-1}\left[ f\left( \nu_x,\nu_y\right) \right] \left( x, y\right) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} F\left( \nu_x,\nu_y\right) e^{-2\pi i (\nu_x x + \nu_y y)} \text{d}\nu_x \text{d}\nu_y = f\left( x, y\right) 
+	\label{eq:xyrück}
+\end{equation}
+
+Ein Beispiel für die Fouriertransformation ist in \cref{rechteckpuls} dargestellt. Dort ist ein Rechteckpuls und seine Fouriertransformierte, eine sinc-Funktion, in einer Dimension dargestellt. 
+
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale = 1.5]{abstande.png}
-	\caption{Fresnel- und Frauenhofer Näherung. Im Fernfeld kann die Frauenhofer Näherung angewandt werden, wohingegen im Nahfeld die Fresnel Näherung angewandt wird.}
+	\includegraphics[width=0.9\textwidth]{rechteckpuls.png}
+	\caption{Fouriertransformation, angewandt auf einen Rechteckpuls. Das Ergebnis ist eine sinc-Funktion. Entnommen aus \cite[3]{anleitung-ws2014}}
+	\label{rechteckpuls}
+\end{figure}
+
+Bei der optischen Fouriertransformation ist allerdings eine Transformation in zwei räumlichen Dimensionen nötig. Dies ist in \cref{rechteckspalt} dargestellt. Hier wird ein Rechteckspalt fouriertransformiert, heraus kommen eine sinc-Funktion in x- und eine sinc-Funktion in y-Richtung, die sich überlagern.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{rechteckspalt.png}
+	\caption{Ein Rechteckspalt und die Fouriertransformierte, zwei sich überlagernde sinc-Funktionen. Entnommen aus \cite[4]{anleitung-ws2014}}
+	\label{rechteckspalt}
+\end{figure}
+
+Die Fouriertransformation ist außerdem ein nützliches Werkzeug, um die Faltung zweier Funktionen zu beschreiben. Diese wird häufig verwendet, um periodische Strukturen wie Gitter zu beschreiben. Die Faltung ist im Orts- bzw. Zeitraum ein kompliziert zu bestimmendes Integral. Allerdings ist die Faltung zweier Funktionen in einem dieser Räume einfach gleich dem Produkt der Funktionen im Frequenzraum.
+
+\subsection{Skalare Beugungstheorie}
+Um die Eigenschaften des Lichts in diesem Versuch zu beschreiben, wird die skalare Beugungstheorie verwendet. Diese hat ihren Namen von der Näherung, nach der das elektrische Feld nicht als Vektor, sondern als skalare, monochromatische ebene Welle beschrieben wird. Trifft das Licht auf ein Hindernis, wird es gemäß dem Huygenschen Prinzip gebeugt. Dies besagt, dass jeder Punkt einer Wellenfront wieder als Ausgangspunkt einer Kugelwelle dient. Diese Kugelwellen interferieren nun miteinander, sodass auf einem Schirm, der hinter dem Hindernis aufgestellt wird, ein Beugungsbild beobachtet werden kann. Die Beugungsbilder, die bei verschiedenen Abständen auftreten, sind in \cref{Theoriebild} dargestellt. Dabei ist $z_0$ der Abstand des Beugungsbilds vom Hindernis und $b$ die Größe des Beugungsobjekts.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{abstande.png}
+	\caption{Fresnel- und Frauenhofer Näherung. Im Fernfeld kann die Frauenhofer Näherung angewandt werden, wohingegen im Nahfeld die Fresnel Näherung angewandt wird. Entnommen aus \cite[5]{anleitung-ws2014}}
 	\label{Theoriebild}
 \end{figure}
-In der Nahzone wird die Interferenz durch die Fresnel-Näherung beschrieben, wohingegen die Interferenz im Fernfeld über die Frauenhofer Näherung beschrieben wird. Die Fresnel-Näherung kann angenommen werden, wenn der Abstand der Lichtquelle zum Beugungsobjekt groß gegenüber der Ausdehnung des Beugungsobjektes (b) ist. Ist hingegen der Abstand vom Schirm zum Beugungsobjekt groß kann die Frauenhofer Näherung angewandt werden.
+
+In der Nahzone wird die Lichtausbreitung mithilfe der Fresnel-Näherung beschrieben. Diese gilt, wenn der Abstand des Beugungsobjekts zum Schirm klein ist. Ist dieser Abstand hingegen groß, also gilt $z_0 >> b$, wird das Beugungsbild mithilfe der Fraunhofer-Näherung für das Fernfeld beschrieben. Das elektrische Feld in der Fraunhofer-Näherung wird lässt sich mit \cref{eq:fraunhofer} bestimmen.
+
+\begin{equation}
+E\left( x', y', z'\right) = A\left( x', y', z'\right) \mathcal{F}\left( E_0\left( x, y, z_0\right) e^{i\Phi\left( x, y, z_0\right) }\right) \left( \nu_x, \nu_y\right) 
+\label{eq:fraunhofer}
+\end{equation}
+
+Das Interferenzbild im Fernfeld entspricht also der Fouriertransformierten des Beugungsobjekts.
+
+\subsection{Beugung am Gitter}
+Bei der Beugung am Gitter entstehen nach dem Huygenschen Prinzip Kugelwellen, die mit einander interferieren. Die Interferenz ist entweder positiv bei einer Phasendifferenz von $2\pi$ oder negativ bei einer Phasendifferenz von $\pi$. Es entsteht also ein Beugungsbild, das vom Abstand zwischen Gitter und Schirm $d$, der Gitterkonstante $b$, der Spaltzahl $N$ und dem Beugungswinkel $\theta$ abhängig ist. Dies kann mit \cref{eq:beugung} berechnet werden.
+
+\begin{equation}
+I(\theta) = I_0 \text{sinc}^2\left( \frac{N\pi d \sin(\theta)}{\lambda}\right)  \text{sinc}^2\left( \frac{\pi b \sin(\theta)}{\lambda}\right) 
+\label{eq:beugung}
+\end{equation}
+
+Um den Gitterabstand zu bestimmen, benötigt man allerdings nur die Bedingung für positive Interferenz. Sie lautet:
+
+\begin{equation}
+	k \lambda = b \sin(\theta); k\in \mathbb{N}_0
+\end{equation}
+
+\subsection{Optische Fouriertransformation mit Linsen}
+In diesem Versuch soll hauptsächlich im Bereich der Fraunhofer-Näherung gearbeitet werden. Diese gilt aber erst im unendlichen. Daher wird eine Linse im Strahlengang positioniert, die das Bild der Fouriertransformierten in der Brennebene darstellt. Dieser Aufbau wird als 2f-Aufbau bezeichnet, da seine Länge der zweifachen Brennweite der Linse entspricht. Der Aufbau kann um eine weitere Linse erweitert werden, die eine Rücktransformation ausführt, um so wieder das ursprüngliche Bild zu erhalten. Die Linse wird dabei im Abstand $f$ von der Fourierebene positioniert. Im Abtand $f$ auf der anderen Seite der Linse wird dann das Objekt sichtbar. Der dazu nötige Aufbau ist in \cref{4f} dargestellt und wird 4f-Aufbau genannt.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4f.png}
+	\caption{Schematische Darstellung des 4f-Aufbaus, der hier zur Fourierfilterung eingesetzt wird. Entnommen aus \cite[6]{anleitung-ws2014}}
+	\label{4f}
+\end{figure}
+
+\subsection{Frequenzfilterung}
+Mithilfe des 4f-Aufbaus kann nun eine Fourierfilterung durchgeführt werden. Hierfür können verschiedene Filter in der Fourierebene platziert werden. Ein Tiefpass wird dabei mithilfe einer Blende realisiert, die nur Licht in der Mitte der nullten Beugungsordnung durchlässt. Ein Hochpass wird mit einer Nadel erzeugt, die mittig in der Fourierebene platziert wird. Außerdem können auch bestimmte Frequenzen gefiltert werden, um periodisches Rauschen zu entfernen.
+
+\subsection{Dunkelfeldmethode}
+Die Intensität eines Lichtfeldes, das Betragsquadrat des elektrischen Feldes kann auf einem Schirm mit bloßem Auge erkannt werden. Das elektrische Feld selbst ist allerdings nicht direkt sichtbar, da keine Informationen über die Phase des Felds bekannt sind. Um das elektrische Feld trotzdem zu detektieren, wird die Dunkelfeldmethode verwendet. Dazu nehmen wir an, dass das beugende Objekt dem elektrischen Feld eine ortsabhängige Phase aufprägt. Das E-Feld lässt sich nun schreiben als:
+
+\begin{equation}
+	E(x, y) = a e^{i\Phi\left( x, y\right) }.
+\end{equation}
+
+Für kleine Phasenänderungen gilt dann:
+
+\begin{equation}
+	E(x, y) = a\left( 1 + i\Phi\left( x, y\right) \right) .
+\end{equation}
+
+Fouriertransformiert ergibt sich dann:
+
+\begin{equation}
+	\mathcal{F}\left( E\left( x, y\right) \right)  = a\left( \delta\left( \nu_x\right) \delta\left( \nu_y\right) + \mathcal{F}\left( i\Phi\left( x, y\right) \right) \right) .
+\end{equation}
+
+Wird nun der erste Summand gefiltert, ergibt sich nach der Rücktransformation:
+
+\begin{equation}
+	\mathcal{F}^{-1}\left( \mathcal{F}\left( E\left( x, y\right) \right) \right) = E\left( x, y\right) = ia\Phi\left( x, y\right) .
+\end{equation}
+
+Die Intensität ist nun also abhängig von der Phase des elektrischen Feldes, somit ist die Phase auf dem Schirm sichtbar.
+
+\section{Methoden}
+Die optische Fouriertransformation wird in diesem Versuch mit einem Helium-Neon-Laser durchgeführt. Dieser strahlt entlang einer optischen Bank, auf der verschiedene optische Instrumente befestigt sind, auf eine Kamera. Das Bild der Kamera wird direkt auf einen Computer übertragen. Zur Fouriertransformation wird ausgenutzt, dass das Beugungsbild eines Objekts im Unendlichen die Fouriertransformation ist. Mithilfe einer Linse kann die Fouriertransformation in der Brennebene der Linse sichtbar gemacht werden. Dieser Aufbau wird auch als 2-f-Aufbau bezeichnet. Wird hinter der Brennebene der ersten Linse eine zweite Linse aufgestellt, wird die Fouriertransformation rückgängig gemacht und in der Brennebene der zweiten Linse wird das ursprüngliche Bild wieder sichtbar. Dies ist unter dem Namen 4-f-Aufbau bekannt. Wird nun in der Fourierebene ein Teil des Strahls geblockt, werden einzelne Frequenzen des Bildes gefiltert. Diesen Vorgang bezeichnet man als optische Fourierfilterung.
 
 \section{Übergang von Nah- zu Fernfeld}
 In diesem Versuchsteil wird das Beugungsbild eines Gitters in Abhängigkeit des Abstandes zwischen Schirm und Gitter beobachtet. Dabei wird ein kollimierter Laserstrahl mit einer Wellenlänge von $\lambda = 633 nm$ auf einen Schirm gerichtet. Der Laserstrahl wird, um ihn zu kollimieren, auf zwei Linsen gerichtet. Die erste Linse weitet den Stahl auf und die zweite Linse fokussiert den Strahl wieder. Der Abstand der Linsen beträgt gerade die Summe der beiden Brennweiten der Linsen. Zwischen den beiden Linsen wird ein Gitter in den Strahlengang gesetzt, sodass das Gitter komplett beleuchtet wird. Mit diesem Aufbau kann nun das Beugungsbild bei unterschiedlichem Abstand zwischen Schirm und Gitter beobachtet werden. \cref{alle} zeigt den Verlauf der Beugungsbilder bei veränderlichem Abstand. Je größer der Abstand vom Schirm zum Gitter wird, desto kleiner wird der Abstand zwischen Gitter und Laser. Je näher sich das Gitter zum Laser bewegt, desto mehr wird sich das Fernfeld einstellen.
