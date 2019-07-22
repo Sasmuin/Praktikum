@@ -1,5 +1,7 @@
-\section{Einleitung}
+\section{Abstract}
 In diesem Versuch geht es um die Positronen Emissions Tomographie (PET). Es ist ein bildgebenes Verfahren, das in der Medizin zur Tumorerkennung eingesetzt wird. Dabei wird dem Patienten ein radioaktives Material verabreicht, welches mit Detektoren, die um den Patienten in einem Kreis verteilt sind, näher untersucht werden kann. Da sich das radioaktive Material im Tumor anreichert, da es dort zu erhöhtem Stoffwechsel kommt, kann damit auch die genaue Postion des Tumors bestimmt werden.
+
+Im letzten Teil wurde die Auflösung des Aufbaus bestimmt. Zwei Quellen können demnach nur unterschieden werden, wenn sie mindestens $\SI{63,3\pm34,0}{mm}$ voneinander entfernt stehen. Sowohl der Wert als auch die Unsicherheit sind sehr hoch, was vor allem am unzureichenden Versuchsaufbau und Rekonstruktionsalgorithmus liegt.
 
 \section{Theorie}
 \subsection{$\beta^{+}$-Zerfall}
@@ -47,7 +49,7 @@ Bei diesem Versuch wird ein anorganische Szintillator aus Bismutgermanat (BGO) e
 Der elektrische Puls des Photomultipliers wird dann durch die nachgeschaltete Elektronik verstärkt und mit einem Flash Analog Digital Converter (FADC) abgetastet und digitalisiert.
 
 \subsection{Strahlungsquelle}
-Als Strahlungsquelle wird das Natrium Isotop $^{22}$Na eingesetzt. Diese Quelle beseitzt eine Halbwertszeit von 2,6 Jahren um zu $^{22}$Ne zu zerfallen. Dabei laufen 90,3\% aller Zerfälle über einen $\beta^{+}$-Zerfall un den angeregten Zustand von $^{22}$Ne, der daraufhin durch Emission eines Photons in der Grundzustand übergeht. Mit 9,64\% über einen Electron Capture Prozess. Allerdings wird dabei kein Positron freigesetzt, weshalb dieser Prozess auch nicht relevant für den versuch ist. Zuletzt kann es mit einer Wahrscheinlichkeit von 0,06\% auch zu einem direkten Übergang in den Grundzustand kommen. Für uns relevant ist also nur der indirekte $\beta^{+}$-Zerfall, bei dem zwei 511 keV Photonen durch das Positronium entstehen und ein 1275 keV Photon durch den Übergang in den Grundzustand.
+Als Strahlungsquelle wird das Natrium Isotop $^{22}$Na eingesetzt. Diese Quelle beseitzt eine Halbwertszeit von 2,6 Jahren um zu $^{22}$Ne zu zerfallen. Dabei laufen 90,3\% aller Zerfälle über einen $\beta^{+}$-Zerfall in den angeregten Zustand von $^{22}$Ne, der daraufhin durch Emission eines Photons in der Grundzustand übergeht. Mit 9,64\% läuft der Zerfall über einen Electron Capture Prozess. Allerdings wird dabei kein Positron freigesetzt, weshalb dieser Prozess auch nicht relevant für den versuch ist. Zuletzt kann es mit einer Wahrscheinlichkeit von 0,06\% auch zu einem direkten Übergang in den Grundzustand kommen. Für uns relevant ist also nur der indirekte $\beta^{+}$-Zerfall, bei dem zwei 511 keV Photonen durch das Positronium entstehen und ein 1275 keV Photon durch den Übergang in den Grundzustand.
 
 \subsection{Bildrekonstruktion}
 Für die Bildrekonstruktion werden nur Ereignisse untersucht, bei denen zwei Detektoren gleichzeitig ein 511 keV Photon nachweisen. Dann kann man davon ausgehen, dass es sich dabei um einen einzelnen Zerfallsprozess gehandelt hat. Es werden also nur die Ergebnisse herausgefiltert, bei denen genau dies der Fall ist. Dieses gefilterte Energiespektrum wird dann in einer 32 x 32 Matrix abgespeichert, wobei jeder Eintrag für ein Detektorpaar steht. Aus dieser Matrix kann ein Sinogramm berechnet werden, dass für die gemessenen Koinzidenzen eine Projektion mit der Formel:
@@ -63,7 +65,7 @@ erzeugt. Zu sehen ist das Beispielhaft in \cref{Sino} für den Eintrag zwischen 
 	\label{Sino}
 \end{figure}
 
-Zur Rekonstruktion gibt es zwei grundsätzlich verschiedene Methoden zur Bildrekonstruktion. Die Erste ist die Backprojection, bei der eine Linie wie im Bild des Sinogramms gezogen wird. Jede dieser Linien hat eine bestimmte Anzahl an Koinzidenzen N. Jedem Pixel wird also gewichteter Wert $N \cdot w$ zugeordnet, wobei w beschreibt, wie lange die gezeichnete Linie durch den Pixel geht. Der Wert ist also größer, je mittiger die Linie durch den Pixel geht. Mathematisch gesehen lässt sich das Bild dann über:
+Zur Rekonstruktion gibt es zwei grundsätzlich verschiedene Methoden zur Bildrekonstruktion. Die Erste ist die Backprojection, bei der eine Linie wie im Bild des Sinogramms gezogen wird. Jede dieser Linien hat eine bestimmte Anzahl an Koinzidenzen N. Jedem Pixel wird also gewichteter Wert $N \cdot w$ zugeordnet, wobei $w$ beschreibt, wie lange die gezeichnete Linie durch den Pixel geht. Der Wert ist also größer, je mittiger die Linie durch den Pixel geht. Mathematisch gesehen lässt sich das Bild dann über:
 \begin{equation}
 	a'(x,y) = \frac{1}{N} \sum_{n = 1}^{N}s(r,\phi_{n})
 \end{equation}
@@ -77,7 +79,7 @@ Das Problem dabei ist allerdings, dass das direkte Ausrechnung sehr rechenintens
 \end{equation}
 wobei $s^{*}$ mit einem Fourierfilter $H(\nu) = |\nu|$ modifiziertes Sinogramm Daten sind.
 
-Damit lässt sich die Faltung umgehen. Allerdings gibt es neben dem schon angesprochenen Filter, noch andere die versuchen statistische Fehler zu reduzieren. Diese sind in \cref{Filter} zu sehen.
+Damit lässt sich die Faltung umgehen. Allerdings gibt es neben dem schon angesprochenen Filter noch andere, die versuchen statistische Fehler zu reduzieren. Diese sind in \cref{Filter} zu sehen.
 
 
 \begin{figure}[h!]
@@ -105,41 +107,41 @@ Die Analyse selbst erfolgt mit verschiedenen Rekonstruktionsalgorithmen, damit e
 
 \section{Auswertung}
 \subsection{Rekonstruktionsalgoritmen}
-Zuerst wird ein 22Na-Strahler in den Koordinatenurspung des MiniPET gestellt. Dann wird durch verschiedene Rekonstruktionalgorithmen ein 2D Bild dargestellt. Durch den Maximalwert der Intensitätsverteilung wird eine Gerade durchgezogen, welche die Intensität auf die Channelnummer aufträgt. Über den zu sehenden 511 keV-Peak wird ein Gaußfit angepasst, mittels dessen die Halbwertsbreite bestimmt wird.
+Zuerst wird ein 22Na-Strahler in den Koordinatenurspung des MiniPET gestellt. Dann wird durch verschiedene Rekonstruktionalgorithmen ein 2D Bild dargestellt. Durch den Maximalwert der Intensitätsverteilung wird eine Gerade gelegt, welche die Intensität auf die Channelnummer aufträgt. Über den zu sehenden 511 keV-Peak wird ein Gaußfit angepasst, mittels dessen die Halbwertsbreite bestimmt werden.
 Es werden vier verschiedene Rekonstruktionsalgorithmen verwendet. \\
-Pixel Driven Bakprojektion \\
-filtered Backprojection Hann \\
-filtered Backprojection Shepp-Logan \\ 
-filtered Backprojection Ramp \\
+1.Pixel Driven Bakprojektion \\
+2.filtered Backprojection Hann \\
+3.filtered Backprojection Shepp-Logan \\ 
+4.filtered Backprojection Ramp \\
 Für jeden Filter wird die Aktivitätsverteilung über alle verschiedenen Winkeleinstellungen gemessen. Wie oben beschrieben wurden danach die Gaußfits erstellt.
-Diese sind in \cref{ooo},\cref{ooh},\cref{oos} und \cref{oor} zu sehen. Die jeweiligen Werte und Unsicherheiten ergeben sich aus den Fits. Die Halbwertsbreite muss über ($FWHM = 2,35\sigma$) zu berechnen. Diese sind in \cref{oot} berechnet worden.
+Diese sind in \cref{ooo},\cref{ooh},\cref{oos} und \cref{oor} zu sehen. Die jeweiligen Werte und Unsicherheiten ergeben sich aus den Fits. Die Halbwertsbreiten müssen über ($FWHM = 2,35\sigma$) berechnet werden. Diese sind in \cref{oot} berechnet worden.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Ohne-Filter.png}
-	\caption{Hier wurde der Pixel Driven Backprojektion Rekonstruktionsalgorithmus benutzt. Das maximum liegt bei $-0,08 \pm 0,2$ und die Standartabweichung beträgt $19,8 \pm 0,3$.}
+	\caption{Hier wurde der Pixel Driven Backprojektion Rekonstruktionsalgorithmus benutzt. Das Maximum liegt bei $-0,08 \pm 0,2$ und die Standartabweichung beträgt $19,8 \pm 0,3$.}
 	\label{ooo}
 \end{figure}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Hann-Filter.png}
-	\caption{Hier wurde der filtered Backprojection Hann Rekonstruktionsalgorithmus benutzt. Das maximum liegt bei $-0,12 \pm 0,8$ und die Standartabweichung beträgt $23,7 \pm 1$.}
+	\caption{Hier wurde der filtered Backprojection Hann Rekonstruktionsalgorithmus benutzt. Das Maximum liegt bei $-0,12 \pm 0,8$ und die Standartabweichung beträgt $23,7 \pm 1$.}
 	\label{ooh}
 \end{figure}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Shepp-Logan-Filter.png}
-	\caption{Hier wurde der filtered Backprojection Shepp-Logan  Rekonstruktionsalgorithmus benutzt. Das maximum liegt bei $-0,05 \pm 0,3$ und die Standartabweichung beträgt $14,6 \pm 0,3$.}
+	\caption{Hier wurde der filtered Backprojection Shepp-Logan  Rekonstruktionsalgorithmus benutzt. Das Maximum liegt bei $-0,05 \pm 0,3$ und die Standartabweichung beträgt $14,6 \pm 0,3$.}
 	\label{oos}
 \end{figure}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Ramp-Filter.png}
-	\caption{Hier wurde der filtered Backprojection Ramp Rekonstruktionsalgorithmus benutzt. Das maximum liegt bei $-0,02 \pm 0,3$ und die Standartabweichung beträgt $13,7 \pm 0,3$.}
+	\caption{Hier wurde der filtered Backprojection Ramp Rekonstruktionsalgorithmus benutzt. Das Maximum liegt bei $-0,02 \pm 0,3$ und die Standartabweichung beträgt $13,7 \pm 0,3$.}
 	\label{oor}
 \end{figure}
-Werden die Halbwertsbreiten der verschiedenen Rekonstruktionsalgorithmen miteinander verglichen fällt auf, dass die Halbwertsbreiten von filtered backprojection Shepp-Logan und filtered backprojektion Ramp deutlich genauer sind, als die der anderen beiden.
-Dabei ist der filtered backprojektion Ramp ein wenig genauer als filtered backprojection Shepp-Logan. Der filtered backprojection Hann zeigt hingegen  den breitesten Peak, mt höchster Halbwertszeit.
-Ein weiterer interessanter Vergleichspunkt ist die Anzahl der Detektionen. Der pixel driven backprojection besitzt, wie in \cref{ooo} zu sehen ist, mit großen Abstand die meisten Einträge. Der Peak ist jedoch nicht am schärfsten. Es ist zu beobachten, dass dieser Rekonstruktionsalgorithmus ein Untergrund mit detektiert hat, da sich der Graf an den Rändern mehr verläuft. Ebenfalls kann hier ein Untrgrund erkannt werden. Dieses Verhalten ist bei den anderen Algorithmen nicht vorhanden.
+Werden die Halbwertsbreiten der verschiedenen Rekonstruktionsalgorithmen miteinander verglichen, fällt auf, dass die Halbwertsbreiten von filtered backprojection Shepp-Logan und filtered backprojektion Ramp deutlich genauer sind, als die der anderen beiden.
+Dabei ist der filtered backprojektion Ramp ein wenig genauer als filtered backprojection Shepp-Logan. Der filtered backprojection Hann zeigt hingegen  den breitesten Peak, mt höchster Halbwertsbreite.
+Ein weiterer interessanter Vergleichspunkt ist die Anzahl der Detektionen. Der pixel driven backprojection besitzt, wie in \cref{ooo} zu sehen ist, mit großen Abstand die meisten Einträge. Der Peak ist jedoch nicht am schärfsten. Es ist zu beobachten, dass dieser Rekonstruktionsalgorithmus einen Untergrund mit detektiert hat. Dies ist zu sehen, da sich der Graf an den Rändern verläuft. Ebenfalls kann hier ein Untergrund erkannt werden. Dieses Verhalten ist bei den anderen Algorithmen nicht vorhanden.
 \begin{tabular}{|c|c|c|c|}
 	\hline 
 	Algorithmus & Sigma & FWHM (keV) & Unsicherheiten FWHM (keV) \\ 
@@ -158,7 +160,7 @@ Anhand der Halbwertsbreiten ist zu erkennen, dass der filtered backprojektion Ra
 Das iterative Rekonstruktionsverfahren wurde in diesem Bericht weggelassen.
 
 \subsection{Positionsbestimmung}
-Bei den rekonstruierten Bildern ist die Intensität in einem Graphen von 300x300 Pixeln gegeben. Somit muss die pixelabhängigkeit in den Gaphen erst in Positionen im Raum umgerechnet werden. Dazu werden weitere Messungen mit dem filtered backprojektion Ramp Algorithmus durchgeführt an  verschiedenen Stellen im Raum. Mit diesen Messungen kann eine Kalibration im Raum vorgenommen werden. In \cref{oop} ist die Position der Gaußmaxima gegen die tatsächliche Position aufgetragen.
+Bei den rekonstruierten Bildern ist die Intensität in einem Graphen von 300x300 Pixeln gegeben. Somit muss die Pixelabhängigkeit in den Graphen erst in Positionen im Raum umgerechnet werden. Dazu werden weitere Messungen mit dem filtered backprojektion Ramp Algorithmus , an  verschiedenen Stellen im Raum, durchgeführt. Mit diesen Messungen kann eine Kalibration im Raum vorgenommen werden. In \cref{oop} ist die Position der Gaußmaxima gegen die tatsächliche Position aufgetragen.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Position.png}
@@ -174,13 +176,25 @@ Hier werden zwei Fehlerquellen angenommen. Einmal wird der Fehler aus dem filter
 \begin{align}
 	u(x) &= \sqrt{(xpu(m))^2 + (m\sigma)^2} &= 2,6cm
 \end{align}
-da der Fehler von der Position xp abhängig ist, wird der mittlere Radius (xp = 75) für die Fehlerabschätzung verwendet
+da der Fehler von der Position xp abhängig ist, wird der mittlere Radius (xp = 75) für die Fehlerabschätzung verwendet.
 
+\subsection{Auflösung}
+Zuletzt wurde noch die Auflösung des Versuchaufbaus bestimmt. Hierfür wurden zwei $^12$Na-Quellen verwendet. Diese wurden mit verschiedenen Abständen zueinander im Detektor positioniert. Anschließend wurde mit dem Ramp-Rekonstruktionsalgorithmus der wahrscheinliche Aufenthaltsort beider Quellen bestimmt. Dieser wurde anschließend eindimensional mit einem Gauss-Fit genähert. Dazu wurde im rekonstruierten Bild nur die Informationen entlang der x-Achse verwendet. Diese Fits sind in \cref{abstand} dargestellt.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{abstand_alle.png}
+	\caption{Jeweils zwei Fits für alle verschiedenen Abstände der Quellen}
+	\label{abstand}
+\end{figure}
 
+Nun wurde für drei verschiedene Abstände (60, 80 und \SI{100}{mm}) der gemessene Abstand zwischen den Punkten, an denen die Gaussverteilung jeweils auf die Hälfte abgefallen ist, bestimmt. Die FWHM wurden mit $FWHM = 2\sqrt{2\ln(2)}$ berechnet. Diese Werte wurden anschließend in \cref{abstand_fit} eingetragen.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{abstand_fit.png}
+	\caption{Der Abstand zwischen den zueinanderzeigenden FWHM der Gaussfits, aufgetragen gegen den tatsächlichen Abstand zwischen den beiden Quellen.}
+	\label{abstand_fit}
+\end{figure}
 
-
-
-
-
+Unterschieden werden können Quellen nach dieser Definition, solange sich die FWHM der beiden Peaks nicht überschneiden. Die Nullstelle des linearen Fits zeigt nun an, bis zu welchem Abstand die beiden Quellen unterschieden werden können. Der gesuchte Wert beträgt $\SI{63,3\pm34,0}{mm}$. Zwei Quellen können also, wenn sie näher aneinander positioniert werden, nicht unterschieden werden. Sowohl der berechnete Wert als auch die dazugehörige Unsicherheit liegen im Zentimeterbereich. Damit ist die hier verwendete Kombination von Aufbau und Rekombinationsalgorithmus nicht für den eigentlichen Zweck von PET, der genauen Lokalisierung von Tumoren, geeignet. Das liegt zum Beispiel daran, dass hier nur acht Detektoren verwendet werden, die im Kreis um die Quelle verschoben werden. Außerdem sind alle hier verwendeten Rekonstruktionsalgorithmen immer noch deutlich schlechter als die iterative Methode. Die Ungenauigkeit der Daten zeigt sich auch am Wert für den messbaren Abstand bei 6cm Abstand zwischen den Quellen. Laut Bild (\cref{abstand}) und Nullstelle der Fitgerade sollten die beiden Quellen in diesem Fall nicht mehr unterscheidbar sein, laut Rechnung (in \cref{abstand_fit} eingetragener Wert) sind sie allerdings noch unterscheidbar. Das liegt vor allem an den vom Programm erstellten Gauss-Fits, die die Messwerte unzureichend darstellen.
