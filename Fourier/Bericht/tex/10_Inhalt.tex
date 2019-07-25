@@ -142,17 +142,26 @@ Mit diesem Aufbau kann nun das Beugungsbild bei unterschiedlichem Abstand zwisch
 \end{figure}
 In \cref{alle} kann in einem Abstand von $500 mm$ bis $1400 mm$ das Nahfeld erkannt werden. Bei einem Abstand von $1700 mm$ bis $2600 mm$  kann das Übergangsfeld beobachtet werden und in einem Abstand von $2900 mm$ bis $3800 mm$ kann das Fernfeld beobachtet werden. Die angegebenen Grenzen sind keine scharfen Grenzen. Häufig kann man an den Grenzen beide Effekte erkennen. Die Effekte sind beim Nah- und Fernfeld vor allem an den Rändern sichtbar (also bei $500 mm$ bzw. bei $3800 mm$) und beim Übergangsfeld bei einem Abstand von $2000 mm$. Diese Angaben wurden mit \cref{Theoriebild} erhoben. Gründe für diese Einteilung sind, dass sich die Maxima höherer Ordnung erst im Fernfeld klar unterscheiden lassen und sich die Maxima im Nahfeld in einem Punkt treffen. Charakteristisch für die Übergangszone ist das vermischen beider Effekte. Das Hauptmaxima ist deutlich zu erkennen, jedoch gibt es entfernt vom Hauptmaxima noch Helligkeitserscheinungen, die nach außen hin abschwächen und kaum zu erkennende Peaks ausbilden. Diese Charakteristiken können im Vergleich von \cref{Theoriebild} und \cref{alle} an den oben genannten Bildern beobachtet werden.
 
-\section{Bestimmung der Gitterkonstanten}
-In diesem Abschnitt wurden die Gitterkonstanten verschiedener Gitter bestimmt. Dafür wurde das Gitter in den Strahlengang gestellt. Die Kamera wird $\SI{3800}{mm}$ entfernt positioniert. Das Beugungsbild von Gitter 5 ist exemplarisch in \cref{Gitter5} dargestellt.
+\section{Gitterkonstanten ohne Linse}
+In diesem Abschnitt wurden die Gitterkonstanten verschiedener Gitter bestimmt. Dafür wurde das Gitter in den Strahlengang gestellt. Die Kamera wird $\SI{3800}{mm}$ entfernt positioniert. Dieser Aufbau ist in \cref{aufbaugitter} dargestellt.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Lana-Bild2.png}
+	\caption{Schematischer Aufbau des Versuchs zur Bestimmung der Gitterkonstanten}
+	\label{aufbaugitter}
+\end{figure}
+
+Die dabei aufgenommenen Bilder sind in \cref{gitterfernfeld} zu sehen. Man erkennt deutlich, dass die Abstände zwischen den einzelnen Punkten von links nach rechts größer werden. Außerdem sind die Bilder links eher unscharf, nach rechts werden die einzelnen Punkte schärfer und lassen sich besser unterscheiden. Bei allen Gittern wird nun der Abstand zwischen dem nullten Beugungsmaximum und dem ersten und zweiten Beugungsmaximum nach oben und unten ermittelt. Dazu wird ein Lineal verwendet, dass auf den unbearbeiteten Bildern mit fotografiert wurde und so als Skala dient. Eine Ausnahme bildet das zweite Beugungsmaximum nach oben bei Gitter 2, dieses konnte nicht identifiziert werden. 
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.4]{Gitter5.jpg}
-	\caption{Das Beugungsbild des 5. Gitters.}
-	\label{Gitter5}
+	\includegraphics[width=0.9\textwidth]{gitter_fernfeld.png}
+	\caption{Die Beugungsbilder der 5 Gitter von Gitter 1 ganz links bis Gitter 5 ganz rechts, aufgenommen ohne Linse}
+	\label{gitterfernfeld}
 \end{figure}
 
-Aus dem Abstand der einzelnen Beugungsmaxima zum nullten Beugungsmaximum $a$ und dem Abstand zwischen Gitter und Kamera $d$ kann dann mit \cref{eq:sin} $\theta$ bestimmt werden.
+Aus dem Abstand der einzelnen Beugungsmaxima zum nullten Beugungsmaximum $a$ und dem Abstand zwischen Gitter und Kamera $d$ kann dann mit \cref{eq:sin} $\theta$ für jedes Beugungsmaximum einzeln bestimmt werden.
 
 \begin{equation}
 	\theta = \arctan\left(\frac{a}{d}\right)
@@ -166,7 +175,7 @@ Nun lässt sich die Gitterkonstante des untersuchten Gitters mit \cref{eq:gk} be
 	\label{eq:gk}
 \end{equation}
 
-Bei jedem Gitter wurde die Gitterkonstante jeweils viermal bestimmt, mit den beiden ersten Beugungsmaxima nach oben und unten ausgehend vom nullten Maximum. Aus diesen wurde dann der Mittelwert gebildet. Die Ergebnisse sind in \cref{tab} zusammengefasst.
+Bei jedem Gitter, außer dem zweiten aus oben genanntem Grund, wurde die Gitterkonstante jeweils viermal bestimmt, mit den beiden ersten Beugungsmaxima nach oben und unten ausgehend vom nullten Maximum. Aus diesen wurde dann der Mittelwert gebildet. Die Ergebnisse sind in \cref{tab} zusammengefasst.
 
 \begin{table}[h]
 	\caption{Die Gitterkonstanten der fünf untersuchten Gitter in mm}
@@ -177,6 +186,7 @@ Bei jedem Gitter wurde die Gitterkonstante jeweils viermal bestimmt, mit den bei
 \label{tab}
 \end{table}
 
+Wie bereits in \cref{gitterfernfeld} erkennbar, wird die Gitterkonstante bei kleinerer Gitternummer kleiner. Eine Ausnahme bildet Gitter 1, welches kleiner ist als Gitter 2.
 Die Unsicherheit beim Ablesen der Abstände wurde auf $\SI{\pm1}{mm}$ geschätzt. Daraus ergibt sich mithilfe der Formel für die Fehlerfortpflanzung (\cref{eq:utheta}) die Unsicherheit von $\theta$ und daraus mit \cref{eq:ugk} die Gesamtunsicherheit der Gitterkonstanten.
 
 \begin{align}
@@ -185,6 +195,42 @@ u(\theta) &= \frac{u(a)*d}{a^2 +d^2}
 u(b) &= \frac{u(\theta) k \lambda \cos(\theta)}{sin(\theta)^2}
 \label{eq:ugk}
 \end{align}
+
+Auch die Unsicherheiten wurden für jedes Beugungsmaximum einzeln bestimmt, anschließend wurde daraus der in der Tabelle aufgeführte Mittelwert gebildet.
+
+\section{Gitterkonstanten mit Linse}
+Im nächsten Schritt wurde die Gitterkonstante erneut bestimmt, allerdings mit leicht verändertem Versuchsaufbau (dargestellt in \cref{aufbaugitter2}). Nun ist hinter dem Gitter im Abstand von $\SI{1150}{mm}$ eine Linse positioniert. Diese fokussiert das Licht auf den Schirm, der wiederum im Abstand von $\SI{1150}{mm}$ zur Linse positioniert ist.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Lana-Bild3}
+	\caption{Schematischer Aufbau des 2. Versuchs zur Bestimmung der Gitterkonstanten.}
+	\label{aufbaugitter2}
+\end{figure}
+
+Die dabei entstandenen Beugungsbilder sind in \cref{gitterfourier} zu sehen. Auch hier ist deutlich erkennbar, dass die Beugungsmaxima bei höherer Gitternummer weiter auseinander liegen. Erneut wird beobachtet, dass die Beugungsmaxima bei höherer Gitternummer schärfer und besser unterscheidbar sind, während die Bilder bei niedriger Gitternummer unscharf und die Beugungsmaxima schwer trennbar sind. Dieser Effekt ist hier deutlich stärker ausgeprägt als bei der Messung ohne Linse.
+Die Abstände werden hier genauso bestimmt wie oben beschrieben, mit dem Lineal als Skala. Bei Gitter 3-5 wurden wieder das erste und zweite Beugungsmaximum in beide Richtungen zur Rechnung verwendet. Bei Gitter 1 und 2 waren diese nicht identifizierbar, hier wurden in beide Richtungen die ersten Maxima verwendet, die von der weiß leuchtenden Fläche rund um das nullte Beugungsmaximum als getrennte Punkte erkennbar waren. Dies war in allen vier Fällen das vierte Beugungsmaximum. Um welches Maximum es sich bei diesen Gittern handelt, konnte visuell nicht herausgefunden werden. Es ist aber wahrscheinlich, dass es sich um das Vierte handelt, da bei dieser Wahl die Gitterkonstanten von Gitter 2 aus beiden Messungen ungefähr übereinstimmen. Da Gitter 1 eine größere Gitterkonstante als Gitter 2 haben muss, muss es sich beim für die Rechnung verwendeten Beugungsmaximum mindestens um das Vierte handeln, höhere Ordnungen sind aber theoretisch auch möglich.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{gitter_fourier.png}
+	\caption{Die Beugungsbilder der 5 Gitter von Gitter 1 ganz links bis Gitter 5 ganz rechts, aufgenommen mit Linse.}
+	\label{gitterfourier}
+\end{figure}
+
+Zur Berechnung der Gitterkonstanten wurden wie im vorigen Abschnitt \cref{eq:sin} und \cref{eq:gk} verwendet, anschließend wurde aus diesen Werten der Mittelwert gebildet. Die Unsicherheiten wurden wieder mit \cref{eq:utheta} und \cref{eq:ugk} und anschließender Bildung des Mittelwerts bestimmt. Aufgrund der deutlich besseren Bildqualität wurden die Unsicherheit beim Ablesen für Gitter 3-5 auf $\SI{\pm0,5}{mm}$ geschätzt Die Ergebnisse beider Messreihen sind in \cref{tab2} zusammengefasst.
+
+\begin{table}[h]
+	\caption{Die Gitterkonstanten der fünf untersuchten Gitter in mm, ohne Linse und mit Linse.}
+	\begin{tabular}{llllll}
+		&Gitter 1 & Gitter 2& Gitter 3& Gitter 4& Gitter 5\\
+		Mit Linse&$0,683\pm0,080$ & $0,485\pm0,081$ & $0,377\pm0,072$ & $0,332\pm0,057$ & $0,269\pm0,037$\\
+		Ohne Linse&$0,386\pm0,048$ & $0,456\pm0,053$ & $0,363\pm0,041$ & $0,323\pm0,032$ & $0,252\pm0,020$
+	\end{tabular}
+	\label{tab2}
+\end{table}
+
+Die Werte für die Gitterkonstante sind bei allen Gittern (außer Gitter 1) innerhalb der angegebenen Unsicherheiten gleich. Damit kann die Messung als Erfolg gewertet werden. Die Gitterkonstanten lassen sich offenbar auf beide Arten gut bestimmen. Der einzige abweichende Wert ist die Gitterkonstante von Gitter 1 bei Messung ohne Linse. Hierfür sind mehrere Erklärungen möglich. Zum einen weicht das Beugungsbild für dieses Gitter deutlich von den anderen ab, die Punkte sind stark verschwommene Figuren, die nicht als Punkte erkennbar sind. Dies erschwert die Bestimmung des Abstandes zwischen den Beugungsmaxima und damit die Bestimmung der Gitterkonstante. Zum anderen ist es möglich, dass es sich bei den beobachteten Maxima nicht um die ersten bzw. zweiten Maxima handelt, sondern um höhere Ordnungen. Dann müssten dafür müssten andere niedrigere Beugungsmaxima so miteinander verschwimmen, das eine visuelle Trennung nicht mehr möglich ist. Dies kann aufgrund er schlechten Bildqualität nicht ausgeschlossen werden.
 
 \section{Fourierfilterung}
 \subsection{Ergebnis}
