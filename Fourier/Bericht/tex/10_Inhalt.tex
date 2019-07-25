@@ -3,7 +3,8 @@ Dieser Versuch beschäftigt sich mit der optischen Fouriertransformation eines L
 
 
 
-\section{Theorie\cite{anleitung-ws2014}}
+\section{Theorie}
+Dieses komplette Kapitel wurde aus \autocite{anleitung-ws2014} zusammengefasst
 \subsection{Fouriertransformation}
 Die Fouriertransformation wird in der Signalverarbeitung verwendet, um Signale in den Frequenzraum und zurück zu transformieren. Dabei können sowohl zeitliche Signale in ihre zeitlichen Frequenzen zerlegt werden, als auch räumliche Signale in ihre räumlichen Frequenzen. \cref{eq:tfourier} zeigt die Gleichung für die Umwandlung zeitlicher Signale, \cref{eq:xyfourier} zeigt die Gleichung für die Umwandlung zweidimensionaler räumlicher Signale.
 
@@ -33,8 +34,8 @@ Ein Beispiel für die Fouriertransformation ist in \cref{rechteckpuls} dargestel
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\textwidth]{rechteckpuls.png}
-	\caption{Fouriertransformation, angewandt auf einen Rechteckpuls. Das Ergebnis ist eine sinc-Funktion. Entnommen aus \cite[3]{anleitung-ws2014}}
+	\includegraphics[width=0.9\textwidth]{rechteckpuls.PNG}
+	\caption{Fouriertransformation, angewandt auf einen Rechteckpuls. Das Ergebnis ist eine sinc-Funktion. Entnommen aus \autocite{anleitung-ws2014}}
 	\label{rechteckpuls}
 \end{figure}
 
@@ -42,8 +43,8 @@ Bei der optischen Fouriertransformation ist allerdings eine Transformation in zw
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\textwidth]{rechteckspalt.png}
-	\caption{Ein Rechteckspalt und die Fouriertransformierte, zwei sich überlagernde sinc-Funktionen. Entnommen aus \cite[4]{anleitung-ws2014}}
+	\includegraphics[width=0.7\textwidth]{rechteckspalt.PNG}
+	\caption{Ein Rechteckspalt und die Fouriertransformierte, zwei sich überlagernde sinc-Funktionen. Entnommen aus \autocite{anleitung-ws2014}}
 	\label{rechteckspalt}
 \end{figure}
 
@@ -55,7 +56,7 @@ Um die Eigenschaften des Lichts in diesem Versuch zu beschreiben, wird die skala
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{abstande.png}
-	\caption{Fresnel- und Frauenhofer Näherung. Im Fernfeld kann die Frauenhofer Näherung angewandt werden, wohingegen im Nahfeld die Fresnel Näherung angewandt wird. Entnommen aus \cite[5]{anleitung-ws2014}}
+	\caption{Fresnel- und Frauenhofer Näherung. Im Fernfeld kann die Frauenhofer Näherung angewandt werden, wohingegen im Nahfeld die Fresnel Näherung angewandt wird. Entnommen aus \autocite{anleitung-ws2014}}
 	\label{Theoriebild}
 \end{figure}
 
@@ -87,8 +88,8 @@ In diesem Versuch soll hauptsächlich im Bereich der Fraunhofer-Näherung gearbe
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\textwidth]{4f.png}
-	\caption{Schematische Darstellung des 4f-Aufbaus, der hier zur Fourierfilterung eingesetzt wird. Entnommen aus \cite[6]{anleitung-ws2014}}
+	\includegraphics[width=0.9\textwidth]{4f.PNG}
+	\caption{Schematische Darstellung des 4f-Aufbaus, der hier zur Fourierfilterung eingesetzt wird. Entnommen aus \autocite{anleitung-ws2014}}
 	\label{4f}
 \end{figure}
 
@@ -96,6 +97,7 @@ In diesem Versuch soll hauptsächlich im Bereich der Fraunhofer-Näherung gearbe
 Mithilfe des 4f-Aufbaus kann nun eine Fourierfilterung durchgeführt werden. Hierfür können verschiedene Filter in der Fourierebene platziert werden. Ein Tiefpass wird dabei mithilfe einer Blende realisiert, die nur Licht in der Mitte der nullten Beugungsordnung durchlässt. Ein Hochpass wird mit einer Nadel erzeugt, die mittig in der Fourierebene platziert wird. Außerdem können auch bestimmte Frequenzen gefiltert werden, um periodisches Rauschen zu entfernen.
 
 \subsection{Dunkelfeldmethode}
+\label{Dunkelfeld}
 Die Intensität eines Lichtfeldes, das Betragsquadrat des elektrischen Feldes kann auf einem Schirm mit bloßem Auge erkannt werden. Das elektrische Feld selbst ist allerdings nicht direkt sichtbar, da keine Informationen über die Phase des Felds bekannt sind. Um das elektrische Feld trotzdem zu detektieren, wird die Dunkelfeldmethode verwendet. Dazu nehmen wir an, dass das beugende Objekt dem elektrischen Feld eine ortsabhängige Phase aufprägt. Das E-Feld lässt sich nun schreiben als:
 
 \begin{equation}
@@ -233,9 +235,9 @@ Zur Berechnung der Gitterkonstanten wurden wie im vorigen Abschnitt \cref{eq:sin
 Die Werte für die Gitterkonstante sind bei allen Gittern (außer Gitter 1) innerhalb der angegebenen Unsicherheiten gleich. Damit kann die Messung als Erfolg gewertet werden. Die Gitterkonstanten lassen sich offenbar auf beide Arten gut bestimmen. Der einzige abweichende Wert ist die Gitterkonstante von Gitter 1 bei Messung ohne Linse. Hierfür sind mehrere Erklärungen möglich. Zum einen weicht das Beugungsbild für dieses Gitter deutlich von den anderen ab, die Punkte sind stark verschwommene Figuren, die nicht als Punkte erkennbar sind. Dies erschwert die Bestimmung des Abstandes zwischen den Beugungsmaxima und damit die Bestimmung der Gitterkonstante. Zum anderen ist es möglich, dass es sich bei den beobachteten Maxima nicht um die ersten bzw. zweiten Maxima handelt, sondern um höhere Ordnungen. Dann müssten dafür müssten andere niedrigere Beugungsmaxima so miteinander verschwimmen, das eine visuelle Trennung nicht mehr möglich ist. Dies kann aufgrund er schlechten Bildqualität nicht ausgeschlossen werden.
 
 \section{Fourierfilterung}
-\subsection{Ergebnis}
 \subsection{Fourier Schriftzug}
-Zuerst soll ein "Fourier" Schriftzug vor einem Gitter modelliert werden, indem das Gitter entfernt wird. Dazu wird eine Tiefpassfilterung benutzt, da die im Vergleich große Schrift hauptsächlich aus niedrigen Frequenzen besteht. 
+Im weiteren Versuchsverlauf sind alle Experimente nach dem 4-f-Aufbau realisiert, der in \cref{4f} zu sehen ist. Zuerst soll ein „Fourier“ Schriftzug vor einem Gitter modelliert werden, indem das Gitter entfernt wird.
+Dazu wird eine Tiefpassfilterung benutzt, da die im Vergleich große Schrift hauptsächlich aus niedrigen Frequenzen besteht. 
 
 
 \begin{figure}[h]
@@ -255,10 +257,10 @@ Zuerst soll ein "Fourier" Schriftzug vor einem Gitter modelliert werden, indem d
 \label{Fourier}
 \end{figure}   
 
-In \cref{Fourier} ist zu sehen, wie sich der Tiefpassfilter auf das Bild auswirkt. Das Gitter ist zum größten Teil nicht mehr als solches zu erkennen.
+In \cref{Fourier} ist zu sehen, wie sich der Tiefpassfilter auf das Bild auswirkt. Das Gitter ist zum größten Teil nicht mehr als solches zu erkennen. Allerdings konnten die Linien nicht vollständig entfernt werden. Das liegt höchstwahrscheinlich daran, dass der Filter nicht perfekt in der Fourierebene lag, dadurch können verschiedene Effekte auftreten, wie z.B. ein gewisse räumliche Verzerrung. 
 
 \subsection{Nenner eines Bruches entfernen}
-Daraufhin soll der Nenner eines $\frac{1}{2}$ Bruchs entfernt werden. Wie in \cref{fig:Bruch} zu sehen ist, befindet sich unter dem Zähler ein Gitter, welches sich nicht bei dem Nenner befindet. Es werden also praktisch beide Zahlen entfernt, allerdings ist durch das Gitter immer noch der Umriss der 1 sichtbar. Dieses entfernen geschieht durch eine Hochpassfilterung, was bedeutet, dass niedrige Frequenzen entfernt werden. Das hat sehr gut funktioniert, da in \cref{fig:Bruch_filter} die Zwei, also der Nenner nicht mehr erkennbar ist.
+Daraufhin soll der Nenner eines $\frac{1}{2}$ Bruchs entfernt werden. Wie in \cref{fig:Bruch} zu sehen ist, befindet sich unter dem Zähler ein Gitter, welches sich nicht bei dem Nenner befindet. Es werden also praktisch beide Zahlen entfernt, allerdings ist durch das Gitter immer noch der Umriss der 1 sichtbar. Dieses entfernen geschieht durch eine Hochpassfilterung, was bedeutet, dass niedrige Frequenzen entfernt werden. Das hat funktioniert, da in \cref{fig:Bruch_filter} die Zwei, also der Nenner nicht mehr erkennbar ist.
 
 \begin{figure}[h]
 	\begin{subfigure}[c]{0.5\textwidth}
@@ -273,7 +275,7 @@ Daraufhin soll der Nenner eines $\frac{1}{2}$ Bruchs entfernt werden. Wie in \cr
 		\caption{}
 		\label{fig:Bruch_filter}
 	\end{subfigure}
-	\caption{In \cref{fig:Bruch} ist der $\frac{1}{2}$ Bruch ohne Filter zu sehen; in \cref{fig:Bruch_filter} mit einem Hochpassfilter, wodurch die Zwei entfernt wurde.}
+	\caption{In \cref{fig:Bruch} ist der $\frac{1}{2}$ Bruch ohne Filter zu sehen; in \cref{fig:Bruch_filter} mit einem Hochpassfilter, wodurch die Zwei entfernt wurde und die eins als negativ zu erkennen bleibt.}
 	\label{Bruch}
 \end{figure}   
 
@@ -349,11 +351,22 @@ Daraufhin wird eine Schraube einer Hochpassfilterung unterzogen. In \cref{Schrau
 \end{figure}  
 
 \subsection{Dunkelfeldmethode}
-Zuletzt soll noch die Dunkelfeldmethode getestet, die Luftströme sichtbar machen kann. Dazu wird ein Teelicht 
+Zuletzt soll noch die Dunkelfeldmethode getestet werden, die Luftströme sichtbar machen
+kann. Die Theorie dazu ist in \cref{Dunkelfeld} beschrieben. Um den Versuch auszuführen wird ein Teelicht in den Strahlengang eingesetzt und der Laser so justiert,
+dass er sich etwas über der Flamme befindet. Nach dem Einsetzen eines Hochpassfilters,
+lassen sich die Luftströme sichtbar machen. Diese Luftströme, die durch das Erhitzen der
+Luft durch das Teelicht entstehen, entsprechen dabei den hellen Stellen in Abb. 9. Dies
+ist der Fall, da die Luftströme eine Änderung der Phase verursachen und damit durch
+die Hochpassfilterung sichtbar gemacht werden.
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale = 1]{Flamme.png}
-	\caption{}
+	\caption{Anwendung der Dunkelfeldmethode. Die helle Stelle zeigt einen Luftstrom, der
+		durch das Teelicht entstanden ist.}
 	\label{Flamme}
 \end{figure}
+
+\section{Zusammenfassung}
+...
+Außerdem hat die Filterung der verschiedenen Objekte funktioniert. Es wurde zwar in einigen Fällen deutlich, dass die jeweiligen Filter sich nicht perfekt in der Fourierebene befunden haben, allerdings konnten trotzdem alle grundsätzlichen Ziele erreicht werden. Ein Problem war allerdings, dass nur ein Bild von der Dunkelfeldmethode gemacht wurden, sodass sich nicht gut zeigen lässt, dass es sich tatsächlich um Luftströme gehandelt hat. Außerdem fehlt ein Vergleichsbild ohne die Kerze. 
