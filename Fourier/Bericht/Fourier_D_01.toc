@@ -13,10 +13,10 @@
 \contentsline {section}{\numberline {4}Gitterkonstanten ohne Linse}{8}{section.4}
 \contentsline {section}{\numberline {5}Gitterkonstanten mit Linse}{10}{section.5}
 \contentsline {section}{\numberline {6}Fourierfilterung}{13}{section.6}
-\contentsline {subsection}{\numberline {6.1}Ergebnis}{13}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Fourier Schriftzug}{13}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Nenner eines Bruches entfernen}{13}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Tiefpassfilterung bei einem Quadratgitter}{14}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Hochpassfilterung einer Schraube}{15}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Dunkelfeldmethode}{15}{subsection.6.6}
-\contentsline {section}{\nonumberline Literatur}{18}{section*.20}
+\contentsline {subsection}{\numberline {6.1}Fourier Schriftzug}{13}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Nenner eines Bruches entfernen}{13}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Tiefpassfilterung bei einem Quadratgitter}{14}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Hochpassfilterung einer Schraube}{15}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Dunkelfeldmethode}{15}{subsection.6.5}
+\contentsline {section}{\numberline {7}Zusammenfassung}{15}{section.7}
+\contentsline {section}{\nonumberline Literatur}{19}{section*.20}
