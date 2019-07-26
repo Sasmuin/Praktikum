@@ -243,7 +243,16 @@ Die Werte für die Gitterkonstante sind bei allen Gittern (außer Gitter 1) inne
 
 \section{Fourierfilterung}
 \subsection{Fourier Schriftzug}
-Im weiteren Versuchsverlauf sind alle Experimente nach dem 4-f-Aufbau realisiert, der in \cref{4f} zu sehen ist. Zuerst soll ein „Fourier“ Schriftzug vor einem Gitter modelliert werden, indem das Gitter entfernt wird.
+Im weiteren Versuchsverlauf sind alle Experimente nach dem 4-f-Aufbau realisiert, der in \cref{4f-Aufbau} zu sehen ist. Zuerst soll ein „Fourier“ Schriftzug vor einem Gitter modelliert werden, indem das Gitter entfernt wird.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Lana-Bild4}
+	\caption{Schematischer Aufbau des der Fourierfilterung.}
+	\label{4f-Aufbau}
+\end{figure}
+
+
 Dazu wird eine Tiefpassfilterung benutzt, da die im Vergleich große Schrift hauptsächlich aus niedrigen Frequenzen besteht. 
 
 
@@ -286,6 +295,8 @@ Daraufhin soll der Nenner eines $\frac{1}{2}$ Bruchs entfernt werden. Wie in \cr
 	\label{Bruch}
 \end{figure}   
 
+\newpage
+
 \subsection{Tiefpassfilterung bei einem Quadratgitter}
 Als nächstes soll ausprobiert werden, was passiert, wenn ein Quadratgitter eingesetzt wird, das mit einem eindimensionalem Tiefpassfilter in verschiedenen Ausrichtungen gefiltert wird. Das ungefilterte Bild ist in \cref{fig:Gitter} zu sehen. Dazu im Vergleich wurde in \cref{fig:0Gitter} ein Tiefpassfilter im Winkel von 0° Grad eingebaut. Da der Tiefpass alle Frequenzen außer denen, die im 0° Winkel sind durchgelassen. Deshalb wurde erwartet, dass die Linien orthogonal zum Frequenzbild erkennbar sind. Allerdings ist das besonders am Rand und zum Teil auch in der Mitte des Bildes nicht immer deutlich zu erkennen. 
 
@@ -297,7 +308,7 @@ Diese hellen Strahlen, die sich an der räumlichen Ausrichtung des Filters orien
 
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{subfigure}[c]{0.5\textwidth}
 		
 		\includegraphics[width=1\textwidth]{Quadratgitter.png}
@@ -310,14 +321,8 @@ Diese hellen Strahlen, die sich an der räumlichen Ausrichtung des Filters orien
 		\caption{}
 		\label{fig:0Gitter}
 	\end{subfigure}
-	\caption{In \cref{fig:Gitter} ist das Quadratgitter ohne einen Filter zu sehen; in \cref{fig:0Gitter} mit einem Tiefpassfilter im 0° Winkel}
-	\label{Gitter1}
-\end{figure}  
 
 
-
-
-\begin{figure}[h]
 	\begin{subfigure}[c]{0.5\textwidth}
 		
 		\includegraphics[width=1\textwidth]{45Grad_Tiefpass_quadrat.png}
@@ -330,12 +335,13 @@ Diese hellen Strahlen, die sich an der räumlichen Ausrichtung des Filters orien
 		\caption{}
 		\label{fig:90Gitter}
 	\end{subfigure}
-	\caption{In \cref{fig:45Gitter} ist das Quadratgitter mit einem Tiefpassfilter im 45° Winkel zu sehen; in \cref{fig:90Gitter} im 90° Winkel.}
+	\caption{In \cref{fig:Gitter} ist das Quadratgitter ohne einen Filter zu sehen; in \cref{fig:0Gitter} mit einem Tiefpassfilter im 0° Winkel,in \cref{fig:45Gitter} im 45° Winkel und in \cref{fig:90Gitter} im 90° Winkel.}
 	\label{blabla}
 \end{figure}  
 
 
 
+\newpage
 
 \subsection{Hochpassfilterung einer Schraube}
 Daraufhin wird eine Schraube einer Hochpassfilterung unterzogen. In \cref{Schraube} sind die Bilder mit und ohne Filter zu sehen. In \cref{fig:Schraube_Filter} ist dabei nur noch der Umriss der Schraube zu sehen. Da sowohl der Laser selbst als auch die Schraube selbst nahezu homogen sind, werden dafür fast nur niedrige Frequenzen benutzt. Der Rand der Schraube hat allerdings mehre kleine Kanten, die durch hohe Frequenzen dargestellt werden und deshalb durch den Hochpassfilter durchkommen.
@@ -357,6 +363,9 @@ Daraufhin wird eine Schraube einer Hochpassfilterung unterzogen. In \cref{Schrau
 	\label{Schraube}
 \end{figure}  
 
+
+\newpage
+
 \subsection{Dunkelfeldmethode}
 Zuletzt soll noch die Dunkelfeldmethode getestet werden, die Luftströme sichtbar machen
 kann. Die Theorie dazu ist in \cref{Dunkelfeld} beschrieben. Um den Versuch auszuführen wird ein Teelicht in den Strahlengang eingesetzt und der Laser so justiert,
@@ -373,6 +382,9 @@ die Hochpassfilterung sichtbar gemacht werden.
 		durch das Teelicht entstanden ist.}
 	\label{Flamme}
 \end{figure}
+
+
+\newpage
 
 \section{Zusammenfassung}
 

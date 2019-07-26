@@ -1,17 +1,17 @@
-[5] Config.pm:302> INFO - This is Biber 2.9
-[6] Config.pm:305> INFO - Logfile is 'Fourier_D_01.blg'
-[286] biber:313> INFO - === Do Jul 25, 2019, 17:19:39
-[529] Biber.pm:371> INFO - Reading 'Fourier_D_01.bcf'
-[1265] Biber.pm:854> INFO - Using all citekeys in bib section 0
-[1425] Biber.pm:3981> INFO - Processing section 0
-[1529] Biber.pm:4154> INFO - Looking for bibtex format file 'res/literatur.bib' for section 0
-[1549] bibtex.pm:1468> INFO - LaTeX decoding ...
-[1592] bibtex.pm:1294> INFO - Found BibTeX data source 'res/literatur.bib'
-[1595] Utils.pm:169> WARN - month field 'November' in entry 'anleitung-ws2014' is not an integer - this will probably not sort properly.
-[1738] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1738] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1738] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[1739] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
-[1754] bbl.pm:617> INFO - Writing 'Fourier_D_01.bbl' with encoding 'UTF-8'
-[1759] bbl.pm:720> INFO - Output to Fourier_D_01.bbl
-[1763] Biber.pm:110> INFO - WARNINGS: 1
+[1] Config.pm:302> INFO - This is Biber 2.9
+[2] Config.pm:305> INFO - Logfile is 'Fourier_D_01.blg'
+[103] biber:313> INFO - === Fr Jul 26, 2019, 22:31:25
+[226] Biber.pm:371> INFO - Reading 'Fourier_D_01.bcf'
+[562] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[617] Biber.pm:3981> INFO - Processing section 0
+[652] Biber.pm:4154> INFO - Looking for bibtex format file 'res/literatur.bib' for section 0
+[654] bibtex.pm:1468> INFO - LaTeX decoding ...
+[662] bibtex.pm:1294> INFO - Found BibTeX data source 'res/literatur.bib'
+[666] Utils.pm:169> WARN - month field 'November' in entry 'anleitung-ws2014' is not an integer - this will probably not sort properly.
+[706] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[706] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[706] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[706] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
+[747] bbl.pm:617> INFO - Writing 'Fourier_D_01.bbl' with encoding 'UTF-8'
+[750] bbl.pm:720> INFO - Output to Fourier_D_01.bbl
+[751] Biber.pm:110> INFO - WARNINGS: 1
