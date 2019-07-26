@@ -1,21 +1,22 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\select@language {ngerman}
 \contentsline {section}{\numberline {1}Abstract}{1}{section.1}
-\contentsline {section}{\numberline {2}Theorie}{1}{section.2}
+\contentsline {section}{\numberline {2}Theorie\cite {anleitung-ws2014}}{1}{section.2}
 \contentsline {subsection}{\numberline {2.1}Fouriertransformation}{1}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Skalare Beugungstheorie}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Beugung am Gitter}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Beugung am Gitter}{3}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Optische Fouriertransformation mit Linsen}{5}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Frequenzfilterung}{6}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.5}Frequenzfilterung}{5}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Dunkelfeldmethode}{6}{subsection.2.6}
-\contentsline {section}{\numberline {3}\IeC {\"U}bergang von Nah- zu Fernfeld}{7}{section.3}
+\contentsline {section}{\numberline {3}\IeC {\"U}bergang von Nah- zu Fernfeld}{6}{section.3}
 \contentsline {section}{\numberline {4}Gitterkonstanten ohne Linse}{8}{section.4}
-\contentsline {section}{\numberline {5}Gitterkonstanten mit Linse}{11}{section.5}
+\contentsline {section}{\numberline {5}Gitterkonstanten mit Linse}{10}{section.5}
 \contentsline {section}{\numberline {6}Fourierfilterung}{13}{section.6}
 \contentsline {subsection}{\numberline {6.1}Fourier Schriftzug}{13}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Nenner eines Bruches entfernen}{14}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.2}Nenner eines Bruches entfernen}{13}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Tiefpassfilterung bei einem Quadratgitter}{14}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}Hochpassfilterung einer Schraube}{15}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Dunkelfeldmethode}{16}{subsection.6.5}
-\contentsline {section}{\numberline {7}Zusammenfassung}{16}{section.7}
+\contentsline {subsection}{\numberline {6.5}Dunkelfeldmethode}{15}{subsection.6.5}
+\contentsline {section}{\numberline {7}Zusammenfassung}{15}{section.7}
 \contentsline {section}{\nonumberline Literatur}{19}{section*.20}

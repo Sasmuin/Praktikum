@@ -4,6 +4,10 @@ Dieser Versuch beschäftigt sich mit der optischen Fouriertransformation eines L
 Die Gitterkonstanten stimmen bei beiden Versuchsaufbauten überein, nur Gitter 1 wurde bei einer Messung offenbar falsch bestimmt. Die Methoden sind also beide gut zur Bestimmung der Gitterkonstanten geeignet.
 
 
+Als letztes werden Hoch- und Tiefpassfilter benutzt, um verschiedene Bildeffekte zu erzeugen. Insgesamt konnten alle Effekte gezeigt werden, allerdings wurden die Filter nicht immer perfekt in der Fourierebene abgestellt, weshalb die erzeugten Bilder zum Teil auch ungewollte Effekte aufzeigen. 
+
+
+
 
 \section{Theorie}
 Dieses komplette Kapitel wurde aus \autocite{anleitung-ws2014} zusammengefasst
@@ -146,6 +150,7 @@ Mit diesem Aufbau kann nun das Beugungsbild bei unterschiedlichem Abstand zwisch
 \end{figure}
 In \cref{alle} kann in einem Abstand von $500 mm$ bis $1400 mm$ das Nahfeld erkannt werden. Bei einem Abstand von $1700 mm$ bis $2600 mm$  kann das Übergangsfeld beobachtet werden und in einem Abstand von $2900 mm$ bis $3800 mm$ kann das Fernfeld beobachtet werden. Die angegebenen Grenzen sind keine scharfen Grenzen. Häufig kann man an den Grenzen beide Effekte erkennen. Die Effekte sind beim Nah- und Fernfeld vor allem an den Rändern sichtbar (also bei $500 mm$ bzw. bei $3800 mm$) und beim Übergangsfeld bei einem Abstand von $2000 mm$. Diese Angaben wurden mit \cref{Theoriebild} erhoben. Gründe für diese Einteilung sind, dass sich die Maxima höherer Ordnung erst im Fernfeld klar unterscheiden lassen und sich die Maxima im Nahfeld in einem Punkt treffen. Charakteristisch für die Übergangszone ist das vermischen beider Effekte. Das Hauptmaximum ist deutlich zu erkennen, jedoch gibt es entfernt vom Hauptmaximum noch Helligkeitserscheinungen, die nach außen hin abschwächen und kaum zu erkennende Peaks ausbilden. Diese Charakteristiken können im Vergleich von \cref{Theoriebild} und \cref{alle} an den oben genannten Bildern beobachtet werden.
 
+
 \section{Gitterkonstanten ohne Linse}
 In diesem Abschnitt wurden die Gitterkonstanten verschiedener Gitter bestimmt. Dafür wurde das Gitter in den Strahlengang gestellt. Die Kamera wird $\SI{3800}{mm}$ entfernt positioniert. Dieser Aufbau ist in \cref{aufbaugitter} dargestellt.
 
@@ -190,7 +195,7 @@ Bei jedem Gitter, außer dem zweiten aus oben genanntem Grund, wurde die Gitterk
 \label{tab}
 \end{table}
 
-Wie bereits in \cref{gitterfernfeld} erkennbar, wird die Gitterkonstante bei kleinerer Gitternummer kleiner. Eine Ausnahme bildet Gitter 1, welches kleiner ist als Gitter 2.
+Wie bereits in \cref{gitterfernfeld} erkennbar, wird die Gitterkonstante bei kleinerer Gitternummer kleiner. Das wurde auch schon während dem Versuch mit bloßem Auge so abgeschätzt. Eine Ausnahme bildet Gitter 1, welches kleiner ist als Gitter 2.
 Die Unsicherheit beim Ablesen der Abstände wurde auf $\SI{\pm1}{mm}$ geschätzt. Daraus ergibt sich mithilfe der Formel für die Fehlerfortpflanzung (\cref{eq:utheta}) die Unsicherheit von $\theta$ und daraus mit \cref{eq:ugk} die Gesamtunsicherheit der Gitterkonstanten.
 
 \begin{align}
@@ -370,5 +375,14 @@ die Hochpassfilterung sichtbar gemacht werden.
 \end{figure}
 
 \section{Zusammenfassung}
-...
+
+
+
+Die Überlegungen aus der Theorie für den ersten Versuchsteil haben sich im  Experiment qualitativ bestätigt. Es konnten die charakteristischen Eigenschaften von Fern- Übergangs- und Nahfeld beobachtet werden.
+
+Auch der zweite Versuchsteil kann als Erfolg gewertet werden. Die Gitterkonstanten der fünf Gitter konnten sowohl ohne Linse bei großem Abstand zwischen Gitter und Schirm als auch mit Linse, wobei der Schirm in der Brennebene der Linse platziert wurde, bestimmt werden. Nur für Gitter 1 stimmen die beiden berechneten Werte nicht überein. Insgesamt erscheinen die berechneten Werte plausibel, die Abnahme der Gitterkonstante für höhere Gitternummern konnte schon während dem Versuch mit bloßem Auge festgestellt werden.
+
+
+
+
 Außerdem hat die Filterung der verschiedenen Objekte funktioniert. Es wurde zwar in einigen Fällen deutlich, dass die jeweiligen Filter sich nicht perfekt in der Fourierebene befunden haben, allerdings konnten trotzdem alle grundsätzlichen Ziele erreicht werden. Ein Problem war allerdings, dass nur ein Bild von der Dunkelfeldmethode gemacht wurden, sodass sich nicht gut zeigen lässt, dass es sich tatsächlich um Luftströme gehandelt hat. Außerdem fehlt ein Vergleichsbild ohne die Kerze. 
