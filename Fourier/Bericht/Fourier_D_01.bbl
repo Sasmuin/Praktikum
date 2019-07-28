@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.9 $
+% $ biblatex bbl format version 2.8 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
+  \sortlist[entry]{nty/global/}
     \entry{anleitung-ws2014}{manual}{}
       \list{organization}{1}{%
         {Westfälische Wilhelms-Universität Münster}%
@@ -27,13 +27,13 @@
         {Institut für Angewandte Physik}%
       }
       \field{sortinit}{O}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
       \field{labeltitlesource}{title}
       \field{month}{11}
       \field{title}{Optische Fouriertransformation}
       \field{year}{2017}
     \endentry
-  \enddatalist
+  \endsortlist
 \endrefsection
 \endinput
 
