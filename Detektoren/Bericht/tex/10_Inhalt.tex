@@ -234,13 +234,14 @@ Insgesamt passen die Ergebnisse ziemlich gut, die Peaks unterscheiden sich meist
 
 \subsection{Detektoreigenschaften}
 \subsubsection{ Relative Abweichung von den Referenzwerten.}
-In \cref{ee} ist die relatve Differenz von gemessener zur Referenzenergie gegen die Referenzenergie aufgetragen. Die Fehlerbalken wurden durch die Fehler, welche das Programm fityk ausgerechnet hat mittels Fehlerfortpflanzung berechnet.Es ist zu erkennen, dass die relativen Abweichungen der gemessenen Werte vom Halbleiterdetektor näher an den Referenzwerten liegen, als die Werte die mittels des Szintillators berechnet wurden. Dies kann bei drei Werten erkannt werden. Die anderen beiden Werte liefern unabhängig von ihrern Fehlern dieselben Ergebnisse. Hier ist anzufügen, dass die Fehlerbalken mittels des Szintillators größer ausgefallen sind, als die Fehlerbalken des Halbleiter Detektors.
+In \cref{ee} ist die relatve Differenz von gemessener zur Referenzenergie gegen die Referenzenergie aufgetragen. Die Fehlerbalken wurden durch die Fehler, welche das Programm fityk ausgerechnet hat mittels Fehlerfortpflanzung berechnet. Ebenfalls besitzt die Kalibration ein Fehler, welcher über Kombination mit dem Fitfehler zusammengerechnet wurde. Dies ergab den Gesamtfehler. Es ist zu erkennen, dass die relativen Abweichungen der gemessenen Werte vom Halbleiterdetektor näher an den Referenzwerten liegen, als die Werte die mittels des Szintillators berechnet wurden. Dies kann an der kleineren Abweichung zum Nullpunkt erkannt werden. Die Abweichungen der Low Energie Peaks (vom Am-241) besitzen die größten Fehler und die stärksten Abweichungen von dem Referenzwert. Hier ist anzufügen, dass die Fehlerbalken mittels des Szintillators größer ausgefallen sind, als die Fehlerbalken des Halbleiter Detektors.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{1minEdurchE.png}
-	\caption{Auf der $y$-Achse ist die relative Differenz zwischen gemessenen Energien und auf der $x$-Achse die Referenzenergie aufgetragen.}
+	\caption{Auf der $y$-Achse ist die relative Differenz zwischen gemessener Energie und Referenzenergie aufgetragen und auf der $x$-Achse die Referenzenergie aufgetragen.}
 	\label{ee}
 \end{figure}
+Hierbei stellt $E_r$ die Referenzenergie dar und $E_m$ die gemessene Energie.
 \subsubsection{Energieauflösung}
 Als weiteren Vergleichspunkt wird die Energieauflösung ($\Delta E$) der beiden Detektoren berechnet.
 Die Energieauflösung ($\Delta E = \frac{\sigma}{E}$) beschreibt die Energiebreite des Peaks zur jeweiligen Energie. Dabei wurde die Breite des Gaußpeaks ($\sigma$) über das Full Width at Half Maximum bestimmt.
@@ -252,11 +253,27 @@ Dies veranlasst uns dazu, die Erzprobe nicht mit dem Szintillator, sondern mit d
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{sigma.png}
-	\caption{}
+	\caption{Auf der $x$-Achse ist die Energie in keV angegeben und auf der $y$-Achse ist die Standartabweichung in Relation zur Energie dargestellt.}
 	\label{sig}
 \end{figure}
 \subsubsection{Mittlere Ionisationsenergie}
-Die Ionisationsenergie ($I = \frac{E}{N}$), wobei N die Anzahl von Zählungen ist, kann mittels der Energieauflösung und der Annahme, dass $\sigma$ Poisson verteilt ist zu $I = \frac{\sigma^2}{E}$ umgeformt werden.
+Die mittlere Ionisationsenergie ($I = \frac{E}{N}$), wobei N die Anzahl von Ladungsträgern ist, kann mittels der Energieauflösung und der Annahme, dass $\sigma$ Poissonverteilt ist zu $I = \frac{\sigma^2}{E}$ umgeformt werden. Dies kann durch folgende Annahme geschlussfolgert werden.
+\begin{align}
+	\frac{\sigma}{E} &= \frac{\sigma_N}{N}
+\end{align}
+Aus der Poisson-Statistik ergibt sich, 
+\begin{align}
+	\frac{\sqrt{N}}{N} &= \frac{1}{\sqrt{N}}
+\end{align}
+da $\sigma_N = \sqrt{N}$ ist.
+Daraus ergibt sich 
+\begin{align}
+	N = \frac{E^2}{\sigma^2}
+\end{align}
+Wird in diese Gleichung $I = \frac{E}{N}$ eingesetzt ergibt sich 
+\begin{align}
+	I = \frac{\sigma^2}{E}
+\end{align}
 In \cref{sig2} ist die Ionisierungsenergie bezüglich der Energie aufgetragen. Aufgrund der unterschiedlichen Skalierung der Achsen für Szintillator und Halbleiter-Detektor ist zu erkennen, dass die Ionisierungsenergien beim Halbleiter-Detektor geringer sind als beim Szintillator. Die Ionisationsenergie des Szintillators liegen bei maximal $0,2$ keV, wohingegen die Ionisationsenergien beim Halbleiter-Detektor maximal bei $0,001$ keV liegen.
 \begin{figure}[h!]
 	\centering
@@ -265,17 +282,19 @@ In \cref{sig2} ist die Ionisierungsenergie bezüglich der Energie aufgetragen. A
 	\label{sig2}
 \end{figure}
 \subsubsection{Effizienz}
-Die Effizienz ist ein Maß für den Anteil der detektierten Photonen von der Gesamtzahl theoretisch nachweisbarer Photonen. Dieser Parameter ist von verschiedenen Parametern abhängig. Die Effizienz ist von der Aktivität der Stoffe und von geometrischen Eigenschaften, wie vom Raumwinkel, abhängig. Somit kann die Effizienz vom Szintillator nicht mit der Effizienz vom Halbleiter-Detektor verglichen werden. Ebenfalls kann die Effizienz nicht von unterschiedlichen Quellen verglichen werden. So kann nur die Effizienz der Mischquelle am Szintillator oder Halbleiter-Detektor untersucht werden. In diesem Versuch wurde die Effizienz nur an dem Szintillator untersucht. Die Effizienz ist definiert als, 
+Die Effizienz ist ein Maß für den Anteil der detektierten Photonen von der Gesamtzahl theoretisch nachweisbarer Photonen. Dieser Parameter ist von verschiedenen Parametern abhängig. Die Effizienz ist von geometrischen Eigenschaften, wie vom Raumwinkel, abhängig. Somit kann die Effizienz vom Szintillator nicht mit der Effizienz vom Halbleiter-Detektor verglichen werden, da diese Quellen nicht identisch ausgerichtet waren. Ebenfalls kann die Effizienz nicht von unterschiedlichen Quellen verglichen werden. So kann nur die Effizienz der Mischquelle am Szintillator oder Halbleiter-Detektor untersucht werden. Die relative Effizienz ist definiert als, 
 \begin{align}
 	\epsilon = \frac{\frac{Area}{A}}{|\frac{Area}{A}|}
 \end{align}
 Die Normierung ist von dem Stoff höchster Aktivität pro Fläche zu nehmen.
-In \cref{eff} ist zu sehen, dass die Effizienz im niederenergetischen Bereich maximal ist, wohingegen die Effizienz mit zunehmender Energie abfällt. Da der Wirkungsquerschnitt im niederenergetischen Bereich am größten ist, ist die Effizienz heir ebenfalls am größten. Der Wirkungsquerschnitt fällt mit zunehmender Energie ab, sodass hier die Effizienz abnimmt.
+In \cref{eff} ist zu sehen, dass die Effizienz im niederenergetischen Bereich maximal ist, wohingegen die Effizienz mit zunehmender Energie abfällt. Da der Wirkungsquerschnitt im niederenergetischen Bereich am größten ist, ist die Effizienz hier ebenfalls am größten. Der Wirkungsquerschnitt fällt mit zunehmender Energie ab, sodass hier die Effizienz abnimmt.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Effizienz.png}
-	\caption{}
+	\caption{Die relative Effizienz ist gegen die Energie in keV angegeben}
 	\label{eff}
 \end{figure}
-
+\section{Diskussion}
+Es wurden zwei verschiedene Detektortypen miteinander verglichen. Ein Szintillator und ein Halbleiterdetektor. Die aufgenommenen Peaks beim Halbleiter Detektor waren exakter und innerhalb der Messunsicherheiten haben die Ergebnisse mit den Literaturwerten übereingestimmt. Die Werte des Szintillators hingegen haben nicht immer mit den Literaturaturwerten übereingestimmt innerhalb ihrer Fehler. Dennoch kam der Szintillator den Literaturwerten Nahe. Wenn die beiden Detektortypen hinsichtlich des Auflösungsvermögen vergleicht, sieht man beim Halbleiterdetektor eine 100-fach bessere Auflösung, als beim Szintillator. In Abhängigkeit der Energien hat sich herausgestllt, dass beide Detektoren mit zunehmender Energie eine bessere Auflösung besitzen. Bei der Effizienz beider Detektoren wurde die Mischquelle verwendet. Um gleiche Bedingungen für die Proben zu verschaffen, werden die jeweiligen Effizienzen durch dir höchste Effizienz geteilt. Vergleicht man die Effizienz beider Detektoren, sieht man, dass der Halbleiterdetektor eine höhere Effizienz besitzt, als der Szintillator.
+Die Effizienz nimmt für hohe und kleine Energien ab, sodass hier ein Maximum vorliegt.
 
